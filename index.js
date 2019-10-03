@@ -40,7 +40,7 @@ const fetchUserDisplayName = userId => {
             .catch(err => {
                 console.error(err);
                 console.error(`Unable to get profile for userId ${userId}`);
-                return Promise.reject(null);
+                return Promise.resolve(null);
             });
     } else {
         return Promise.resolve(null);
