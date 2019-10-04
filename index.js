@@ -30,16 +30,16 @@ const generateResponseText = (userDisplayName, messageText) => {
     }
 };
 
-const fetchUserDisplayName = userId => {
-    if (userId != null) {
-        return client.getProfile(userId)
+const fetchUserDisplayName = (groupId, userId) => {
+    if (groupId != null && userId != null) {
+        return client.getGroupMemberProfile(groupId, userId)
             .then(profile => {
                  console.log('profile.displayName: ' + profile.displayName);
                  return Promise.resolve(profile.displayName);
             })
             .catch(err => {
                 console.error(err);
-                console.error(`Unable to get profile for userId ${userId}`);
+                console.error(`Unable to get profile for groupId ${groupId}, userId ${userId}`);
                 return Promise.resolve(null);
             });
     } else {
@@ -49,10 +49,12 @@ const fetchUserDisplayName = userId => {
 
 const handleEvent = event => {
     if (_.get(event, 'type') === 'message') {
+        console.log('message event', event);
         if (_.get(event, 'message.type') === 'text') {
+            const groupId = _.get(event, 'source.groupId');
             const userId = _.get(event, 'source.userId');
-            console.log('Message from userId: ' + userId);
-            fetchUserDisplayName(userId).then(userDisplayName => {
+            console.log(`Message from groupId: ${groupId} userId: ${userId}`);
+            fetchUserDisplayName(groupId, userId).then(userDisplayName => {
                 console.log('The userDisplayName is: ' + userDisplayName);
                 const messageText = _.get(event, 'message.text');
                 const responseText = generateResponseText(userDisplayName, messageText);
