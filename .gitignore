@@ -1,4 +1,4 @@
 node_modules/
-secrets.txt
 manifest.yml
 cf-push.*
+.cfignore
