@@ -83,6 +83,5 @@ const middleware = [
 ];
 
 module.exports = {
-    middleware,
-    lineClient
+    middleware
 };
