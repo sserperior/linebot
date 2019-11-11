@@ -16,12 +16,7 @@ const getManager = () => {
         manager.load('hero-brain.nlp');
     }
     return manager;
-}
-
-const handleHarpoonTeamQuery = entities => ({
-    replyMessages: [],
-    broadcastMessages: []
-});
+};
 
 const generateResponse = messageText => getManager().process(messageText).then(result => {
     logger.info(result);
