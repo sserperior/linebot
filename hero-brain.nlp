@@ -1,0 +1,781 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "hero,show": {
+            "domain": "default",
+            "intent": "show.hero"
+          },
+          "hero,me,show": {
+            "domain": "default",
+            "intent": "show.hero"
+          },
+          "alliancememb,harpoon,is,on,team,which": {
+            "domain": "default",
+            "intent": "harpoon.team.query"
+          },
+          "alliancememb,harpoon,is,of,part,team,which": {
+            "domain": "default",
+            "intent": "harpoon.team.query"
+          },
+          "alliancememb,harpoon,is,on,team,what": {
+            "domain": "default",
+            "intent": "harpoon.team.query"
+          },
+          "alliancememb,harpoon,is,of,part,team,what": {
+            "domain": "default",
+            "intent": "harpoon.team.query"
+          }
+        },
+        "intentDict": {
+          "show.hero": "default",
+          "harpoon.team.query": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "show.hero",
+                "tokens": [
+                  "show",
+                  "hero"
+                ]
+              },
+              {
+                "intent": "show.hero",
+                "tokens": [
+                  "show",
+                  "me",
+                  "hero"
+                ]
+              },
+              {
+                "intent": "harpoon.team.query",
+                "tokens": [
+                  "which",
+                  "harpoon",
+                  "team",
+                  "is",
+                  "alliancememb",
+                  "on"
+                ]
+              },
+              {
+                "intent": "harpoon.team.query",
+                "tokens": [
+                  "which",
+                  "harpoon",
+                  "team",
+                  "is",
+                  "alliancememb",
+                  "part",
+                  "of"
+                ]
+              },
+              {
+                "intent": "harpoon.team.query",
+                "tokens": [
+                  "what",
+                  "harpoon",
+                  "team",
+                  "is",
+                  "alliancememb",
+                  "on"
+                ]
+              },
+              {
+                "intent": "harpoon.team.query",
+                "tokens": [
+                  "what",
+                  "harpoon",
+                  "team",
+                  "is",
+                  "alliancememb",
+                  "part",
+                  "of"
+                ]
+              }
+            ],
+            "features": {
+              "show": 2,
+              "hero": 2,
+              "me": 1,
+              "which": 2,
+              "harpoon": 4,
+              "team": 4,
+              "is": 4,
+              "alliancememb": 4,
+              "on": 2,
+              "part": 2,
+              "of": 2,
+              "what": 2
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  13,
+                  3
+                ],
+                "layers": [
+                  {
+                    "show": {},
+                    "hero": {},
+                    "me": {},
+                    "which": {},
+                    "harpoon": {},
+                    "team": {},
+                    "is": {},
+                    "alliancememb": {},
+                    "on": {},
+                    "part": {},
+                    "of": {},
+                    "what": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "show.hero": {
+                      "bias": 1.649536397,
+                      "weights": {
+                        "show": 5.280550003,
+                        "hero": 5.280550003,
+                        "me": 0.473864466,
+                        "which": -0.23932755,
+                        "harpoon": -0.360253572,
+                        "team": -0.360253572,
+                        "is": -0.360253572,
+                        "alliancememb": -0.360253572,
+                        "on": -0.236131996,
+                        "part": -0.124121569,
+                        "of": -0.124121569,
+                        "what": -0.120925993,
+                        "nonefeature": -1.616226912
+                      }
+                    },
+                    "harpoon.team.query": {
+                      "bias": 0.646964277,
+                      "weights": {
+                        "show": -0.355133355,
+                        "hero": -0.355133355,
+                        "me": -0.134301245,
+                        "which": 1.147119284,
+                        "harpoon": 2.294121981,
+                        "team": 2.294121981,
+                        "is": 2.294121981,
+                        "alliancememb": 2.294121981,
+                        "on": 1.529411435,
+                        "part": 0.764710724,
+                        "of": 0.764710724,
+                        "what": 1.147003531,
+                        "nonefeature": -0.644936621
+                      }
+                    },
+                    "None": {
+                      "bias": 3.37277085,
+                      "weights": {
+                        "show": -1.675681829,
+                        "hero": -1.675681829,
+                        "me": -0.402364224,
+                        "which": -0.32702148,
+                        "harpoon": -0.652276516,
+                        "team": -0.652276516,
+                        "is": -0.652276516,
+                        "alliancememb": -0.652276516,
+                        "on": -0.434776753,
+                        "part": -0.217499897,
+                        "of": -0.217499897,
+                        "what": -0.325255215,
+                        "nonefeature": 9.070072174
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "show %hero%"
+      ],
+      [
+        "en",
+        "show me %hero%"
+      ],
+      [
+        "en",
+        "which harpoon team is %allianceMember% on"
+      ],
+      [
+        "en",
+        "which harpoon team is %allianceMember% part of"
+      ],
+      [
+        "en",
+        "what harpoon team is %allianceMember% on"
+      ],
+      [
+        "en",
+        "what harpoon team is %allianceMember% part of"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {
+      "hero": {
+        "type": "enum",
+        "name": "hero",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "gato": [
+              "gato"
+            ],
+            "graymane": [
+              "greymane",
+              "graymane"
+            ],
+            "gunnar": [
+              "gunnar"
+            ],
+            "karil": [
+              "karil"
+            ],
+            "ulmer": [
+              "ulmer"
+            ],
+            "valen": [
+              "valen"
+            ],
+            "arman": [
+              "arman"
+            ],
+            "bane": [
+              "bane"
+            ],
+            "dawa": [
+              "dawa"
+            ],
+            "gan ju": [
+              "gan",
+              "ju",
+              "gan ju",
+              "gan-ju"
+            ],
+            "melia": [
+              "melia"
+            ],
+            "kailani": [
+              "kailani",
+              "kalani"
+            ],
+            "belith": [
+              "belith"
+            ],
+            "berden": [
+              "berden"
+            ],
+            "brienne": [
+              "brienne"
+            ],
+            "carver": [
+              "carver"
+            ],
+            "friar tuck": [
+              "friar",
+              "friar tuck"
+            ],
+            "hisan": [
+              "hissan",
+              "hisan"
+            ],
+            "ishtak": [
+              "ishtak",
+              "ishhtak"
+            ],
+            "mnesseus": [
+              "mneusseus",
+              "menusseus",
+              "mneussus",
+              "menussus"
+            ],
+            "muggy": [
+              "muggy"
+            ],
+            "azar": [
+              "azar"
+            ],
+            "bauchan": [
+              "bauchen",
+              "bauchan"
+            ],
+            "hawkmoon": [
+              "hawkmoon"
+            ],
+            "jahangir": [
+              "jahangar",
+              "jahangir"
+            ],
+            "namahage": [
+              "namahage"
+            ],
+            "nashgar": [
+              "nashgar"
+            ],
+            "rudolph": [
+              "rudolph"
+            ],
+            "squire wabbit": [
+              "squire-rabbit",
+              "squire-wabbit",
+              "squire",
+              "wabbit"
+            ],
+            "balthazar": [
+              "balthazar"
+            ],
+            "chochin": [
+              "cochin",
+              "chochin"
+            ],
+            "gill-ra": [
+              "gil-ra",
+              "gilra",
+              "gill-ra",
+              "gillra"
+            ],
+            "oberon": [
+              "oberon"
+            ],
+            "prisca": [
+              "prisca"
+            ],
+            "renfeld": [
+              "renfeld",
+              "renfield"
+            ],
+            "tyrum": [
+              "tyrum"
+            ],
+            "vlad": [
+              "vlad"
+            ],
+            "agwe": [
+              "agwe"
+            ],
+            "boril": [
+              "boril"
+            ],
+            "captain of diamonds": [
+              "captain of diamonds",
+              "diamonds"
+            ],
+            "grimm": [
+              "grimm"
+            ],
+            "kiril": [
+              "kiril"
+            ],
+            "sonya": [
+              "sonya"
+            ],
+            "triton": [
+              "triton"
+            ],
+            "valeria": [
+              "valeria"
+            ],
+            "chao": [
+              "chao"
+            ],
+            "gretel": [
+              "gretel"
+            ],
+            "hu tao": [
+              "hu",
+              "hu tao",
+              "hu-tao"
+            ],
+            "jackal": [
+              "jackal"
+            ],
+            "li xiu": [
+              "li",
+              "li xiu",
+              "li-xiu"
+            ],
+            "wu kong": [
+              "wu",
+              "wu kong",
+              "wu-kong"
+            ],
+            "caedmon": [
+              "caed",
+              "caedmon"
+            ],
+            "gaedirus": [
+              "gaed",
+              "gad",
+              "gaedirus",
+              "gadeirus"
+            ],
+            "hansel": [
+              "hansel"
+            ],
+            "jack o'hare": [
+              "jack",
+              "jack o'hare",
+              "jack ohare",
+              "jack hare"
+            ],
+            "kashrek": [
+              "kash",
+              "kashrek"
+            ],
+            "little john": [
+              "lj",
+              "little john",
+              "little-john"
+            ],
+            "melendor": [
+              "mel",
+              "melendor",
+              "gandalf"
+            ],
+            "boldtusk": [
+              "boldtusk"
+            ],
+            "colen": [
+              "colen"
+            ],
+            "gormek": [
+              "gormek"
+            ],
+            "kelile": [
+              "kelile",
+              "kellile"
+            ],
+            "lancelot": [
+              "lancelot"
+            ],
+            "scarlett": [
+              "scarlet",
+              "scarlett"
+            ],
+            "sumitomo": [
+              "sumitomo"
+            ],
+            "wilbur": [
+              "wilbur"
+            ],
+            "boomer": [
+              "boomer"
+            ],
+            "cyprian": [
+              "cyprian"
+            ],
+            "gafar": [
+              "gafar",
+              "gaffar"
+            ],
+            "merlin": [
+              "merlin"
+            ],
+            "proteus": [
+              "proteus"
+            ],
+            "rigard": [
+              "rigard"
+            ],
+            "sabina": [
+              "sabina"
+            ],
+            "tibertus": [
+              "burt",
+              "tibs",
+              "tibertus"
+            ]
+          }
+        }
+      },
+      "allianceMember": {
+        "type": "enum",
+        "name": "allianceMember",
+        "localeFallback": {
+          "*": "en"
+        },
+        "locales": {
+          "en": {
+            "88pokemon": [
+              "88",
+              "88pokemon",
+              "boss",
+              "obi"
+            ],
+            "alexloh": [
+              "alex",
+              "alexloh"
+            ],
+            "AcousticWord": [
+              "acoustic",
+              "aural",
+              "acousticword"
+            ],
+            "Alundra": [
+              "alundra",
+              "al"
+            ],
+            "beCool": [
+              "becool"
+            ],
+            "Cole": [
+              "cole"
+            ],
+            "Dman": [
+              "d-man",
+              "dman"
+            ],
+            "Dunc": [
+              "dunc",
+              "teach"
+            ],
+            "Failinbad": [
+              "failin",
+              "failinbad"
+            ],
+            "Fred Weasley": [
+              "fred",
+              "fred weasley"
+            ],
+            "Hotbox": [
+              "hotbox"
+            ],
+            "Jamison": [
+              "jamison"
+            ],
+            "jacko": [
+              "jacko",
+              "jack"
+            ],
+            "Julius": [
+              "julius"
+            ],
+            "magicmands": [
+              "magic",
+              "mandibles",
+              "magicmands"
+            ],
+            "Major Chaos": [
+              "mc",
+              "major",
+              "major chaos",
+              "majorchaos"
+            ],
+            "Moosepoo": [
+              "moosepoo",
+              "moose jr",
+              "moose junior",
+              "real moose"
+            ],
+            "Nazgul": [
+              "nazgul",
+              "naz",
+              "sharkey",
+              "nazgûl"
+            ],
+            "RebelRebel": [
+              "rebel",
+              "rebs",
+              "rebs2",
+              "rebelrebel",
+              "rebellious"
+            ],
+            "richo": [
+              "richo",
+              "richy",
+              "richyrich",
+              "richy-rich"
+            ],
+            "Roland in the Derp": [
+              "r2",
+              "roland2",
+              "roland"
+            ],
+            "Sarah": [
+              "squeaki",
+              "squeaks",
+              "sarah"
+            ],
+            "Slash": [
+              "slasher",
+              "slash",
+              "slashy"
+            ],
+            "Soulja_gurl": [
+              "soulja_gurl",
+              "soulja"
+            ],
+            "T3RMIN8TOR": [
+              "terminator",
+              "t3",
+              "t3rmin8tor"
+            ],
+            "The Moose": [
+              "big moose",
+              "moose",
+              "the moose",
+              "spymoose",
+              "spy moose"
+            ],
+            "Toetapper": [
+              "tt",
+              "toetapper",
+              "toe tapper"
+            ],
+            "Werd5": [
+              "werd",
+              "werd5",
+              "werdy",
+              "werdles"
+            ],
+            "Yoddha": [
+              "yoda",
+              "yoddha"
+            ],
+            "Zakku": [
+              "zakku",
+              "zak"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "slotManager": {
+    "show.hero": {
+      "hero": {
+        "intent": "show.hero",
+        "entity": "hero",
+        "mandatory": false,
+        "locales": {}
+      }
+    },
+    "harpoon.team.query": {
+      "allianceMember": {
+        "intent": "harpoon.team.query",
+        "entity": "allianceMember",
+        "mandatory": false,
+        "locales": {}
+      }
+    }
+  },
+  "responses": {},
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
