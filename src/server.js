@@ -8,6 +8,5 @@ const brain = require('nlp/brain');
 const app = express();
 const port = cfenv.getAppEnv().port || 3000;
 
-//app.post('/', lineUtils.middleware);
-app.post('/', lineUtils.middleware2(brain.generateResponse));
+app.post('/', lineUtils.middleware(brain.generateResponse));
 app.listen(port, () => logger.info(`Listening on port ${port}`));
