@@ -1,4 +1,5 @@
 const _ = require('lodash');
+
 const line = require('@line/bot-sdk');
 
 const logger = require('logger');
@@ -27,51 +28,116 @@ const fetchUserDisplayName = (groupId, userId) => {
     }
 };
 
-const generateResponseText = (userDisplayName, messageText) => {
-    const lMessageText = messageText.toLowerCase();
-    const prefix = userDisplayName != null ? `${userDisplayName}: ` : ''
-    if (lMessageText.includes('moose')) {
-        return `${prefix} Moose is the greatest!`;
-    } else if (lMessageText.includes('dawa')) {
-        return `${prefix} Dawa is very special (not)`;
-    } else if (lMessageText.includes('khagan')) {
-        return `${prefix} Khagan is borderline useless`;
-    } else if (lMessageText.includes('work on next')) {
-        return '@88pokemon, where are you?';
-    }
-    if (lMessageText.includes('@cyber88')) {
-        // It's addressed to the bot
-        return `Hi ${prefix}. I can't help you with that yet.`;
-    }
+/*
+const getHarpoonTeams = () => {
+    const doc = new GoogleSpreadsheet(process.env.TMTR_HARPOON_GOOGLE_SPREADSHEET_KEY);
+    return new Promise((resolve, reject) => {
+        doc.getInfo((err, info) => {
+            if (err) {
+                reject(err);
+            }
+            const harpoonsWorksheet = info.worksheets[0];
+            const teams = {
+                teamA: [],
+                teamB: []
+            };
+            harpoonsWorksheet.getRows({}, (err, rows) => {
+                if (err) {
+                    reject(err);
+                }
+                rows.forEach(row => {
+                    teams.teamA.push(row.teama);
+                    teams.teamB.push(row.teamb);
+                });
+                resolve(teams);
+            });
+        });
+    });
 };
 
-const handleEvent = event => {
+const handleHarpoonTeamQuery = (groupId, entities, replyToken) => {
+    logger.info('handle harpoon.team.query intent');
+
+    return getHarpoonTeams().then(teams => {
+        const promises = [];
+        const messages = [];
+        const uniqueAllianceMemberNames = [];
+        
+        for (let i=0;i<Math.min(entities.length, 5);i++) {
+            if (entities[i].entity === 'allianceMember') {
+                const allianceMemberName = entities[i].option;
+                if (allianceMemberName != null && !uniqueAllianceMemberNames.includes(allianceMemberName)) {
+                    uniqueAllianceMemberNames.push(allianceMemberName);
+                    const isTeamA = teams.teamA.includes(allianceMemberName);
+                    const isTeamB = teams.teamB.includes(allianceMemberName);
+                    let team = 'unknown';
+                    if (isTeamA && isTeamB) {
+                        team = 'A and B';
+                    } else if (isTeamA) {
+                        team = 'A';
+                    } else if (isTeamB) {
+                        team = 'B';
+                    }
+                    messages.push({
+                        type: 'text',
+                        text: `${allianceMemberName} is on harpoon Team ${team}`
+                    });                    
+                }
+            }
+        }
+
+        promises.push(
+            lineClient.replyMessage(replyToken, messages).catch(logger.error)
+        );
+    
+        if (uniqueAllianceMemberNames.length > 5) {
+            promises.push(
+                lineClient.pushMessage(
+                    groupId,
+                    {
+                        type: 'text',
+                        text: 'I can only show the teams for up to five alliance members 😢'
+                    }
+                ).catch(logger.error)
+            );
+        }
+        return Promise.all(promises);        
+    });   
+};
+*/
+
+const createEventHandler = generateResponse => event => {
     if (_.get(event, 'type') === 'message') {
         logger.info('message event', event);
         if (_.get(event, 'message.type') === 'text') {
             const groupId = _.get(event, 'source.groupId');
             const userId = _.get(event, 'source.userId');
             logger.info(`Message from groupId: ${groupId} userId: ${userId}`);
-            fetchUserDisplayName(groupId, userId).then(userDisplayName => {
-                const messageText = _.get(event, 'message.text');
-                const responseText = generateResponseText(userDisplayName, messageText);
-                if (responseText != null) {
-                    return lineClient.replyMessage(
-                        event.replyToken,
-                        {
-                            type: 'text',
-                            text: responseText
-                        }
-                    )
-                }
+            return fetchUserDisplayName(groupId, userId).then(userDisplayName => {
+                /**
+                 * Expected response structure:
+                 * {
+                 *      replyMessages: [], // 0-5 message objects to be sent using the replyToken
+                 *      broadcastMessages: [] // message objects to be sent via broadcast.
+                 * }
+                 */
+                //reply(groupId, userDisplayName, _.get(event, 'message.text'), event.replyToken)                
+                return generateResponse(_.get(event, 'message.text')).then(({ replyMessages, broadcastMessages}) => {
+                    const promises = [];
+                    promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(logger.error));
+                    broadcastMessages.forEach(broadcastMessage => {
+                        promises.push(lineClient.pushMessage(groupId, broadcastMessage).catch(logger.error));
+                    });
+                    return Promise.all(promises);
+                });
             });
         }
     }
-    return Promise.resolve();
+    return Promise.resolve();    
 }
 
-const lineEventsProcessor = (req, res, next) => {
-    Promise.all(req.body.events.map(handleEvent))
+const createLineEventsProcessor = generateResponse => (req, res, next) => {
+    Promise.all(req.body.events.map(createEventHandler(generateResponse)))
         .then(result => res.json(result))
         .catch(err => {
             logger.error(err);
@@ -79,11 +145,11 @@ const lineEventsProcessor = (req, res, next) => {
         });
 };
 
-const middleware = [
+const middleware2 = generateResponse => ([
     line.middleware(lineConfig),
-    lineEventsProcessor
-];
+    createLineEventsProcessor(generateResponse)
+]);
 
 module.exports = {
-    middleware
+    middleware2
 };

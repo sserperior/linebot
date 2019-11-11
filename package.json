@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_PATH=src/ node src/server.js",
-    "local-start": "cross-env NODE_PATH=src CHANNEL_ACCESS_TOKEN=A CHANNEL_SECRET=B node src/server.js"
+    "start": "cross-env NODE_PATH=src node src/server.js",
+    "local-start": "cross-env NODE_PATH=src CHANNEL_ACCESS_TOKEN=A CHANNEL_SECRET=B node src/server.js",
+    "train": "cross-env NODE_PATH=src node src/nlp/trainer.js",
+    "test": "cross-env NODE_PATH=src:test mocha test/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,9 @@
     "cfenv": "^1.2.2",
     "cross-env": "^6.0.3",
     "express": "^4.17.1",
+    "google-spreadsheet": "^2.0.8",
     "lodash": "^4.17.15",
+    "node-nlp": "^3.10.2",
     "winston": "^3.2.1"
   },
   "engines": {
