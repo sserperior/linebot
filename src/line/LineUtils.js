@@ -28,84 +28,6 @@ const fetchUserDisplayName = (groupId, userId) => {
     }
 };
 
-/*
-const getHarpoonTeams = () => {
-    const doc = new GoogleSpreadsheet(process.env.TMTR_HARPOON_GOOGLE_SPREADSHEET_KEY);
-    return new Promise((resolve, reject) => {
-        doc.getInfo((err, info) => {
-            if (err) {
-                reject(err);
-            }
-            const harpoonsWorksheet = info.worksheets[0];
-            const teams = {
-                teamA: [],
-                teamB: []
-            };
-            harpoonsWorksheet.getRows({}, (err, rows) => {
-                if (err) {
-                    reject(err);
-                }
-                rows.forEach(row => {
-                    teams.teamA.push(row.teama);
-                    teams.teamB.push(row.teamb);
-                });
-                resolve(teams);
-            });
-        });
-    });
-};
-
-const handleHarpoonTeamQuery = (groupId, entities, replyToken) => {
-    logger.info('handle harpoon.team.query intent');
-
-    return getHarpoonTeams().then(teams => {
-        const promises = [];
-        const messages = [];
-        const uniqueAllianceMemberNames = [];
-        
-        for (let i=0;i<Math.min(entities.length, 5);i++) {
-            if (entities[i].entity === 'allianceMember') {
-                const allianceMemberName = entities[i].option;
-                if (allianceMemberName != null && !uniqueAllianceMemberNames.includes(allianceMemberName)) {
-                    uniqueAllianceMemberNames.push(allianceMemberName);
-                    const isTeamA = teams.teamA.includes(allianceMemberName);
-                    const isTeamB = teams.teamB.includes(allianceMemberName);
-                    let team = 'unknown';
-                    if (isTeamA && isTeamB) {
-                        team = 'A and B';
-                    } else if (isTeamA) {
-                        team = 'A';
-                    } else if (isTeamB) {
-                        team = 'B';
-                    }
-                    messages.push({
-                        type: 'text',
-                        text: `${allianceMemberName} is on harpoon Team ${team}`
-                    });                    
-                }
-            }
-        }
-
-        promises.push(
-            lineClient.replyMessage(replyToken, messages).catch(logger.error)
-        );
-    
-        if (uniqueAllianceMemberNames.length > 5) {
-            promises.push(
-                lineClient.pushMessage(
-                    groupId,
-                    {
-                        type: 'text',
-                        text: 'I can only show the teams for up to five alliance members 😢'
-                    }
-                ).catch(logger.error)
-            );
-        }
-        return Promise.all(promises);        
-    });   
-};
-*/
-
 const createEventHandler = generateResponse => event => {
     if (_.get(event, 'type') === 'message') {
         logger.info('message event', event);
@@ -145,11 +67,11 @@ const createLineEventsProcessor = generateResponse => (req, res, next) => {
         });
 };
 
-const middleware2 = generateResponse => ([
+const middleware = generateResponse => ([
     line.middleware(lineConfig),
     createLineEventsProcessor(generateResponse)
 ]);
 
 module.exports = {
-    middleware2
+    middleware
 };

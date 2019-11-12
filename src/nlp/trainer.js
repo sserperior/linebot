@@ -26,12 +26,23 @@ Object.keys(AllianceMembers).forEach(allianceMemberKey => {
 // Show hero questions
 manager.addDocument('en', 'show %hero%', 'show.hero');
 manager.addDocument('en', 'show me %hero%', 'show.hero');
+manager.addDocument('en', 'display %hero%', 'show.hero');
 
 // Harpoon team questions
 manager.addDocument('en', 'which harpoon team is %allianceMember% on', 'harpoon.team.query');
 manager.addDocument('en', 'which harpoon team is %allianceMember% part of', 'harpoon.team.query');
 manager.addDocument('en', 'what harpoon team is %allianceMember% on', 'harpoon.team.query');
 manager.addDocument('en', 'what harpoon team is %allianceMember% part of', 'harpoon.team.query');
+manager.addDocument('en', 'display harpoon team for %allianceMember%', 'harpoon.team.query');
+manager.addDocument('en', 'display %allianceMember% harpoon team', 'harpoon.team.query');
+
+// Special questions
+manager.addDocument('en', 'what is the special for %hero%', 'show.hero.special');
+manager.addDocument('en', 'what is %hero% special', 'show.hero.special');
+manager.addDocument('en', 'show %hero% special', 'show.hero.special');
+manager.addDocument('en', 'show special for %hero%', 'show.hero.special');
+manager.addDocument('en', 'display special for %hero%', 'show.hero.special');
+manager.addDocument('en', 'display %hero% special', 'show.hero.special');
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');
