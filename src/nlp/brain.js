@@ -5,6 +5,7 @@ const { NlpManager } = require('node-nlp');
 const logger = require('logger');
 const showHero = require('nlp/intents/showHero');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
+const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 
 let manager = null;
 
@@ -27,7 +28,10 @@ const generateResponse = messageText => getManager().process(messageText).then(r
                 return Promise.resolve(showHero.handle(result.entities));
             case harpoonTeamQuery.intentLabel:
                 logger.info(`${harpoonTeamQuery.intentLabel} intent`);
-                return Promise.resolve(harpoonTeamQuery.handle(result.entities));    
+                return Promise.resolve(harpoonTeamQuery.handle(result.entities));
+            case showHeroSpecial.intentLabel:
+                logger.info(`${showHeroSpecial.intentLabel} intent`);
+                return Promise.resolve(showHeroSpecial.handle(result.entities));    
         }
     }
     return Promise.resolve();
