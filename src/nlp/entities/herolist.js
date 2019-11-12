@@ -1068,7 +1068,6 @@ const green4StarHeroes = {
     }
 };
 
-// TODO
 const red4StarHeroes = {
     boldtusk: {
         name: 'Boldtusk',
@@ -1408,6 +1407,302 @@ const purple4StarHeroes = {
     }
 }
 
+const blue5StarHeroes = {
+    aegir: {
+        name: 'Aegir',
+        attack: 615,
+        defense: 823,
+        health: 1446,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Aegir%20(2).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Icy Resilience',
+            description: [
+                'All allies share received damage with each other for 3 turns.',
+                'All allies get +30% defense for 3 turns.',
+                'All allies heal 100% of dealt normal damage for 3 turns.',
+                "Element Link recovers 4% health for all Ice allies for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    alasie: {
+        name: 'Alasie',
+        attack: 739,
+        defense: 706,
+        health: 1336,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alasie%20(2).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Spirit Arrow',
+            description: [
+                'Deals 462% damage to the target.',
+                "The target and nearby enemies get -24% mana generation for 3 turns. This effect can't be dispelled.",
+                "Element Link gives all Ice allies +5% attack and +5% defense for 6 turns. This effect cant be dispelled."
+            ]
+        }
+    },
+    alice: {
+        name: 'Alice',
+        attack: 741,
+        defense: 714,
+        health: 1326,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alice%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Timeless Timepiece',
+            description: [
+                'Deals 430% damage to the target.',
+                'Target gets -44% attack for 3 turns. The effect duration is reset if the target is healed. This effect cannot be dispelled.'
+            ]
+        }
+    },
+    ariel: {
+        name: 'Ariel',
+        attack: 731,
+        defense: 768,
+        health: 1260,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Ariel%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Divine Protection',
+            description: [
+                'Recovers 40% health for all allies.',
+                'All allies get +24% mana generation for 4 turns.',
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    },
+    athena: {
+        name: 'Athena',
+        attack: 737,
+        defense: 692,
+        health: 1349,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Athena.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: "Athena's Bow",
+            description: [
+                'Deal 305% damage to a single enemy and minor damage on nearby enemies and they get -41% defense and a further -4% decrease every time they are hit for 4 turns. Deals extra damage against Fire.'
+            ]
+        }
+    },
+    finley: {
+        name: 'Finley',
+        attack: 753,
+        defense: 745,
+        health: 1314,
+        pseudonyms: ['fin', 'finley'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Finley.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: "Commodore's Revenge",
+            description: [
+                'Deals 385% damage to the target.',
+                'If the target has buffs, targets another enemy with buffs. If none of the other enemies have buffs, targets a random enemy. The damage is reduced on each consecutive hit. Each enemy can only be hit once.',
+                'All hit targets get -34% defense for 3 turns.'
+            ]
+        }
+    },
+    frida: {
+        name: 'Frida',
+        attack: 733,
+        defense: 723,
+        health: 1330,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Frida%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Polar Bash',
+            description: [
+                'Deals 290% damage to the target and nearby enemies',
+                'The target and nearby enemies get -54% defense against Ice for 4 turns.',
+                'Dispels buffs from the target and nearby enemies',
+                "Element Link gives all Ice allies +46% defense against Nature for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    isarnia: {
+        name: 'Isarnia',
+        attack: 797,
+        defense: 655,
+        health: 1200,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Glacial Shatter',
+            description: [
+                'Deal 235% damage to all enemies and they get -44% defense for 6 turns'
+            ]
+        }
+    },
+    'king arthur': {
+        name: 'King Arthur',
+        attack: 708,
+        defense: 733,
+        health: 1336,
+        pseudonyms: ['arthur', 'ka', 'king arthur', 'king-arthur'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-King-Arthur_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Excalibur',
+            description: [
+                'Deals 468% damage to the target.',
+                'The target gets -39% attack for 4 turns.',
+                'The target gets -54% defense against Ice for 4 turns.',
+                'The caster gets +74% defense against Special Skills for 4 turns.'
+            ]
+        }
+    },
+    magni: {
+        name: 'Magni',
+        attack: 793,
+        defense: 591,
+        health: 1334,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Magni.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Strike of the Ancients',
+            description: [
+                'Deal 420% damage to a single enemy and nearby allies get +63% defense for 4 turns'
+            ]
+        }
+    },
+    'master lepus': {
+        name: 'Master Lepus',
+        attack: 795,
+        defense: 690,
+        health: 1194,
+        pseudonyms: ['master lepus', 'lepus'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Master-Lepus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Reckless Finisher',
+            description: [
+                'Deals 410% damage to the target and minor damage to nearby enemies.',
+                "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'miki': {
+        name: 'Miki',
+        attack: 712,
+        defense: 778,
+        health: 1275,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Miki_August-HOTM.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Wrath of Tundra',
+            description: [
+                'All allies get +130% normal attack that only applies when the enemy has more health than the attacker. Stacks with similar status effects up to a maximum of +170% normal attack. The effect lasts for 5 turns.',
+                'The target and nearby enemies get silenced for 4 turns.',
+                "Element Link gives +4% mana generation for all Ice allies for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    misandra: {
+        name: 'Misandra',
+        attact: 723,
+        defense: 751,
+        health: 1330,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Misandra.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Chain Strike',
+            description: [
+                'Deals 310% damage to the target.',
+                'Has a 42% chance for additional hits on random enemies up to 3 times. Additional hits deal minor damage.',
+                'All allies gain a small amount of mana for each additional hit.'
+            ]
+        }
+    },
+    perseus: {
+        name: 'Perseus',
+        attack: 725,
+        defense: 698,
+        health: 1367,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray//5-Ice-Perseus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Everlasting Wound',
+            description: [
+                "Deal 355% damage to a single enemy and they get -100% healing received for 4 turns and it can't be dispelled. Nearby allies get +94% defense against Nature for 4 turns."
+            ]
+        }
+    },
+    richard: {
+        name: 'Richard',
+        attack: 644,
+        defense: 817,
+        health: 1260,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204347.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Cloud Hammer',
+            description: [
+                'Deal 415% damage to a single enemy and minor damage on nearby enemies and they get -34% attack for 6 turns'
+            ]
+        }
+    },
+    rumpelstiltskin: {
+        name: 'RumpleStiltskin',
+        attack: 733,
+        defense: 698,
+        health: 1359,
+        pseudonyms: ['rumple', 'rumpel', 'rumplestiltskin', 'rumpelstiltskin', 'rumplestilskin', 'rumpelstilskin', 'rump'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Rumpelstiltskin%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Legerdemain',
+            description: [
+                'Draw a card for a specific effect:',
+                '',
+                'Skull:',
+                'Deals 270% damage to all enemies.',
+                'All enemies receive 156 damage over 3 turns.',
+                '',
+                'Cross:',
+                'Recovers 27% health for all allies.',
+                'Dispels status ailments from all allies.',
+                '',
+                'Stars:',
+                'All enemies get -34% defense for 3 turns.',
+                'All allies get +48% attack for 3 turns.'
+            ]
+        }
+    },
+    thorne: {
+        name: 'Thorne',
+        attack: 638,
+        defense: 793,
+        health: 1339,
+        pseudonyms: ['thorne', 'thorn'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Thorne%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Icecold Finisher',
+            description: [
+                'Deals 480% damage to the target and minor damage to nearby enemies.'
+            ]
+        }
+    }
+}
+
 const heroes = {
     // 3*
     ...blue3StarHeroes,
@@ -1421,7 +1716,10 @@ const heroes = {
     ...yellow4StarHeroes,
     ...green4StarHeroes,
     ...red4StarHeroes,
-    ...purple4StarHeroes
+    ...purple4StarHeroes,
+
+    // 5*
+    ...blue5StarHeroes
 };
 
 module.exports = {
@@ -1436,6 +1734,8 @@ module.exports = {
     green4StarHeroes,
     red4StarHeroes,
     purple4StarHeroes,
+
+    blue5StarHeroes,
 
     heroes
 }
