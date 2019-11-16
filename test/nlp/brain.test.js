@@ -75,6 +75,6 @@ describe('brain tests', () => {
     });
 
     it('unsure why this is broken', () => {
-        return getManager().process("@Squeaki, what's on the shopping list").then(console.log);
+        return getManager().process("show Boril").then(console.log);
     });
 });

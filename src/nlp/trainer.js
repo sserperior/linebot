@@ -23,6 +23,10 @@ Object.keys(AllianceMembers).forEach(allianceMemberKey => {
   );
 });
 
+// Outliers to ignore
+manager.addDocument('en', 'no %hero%', 'do.nothing');
+manager.addDocument('en', '%hero%', 'do.nothing');
+
 // Show hero questions
 manager.addDocument('en', 'show %hero%', 'show.hero');
 manager.addDocument('en', 'show me %hero%', 'show.hero');
@@ -35,6 +39,7 @@ manager.addDocument('en', 'what harpoon team is %allianceMember% on', 'harpoon.t
 manager.addDocument('en', 'what harpoon team is %allianceMember% part of', 'harpoon.team.query');
 manager.addDocument('en', 'display harpoon team for %allianceMember%', 'harpoon.team.query');
 manager.addDocument('en', 'display %allianceMember% harpoon team', 'harpoon.team.query');
+manager.addDocument('en', 'show harpoon team for %allianceMember%', 'harpoon.team.query');
 
 // Special questions
 manager.addDocument('en', 'what is the special for %hero%', 'show.hero.special');

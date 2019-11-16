@@ -178,7 +178,7 @@ const yellow3StarHeroes = {
     },
     melia: {
         name: 'Melia',
-        attact: 505,
+        attack: 505,
         defense: 404,
         health: 684,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
@@ -1054,7 +1054,7 @@ const green4StarHeroes = {
         attack: 728,
         defense: 605,
         health: 969,
-        psuedonyms: ['skittles', 'skittleskull'],
+        pseudonyms: ['skittles', 'skittleskull'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
@@ -1068,7 +1068,6 @@ const green4StarHeroes = {
     }
 };
 
-// TODO
 const red4StarHeroes = {
     boldtusk: {
         name: 'Boldtusk',
@@ -1408,6 +1407,1500 @@ const purple4StarHeroes = {
     }
 }
 
+const blue5StarHeroes = {
+    aegir: {
+        name: 'Aegir',
+        attack: 615,
+        defense: 823,
+        health: 1446,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Aegir%20(2).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Icy Resilience',
+            description: [
+                'All allies share received damage with each other for 3 turns.',
+                'All allies get +30% defense for 3 turns.',
+                'All allies heal 100% of dealt normal damage for 3 turns.',
+                "Element Link recovers 4% health for all Ice allies for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    alasie: {
+        name: 'Alasie',
+        attack: 739,
+        defense: 706,
+        health: 1336,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alasie%20(2).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Spirit Arrow',
+            description: [
+                'Deals 462% damage to the target.',
+                "The target and nearby enemies get -24% mana generation for 3 turns. This effect can't be dispelled.",
+                "Element Link gives all Ice allies +5% attack and +5% defense for 6 turns. This effect cant be dispelled."
+            ]
+        }
+    },
+    alice: {
+        name: 'Alice',
+        attack: 741,
+        defense: 714,
+        health: 1326,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alice_(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Timeless Timepiece',
+            description: [
+                'Deals 430% damage to the target.',
+                'Target gets -44% attack for 3 turns. The effect duration is reset if the target is healed. This effect cannot be dispelled.'
+            ]
+        }
+    },
+    ariel: {
+        name: 'Ariel',
+        attack: 731,
+        defense: 768,
+        health: 1260,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Ariel%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Divine Protection',
+            description: [
+                'Recovers 40% health for all allies.',
+                'All allies get +24% mana generation for 4 turns.',
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    },
+    athena: {
+        name: 'Athena',
+        attack: 737,
+        defense: 692,
+        health: 1349,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Athena.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: "Athena's Bow",
+            description: [
+                'Deal 305% damage to a single enemy and minor damage on nearby enemies and they get -41% defense and a further -4% decrease every time they are hit for 4 turns. Deals extra damage against Fire.'
+            ]
+        }
+    },
+    finley: {
+        name: 'Finley',
+        attack: 753,
+        defense: 745,
+        health: 1314,
+        pseudonyms: ['fin', 'finley'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Finley.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: "Commodore's Revenge",
+            description: [
+                'Deals 385% damage to the target.',
+                'If the target has buffs, targets another enemy with buffs. If none of the other enemies have buffs, targets a random enemy. The damage is reduced on each consecutive hit. Each enemy can only be hit once.',
+                'All hit targets get -34% defense for 3 turns.'
+            ]
+        }
+    },
+    frida: {
+        name: 'Frida',
+        attack: 733,
+        defense: 723,
+        health: 1330,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Frida%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Polar Bash',
+            description: [
+                'Deals 290% damage to the target and nearby enemies',
+                'The target and nearby enemies get -54% defense against Ice for 4 turns.',
+                'Dispels buffs from the target and nearby enemies',
+                "Element Link gives all Ice allies +46% defense against Nature for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    isarnia: {
+        name: 'Isarnia',
+        attack: 797,
+        defense: 655,
+        health: 1200,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Glacial Shatter',
+            description: [
+                'Deal 235% damage to all enemies and they get -44% defense for 6 turns'
+            ]
+        }
+    },
+    'king arthur': {
+        name: 'King Arthur',
+        attack: 708,
+        defense: 733,
+        health: 1336,
+        pseudonyms: ['arthur', 'ka', 'king arthur', 'king-arthur'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-King-Arthur_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Excalibur',
+            description: [
+                'Deals 468% damage to the target.',
+                'The target gets -39% attack for 4 turns.',
+                'The target gets -54% defense against Ice for 4 turns.',
+                'The caster gets +74% defense against Special Skills for 4 turns.'
+            ]
+        }
+    },
+    magni: {
+        name: 'Magni',
+        attack: 793,
+        defense: 591,
+        health: 1334,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Magni.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Strike of the Ancients',
+            description: [
+                'Deal 420% damage to a single enemy and nearby allies get +63% defense for 4 turns'
+            ]
+        }
+    },
+    'master lepus': {
+        name: 'Master Lepus',
+        attack: 795,
+        defense: 690,
+        health: 1194,
+        pseudonyms: ['master lepus', 'lepus'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Master-Lepus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Reckless Finisher',
+            description: [
+                'Deals 410% damage to the target and minor damage to nearby enemies.',
+                "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'miki': {
+        name: 'Miki',
+        attack: 712,
+        defense: 778,
+        health: 1275,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Miki_August-HOTM.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Wrath of Tundra',
+            description: [
+                'All allies get +130% normal attack that only applies when the enemy has more health than the attacker. Stacks with similar status effects up to a maximum of +170% normal attack. The effect lasts for 5 turns.',
+                'The target and nearby enemies get silenced for 4 turns.',
+                "Element Link gives +4% mana generation for all Ice allies for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    misandra: {
+        name: 'Misandra',
+        attack: 723,
+        defense: 751,
+        health: 1330,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Misandra.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Chain Strike',
+            description: [
+                'Deals 310% damage to the target.',
+                'Has a 42% chance for additional hits on random enemies up to 3 times. Additional hits deal minor damage.',
+                'All allies gain a small amount of mana for each additional hit.'
+            ]
+        }
+    },
+    perseus: {
+        name: 'Perseus',
+        attack: 725,
+        defense: 698,
+        health: 1367,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray//5-Ice-Perseus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Everlasting Wound',
+            description: [
+                "Deal 355% damage to a single enemy and they get -100% healing received for 4 turns and it can't be dispelled. Nearby allies get +94% defense against Nature for 4 turns."
+            ]
+        }
+    },
+    richard: {
+        name: 'Richard',
+        attack: 644,
+        defense: 817,
+        health: 1260,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204347.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Cloud Hammer',
+            description: [
+                'Deal 415% damage to a single enemy and minor damage on nearby enemies and they get -34% attack for 6 turns'
+            ]
+        }
+    },
+    rumpelstiltskin: {
+        name: 'RumpleStiltskin',
+        attack: 733,
+        defense: 698,
+        health: 1359,
+        pseudonyms: ['rumple', 'rumpel', 'rumplestiltskin', 'rumpelstiltskin', 'rumplestilskin', 'rumpelstilskin', 'rump'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Rumpelstiltskin%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Legerdemain',
+            description: [
+                'Draw a card for a specific effect:',
+                '',
+                'Skull:',
+                'Deals 270% damage to all enemies.',
+                'All enemies receive 156 damage over 3 turns.',
+                '',
+                'Cross:',
+                'Recovers 27% health for all allies.',
+                'Dispels status ailments from all allies.',
+                '',
+                'Stars:',
+                'All enemies get -34% defense for 3 turns.',
+                'All allies get +48% attack for 3 turns.'
+            ]
+        }
+    },
+    thorne: {
+        name: 'Thorne',
+        attack: 638,
+        defense: 793,
+        health: 1339,
+        pseudonyms: ['thorne', 'thorn'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Thorne%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Icecold Finisher',
+            description: [
+                'Deals 480% damage to the target and minor damage to nearby enemies.'
+            ]
+        }
+    }
+}
+
+const yellow5StarHeroes = {
+    delilah: {
+        name: 'Delilah',
+        attack: 737,
+        defense: 704,
+        health: 1345,
+        pseudonyms: ['del', 'delilah'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Delilah.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Summon Temple Guardians',
+            description: [
+                'Recovers 33% health for all allies.',
+                'Summons a Guardian Minion for each ally with 13% HP and 16% attack inherited from the caster.'
+            ]
+        }
+    },
+    'drake fong': {
+        name: 'Drake Fong',
+        attack: 727,
+        defense: 712,
+        health: 1353,
+        pseudonyms: ['drake', 'drake fong'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Drake-Fong.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Flails of Fury',
+            description: [
+                'Deals 270% damage to the target and nearby enemies.',
+                'The target and nearby enemies get -35% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills.',
+                "Element Link gives all Holy allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'guardian owl': {
+        name: 'Guardian Owl',
+        attack: 601,
+        defense: 795,
+        health: 1483,
+        pseudonyms: ['owl', 'guardian owl'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guardian-Owl%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_SLOW,
+        special: {
+            name: 'Stately Retribution',
+            description: [
+                'Deals 235% damage to all enemies.',
+                'Damage is increased by 60% per each dead ally.',
+                'The caster gets +46% defense for 5 turns.',
+                'The caster regenerates 765 HP over 5 turns.'
+            ]
+        }
+    },
+    guinevere: {
+        name: 'Guinevere',
+        attack: 669,
+        defense: 778,
+        health: 1347,
+        pseudonyms: ['guin', 'guinevere'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guinevere_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Word of the Queen',
+            description: [
+                'Reduces the mana of all enemies by 20%.',
+                'The caster and nearby allies regenerate 612 HP over 4 turns.',
+                'The caster and nearby allies get +54% defense against Dark for 4 turns.'
+            ]
+        }
+    },
+    inari: {
+        name: 'Inari',
+        attack: 813,
+        defense: 642,
+        health: 1312,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Inari.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Lucky Nine',
+            description: [
+                'All allies get +56% chance to dodge Special Skills for 3 turns. Each dodge summons a Sakura Fox minion.',
+                'Sakura Fox Minion has 8% HP and 30% attack inherited from the caster. It adds 7% mana to its owner at the end of each turn.'
+            ]
+        }
+    },
+    joon: {
+        name: 'Joon',
+        attack: 749,
+        defense: 636,
+        health: 1339,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-213228%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Solar Beam',
+            description: [
+                'Deal 467% damage to a single enemy and they are less accurate for 6 turns'
+            ]
+        }
+    },
+    justice: {
+        name: 'Justice',
+        attack: 609,
+        defense: 776,
+        health: 1425,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Justice%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Rite of Judgement',
+            description: [
+                'Deals 240% damage to all enemies.',
+                'All enemies get -40% accuract for 4 turns.',
+                'Chance to miss also applies to offensive Special Skills.'
+            ]
+        }
+    },
+    leonidas: {
+        name: 'Leonidas',
+        attack: 731,
+        defense: 718,
+        health: 1221,
+        pseudonyms: ['leo', 'leonidas'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Leonidas%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Spartan Cleave',
+            description: [
+                'Deals 365% damage to the target.',
+                'Reduces the mana of the target by 40%',
+                'Heals the caster for 75% of damage dealt.'
+            ]
+        }
+    },
+    musashi: {
+        name: 'Musashi',
+        attack: 786,
+        defense: 679,
+        health: 1248,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Musashi%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Dragon Fang',
+            description: [
+                'Deal 332% damage to a single enemy and minor damage to nearby enemies.',
+                'The caster heals 50% of dealt normal damage for 5 turns.'
+            ]
+        }
+    },
+    neith: {
+        name: 'Neith',
+        attack: 735,
+        defense: 737,
+        health: 1299,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Neith.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Sickle of Eradication',
+            description: [
+                'Deals 150% damage to all enemies.',
+                'Reduces the mana of all enemies by 10%.',
+                'All enemies get -35% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.',
+                "Element Link gives +4% mana generation for all Holy allies for 4 gturns. This effect can't be dispelled."
+            ]
+        }
+    },
+    onatel: {
+        name: 'Onatel',
+        attack: 618,
+        defense: 815,
+        health: 1437,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Onatel%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Eye of the Prophet',
+            description: [
+                'Deals 250% damage to the target and nearby enemies.',
+                "The caster steals generated mana of the target and the nearby enemies over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be dispelled, but gets removed if the caster dies.",
+                "Element Link recovers 4% health for all Holy allies for 6 turns. This effect can't be dispelled."
+            ]
+        }
+
+    },
+    poseidon: {
+        name: 'Poseidon',
+        attack: 745,
+        defense: 718,
+        health: 1349,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Poseidon.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Ruler of Seas',
+            description: [
+                'Deals 450% damage to the target.',
+                'All allies resist new negative mana effects for 3 turns.',
+                'ALl allies resist new effects that block usage of Special Skills for 3 turns.'
+            ]
+        }
+    },
+    rana: {
+        name: 'Rana',
+        attack: 735,
+        defense: 710,
+        health: 1367,
+        pseudonyms: ['rana', 'sandqueen', 'sand-queen'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Rana.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Sand Storm',
+            description: [
+                'Deals 185% damage to the target and nearby enemies.',
+                'The target and nearby enemies receive 402 damage over 3 turns.',
+                "The target and nearby enemies get -75% healing received for 2 turns. This effect can't be dispelled.",
+                'Cures status ailments from the caster.'
+            ]
+        }
+    },
+    ranvir: {
+        name: 'Ranvir',
+        attack: 768,
+        defense: 782,
+        health: 1126,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Ranvir_June-HOTM.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: "Mystic's Virtue",
+            description: [
+                'Deals 265% damage to the target.',
+                'All allies get +195% attack and -35% accuracy that only applies when the enemy has more health than the attacker. The effect lasts for 5 turns.',
+                "Element Link gives all Holy allies +46% defense against Dark for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    vivica: {
+        name: 'Vivica',
+        attack: 714,
+        defense: 694,
+        health: 1328,
+        pseudonyms: ['viv', 'vivica'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Omniheal',
+            description: [
+                'Recover 44% health for all allies and cure status ailments from them and they get +63% defense for 4 turns'
+            ]
+        }
+    },
+    'white rabbit': {
+        name: 'White Rabbit',
+        attack: 731,
+        defense: 749,
+        health: 1353,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-White-Rabbit.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: "Rabbit's Watch",
+            description: [
+                'Deals 280% damage to the target and nearby enemies.',
+                "Target gets -34% defense for 4 turns. This effect duratiion is reset if the target is healed. This effect cant be dispelled."
+            ]
+        }
+    }
+};
+
+const green5StarHeroes = {
+    alberich: {
+        name: 'Alberich',
+        attack: 725,
+        defense: 741,
+        health: 1277,
+        pseudonyms: ['alby', 'alberich'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Alberich%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: "Midsummer's Dream",
+            description: [
+                'Each fallen ally has a 33% chance to get revived with 23% HP.',
+                'All allies regenerate 612 HP over 4 turns.',
+                'All allies regenerate a moderate amount of mana over 4 turns.'
+            ]
+        }
+    },
+    atomos: {
+        name: 'Atomos',
+        attack: 733,
+        defense: 727,
+        health: 1336,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Atomos%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Immortal Annihilator',
+            description: [
+                'Deals 150% damage to all enemies.',
+                'The more mana the enemies have, the more damage they will receive, up to 270%.',
+                'If the caster dies during the next 5 turns they are resurrected in the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
+            ]
+        }
+    },
+    elkanen: {
+        name: 'Elkanen',
+        attack: 675,
+        defense: 802,
+        health: 1266,
+        pseudonyms: ['elk', 'elkanen'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Elkanen%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Crescent Spear',
+            description: [
+                'Deals 330% damage to the target and minor damage to nearby enemies.',
+                'Heals the caster for 38% of damage dealt.'
+            ]
+        }
+    },
+    evelyn: {
+        name: 'Evelyn',
+        attack: 727,
+        defense: 712,
+        health: 1355,
+        pseudonyms: ['eve', 'evelyn'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Evelyn.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Shattering Warcry',
+            description: [
+                'Deals 210% damage to the target and nearby enemies.',
+                'The target and nearby enemies get -54% defense against Nature for 4 turns.',
+                "Element Link recovers 4% health for all Nature allies for 6 turns. This effect can't be dispelled.",
+                'Dispels buffs from the target and nearby enemies.'
+            ]
+        }
+    },
+    gregorion: {
+        name: 'Gregorion',
+        attack: 729,
+        defense: 710,
+        health: 1351,
+        pseudonyms: ['greg', 'gregorion'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Gregorion.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Unwavering Focus',
+            description: [
+                'Deals 455% damage to the target.',
+                'All allies get +30% critical chance for 3 turns.',
+                "Element Link gives all Nature allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    horghall: {
+        name: 'Horghall',
+        attack: 657,
+        defense: 650,
+        health: 1545,
+        pseudonyms: ['groot', 'tree', 'horg', 'horghall'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Anger of the Forest',
+            description: [
+                'Deals 235% damage to all enemies.',
+                'All enemies get -34% attack for 6 turns.'
+            ]
+        }
+    },
+    kadilen: {
+        name: 'Kadilen',
+        attack: 711,
+        defense: 766,
+        health: 1246,
+        pseudonyms: ['kadilen', 'kad'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Kadilen%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Eclipse Shield',
+            description: [
+                'Deals 190% damage to all enemies.',
+                'All allies get +74% defense against Special Skills for 3 turns.'
+            ]
+        }
+    },
+    'lady locke': {
+        name: 'Lady Locke',
+        attack: 805,
+        defense: 665,
+        health: 1231,
+        pseudonyms: ['lady locke', 'locke'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-Locke.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Moolight Serenade',
+            description: [
+                'The target and nearby enemies receive 869 damage over 4 turns, starting low and increasing with every turn.',
+                'Dispels status ailments from all allies'
+            ]
+        }
+    },
+    'lady of the lake': {
+        name: 'Lady of the Lake',
+        attack: 756,
+        defense: 741,
+        health: 1312,
+        pseudonyms: ['lady of the lake', 'lady lake', 'lady-of-the-lake', 'lady-lake', 'lake lady', 'lake-lady', 'lake'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-of-the-Lake.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Magical Sword',
+            description: [
+                'Recovers 42% health for all allies.',
+                'Summons a Magical Sword Minion for the caster and nearby allies with 14% HP and 15% attack inherited from the caster.',
+                'The Minion removes -10% mana from the target when it hits them.'
+            ]
+        }
+    },
+    lianna: {
+        name: 'Lianna',
+        attack: 729,
+        defense: 718,
+        health: 1248,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212132%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Perfect Shot',
+            description: [
+                'Deal 512% damage to a single enemy'
+            ]
+        }
+    },
+    margaret: {
+        name: 'Margaret',
+        attack: 821,
+        defense: 648,
+        health: 1260,
+        pseudonyms: ['marg', 'margaret'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Margaret_(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        special: {
+            name: 'Hide in Shadows',
+            description: [
+                'The caster and nearby allies have from +20% to +90% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 3 turns.',
+                "Element Link gives all Nature allies +46% defense against Fire for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'morgan le fay': {
+        name: 'Morgan Le Fay',
+        attack: 716,
+        defense: 721,
+        health: 1343,
+        pseudonyms: ['morgan', 'morgan le fay', 'le fay', 'morgan-le-fay', 'le-fay'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Morgan-Le-Fay_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Devourer of Vitality',
+            description: [
+                "The caster drains 627 HP from the target over 4 turns. This effect can't be dispelled but gets removed if the caster dies.",
+                'The caster gets +94% defense against Fire for 4 turns.'
+            ]
+        }
+    },
+    'mother north': {
+        name: 'Mother North',
+        attack: 605,
+        defense: 819,
+        health: 1462,
+        pseudonyms: ['mn', 'mother north'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Mother-North.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Super Porridge',
+            description: [
+                'Recovers 30% health for all allies.',
+                'Each fallen ally has a 50% chance to get revived with 10% HP.',
+                'Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.'
+            ]
+        }
+    },
+    tarlak: {
+        name: 'Tarlak',
+        attack: 824,
+        defense: 667,
+        health: 1240,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Tarlak.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Martial Prowess',
+            description: [
+                'All allies get +100% normal attack for 4 turns. Stacks with similar status effects up to a maximum +160% normal attack.',
+                'All allies regenerate 324 HP over 4 turns.'
+            ]
+        }
+    },
+    'the hatter': {
+        name: 'The Hatter',
+        attack: 735,
+        defense: 710,
+        health: 1341,
+        pseudonyms: [
+            'hatter',
+            'mad hatter',
+            'mad'
+        ],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Hatter.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Mad as a Hatter',
+            description: [
+                'Deals 370% damage to the target and minor damage to nearby expressions.',
+                'Steals all the dispellable buffs from all enemies and randoml exicute hatter'
+            ]
+        }
+    },
+    yunan: {
+        name: 'Yunan',
+        attack: 618,
+        defense: 815,
+        health: 1437,
+        pseudonyms: ['yunan', 'sandking', 'sand-king', 'sand king'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Yunan.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Sand Storm',
+            description: [
+                'Deals 161% damage to all enemies.',
+                'All enemies receive 339 damage over 3 turns.',
+                "All enemies get -50% healing received for 2 turns. This effect can't be dispelled.",
+                'Cures status ailments from the caster.'
+            ]
+        }
+    },
+    zeline: {
+        name: 'Zeline',
+        attack: 764,
+        defense: 688,
+        health: 1308,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Zeline%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Emerald Flash',
+            description: [
+                'Deals 143% damage to all enemies.',
+                'All enemies get -34% attack for 4 turns.',
+                'Deals extra damage against Ice.',
+                'Removes buffs from all enemies.'
+            ]
+        }
+    }
+};
+
+const red5StarHeroes = {
+    anzogh: {
+        name: 'Anzogh',
+        attack: 698,
+        defense: 793,
+        health: 1279,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Anzogh.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Flaming Grudge',
+            description: [
+                'Deals 215% damage to all enemies.',
+                'Heals each ally with 20% of total damage dealt.',
+                "Element Link gives all Fire allies +46% defense against Ice for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    ares: {
+        name: 'Ares',
+        attack: 659,
+        defense: 741,
+        health: 1442,
+        pseudonyms: ['ares', 'aries'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Ares.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Might of Ares',
+            description: [
+                'The caster and nearby allies get +54% attack for 4 turns.',
+                'The caster and nearby allies get +36% critical chance for 4 turns.',
+                'The caster and nearby allies regenerate 720 HP over 4 turns.'
+            ]
+        }
+    },
+    azlar: {
+        name: 'Azlar',
+        attack: 793,
+        defense: 607,
+        health: 1322,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Azlar.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Volcanic Eruption',
+            description: [
+                'Deal 205% damage to all enemies and they receive 360 damage over 6 turns'
+            ]
+        }
+    },
+    'black knight': {
+        name: 'Black Knight',
+        attack: 611,
+        defense: 846,
+        health: 1458,
+        pseudonyms: ['black knight', 'knight', 'black-knight', 'dark knight', 'dark-knight'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Black-Knight.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Just a Flesh Wound',
+            description: [
+                'The caster has a 50% chance to drop any received damage to 1 for 3 turns.',
+                "The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.",
+                'All allies get +45% attack, and a further 20% increase every time they are hit during 3 turns.'
+            ]
+        }
+    },
+    'captain kestrel': {
+        name: 'Captain Kestrel',
+        attack: 727,
+        defense: 702,
+        health: 1353,
+        pseudonyms: ['kestrel', 'captain kestrel'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Captain-Kestrel.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Pirate Shot',
+            description: [
+                'Deals 215% damage to the target and nearby enemies.',
+                'The more mana the enemies have, the more damage they will receive, up to 335%.'
+            ]
+        }
+    },
+    elena: {
+        name: 'Elena',
+        attack: 809,
+        defense: 578,
+        health: 1312,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Wall of Swords',
+            description: [
+                'Deals 202% damage to all enemies.',
+                'The caster and nearby allies counterattack with 125% of the damage received for 5 turns.'
+            ]
+        }
+    },
+    gravemaker: {
+        name: 'Gravemaker',
+        attack: 727,
+        defense: 708,
+        health: 1363,
+        pseudonyms: ['grave', 'gm', 'gravemaker'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Gravemaker%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        special: {
+            name: 'Ashes to Ashes',
+            description: [
+                'Deals 135% damage to the target and nearby enemies.',
+                'The target and nearby enemies receive 298 damage over 2 turns.',
+                'Deals extra damage against Nature.',
+                "Element Link gives all Fire allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    grazul: {
+        name: 'Grazul',
+        attack: 628,
+        defense: 817,
+        health: 1406,
+        pseudonyms: ['grazul', 'graz'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Grazul_September-HOTM_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        special: {
+            name: 'Mending Mantra',
+            description: [
+                'Recovers 15% health for all allies.',
+                'All allies are immune to new status ailments for 2 turns.',
+                "Element Link gives +4% mana generation for all Fire allies for 4 turns. This effect can't be dispelled."
+            ]
+        }
+
+    },
+    'guardian kong': {
+        name: 'Guardian Kong',
+        attack: 886,
+        defense: 587,
+        health: 1433,
+        pseudonyms: ['kong', 'guardian kong', 'guardiankong'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Guardian-Kong%20(2).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Lord of the Jungle',
+            description: [
+                'Deals 220% damage to all enemies.',
+                'All allies get +94% defense against Ice for 4 turns.'
+            ]
+        }
+    },
+    khagan: {
+        name: 'Khagan',
+        attack: 710,
+        defense: 642,
+        health: 1458,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Khagan%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: "Khan's Order",
+            description: [
+                'Deals 320% damage to the target and nearby enemies.',
+                'The caster and nearby allies get +24% mana generation for 5 turns.',
+                'The caster and nearby allies get +63% defense for 5 turns.'
+            ]
+        }
+    },
+    marjana: {
+        name: 'Marjana',
+        attack: 669,
+        defense: 712,
+        health: 1404,
+        pseudonyms: ['marj', 'marjana'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Marjana.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Magma Smash',
+            description: [
+                'Deal 458% damage to a single enemy and they receive 300 damage over 6 turns'
+            ]
+        }
+    },
+    mitsuko: {
+        name: 'Mitsuko',
+        attack: 696,
+        defense: 727,
+        health: 1450,
+        pseudonyms: ['mits', 'mitsuko'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Mitsuko.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Mirror of Flames',
+            description: [
+                'Deals 245% damage to the target and nearby enemies.',
+                'Reduces the mana of the target and nearby enemies by 20%.',
+                'All allies reflect all status effects and 115% damage from Ice Special Skills back to the attacker for 4 turns.'
+            ]
+        }
+    },
+    natalya: {
+        name: 'Natalya',
+        attack: 718,
+        defense: 697,
+        health: 1455,
+        pseudonyms: ['nat', 'natalya'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Natalya%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Burning Chains',
+            description: [
+                "The target receives 752 damage over 4 turns. This effect can't be dispelled.",
+                "The target gets -54% mana generation for 4 turns. This effect can't be dispelled.",
+                'Deals extra damage against Nature.'
+            ]
+        }
+    },
+    'queen of hearts': {
+        name: 'Queen of Hearts',
+        attack: 638,
+        defense: 729,
+        health: 1545,
+        pseudonyms: ['qoh', 'queen of hearts'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Queen-of-Hearts_(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Queen of Cards',
+            description: [
+                'Deals 230% damage to the target and nearby enemies.',
+                'Summons a Playing Card Minion with 13% HP and 30% attack inherited from the caster.',
+                "The Playing Card Minion gives its owner Taunt. Taunt prevents the enemies from using their Special Sklls on Minion owner's allies",
+                'The caster gets 74% defense against Special Skills for 4 turns.'
+            ]
+        }
+    },
+    'red hood': {
+        name: 'Red Hood',
+        attack: 729,
+        defense: 708,
+        health: 1353,
+        pseudonyms: ['red hood', 'hood', 'red', 'redhood'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Red-Hood.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Forest Friends',
+            description: [
+                'Deals 131% damage to all enemies.',
+                'Summons a Fox Minion for each ally with 14% HP. The minion recovers 7% health for its owner at the start of each turn.'
+            ]
+        }
+    },
+    'santa claus': {
+        name: 'Santa Claus',
+        attack: 618,
+        defense: 830,
+        health: 1437,
+        pseudonyms: ['santa', 'claus', 'santa claus'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Santa-Claus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Ultimate Gift Sack',
+            description: [
+                'Deals 150% damage to all enemies.',
+                'Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.',
+                'All enemies get -34% attack for 3 turns.',
+                'All enemies get -44% defense for 3 turns.'
+            ]
+        }
+    },
+    zimkitha: {
+        name: 'Zimkitha',
+        attack: 714,
+        defense: 681,
+        health: 1454,
+        pseudonyms: ['zimkitty', 'zim', 'zimkitha'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Zimkitha.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Dawn Strike',
+            description: [
+                'Deals 155% damage to all enemies.',
+                'All allies get +25% attack for 4 turns.',
+                "Element Link recovers 4% health for all Fire allies for 6 turns. This effect can't be dispelled.",
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    }
+};
+
+const purple5StarHeroes = {
+    aeron: {
+        name: 'Aeron',
+        attack: 733,
+        defense: 712,
+        health: 1341,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Aeron.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Nethershield',
+            description: [
+                'All allies regenerate 459 HP over 3 turns.',
+                "The caster and nearby allies are immune to new status ailments for 3 turns. This effect can't be dispelled.",
+                'Cures status ailments from the target and nearby allies.',
+                "Element Link gives all Dark allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'boss wolf': {
+        name: 'Boss Wolf',
+        attack: 566,
+        defense: 826,
+        health: 1524,
+        pseudonyms: ['boss wolf', 'boss', 'wolf'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Boss-Wolf.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_SLOW,
+        special: {
+            name: 'Unstoppable Growl',
+            description: [
+                "The caster and nearby allies get +24% mana generation for 4 turns. This effect can't be dispelled",
+                'All enemies get -34% mana generation for 4 turns.',
+                'The caster and nearby allies counterattack with 115% of the damage received for 4 turns.'
+            ]
+        }
+    },
+    domitia: {
+        name: 'Domitia',
+        attack: 725,
+        defense: 677,
+        health: 1349,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Domitia%20(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Shock Bolt',
+            description: [
+                'Deals 410% damage to the target.',
+                'The caster and nearby allies get +94% defense against Holy for 4 turns.',
+                'Dispels buffs from the target and nearby enemies.'
+            ]
+        }
+    },
+    hel: {
+        name: 'Hel',
+        attack: 745,
+        defense: 692,
+        health: 1328,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Hel.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Crush of Hel',
+            description: [
+                'Deal 315% damage to a single enemy and minor damage on nearby enemies and they get no mana for 3 turns.',
+                'Deals extra damage against Holy'
+            ]
+        }
+    },
+    jabberwock: {
+        name: 'Jabberwock',
+        attack: 743,
+        defense: 747,
+        health: 1328,
+        pseudonyms: ['jabber', 'jabberwock', 'jabberwocky'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Jabberwock.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Sideswipe',
+            description: [
+                'Deals 300% damage to the enemies on the edges of the enemy formation. If there is only one enemy alive, the damage is doubled.',
+                "The enemies on the edges of the enemy formation receive 234 Poison damage over 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    kageburado: {
+        name: 'Kageburado',
+        attack: 780,
+        defense: 714,
+        health: 1248,
+        pseudonyms: ['kage', 'kageburado'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kageburado.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        special: {
+            name: 'Break Strike',
+            description: [
+                'Dispels buffs from the target.',
+                'Deals 225% damage to the target.',
+                'Deals 450% damage if the target has more than 50% health remaining.'
+            ]
+        }
+    },
+    khiona: {
+        name: 'Khiona',
+        attack: 739,
+        defense: 708,
+        health: 1336,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Khiona.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Bleeding Edge',
+            description: [
+                'Deals 372% damage to the target.',
+                'The caster and nearby allies get +45% attack, and a further 20% increase every time they are hit during 3 turns.',
+                "Element Link recovers 4% health for all Dark allies for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    kunchen: {
+        name: 'Kunchen',
+        attack: 618,
+        defense: 815,
+        health: 1437,
+        pseudonyms: ['kunch', 'kunchen'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kunchen.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Power of Ajna',
+            description: [
+                'Recovers 42% health for all allies.',
+                'All enemies get -34% defense for 4 turns.',
+                'Dispels status ailments from all allies.',
+                "Element Link gives all Dark allies +46% defense against Holy for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'marie-thérèse': {
+        name: 'Marie-Thérèse',
+        attack: 774,
+        defense: 723,
+        health: 1301,
+        pseudonyms: ['marie', 'marie-therese', 'therese'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Marie-Therese.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Zombie Blessing',
+            description: [
+                'Deals 168% damage to all enemies.',
+                'All allies regenerate 612 HP over 4 turns.',
+                'All allies get +30% defense for 4 turns.',
+                '',
+                'All allies receive Zombie Blessing. If the blessed Hero dies in the next 4 turns, they will be reborn as a Zombie with:',
+                '100% health',
+                '500 attack',
+                '500 defense',
+                'Special Skill: Poison Bite.'
+            ]
+        }
+    },
+    'mok-arr': {
+        name: 'Mok-Arr',
+        attack: 741,
+        defense: 688,
+        health: 1400,
+        pseudonyms: ['mok', 'mok-arr'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Mok-Arr.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Black Tide',
+            description: [
+                'Deals 250% damage to all enemies.',
+                'Deals 80% damage to all allies.',
+                'Deals extra damage against Holy.',
+                'All Dark allies and enemies are immune to this attack.'
+            ]
+        }
+    },
+    obakan: {
+        name: 'Obakan',
+        attack: 762,
+        defense: 638,
+        health: 1328,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20171023-110132.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Cleave and Counter',
+            description: [
+                'Deal 260% damage to a single enemy and minor damage on nearby enemies.',
+                'The caster counterattacks with 115% of the damage received for 4 turns.'
+            ]
+        }
+    },
+    'guardian panther': {
+        name: 'Guardian Panther',
+        attack: 782,
+        defense: 622,
+        health: 1339,
+        pseudonyms: ['panther', 'guardian panther'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Eye of the Panther',
+            description: [
+                'Deal 210% damage to target and nearby enemies adn remove buffs from them and they get -54% defense against Dark for 4 turns'
+            ]
+        }
+    },
+    quintus: {
+        name: 'Quintus',
+        attack: 747,
+        defense: 636,
+        health: 1380,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Thunder Ultimatum',
+            description: [
+                'Deal 260% damage to all enemies'
+            ]
+        }
+    },
+    sargasso: {
+        name: 'Sargasso',
+        attack: 729,
+        defense: 708,
+        health: 1334,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Sargasso.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Curse of Sargasso',
+            description: [
+                'Deals 355% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies get -80% decrease for any healing received for 4 turns.'
+            ]
+        }
+    },
+    sartana: {
+        name: 'Sartana',
+        attack: 694,
+        defense: 700,
+        health: 1382,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221444%20(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Deathstrike',
+            description: [
+                'Deal 452% damage to a single enemy and they receive 294 damage over 6 turns'
+            ]
+        }
+    },
+    'thoth-amun': {
+        name: 'Thoth-Amun',
+        attack: 731,
+        defense: 694,
+        health: 1361,
+        pseudonyms: ['thoth', 'thoth-amun'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Thoth-Amun.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Skeletal Summon',
+            description: [
+                'Deal 215% damage to target and nearby enemies and summons an undead Minion with 20% HP and 15% attack inherited from the caster'
+            ]
+        }
+    },
+    ursena: {
+        name: 'Ursena',
+        attack: 760,
+        defense: 731,
+        health: 1283,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Ursena_(1).jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Depth Blast',
+            description: [
+                'Deals 130% damage to all enemies.',
+                'Deals 260% damage if the target has more than 50% health remaining.',
+                "All allies reflect all status effects and 115% damage from enemies' Holy Special Skills back to the attacker for 4 turns.",
+                'Deals extra damage against Holy.'
+            ]
+        }
+    },
+    victor: {
+        name: 'Victor',
+        attack: 778,
+        defense: 671,
+        health: 1347,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Victor_(1).png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        special: {
+            name: 'Night of Sorrow',
+            description: [
+                'Deals 196% damage to the target.',
+                'The target receives 225 damage over 5 turns. If a target already has this effect, the duration will be refreshed and the damage will be increased by 300, up to 825 damage in total.',
+                'The caster steals 61% of any healing applied to the target for 3 turns.',
+                'All allies get +30% defense for 3 turns.'
+            ]
+        }
+    }
+};
+
 const heroes = {
     // 3*
     ...blue3StarHeroes,
@@ -1421,7 +2914,14 @@ const heroes = {
     ...yellow4StarHeroes,
     ...green4StarHeroes,
     ...red4StarHeroes,
-    ...purple4StarHeroes
+    ...purple4StarHeroes,
+
+    // 5*
+    ...blue5StarHeroes,
+    ...yellow5StarHeroes,
+    ...green5StarHeroes,
+    ...red5StarHeroes,
+    ...purple5StarHeroes
 };
 
 module.exports = {
@@ -1436,6 +2936,12 @@ module.exports = {
     green4StarHeroes,
     red4StarHeroes,
     purple4StarHeroes,
+
+    blue5StarHeroes,
+    yellow5StarHeroes,
+    green5StarHeroes,
+    red5StarHeroes,
+    purple5StarHeroes,
 
     heroes
 }
