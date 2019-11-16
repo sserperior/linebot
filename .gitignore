@@ -2,3 +2,4 @@ node_modules/
 manifest.yml
 cf-push.*
 .cfignore
+hero-brain.nlp
