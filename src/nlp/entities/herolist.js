@@ -2105,6 +2105,23 @@ const green5StarHeroes = {
             ]
         }
     },
+    kingston: {
+        name: 'Kingston',
+        attack: 749,
+        defense: 735,
+        health: 1266,
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/8/80/Kingston_-_Hero_Card.gif/revision/latest?cb=20191001130313',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Stiletto Cyclone',
+            description: [
+                'Deals 445% damage to the target.',
+                'The target and nearby enemies get -31% attack, and a further -4% decrease every time they are hit during 4 turns.',
+                "Element Link gives +4% mana generation for all Nature allies for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     'lady locke': {
         name: 'Lady Locke',
         attack: 805,
