@@ -7,12 +7,12 @@ Example Intents:
 
 1. Show a hero card
 
-"Show <hero>"
+"Show *hero*"
 
 2. Show the harpoon team for an alliance member
 
-"What harpoon team is <alliance member> on?"
+"What harpoon team is *alliance member* on?"
 
 3. Show hero special
 
-"What is the special for <hero>?"
+"What is the special for *hero*?"
