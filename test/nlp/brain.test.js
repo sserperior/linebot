@@ -163,11 +163,19 @@ describe('brain tests', () => {
             expect(melendorFound).to.be.true;
         };
 
+        it("what's the special for %hero% should be classified as a show.hero.special intent and the expected entities should be found", () => {
+            return getManager().process("what's the special for Bane, Valen, Little John and Melendor?").then(checkShowHeroSpecialIntent);
+        });
+
+        it('what are the specials for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
+            return getManager().process('what are the specials for Bane, Valen, Little John and Melendor please?').then(checkShowHeroSpecialIntent);
+        });
+
         it('what is the special for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
             return getManager().process('what is the special for Bane, Valen, Little John, and Melendor?').then(checkShowHeroSpecialIntent);
         });
 
-        it('what is %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
+        it('what are %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
             return getManager().process("What are Bane's, Valen's, Little John's and Melendor's specials?").then(checkShowHeroSpecialIntent);
         });
 
@@ -187,4 +195,62 @@ describe('brain tests', () => {
             return getManager().process("display Bane's, Little John's, Melendor's and Valen's specials").then(checkShowHeroSpecialIntent);
         });
     });
+
+    describe('farm.elemental.chest intent tests', () => {
+        const checkFarmElementalChestIntent = (result, expectedEntityOption) => {
+            let expectedEntityFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'element' && result.entities[i].option === expectedEntityOption) {
+                    expectedEntityFound = true;
+                }
+            }
+            expect(expectedEntityFound).to.be.true;
+        };
+
+        const allTests = (elementPseudonym, element=elementPseudonym) => {
+            const allPromises = [];
+            allPromises.push(getManager().process(`where do I farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where is the best place to farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where to farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where to farm for ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where to farm to fill ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what are the best places for filling ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
+
+            // Variations
+            allPromises.push(getManager().process(`where are the best places to fill ${elementPseudonym} chests?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where do I go to fill ${elementPseudonym} chests?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`where are the best places to find ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what's the best place to farm ${elementPseudonym} chests`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what's the best place to farm ${elementPseudonym} monsters`).then(result => checkFarmElementalChestIntent(result, element)));
+            return Promise.all(allPromises);
+        };
+
+        describe('ice chest tests', () => {
+            it('ice should be treated properly', () => allTests('ice'));
+            it('blue should be treated as ice', () => allTests('blue', 'ice'));
+        });
+
+        describe('fire chest tests', () => {
+            it('fire should be treated properly', () => allTests('fire'));
+            it('red should be treated as fire', () => allTests('red', 'fire'));
+        });
+
+        describe('farm holy chest tests', () => {
+            it('holy should be treated properly', () => allTests('holy'));
+            it('gold should be treated as holy', () => allTests('gold', 'holy'));
+            it('yellow shold be treated as holy', () => allTests('yellow', 'holy'))
+        }); 
+
+        describe('farm dark chest tests', () => {
+            it('dark should be treated properly', () => allTests('dark'));
+            it('purple should be treated as dark', () => allTests('purple', 'dark'));
+        });
+
+        describe('farm nature chest tests', () => {
+            it('nature should be treated properly', () => allTests('nature'));
+            it('green should be treated as nature', () => allTests('green', 'nature'));
+        });
+    })
 });

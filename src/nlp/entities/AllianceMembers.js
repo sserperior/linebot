@@ -5,6 +5,9 @@ module.exports = {
     'alexloh': {
         pseudonyms: ['alex', 'alexloh']
     },
+    'Aclan': {
+        pseudonyms: ['aclan']
+    },
     'AcousticWord': {
         pseudonyms: ['acoustic', 'aural', 'acousticword']
     },

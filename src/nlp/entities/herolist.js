@@ -15,7 +15,13 @@ const blue3StarHeroes = {
                 'Deals 300% damage to the target.',
                 'The caster and nearby allies are immune to new status ailments for 3 turns.'
             ]
-        }
+        },
+        synopsis: [
+            'Fast mana sniper with excellent tile damage for a 3* with a very hard special hit that also provides immunity to status ailments for a trio.',
+            'Best on the wings of a defense team.',
+            'Combine with a defense dropper like Valen for faster kills.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },
     graymane: {
         name: 'Graymane',
@@ -31,7 +37,13 @@ const blue3StarHeroes = {
             description: [
                 'Deal 225% damage to a single enemy and steal a moderate amount of dealt damage back'
             ]
-        }
+        },
+        synopsis: [
+            'Decent special attack with small amount of healing from damage dealt that can be life-saving.',
+            'Best on the wings or flanks of a defense team. Could be a tank in a pinch.',
+            'Combine with a defense dropper like Valen for faster kills.',
+            'Good hero for your first 30, rare events, special raid tournaments.',
+        ]
     },
     gunnar: {
         name: 'Gunnar',
@@ -46,7 +58,12 @@ const blue3StarHeroes = {
             description: [
                 'All allies get +63% defense and share received damage with all their allies for 5 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Spirit-link defense provides the increased shielding and shared damage that enables your team to survive tough enemies',
+            'Flank, tank or winger. Preferrably left side for a winger.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },
     karil: {
         name: 'Karil',
@@ -61,7 +78,10 @@ const blue3StarHeroes = {
             description: [
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies'
             ]
-        }
+        },
+        synopsis: [
+            'Not a very useful hero. Multiple Valens/Gatos/Graymanes are more valuable as attackers.'
+        ]
     },    
     ulmer: {
         name: 'Ulmer',
@@ -76,7 +96,12 @@ const blue3StarHeroes = {
             description: [
                 'Deal 116% damage to all enemies and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        synopsis: [
+            '3* Defense dropper on all. Excellent attack.',
+            'Detriments are squishiness and slow mana.',
+            'Good hero for your first 30, rare events, special raid tournaments with 3*s and very fast mana. Consider retiring when you get Grimm, Isarnia, Athena or Frida'
+        ]
     },            
     valen: {
         name: 'Valen',
@@ -91,7 +116,12 @@ const blue3StarHeroes = {
             description: [
                 'Deal 300% damage to a single enemy and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Excellent 3* Defense dropper with good attack.',
+            'Combine with other hitters to form devastating attack teams.',
+            'Good hero for your first 30, rare events, special raid tournaments with 3* and until you get Grimm.'
+        ]
     },
     vodnik: {
         name: 'Vodnik',
@@ -107,7 +137,12 @@ const blue3StarHeroes = {
                 'Deals 280% damage to the target',
                 'The more mana the enemies have, the more damage they will receive, up to 400%'
             ]
-        }
+        },
+        synopsis: [
+            'Decent hitter with damage proportionate to target mana. Looks sturdy.',
+            'Combine with a defense dropper like Valen.',
+            'Good hero for your first 30, rare events, special raid tournaments with 3* and until you get Sonya or Triton.'
+        ]
     }
 };
 
@@ -128,7 +163,12 @@ const yellow3StarHeroes = {
                 "All enemies get -50% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.'
             ]
-        }
+        },
+        synopsis: [
+            'Decent hit-all hitter with damage over time and heal blocking, Good for using in healing mode wars.',
+            'Deteriment is slow mana',
+            'Useful hero for your first 30, rare events, special raid tournaments with 3* where slow mana becomes very fast.'
+        ]
     },    
     bane: {
         name: 'Bane',
@@ -143,7 +183,12 @@ const yellow3StarHeroes = {
             description: [
                 'Deal 300% damage to a single enemy and they are less accurate for 4 turns.'
             ]
-        }
+        },
+        synopsis: [
+            'One of the best 3* snipers. Everyone has one. Keep it!',
+            'Blindness is very useful to give you extra chances against hard hitting enemies.',
+            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
+        ]
     },
     dawa: {
         name: 'Dawa',
@@ -158,7 +203,10 @@ const yellow3StarHeroes = {
             description: [
                 'Deal 210% damage to a single enemy and minor damage on nearby enemies'
             ]
-        }
+        },
+        synopsis: [
+            'Not a very useful hero. Stay away.'
+        ]
     },
     'gan ju': {
         name: 'Gan Ju',
@@ -174,7 +222,11 @@ const yellow3StarHeroes = {
             description: [
                 'Deal 270% damage to a single enemy and reduce their mana by 25%'
             ]
-        }
+        },
+        synopsis: [
+            'Some damage with mana control. Good to pair with Bane perhaps.',
+            'Keep until you have better yellow stacking options.'
+        ]
     },
     melia: {
         name: 'Melia',
@@ -190,7 +242,11 @@ const yellow3StarHeroes = {
                 'Deals 120% damage to all enemies',
                 'All allies get +36% critical chance for 4 turns.'
             ]
-        }
+        },
+        synopsis: [
+            'Good tile damage but low special attack. The key is the increased critical hit buff and fast mana.',
+            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
+        ]
     },
     kailani: {
         name: 'Kailani',
@@ -206,7 +262,11 @@ const yellow3StarHeroes = {
             description: [
                 'All allies get +63% defense and share received damage with all their allies for 5 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Not an attacker. Spirit-link defense provides the increased shielding and shared damage that enables your team to survive tough enemies',
+            'Good hero for your first 30, rare events, special raid tournaments until you get a more durable replacement like Wilbur or Aegir'
+        ]
     },
 };
 
@@ -224,7 +284,11 @@ const green3StarHeroes = {
             description: [
                 'Recover 32% health for all allies and remove buffs from all enemies'
             ]
-        }
+        },
+        synopsis: [
+            'Good 3* healer with the special able to remove buffs from enemies.',
+            'Good hero for your first 30, rare events, special raid tournaments. She can be replaced with a 4* like Melendor.'
+        ]
     },    
     berden: {
         name: 'Berden',
@@ -239,7 +303,11 @@ const green3StarHeroes = {
             description: [
                 'Deal 325% damage to a single enemy and they get -34% attack for 6 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Good 3* sniper who reduces the attack of a successfully hit target',
+            'Good hero for your first 30, rare events, special raid tournaments. He can be replaced with a 4* like Caedmon.'
+        ]
     },
     brienne: {
         name: 'Brienne',
@@ -254,7 +322,11 @@ const green3StarHeroes = {
             description: [
                 'All allies get +45% attack and a further 20% increase every time they are hit for 5 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Attack buff that keeps ramping up is excellent and a rare ability for a 3*. She is good for everything.',
+            'Limited survivability at around 7-8* titans'
+        ]
     },
     carver: {
         name: 'Carver',
@@ -269,7 +341,10 @@ const green3StarHeroes = {
             description: [
                 'Deal 125% damage to all enemies and reduce their mana by 16%'
             ]
-        }
+        },
+        synopsis: [
+            'Ok on defense for a 3*. Very limited beyond this world.'
+        ]
     },            
     'friar tuck': {
         name: 'Friar Tuck',
@@ -285,7 +360,11 @@ const green3StarHeroes = {
             description: [
                 'Recover 37% health for nearby allies and they get +24% mana generation for 3 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Decent partial healer with mana generation buff.',
+            'Kashhrek is a good replacement.'
+        ]
     },
     hisan: {
         name: 'Hisan',
@@ -304,7 +383,12 @@ const green3StarHeroes = {
                 "The target gets -100% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.' 
             ]
-        }
+        },
+        synopsis: [
+            'Excellent tile damage for a 3* with hard special hit, damage over time and heal blocking.',
+            'Special attack also cures status ailments on himself.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },   
     isshtak: {
         name: 'Isshtak',
@@ -320,7 +404,11 @@ const green3StarHeroes = {
             description: [
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies'
             ]
-        }
+        },
+        synopsis: [
+            'Nice attack 3 but having multiple hard hitting greens like Hisan and Berden might be a better option.',
+            'Keep on first 30 if you have him and use on rare events, special raid tournaments as needed.'
+        ]
     },
     mnesseus: {
         name: 'Mnesseus',
@@ -337,7 +425,11 @@ const green3StarHeroes = {
                 'Deals 320% damage to the target.',
                 'Dispels buffs from all enemies.'
             ]
-        }
+        },
+        synopsis: [
+            'Good hard special hit and dispel.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },    
     muggy: {
         name: 'Muggy',
@@ -357,7 +449,12 @@ const green3StarHeroes = {
                 'Devastating Special Skill: Fierce Slash.',
                 'This effect cannot be dispelled.'
             ]
-        }
+        },
+        synopsis: [
+            'Highest tile damage for a 3* hero. Special resurrection can give your attack/defense team extra lives.',
+            'Use in a trio with titan shields against really big titans for amazing damage.',
+            'Good hero for your first 30, rare events, special raid tournaments and big titans if you want to try the titan shields trick.'
+        ]
     }
 };
 
@@ -375,7 +472,11 @@ const red3StarHeroes = {
             description: [
                 'Deal 280% damage to a single enemy and reduce their mana by 25%'
             ]
-        }
+        },
+        synopsis: [
+            'Decent damage for a 3* with mana reduction similar to Gan Ju.',
+            'Keep on first 30 if you have her and use on rare events, special raid tournaments as needed.'
+        ]
     },    
     bauchan: {
         name: 'Bauchan',
@@ -393,7 +494,11 @@ const red3StarHeroes = {
                 'Reduces the mana of all enemies by 20%.',
                 'All allies get +24% mana generation for 4 turns.'
             ]
-        }
+        },
+        synopsis: [
+            '3* Guinevere with the mana reduction. Combine with fast mana hitters to increase offence.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },
     hawkmoon: {
         name: 'Hawkmoon',
@@ -408,7 +513,11 @@ const red3StarHeroes = {
             description: [
                 'Recover 32% health for all allies'
             ]
-        }
+        },
+        synopsis: [
+            'Good 3* healer. Second only to Belith.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },
     jahangir: {
         name: 'Jahangir',
@@ -424,7 +533,11 @@ const red3StarHeroes = {
             description: [
                 'Deal 145% damage to all enemies and they receive 114 damage over 6 turns'
             ]
-        }
+        },
+        synopsis: [
+            'Heavy damage and damage over time hitter limited only by slow mana.',
+            'Good hero for your first 30, rare events and special raid tournaments - especially where mana is very fast and you can only use 3* heroes.'
+        ]
     },
     namahage: {
         name: 'Namahage',
@@ -440,7 +553,12 @@ const red3StarHeroes = {
                 'Deals 290% damage to the target.',
                 'The caster gets +45% attack and a further 20% increase every time they are hit during 5 turns.'
             ]
-        }
+        },
+        synopsis: [
+            'High tile damage for a 3* with a hard special hit and ramping attack buff like Brienne.',
+            'A bit squishy.',
+            'Good hero for your first 30, rare events, special raid tournaments.'
+        ]
     },    
     nashgar: {
         name: 'Nashgar',
@@ -455,7 +573,11 @@ const red3StarHeroes = {
             description: [
                 'Deal 290% damage to a single enemy and they receive 120 damage over 6 turns'
             ]
-        }
+        },
+        synopsis: [
+            'High tile damage for a 3* with a hard special hit and good damage over time on one target.',
+            ''
+        ]
     },
     rudolph: {
         name: 'Rudolph',
@@ -2023,7 +2145,7 @@ const green5StarHeroes = {
         defense: 802,
         health: 1266,
         pseudonyms: ['elk', 'elkanen'],
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Elkanen%20(1).jpg',
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/2/26/Elkanen_-_Hero_Card.gif/revision/latest?cb=20190321142237',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         special: {
@@ -2094,7 +2216,7 @@ const green5StarHeroes = {
         defense: 766,
         health: 1246,
         pseudonyms: ['kadilen', 'kad'],
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Kadilen%20(1).jpg',
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/b/bd/Kadilen_-_Hero_Card.gif/revision/latest?cb=20190321142652',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         special: {
