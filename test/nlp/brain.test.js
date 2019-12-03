@@ -8,9 +8,7 @@ const { NlpManager } = require('node-nlp');
 const { getManager, threshold } = require('nlp/brain');
 
 describe('brain tests', () => {
-    before(() => {
-        return require('nlp/trainer');
-    });
+    before(() => require('nlp/trainer'));
 
     afterEach(() => {
         sinon.restore();
@@ -53,28 +51,28 @@ describe('brain tests', () => {
     describe('show.hero intent tests', () => {
         const checkShowHeroIntent = result => {
             expect(result.intent).to.equal('show.hero');
-                expect(result.score).to.be.at.least(threshold);
-                let entityLjFound = false;
-                let entityValenFound = false;
-                let entityTibsFound = false;
-                result.entities.forEach(entity => {
-                    if (entity.entity === 'hero') {
-                        switch (entity.option) {
-                            case 'little john':
-                                entityLjFound = true;
-                                break;
-                            case 'valen':
-                                entityValenFound = true;
-                                break;
-                            case 'tibertus':
-                                entityTibsFound = true;
-                                break;        
-                        }
+            expect(result.score).to.be.at.least(threshold);
+            let entityLjFound = false;
+            let entityValenFound = false;
+            let entityTibsFound = false;
+            result.entities.forEach(entity => {
+                if (entity.entity === 'hero') {
+                    switch (entity.option) {
+                        case 'little john':
+                            entityLjFound = true;
+                            break;
+                        case 'valen':
+                            entityValenFound = true;
+                            break;
+                        case 'tibertus':
+                            entityTibsFound = true;
+                            break;        
                     }
-                });
-                expect(entityLjFound).to.be.true;
-                expect(entityValenFound).to.be.true;
-                expect(entityTibsFound).to.be.true;
+                }
+            });
+            expect(entityLjFound).to.be.true;
+            expect(entityValenFound).to.be.true;
+            expect(entityTibsFound).to.be.true;
         };
 
         it('show %heroes% should be classified as a show.me intent with the necessary entities', () => {
@@ -205,10 +203,13 @@ describe('brain tests', () => {
                 }
             }
             expect(expectedEntityFound).to.be.true;
+            expect(result.score).to.be.at.least(threshold);
         };
 
         const allTests = (elementPseudonym, element=elementPseudonym) => {
             const allPromises = [];
+            allPromises.push(getManager().process(`${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`${elementPseudonym} monsters`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`where do I farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`where is the best place to farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`where to farm for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
@@ -224,6 +225,9 @@ describe('brain tests', () => {
             allPromises.push(getManager().process(`where are the best places to find ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`what's the best place to farm ${elementPseudonym} chests`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`what's the best place to farm ${elementPseudonym} monsters`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what are the best places to farm for ${elementPseudonym} chests`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`what are the best places to farm for ${elementPseudonym} monsters`).then(result => checkFarmElementalChestIntent(result, element)));
+
             return Promise.all(allPromises);
         };
 

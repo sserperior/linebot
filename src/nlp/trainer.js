@@ -15,7 +15,7 @@ Object.keys(heroes).forEach(heroKey => {
     'hero',
     heroKey,
     ['en'],
-    hero.pseudonyms != null ? hero.pseudonyms : [heroKey]
+    hero.pseudonyms != null ? hero.pseudonyms : [heroKey.toLowerCase()]
   );
 });
 
@@ -62,6 +62,8 @@ manager.addDocument('en', 'display special for %hero%', showHeroSpecial.intentLa
 manager.addDocument('en', 'display %hero% special', showHeroSpecial.intentLabel);
 
 // Elemental chest questions
+manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
+manager.addDocument('en', '%element% monsters', farmElementalChest.intentLabel);
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', "where is the best place to farm for %element% chest", farmElementalChest.intentLabel);
 manager.addDocument('en', 'where to farm for %element% chest', farmElementalChest.intentLabel);

@@ -11,6 +11,9 @@ module.exports = {
     'AcousticWord': {
         pseudonyms: ['acoustic', 'aural', 'acousticword']
     },
+    'Alaina': {
+        pseudonyms: ['alaina']
+    },
     'Alundra': {
         pseudonyms: ['alundra', 'al']
     },
@@ -46,9 +49,6 @@ module.exports = {
     },
     'magicmands': {
         pseudonyms: ['magic', 'mandibles', 'magicmands']
-    },
-    'Major Chaos': {
-        pseudonyms: ['mc', 'major', 'major chaos', 'majorchaos']
     },
     'Moosepoo': {
         pseudonyms: ['moosepoo', 'moose jr', 'moose junior', 'real moose']
