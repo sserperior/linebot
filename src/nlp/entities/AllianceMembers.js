@@ -2,38 +2,29 @@ module.exports = {
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
-    'alexloh': {
-        pseudonyms: ['alex', 'alexloh']
-    },
-    'Aclan': {
-        pseudonyms: ['aclan']
-    },
     'AcousticWord': {
-        pseudonyms: ['acoustic', 'aural', 'acousticword']
+        pseudonyms: ['acoustic', 'aural', 'acousticword', 'aw']
     },
     'Alundra': {
         pseudonyms: ['alundra', 'al']
     },
+    'Baby Warrior': {
+        pseudonyms: ['baby warrior', 'babywarrior', 'bw']
+    },
     'beCool': {
         pseudonyms: ['becool']
     },
-    'Cole': {
-        pseudonyms: ['cole']
-    },
-    'Dman': {
-        pseudonyms: ['d-man', 'dman']
-    },
-    'Dunc': {
-        pseudonyms: ['dunc', 'teach']
+    'Cattleya': {
+        pseudonyms: ['cattleya']
     },
     'Failinbad': {
         pseudonyms: ['failin', 'failinbad']
     },
-    'Fred Weasley': {
-        pseudonyms: ['fred', 'fred weasley']
-    },
     'Hotbox': {
         pseudonyms: ['hotbox']
+    },
+    'iala': {
+        pseudonyms: ['trish/iala', 'iala']
     },
     'Jamison': {
         pseudonyms: ['jamison']
@@ -44,6 +35,15 @@ module.exports = {
     'Julius': {
         pseudonyms: ['julius']
     },
+    'Karenee': {
+        pseudonyms: ['karenee']
+    },
+    'Killjoy': {
+        pseudonyms: ['killjoy', 'kj']
+    },
+    'KiTKD': {
+        pseudonyms: ['kitkd', 'kit', 'kieran']
+    },
     'magicmands': {
         pseudonyms: ['magic', 'mandibles', 'magicmands']
     },
@@ -53,8 +53,8 @@ module.exports = {
     'Moosepoo': {
         pseudonyms: ['moosepoo', 'moose jr', 'moose junior', 'real moose']
     },
-    'Nazgul': {
-        pseudonyms: ['nazgul', 'naz', 'sharkey', 'nazgûl']
+    'Randrys': {
+        pseudonyms: ['randrys']
     },
     'RebelRebel': {
         pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
@@ -68,20 +68,17 @@ module.exports = {
     'Sarah': {
         pseudonyms: ['squeaki', 'squeaks', 'sarah']
     },
+    'ShovelSlayer': {
+        pseudonyms: ['shovelslayer', 'shovel']
+    },
     'Slash': {
         pseudonyms: ['slasher', 'slash', 'slashy']
     },
-    'Soulja_gurl': {
-        pseudonyms: ['soulja_gurl', 'soulja']
-    },
-    'T3RMIN8TOR': {
-        pseudonyms: ['terminator', 't3', 't3rmin8tor']
+    'ssj50driver': {
+        pseudonyms: ['ssj50driver', 'driver']
     },
     'The Moose': {
         pseudonyms: ['big moose', 'moose', 'the moose', 'spymoose', 'spy moose']
-    },
-    'Toetapper': {
-        pseudonyms: ['tt', 'toetapper', 'toe tapper']
     },
     'Werd5': {
         pseudonyms: ['werd', 'werd5', 'werdy', 'werdles']
