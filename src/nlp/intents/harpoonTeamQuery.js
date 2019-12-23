@@ -55,7 +55,7 @@ const handle = entities => {
                     }
                     replyMessages.push({
                         type: 'text',
-                        text: `${allianceMemberId} is on harpoon Team ${team}`
+                        text: `${allianceMemberId} is on harpoon Team ${team}. See ${process.env.TMTR_HARPOON_GOOGLE_SPREADSHEET_URL} for the full list.`
                     });                    
                 }
             }
