@@ -2705,7 +2705,6 @@ const red5StarHeroes = {
         attack: 729,
         defense: 708,
         health: 1353,
-        pseudonyms: ['red hood', 'hood', 'red', 'redhood'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Red-Hood.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3034,6 +3033,24 @@ const purple5StarHeroes = {
             name: 'Deathstrike',
             description: [
                 'Deal 452% damage to a single enemy and they receive 294 damage over 6 turns'
+            ]
+        }
+    },
+    seshat: {
+        name: 'Seshat',
+        attack: 760,
+        defense: 683,
+        health: 1345,
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/3/3f/Seshat_-_Hero_Card.gif/revision/latest?cb=20190701162034',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Conjuration Arrow',
+            description: [
+                'Deals 400% damage to the tarbet.',
+                'Summons a Replicator Minion with 18% HP and 15% attack inherited from the caster. It generates a clone of itself every 3 gturns.',
+                "Element link gives 4% mana generation for all Dark allies for 4 turns. This effect can't be dispelled.",
+                'Dispels buffs from the target and nearby enemies'
             ]
         }
     },
