@@ -455,6 +455,23 @@ const green3StarHeroes = {
             'Use in a trio with titan shields against really big titans for amazing damage.',
             'Good hero for your first 30, rare events, special raid tournaments and big titans if you want to try the titan shields trick.'
         ]
+    },
+    shrubbear: {
+        name: 'Shrubbear',
+        attack: 351,
+        defense: 512,
+        health: 888,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Shrubbear.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Camouflage Foliage',
+            description: [
+                "The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 4 turns.",
+                'The caster gets +63% defense for 4 turns.',
+                'The caster gets +74% defense againse Special Skills for 4 turns.'
+            ]
+        }
     }
 };
 
@@ -1807,6 +1824,22 @@ const blue5StarHeroes = {
             ]
         }
     },
+    'snow white': {
+        name: 'Snow White',
+        attack: 756,
+        defense: 747,
+        health: 1299,
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/e/e6/Snow_White.png/revision/latest?cb=20191204181154',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        special: {
+            name: 'Enchanted Edge',
+            description: [
+                'Dispels all buffs and status ailments from all allies and enemies.',
+                'Deals 180% damage to all enemies and additional 15% damage per removed status effect, up to 420% damage in total.'
+            ]
+        }
+    },
     thorne: {
         name: 'Thorne',
         attack: 638,
@@ -2775,6 +2808,24 @@ const purple5StarHeroes = {
                 'Deals 410% damage to the target.',
                 'The caster and nearby allies get +94% defense against Holy for 4 turns.',
                 'Dispels buffs from the target and nearby enemies.'
+            ]
+        }
+    },
+    grimble: {
+        name: 'Grimble',
+        attack: 615,
+        defense: 824,
+        health: 1425,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Grimble.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Gnomish Carnage',
+            description: [
+                'Destroys all Minions from all enemies.',
+                'Deals 235% damage to all enemies.',
+                'All allies get a small amount of mana for each destroyed Minon.',
+                "Element Link gives all Dark allies +10% critical chance for 6 turns. This effect can't be dispelled."
             ]
         }
     },
