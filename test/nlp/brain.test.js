@@ -88,6 +88,20 @@ describe('brain tests', () => {
         it('display %heroes% should be classified as a show.me intent with the necessary entities', () => {
             return getManager().process('display Little-John, Valen and Tibertus').then(checkShowHeroIntent);
         });
+
+        it('show red hood should be classified correctly', () => {
+            return getManager().process('show red hood').then(result => {
+                expect(result.intent).to.equal('show.hero');
+                let redHoodFound = false;
+                for (let i=0;i<result.entities.length;i++) {
+                    if (result.entities[i].entity === 'hero' && result.entities[i].option === 'red hood') {
+                        redHoodFound = true;
+                        break;
+                    }
+                }
+                expect(redHoodFound).to.be.true;
+            });
+        });
     });
 
     describe('harpoon.team.query intent tests', () => {
