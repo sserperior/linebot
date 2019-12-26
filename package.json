@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_PATH=src node src/server.js",
     "local-start": "cross-env NODE_PATH=src CHANNEL_ACCESS_TOKEN=A CHANNEL_SECRET=B node src/server.js",
-    "test": "cross-env NODE_PATH=src:test mocha test/**/*.test.js"
+    "test": "cross-env NODE_PATH=src:test mocha --timeout 50000 test/**/*.test.js"
   },
   "repository": {
     "type": "git",

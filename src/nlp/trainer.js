@@ -70,6 +70,8 @@ manager.addDocument('en', 'where to farm to fill %element% chest', farmElemental
 manager.addDocument('en', 'what are the best places for filling %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', 'what are the best places for %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', 'what are the best places for %element% monsters', farmElementalChest.intentLabel);
+manager.addDocument('en', 'show %element% chest', farmElementalChest.intentLabel);
+manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');

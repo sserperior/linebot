@@ -217,6 +217,8 @@ describe('brain tests', () => {
             allPromises.push(getManager().process(`what are the best places for filling ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`show ${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
 
             // Variations
             allPromises.push(getManager().process(`where are the best places to fill ${elementPseudonym} chests?`).then(result => checkFarmElementalChestIntent(result, element)));
@@ -252,5 +254,5 @@ describe('brain tests', () => {
             it('nature should be treated properly', () => allTests('nature'));
             it('green should be treated as nature', () => allTests('green', 'nature'));
         });
-    })
+    });
 });
