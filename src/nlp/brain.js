@@ -7,6 +7,7 @@ const showHero = require('nlp/intents/showHero');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
+const thanksCyber = require('nlp/intents/thanksCyber');
 
 let manager = null;
 
@@ -35,7 +36,10 @@ const generateResponse = messageText => getManager().process(messageText).then(r
                 return Promise.resolve(showHeroSpecial.handle(result.entities));
             case farmElementalChest.intentLabel:
                 logger.info(`${farmElementalChest.intentLabel} intent`);
-                return Promise.resolve(farmElementalChest.handle(result.entities));       
+                return Promise.resolve(farmElementalChest.handle(result.entities));  
+            case thanksCyber.intentLabel:
+                logger.info(`${thanksCyber.intentLabel} intent`);
+                return Promise.resolve(thanksCyber.handle(result.entities));        
         }
     }
     return Promise.resolve();

@@ -269,4 +269,19 @@ describe('brain tests', () => {
             it('green should be treated as nature', () => allTests('green', 'nature'));
         });
     });
+
+    describe('thanksCyber tests', () => {
+        const checkResult = result => {
+            expect(result.intent).to.equal('thanks.cyber');
+            expect(result.score).to.be.at.least(threshold);
+        };
+
+        it('should trigger for "thanks cyber"', () => {
+            return getManager().process('thanks cyber').then(result => checkResult);
+        });
+
+        it('should trigger for "thank you cyber 88', () => {
+            return getManager().process('thank you cyber 88').then(result => checkResult);
+        });
+    });
 });
