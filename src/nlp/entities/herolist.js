@@ -683,6 +683,23 @@ const purple3StarHeroes = {
             ]
         }
     },
+    'guardian bat': {
+        name: 'Guardian Bat',
+        attack: 437,
+        defense: 418,
+        health: 862,
+        pseudonyms: ['bat', 'guardian bat'],
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/c/cb/Guardian_Bat_-_Hero_Card.gif/revision/latest?cb=20200109125830',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Merciless Bite',
+            description: [
+                'Deals 270% damage to the target and minor damage to nearby enemies.',
+                'The damage is increased by 60% per each dead ally.'
+            ]
+        }
+    },
     oberon: {
         name: 'Oberon',
         attack: 422,
@@ -1855,6 +1872,25 @@ const blue5StarHeroes = {
                 'Deals 480% damage to the target and minor damage to nearby enemies.'
             ]
         }
+    },
+    vela: {
+        name: 'Vela',
+        attack: 743,
+        defense: 729,
+        health: 1303,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Vela_January-HOTM.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Aquatic Outbreak',
+            description: [
+                'Deals 150% damage to all enemies.',
+                'All enemies receive 208 Water damage over 4 turns.',
+                'All Fire enemies get -54% attack for 4 turns.',
+                'Deals extra damage against Fire.',
+                "Element Link gives all ice allies +10% critial chance for 6 turns. This effect can't be dispelled."
+            ]
+        }
     }
 }
 
@@ -1891,6 +1927,30 @@ const yellow5StarHeroes = {
                 'Deals 270% damage to the target and nearby enemies.',
                 'The target and nearby enemies get -35% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills.',
                 "Element Link gives all Holy allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'guardian gazelle': {
+        name: 'Guardian Gazelle',
+        attack: 751,
+        defense: 741,
+        health: 1324,
+        pseudonyms: ['gazelle', 'guardian gazelle'],
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/5/5d/Guardian_Gazelle_-_Hero_Card.gif/revision/latest?cb=20200109132056',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Dance of Spirits',
+            description: [
+                'Removes all dispellable and undispellable status effects from all allies except the caster.',
+                'The caster regenerates 612 HP over 4 turns.',
+                'For 4 turns all allies except the caster start dancing the Dance of Spirits:',
+                '',
+                '+100% attack.',
+                'Reduces all received damage by -50%.',
+                'Gives immunity to new status effects.',
+                'If the caster dies, the dancer receives 100% damage and their mana is reduced by 100%.',
+                'This effect cannot be dispelled.'
             ]
         }
     },
@@ -2225,6 +2285,26 @@ const green5StarHeroes = {
                 "Element Link gives all Nature allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
             ]
         }
+    },
+    'guardian chameleon': {
+        name: 'Guardian Chameleon',
+        attack: 714,
+        defense: 780,
+        health: 1339,
+        pseudonyms: ['chameleon', 'guardian chameleon'],
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/9/9d/Guardian_Chameleon_-_Hero_Card.gif/revision/latest?cb=20200109131113',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Elemental Magic',
+            description: [
+                'Removes all dispellable and undispellable status effects from all enemies.',
+                'Changes the element of all enemies to the element they are strong against for 3 turns',
+                'All allies get +54% attack for 4 turns.',
+                'All allies get +36% critical chance for 4 turns.'
+            ]
+        }
+
     },
     horghall: {
         name: 'Horghall',

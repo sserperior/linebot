@@ -41,9 +41,11 @@ Object.keys(elements).forEach(elementKey => {
 
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
+manager.addDocument('en', '%allianceMember%', 'do.nothing');
 
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);
+manager.addDocument('en', 'show red hood', showHero.intentLabel);
 manager.addDocument('en', 'display %hero%', showHero.intentLabel);
 
 // Harpoon team questions

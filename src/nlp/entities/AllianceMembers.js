@@ -2,9 +2,6 @@ module.exports = {
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
-    'AcousticWord': {
-        pseudonyms: ['acoustic', 'aural', 'acousticword', 'aw']
-    },
     'Alundra': {
         pseudonyms: ['alundra', 'al']
     },
@@ -14,8 +11,8 @@ module.exports = {
     'beCool': {
         pseudonyms: ['becool']
     },
-    'Cattleya': {
-        pseudonyms: ['cattleya']
+    'Cole': {
+        pseudonyms: ['cole']
     },
     'Failinbad': {
         pseudonyms: ['failin', 'failinbad']
@@ -77,6 +74,12 @@ module.exports = {
     'ssj50driver': {
         pseudonyms: ['ssj50driver', 'driver']
     },
+    'Soulja_gurl': {
+        pseudonyms: ['soulja_gurl', 'soulja']
+    },
+    'toetapper': {
+        pseudonyms: ['toetapper', 'tt']
+    },
     'The Moose': {
         pseudonyms: ['big moose', 'moose', 'the moose', 'spymoose', 'spy moose']
     },
@@ -85,8 +88,5 @@ module.exports = {
     },
     'Yoddha': {
         pseudonyms: ['yoda', 'yoddha']
-    },
-    'Zakku': {
-        pseudonyms: ['zakku', 'zak']
     }
 };
