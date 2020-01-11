@@ -44,13 +44,25 @@ const createEventHandler = generateResponse => event => {
                  * }
                  */
                 //reply(groupId, userDisplayName, _.get(event, 'message.text'), event.replyToken)                
-                return generateResponse(_.get(event, 'message.text')).then(({ replyMessages, broadcastMessages}) => {
+                return generateResponse(_.get(event, 'message.text')).then(response => {
+                    const replyMessages = response.replyMessages;
+                    const broadcastMessages = response.broadcastMessages;
+                    logger.info('replyMessages', replyMessages);
+                    logger.info('broadcastMessages', broadcastMessages);
                     const promises = [];
-                    promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(logger.error));
-                    broadcastMessages.forEach(broadcastMessage => {
-                        promises.push(lineClient.pushMessage(groupId, broadcastMessage).catch(logger.error));
-                    });
-                    return Promise.all(promises);
+                    if (replyMessages != null && replyMessages.length > 0) {
+                        promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(logger.error));
+                    }
+                    if (broadcastMessages != null && broadcastMessages.length > 0) {
+                        broadcastMessages.forEach(broadcastMessage => {
+                            promises.push(lineClient.pushMessage(groupId, broadcastMessage).catch(logger.error));
+                        });
+                    }
+                    if (promises.length > 0) {
+                        return Promise.all(promises);
+                    } else {
+                        return Promise.resolve({});
+                    }
                 });
             });
         }

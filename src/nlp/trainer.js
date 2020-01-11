@@ -2,10 +2,13 @@ const { NlpManager } = require('node-nlp');
 const { heroes } = require('nlp/entities/herolist');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
+const cyber88 = require('nlp/entities/bots').cyber88;
+
 const showHero = require('nlp/intents/showHero');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
+const thanksCyber = require('nlp/intents/thanksCyber');
 
 const manager = new NlpManager({ languages: ['en'] });
 
@@ -38,6 +41,13 @@ Object.keys(elements).forEach(elementKey => {
     element.pseudonyms != null ? element.pseudonyms : [elementKey.toLowerCase()]
   );
 });
+
+manager.addNamedEntityText(
+  'cyber',
+  'cyber88',
+  ['en'],
+  cyber88.pseudonyms
+);
 
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
@@ -74,6 +84,10 @@ manager.addDocument('en', 'what are the best places for %element% chest', farmEl
 manager.addDocument('en', 'what are the best places for %element% monsters', farmElementalChest.intentLabel);
 manager.addDocument('en', 'show %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
+
+// Thanks Cyber
+manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
+manager.addDocument('en', 'thany you %cyber%', thanksCyber.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');
