@@ -65,9 +65,6 @@ module.exports = {
     'Sarah': {
         pseudonyms: ['squeaki', 'squeaks', 'sarah']
     },
-    'ShovelSlayer': {
-        pseudonyms: ['shovelslayer', 'shovel']
-    },
     'Slash': {
         pseudonyms: ['slasher', 'slash', 'slashy']
     },
@@ -85,6 +82,9 @@ module.exports = {
     },
     'Werd5': {
         pseudonyms: ['werd', 'werd5', 'werdy', 'werdles']
+    },
+    'WonderfulTree': {
+        pseudonyms: ['wonderfultree', 'wonderful', 'tree']
     },
     'Yoddha': {
         pseudonyms: ['yoda', 'yoddha']
