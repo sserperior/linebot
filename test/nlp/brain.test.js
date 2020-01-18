@@ -5,7 +5,14 @@ const fs = require('fs');
 
 const { NlpManager } = require('node-nlp');
 
-const { getManager, threshold } = require('nlp/brain');
+const { getManager } = require('nlp/brain');
+
+const doNothing = require('nlp/intents/doNothing');
+const farmElementalChest = require('nlp/intents/farmElementalChest');
+const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
+const showHero = require('nlp/intents/showHero');
+const showHeroSpecial = require('nlp/intents/showHeroSpecial');
+const thanksCyber = require('nlp/intents/thanksCyber');
 
 describe('brain tests', () => {
     before(() => {
@@ -38,7 +45,7 @@ describe('brain tests', () => {
     describe('do.nothing intent tests', () => {
         const checkDoNothingIntent = (result => {
             expect(result.intent).to.equal('do.nothing');
-            expect(result.score).to.be.at.least(threshold);
+            expect(result.score).to.be.at.least(doNothing.intentThreshold);
         });
 
         it('no %hero% should result in do.nothing intent', () => {
@@ -53,7 +60,7 @@ describe('brain tests', () => {
     describe('show.hero intent tests', () => {
         const checkShowHeroIntent = result => {
             expect(result.intent).to.equal('show.hero');
-                expect(result.score).to.be.at.least(threshold);
+                expect(result.score).to.be.at.least(showHero.intentThreshold);
                 let entityLjFound = false;
                 let entityValenFound = false;
                 let entityTibsFound = false;
@@ -107,7 +114,7 @@ describe('brain tests', () => {
     describe('harpoon.team.query intent tests', () => {
         const checkHarpoonTeamQueryIntent = result => {
             expect(result.intent).to.equal('harpoon.team.query');
-            expect(result.score).to.be.at.least(threshold);
+            expect(result.score).to.be.at.least(harpoonTeamQuery.intentThreshold);
             let entityWerd5Found = false;
             for (let i=0;i<result.entities.length;i++) {
                 if (result.entities[i].entity === 'allianceMember' && result.entities[i].option === 'Werd5') {
@@ -150,7 +157,7 @@ describe('brain tests', () => {
     describe('show.hero.special intent tests', () => {
         const checkShowHeroSpecialIntent = result => {
             expect(result.intent).to.equal('show.hero.special');
-            expect(result.score).to.be.at.least(threshold);
+            expect(result.score).to.be.at.least(showHeroSpecial.intentThreshold);
             let baneFound = false;
             let valenFound = false;
             let lJFound = false;
@@ -273,7 +280,7 @@ describe('brain tests', () => {
     describe('thanksCyber tests', () => {
         const checkResult = result => {
             expect(result.intent).to.equal('thanks.cyber');
-            expect(result.score).to.be.at.least(threshold);
+            expect(result.score).to.be.at.least(thanksCyber.intentThreshold);
         };
 
         it('should trigger for "thanks cyber"', () => {
@@ -283,5 +290,11 @@ describe('brain tests', () => {
         it('should trigger for "thank you cyber 88', () => {
             return getManager().process('thank you cyber 88').then(result => checkResult);
         });
+
+        it('"Do you think cyber?" should not trigger "thanks cyber"', () => {
+            return getManager().process('Do you think cyber?').then(result => {
+                expect(result.score).to.be.lessThan(thanksCyber.intentThreshold)
+            })
+        })
     });
 });

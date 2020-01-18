@@ -2,6 +2,7 @@ const logger = require('logger');
 const bots = require('nlp/entities/bots');
 
 const intentLabel = 'thanks.cyber';
+const intentThreshold = parseFloat(process.env.THANKS_CYBER_INTENT_THRESHOLD || 0.95);
 
 const handle = entities => {
     logger.info(`handle ${intentLabel} intent`);
@@ -22,5 +23,6 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    intentLabel
+    intentLabel,
+    intentThreshold
 }

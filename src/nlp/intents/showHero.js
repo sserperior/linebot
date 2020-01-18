@@ -2,6 +2,7 @@ const logger = require('logger');
 const herolist = require('nlp/entities/herolist');
 
 const intentLabel = 'show.hero';
+const intentThreshold = parseFloat(process.env.SHOW_HERO_INTENT_THRESHOLD || 0.8);
 
 const handle = entities => {
     logger.info(`handle ${intentLabel} intent`);
@@ -39,5 +40,6 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    intentLabel
+    intentLabel,
+    intentThreshold
 };

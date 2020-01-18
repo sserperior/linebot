@@ -8,10 +8,9 @@ const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const thanksCyber = require('nlp/intents/thanksCyber');
+const doNothing = require('nlp/intents/doNothing');
 
 let manager = null;
-
-const threshold = parseFloat(process.env.AI_INTENT_THRESHOLD);
 
 const getManager = () => {
     if (fs.existsSync('hero-brain.nlp') && manager == null) {
@@ -21,32 +20,29 @@ const getManager = () => {
     return manager;
 };
 
+const isRecognizedIntent = (intent, score, knownIntent) => intent === knownIntent.intentLabel && score >= knownIntent.intentThreshold;
+
 const generateResponse = messageText => getManager().process(messageText).then(result => {
     logger.info(result);
-    if (result.score >= threshold) {
-        switch(result.intent) {
-            case showHero.intentLabel:
-                logger.info(`${showHero.intentLabel} intent`);
-                return Promise.resolve(showHero.handle(result.entities));
-            case harpoonTeamQuery.intentLabel:
-                logger.info(`${harpoonTeamQuery.intentLabel} intent`);
-                return Promise.resolve(harpoonTeamQuery.handle(result.entities));
-            case showHeroSpecial.intentLabel:
-                logger.info(`${showHeroSpecial.intentLabel} intent`);
-                return Promise.resolve(showHeroSpecial.handle(result.entities));
-            case farmElementalChest.intentLabel:
-                logger.info(`${farmElementalChest.intentLabel} intent`);
-                return Promise.resolve(farmElementalChest.handle(result.entities));  
-            case thanksCyber.intentLabel:
-                logger.info(`${thanksCyber.intentLabel} intent`);
-                return Promise.resolve(thanksCyber.handle(result.entities));        
-        }
+    logger.info(`${result.intent} intent, score: ${result.score}`);
+    const { intent, score } = result;
+    if (isRecognizedIntent(intent, score, showHero)) {
+        return Promise.resolve(showHero.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, harpoonTeamQuery)) {
+        return Promise.resolve(harpoonTeamQuery.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, showHeroSpecial)) {
+        return Promise.resolve(showHeroSpecial.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, farmElementalChest)) {
+        return Promise.resolve(farmElementalChest.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, thanksCyber)) {
+        return Promise.resolve(thanksCyber.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, doNothing)) {
+        // default case.
     }
     return Promise.resolve();
 });
 
 module.exports = {
     getManager,
-    generateResponse,
-    threshold: 0.8
+    generateResponse
 };
