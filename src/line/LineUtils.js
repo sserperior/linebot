@@ -47,8 +47,8 @@ const createEventHandler = generateResponse => event => {
                 return generateResponse(_.get(event, 'message.text')).then(response => {
                     const replyMessages = response.replyMessages;
                     const broadcastMessages = response.broadcastMessages;
-                    logger.info('replyMessages', replyMessages);
-                    logger.info('broadcastMessages', broadcastMessages);
+                    logger.info(`replyMessages: ${replyMessages}`);
+                    logger.info(`broadcastMessages: ${broadcastMessages}`);
                     const promises = [];
                     if (replyMessages != null && replyMessages.length > 0) {
                         promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(logger.error));
