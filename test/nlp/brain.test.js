@@ -293,8 +293,8 @@ describe('brain tests', () => {
 
         it('"Do you think cyber?" should not trigger "thanks cyber"', () => {
             return getManager().process('Do you think cyber?').then(result => {
-                expect(result.score).to.be.lessThan(thanksCyber.intentThreshold)
-            })
-        })
+                expect(result.score).to.be.lessThan(thanksCyber.intentThreshold);
+            });
+        });
     });
 });
