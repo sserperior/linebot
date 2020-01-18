@@ -45,6 +45,10 @@ const handle = text => {
                     }
                 ]
             }));
+        } else {
+            return Promise.resolve({
+                replyMessages: []
+            });
         }
     });
 }
