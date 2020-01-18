@@ -3,6 +3,7 @@ const logger = require('logger');
 const herolist = require('nlp/entities/herolist');
 
 const intentLabel = 'show.hero.special';
+const intentThreshold = parseFloat(process.env.SHOW_HERO_SPECIAL_INTENT_THRESHOLD || 0.8);
 
 const generateSpecialText = heroData => {
     let specialText = `${heroData.name}'s special is ${_.get(heroData, 'special.name', 'Unknown')}`;
@@ -54,5 +55,6 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    intentLabel
+    intentLabel,
+    intentThreshold
 };

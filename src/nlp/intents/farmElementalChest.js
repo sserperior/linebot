@@ -2,6 +2,7 @@ const logger = require('logger');
 const elementList = require('nlp/entities/elements');
 
 const intentLabel = 'farm.elemental.chest';
+const intentThreshold = parseFloat(process.env.FARM_ELEMENTAL_CHEST_INTENT_THRESHOLD || 0.8);
 
 const handle = entities => {
     logger.info(`handle ${intentLabel} intent`);
@@ -30,5 +31,6 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    intentLabel
+    intentLabel,
+    intentThreshold
 };

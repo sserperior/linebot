@@ -2,6 +2,7 @@ const logger = require('logger');
 const GoogleSpreadsheet = require('google-spreadsheet');
 
 const intentLabel = 'harpoon.team.query';
+const intentThreshold = parseFloat(process.env.HARPOON_TEAM_QUERY_INTENT_THRESHOLD || 0.8);
 
 const getHarpoonTeams = () => {
     const doc = new GoogleSpreadsheet(process.env.TMTR_HARPOON_GOOGLE_SPREADSHEET_KEY);
@@ -77,5 +78,6 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    intentLabel
+    intentLabel,
+    intentThreshold
 };
