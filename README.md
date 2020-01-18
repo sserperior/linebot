@@ -29,6 +29,6 @@ Example Intents:
 
 "What is the special for *hero*?"
 
-4. Translate <some text>
+4. Translate *some text*
 
 "Translate pourquoi?"
