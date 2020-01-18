@@ -87,7 +87,7 @@ manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
 
 // Thanks Cyber
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
-manager.addDocument('en', 'thany you %cyber%', thanksCyber.intentLabel);
+manager.addDocument('en', 'thank you %cyber%', thanksCyber.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');
