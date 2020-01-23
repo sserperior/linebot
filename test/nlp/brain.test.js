@@ -284,11 +284,15 @@ describe('brain tests', () => {
         };
 
         it('should trigger for "thanks cyber"', () => {
-            return getManager().process('thanks cyber').then(result => checkResult);
+            return getManager().process('thanks cyber').then(checkResult);
         });
 
         it('should trigger for "thank you cyber 88', () => {
-            return getManager().process('thank you cyber 88').then(result => checkResult);
+            return getManager().process('thank you cyber 88').then(checkResult);
+        });
+
+        it('should trigger for "thx cyber"', () => {
+            return getManager().process('thx cyber').then(checkResult);
         });
 
         it('"Do you think cyber?" should not trigger "thanks cyber"', () => {
