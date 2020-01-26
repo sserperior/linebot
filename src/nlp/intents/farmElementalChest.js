@@ -1,7 +1,7 @@
 const logger = require('logger');
-const elementList = require('nlp/entities/elements');
+const elementMap = require('nlp/entities/elements');
 
-const intentLabel = 'farm.elemental.chest';
+const intentLabel = 'farm.elementalChest';
 const intentThreshold = parseFloat(process.env.FARM_ELEMENTAL_CHEST_INTENT_THRESHOLD || 0.8);
 
 const handle = entities => {
@@ -14,7 +14,7 @@ const handle = entities => {
             const elementId = entities[i].option;
             if (elementId != null && !uniqueElementIds.includes(elementId)) {
                 uniqueElementIds.push(elementId);
-                const elementData = elementList[elementId];
+                const elementData = elementMap[elementId];
                 replyMessages.push({
                     type: 'image',
                     originalContentUrl: elementData.chestFarmingImgUrl,

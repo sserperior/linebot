@@ -9,6 +9,7 @@ const { getManager } = require('nlp/brain');
 
 const doNothing = require('nlp/intents/doNothing');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
+const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHero = require('nlp/intents/showHero');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
@@ -226,6 +227,7 @@ describe('brain tests', () => {
                 }
             }
             expect(expectedEntityFound).to.be.true;
+            expect(result.score).to.be.at.least(farmElementalChest.intentThreshold);
         };
 
         const allTests = (elementPseudonym, element=elementPseudonym) => {
@@ -239,6 +241,8 @@ describe('brain tests', () => {
             allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} chest?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`what are the best places for ${elementPseudonym} monsters?`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`show ${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`farm ${elementPseudonym} monsters`).then(result => checkFarmElementalChestIntent(result, element)));
+            allPromises.push(getManager().process(`farm ${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
             allPromises.push(getManager().process(`${elementPseudonym} chest`).then(result => checkFarmElementalChestIntent(result, element)));
 
             // Variations
@@ -277,9 +281,40 @@ describe('brain tests', () => {
         });
     });
 
+    describe('farmItem tests', () => {
+        const checkResult = (result, expectedEntityOption) => {
+            let expectedEntityFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === farmItem.itemEntity && result.entities[i].option === expectedEntityOption) {
+                    expectedEntityFound = true;
+                }
+            }
+            expect(expectedEntityFound).to.be.true;
+            expect(result.score).to.be.at.least(farmItem.intentThreshold);
+        };
+
+        it('all items should be identified correctly', () => {
+            const allPromises = [];
+            Object.keys(farmItem.itemMap).forEach(itemKey => {
+                const item = farmItem.itemMap[itemKey];
+                const itemPseudonyms = item.pseudonyms != null ? item.pseudonyms : [itemKey.toLowerCase()];
+                itemPseudonyms.forEach(itemPseudonym => {
+                    allPromises.push(getManager().process(`where do i find ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`where do i farm ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`where do i get ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`show ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`farm ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`find ${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                    allPromises.push(getManager().process(`${itemPseudonym}`).then(result => checkResult(result, itemKey)));
+                });
+            });
+            return allPromises;
+        });
+    });
+
     describe('thanksCyber tests', () => {
         const checkResult = result => {
-            expect(result.intent).to.equal('thanks.cyber');
+            expect(result.intent).to.equal(thanksCyber.intentLabel);
             expect(result.score).to.be.at.least(thanksCyber.intentThreshold);
         };
 

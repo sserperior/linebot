@@ -39,7 +39,7 @@ module.exports = {
         pseudonyms: ['killjoy', 'kj']
     },
     'KiTKD': {
-        pseudonyms: ['kitkd', 'kit', 'kieran']
+        pseudonyms: ['kitkd', 'kieran']
     },
     'magicmands': {
         pseudonyms: ['magic', 'mandibles', 'magicmands']

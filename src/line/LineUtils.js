@@ -28,7 +28,7 @@ const fetchUserDisplayName = (groupId, userId) => {
     }
 };
 
-const createEventHandler = generateResponse => event => {
+const createEventHandler = (generateResponse, next) => event => {
     if (_.get(event, 'type') === 'message') {
         logger.info('message event', event);
         if (_.get(event, 'message.type') === 'text') {
@@ -51,11 +51,17 @@ const createEventHandler = generateResponse => event => {
                     logger.info(`broadcastMessages: ${broadcastMessages}`);
                     const promises = [];
                     if (replyMessages != null && replyMessages.length > 0) {
-                        promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(logger.error));
+                        promises.push(lineClient.replyMessage(event.replyToken, replyMessages).catch(err => {
+                            logger.error(err);
+                            next(err);
+                        }));
                     }
                     if (broadcastMessages != null && broadcastMessages.length > 0) {
                         broadcastMessages.forEach(broadcastMessage => {
-                            promises.push(lineClient.pushMessage(groupId, broadcastMessage).catch(logger.error));
+                            promises.push(lineClient.pushMessage(groupId, broadcastMessage).catch(err => {
+                                logger.error(err);
+                                next(err);
+                            }));
                         });
                     }
                     if (promises.length > 0) {
@@ -71,12 +77,12 @@ const createEventHandler = generateResponse => event => {
 }
 
 const createLineEventsProcessor = generateResponse => (req, res, next) => {
-    Promise.all(req.body.events.map(createEventHandler(generateResponse)))
-        .then(result => res.json(result))
-        .catch(err => {
-            logger.error(err);
-            res.status(500).end();
-        });
+    Promise.all(req.body.events.map(createEventHandler(generateResponse, next)))
+    .then(result => res.json(result))
+    .catch(err => {
+        logger.error(err);
+        next(err);
+    });
 };
 
 const middleware = generateResponse => ([
