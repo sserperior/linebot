@@ -8,6 +8,7 @@ const showHero = require('nlp/intents/showHero');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
+const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
 
 const manager = new NlpManager({ languages: ['en'] });
@@ -39,6 +40,16 @@ Object.keys(elements).forEach(elementKey => {
     elementKey,
     ['en'],
     element.pseudonyms != null ? element.pseudonyms : [elementKey.toLowerCase()]
+  );
+});
+
+Object.keys(farmItem.itemMap).forEach(itemKey => {
+  const farmableItem = farmItem.itemMap[itemKey];
+  manager.addNamedEntityText(
+    farmItem.itemEntity,
+    itemKey,
+    ['en'],
+    farmableItem.pseudonyms != null ? farmableItem.pseudonyms : [itemKey.toLowerCase()]
   );
 });
 
@@ -83,7 +94,18 @@ manager.addDocument('en', 'what are the best places for filling %element% chest'
 manager.addDocument('en', 'what are the best places for %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', 'what are the best places for %element% monsters', farmElementalChest.intentLabel);
 manager.addDocument('en', 'show %element% chest', farmElementalChest.intentLabel);
+manager.addDocument('en', 'farm %element% chest', farmElementalChest.intentLabel);
+manager.addDocument('en', 'farm %element% monsters', farmElementalChest.intentLabel);
 manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
+
+// Farm item questions
+manager.addDocument('en', 'where do i find %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'where do i farm %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'show %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'farm %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', '%farmableItem%', farmItem.intentLabel);
 
 // Thanks Cyber
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
