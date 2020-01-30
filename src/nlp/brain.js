@@ -24,15 +24,33 @@ const getManager = () => {
     return manager;
 };
 
-const getCommandParameter = (trimmedMessage, knownCommands) => {
+const getCommandStructure = (trimmedMessage, knownCommands) => {
+    const result = {
+        command: null,
+        subCommand: null,
+        parameter: null
+    };
     const trimmedMessageLC = trimmedMessage.toLowerCase();
     for (let i=0;i<knownCommands.length;i++) {
-        const knownCommandLength = knownCommands[i].length;
         if (trimmedMessageLC.startsWith(knownCommands[i])) {
             logger.info(`command detected: ${knownCommands[i]}`);
-            const commandParameter = trimmedMessage.substring(knownCommandLength).trim();
+            result.command = knownCommands[i];
+            // Get subcommand. format is:
+            // command:subcommand xxx
+            // The split below results in, for example, `translate:af xxx` => ["translate", "af xxx"].
+            // If there is no subcommand, we end up with an array of just one element - the entire string.
+            const splitTrimmedMessageLC = trimmedMessageLC.split(':');
+            if (splitTrimmedMessageLC.length > 1) {
+                result.subCommand = splitTrimmedMessageLC[1].split(' ')[0];
+            }
+
+            // Get the command parameter
+            // `translate:af xxx` => xxx
+            const totalCommandLength = result.command.length + (result.subCommand != null ? result.subCommand.length + 1 : 0)
+            const commandParameter = trimmedMessage.substring(totalCommandLength).trim();
             logger.info(`command parameter: ${commandParameter}`);
-            return commandParameter;
+            result.parameter = commandParameter;
+            return result;
         }
     }
     return null;
@@ -43,10 +61,10 @@ const generateCommandResponse = messageText => {
     let result = null;
     if (messageText != null) {
         messageText = messageText.trim();
-        let commandParameter = null;
-        if ((commandParameter = getCommandParameter(messageText, translate.commands)) != null)
+        let commandStructure = null;
+        if ((commandStructure = getCommandStructure(messageText, translate.commands)) != null)
         {
-            return translate.handle(commandParameter);
+            return translate.handle(commandStructure);
         }
     }
     return result;
