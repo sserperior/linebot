@@ -336,4 +336,10 @@ describe('brain tests', () => {
             });
         });
     });
+
+    describe('show.hero.grading tests', () => {
+        it('...', () => {
+            return getManager().process("show Bane's grading").then(console.log);
+        });
+    });
 });

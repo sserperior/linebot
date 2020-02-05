@@ -24,7 +24,7 @@
     "cfenv": "^1.2.2",
     "cross-env": "^6.0.3",
     "express": "^4.17.1",
-    "google-spreadsheet": "^2.0.8",
+    "google-spreadsheet": "^3.0.2",
     "google-translate": "^3.0.0",
     "lodash": "^4.17.15",
     "node-nlp": "^3.10.2",

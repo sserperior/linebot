@@ -9,6 +9,7 @@ const translate = require('nlp/commands/translate');
 const showHero = require('nlp/intents/showHero');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
+const showHeroGrading = require('nlp/intents/showHeroGrading');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
@@ -94,6 +95,8 @@ const generateNLResponse = messageText => getManager().process(messageText).then
         return Promise.resolve(showHeroSpecial.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, farmElementalChest)) {
         return Promise.resolve(farmElementalChest.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, showHeroGrading)) {
+        return showHeroGrading.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, farmItem)) {
         return Promise.resolve(farmItem.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, thanksCyber)) {

@@ -1,31 +1,33 @@
 const logger = require('logger');
-const GoogleSpreadsheet = require('google-spreadsheet');
+const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const intentLabel = 'harpoon.team.query';
 const intentThreshold = parseFloat(process.env.HARPOON_TEAM_QUERY_INTENT_THRESHOLD || 0.8);
 
 const getHarpoonTeams = () => {
+    logger.info('getHarpoonTeams');
     const doc = new GoogleSpreadsheet(process.env.TMTR_HARPOON_GOOGLE_SPREADSHEET_KEY);
-    return new Promise((resolve, reject) => {
-        doc.getInfo((err, info) => {
-            if (err) {
-                reject(err);
-            }
-            const harpoonsWorksheet = info.worksheets[0];
-            const teamA = [];
-            const teamB = [];
-            harpoonsWorksheet.getRows({}, (err, rows) => {
-                if (err) {
-                    reject(err);
-                }
+    const teamA = [];
+    const teamB = [];
+    return doc.useServiceAccountAuth({
+        client_email: process.env.GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL,
+        private_key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY
+    }).then(() => {
+        logger.info('Authenticated with harpoons spreadsheet');
+        return doc.loadInfo().then(() => {
+            const harpoonsWorksheet = doc.sheetsByIndex[0];
+            logger.info(`Spreadsheet info loaded: ${harpoonsWorksheet.title}`);
+            return harpoonsWorksheet.getRows().then(rows => {
                 rows.forEach(row => {
-                    teamA.push(row.teama);
-                    teamB.push(row.teamb);
+                    teamA.push(row['Team A']);
+                    teamB.push(row['Team B']);
                 });
-                resolve({
+                logger.info(teamA);
+                logger.info(teamB);
+                return {
                     teamA,
                     teamB
-                });
+                };
             });
         });
     });

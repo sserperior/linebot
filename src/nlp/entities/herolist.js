@@ -989,7 +989,7 @@ const yellow4StarHeroes = {
         }
     },
     jackal: {
-        name: 'Jackal',
+        name: 'Guardian Jackal',
         attack: 765,
         defense: 531,
         health: 1032,
@@ -2689,6 +2689,25 @@ const red5StarHeroes = {
             description: [
                 'Deals 220% damage to all enemies.',
                 'All allies get +94% defense against Ice for 4 turns.'
+            ]
+        }
+    },
+    'jean-françois': {
+        name: 'Jean-François',
+        attack: 737,
+        defense: 723,
+        health: 1332,
+        pseudonyms: ['jean-françois', 'jean francois', 'jean françois', 'jf'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Jean-Francois.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        special: {
+            name: 'Seal of Fire',
+            description: [
+                'All enemies receive 302 Burn damage over 2 turns.',
+                'All allies get +94% defense against ice for 4 turns.',
+                'All allies get Defense Status Ailment Protection for 4 turns. New status ailments affecting defense will be replaced by +42% defense for 4 turns.',
+                "Element Link gives all Fire allies +10% critical chance for 6 turns. This effect can't be dispelled."
             ]
         }
     },

@@ -2,10 +2,13 @@ const { NlpManager } = require('node-nlp');
 const { heroes } = require('nlp/entities/herolist');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
-const cyber88 = require('nlp/entities/bots').cyber88;
+const cyber88 = require('nlp/entities/cyber88');
+const grade = require('nlp/entities/grade');
+const special = require('nlp/entities/special');
 
 const showHero = require('nlp/intents/showHero');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
+const showHeroGrading = require('nlp/intents/showHeroGrading');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
@@ -54,11 +57,25 @@ Object.keys(farmItem.itemMap).forEach(itemKey => {
 });
 
 manager.addNamedEntityText(
-  'cyber',
-  'cyber88',
+  cyber88.itemEntity,
+  cyber88.itemEntity,
   ['en'],
   cyber88.pseudonyms
 );
+
+manager.addNamedEntityText(
+  grade.itemEntity,
+  grade.itemEntity,
+  ['en'],
+  grade.pseudonyms
+);
+
+manager.addNamedEntityText(
+  special.itemEntity,
+  special.itemEntity,
+  ['en'],
+  special.pseudonyms
+)
 
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
@@ -76,13 +93,20 @@ manager.addDocument('en', 'display %allianceMember% harpoon team', harpoonTeamQu
 manager.addDocument('en', 'show harpoon team for %allianceMember%', harpoonTeamQuery.intentLabel);
 
 // Special questions
-manager.addDocument('en', "what is the special for %hero%", showHeroSpecial.intentLabel);
-manager.addDocument('en', 'what are the specials for %hero%', showHeroSpecial.intentLabel);
-manager.addDocument('en', "what is %hero% special", showHeroSpecial.intentLabel);
-manager.addDocument('en', 'show %hero% special', showHeroSpecial.intentLabel);
-manager.addDocument('en', 'show special for %hero%', showHeroSpecial.intentLabel);
-manager.addDocument('en', 'display special for %hero%', showHeroSpecial.intentLabel);
-manager.addDocument('en', 'display %hero% special', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'what is the %special% for %hero%', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'what is %hero% %special%', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'show %hero% %special%', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'show %special% for %hero%', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'display %special% for %hero%', showHeroSpecial.intentLabel);
+manager.addDocument('en', 'display %hero% %special%', showHeroSpecial.intentLabel);
+
+// Hero grading questions
+manager.addDocument('en', 'what is the %grade% for %hero%', showHeroGrading.intentLabel);
+manager.addDocument('en', 'what is %hero% %grade%', showHeroGrading.intentLabel);
+manager.addDocument('en', 'show %hero% %grade%', showHeroGrading.intentLabel);
+manager.addDocument('en', 'show %grade% for %hero%', showHeroGrading.intentLabel);
+manager.addDocument('en', 'display %grade% for %hero%', showHeroGrading.intentLabel);
+manager.addDocument('en', 'display %hero% %grade%', showHeroGrading.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);
