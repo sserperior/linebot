@@ -79,12 +79,11 @@ const findGradingData = heroName => {
         worksheet = doc.sheetsByIndex[0];
         return loadHeroNameToRowIndex(worksheet);
     }).then(heroNameToRowIndex => {
-        logger.info(heroNameToRowIndex);
         let index = heroNameToRowIndex[heroName];
         if (index == null) {
             index = -1;
         }
-        logger.info(index);
+        logger.info(`Located ${heroName} in spreadsheet at row ${index}`);
         return constructGradingData(index, worksheet).then(result => ({
             ... result,
             heroName
@@ -135,7 +134,6 @@ const handle = entities => {
     }
 
     return Promise.all(promises).then(results => {
-        logger.info('results obtained!');
         results.forEach(result => {
             replyMessages.push({
                 type: 'text',
@@ -148,7 +146,6 @@ const handle = entities => {
                 text: 'I can only show grading information for up to five heroes 😢'
             });
         }
-        console.log(replyMessages);
         return {
             replyMessages,
             broadcastMessages
