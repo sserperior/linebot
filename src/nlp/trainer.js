@@ -1,5 +1,6 @@
 const { NlpManager } = require('node-nlp');
 const { heroes } = require('nlp/entities/herolist');
+const eventsWrapper = require('nlp/entities/events');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
 const cyber88 = require('nlp/entities/cyber88');
@@ -7,6 +8,7 @@ const grade = require('nlp/entities/grade');
 const special = require('nlp/entities/special');
 
 const showHero = require('nlp/intents/showHero');
+const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
@@ -25,6 +27,23 @@ Object.keys(heroes).forEach(heroKey => {
     hero.pseudonyms != null ? hero.pseudonyms : [heroKey]
   );
 });
+
+Object.keys(eventsWrapper.events).forEach(eventKey => {
+  const event = eventsWrapper.events[eventKey];
+  manager.addNamedEntityText(
+    eventsWrapper.itemEntity,
+    eventKey,
+    ['en'],
+    event.pseudonyms != null ? event.pseudonyms : [eventKey]
+  );
+});
+
+manager.addNamedEntityText(
+  eventsWrapper.challengeEntity,
+  eventsWrapper.challengeEntity,
+  ['en'],
+  [eventsWrapper.challengeEntity]
+);
 
 Object.keys(AllianceMembers).forEach(allianceMemberKey => {
   const allianceMember = AllianceMembers[allianceMemberKey];
@@ -84,10 +103,18 @@ manager.addDocument('en', '%allianceMember%', 'do.nothing');
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);
 manager.addDocument('en', 'show red hood', showHero.intentLabel);
+manager.addDocument('en', 'show puss in boots', showHero.intentLabel);
+manager.addDocument('en', 'show santa', showHero.intentLabel);
 manager.addDocument('en', 'display %hero%', showHero.intentLabel);
+
+// Show event questions
+manager.addDocument('en', 'show %event%', showEvent.intentLabel);
+manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
+manager.addDocument('en', 'display %event%', showEvent.intentLabel);
 
 // Harpoon team questions
 manager.addDocument('en', 'which harpoon team is %allianceMember% on', harpoonTeamQuery.intentLabel);
+manager.addDocument('en', 'what harpoon team is %allianceMember% part of?', harpoonTeamQuery.intentLabel);
 manager.addDocument('en', 'display harpoon team for %allianceMember%', harpoonTeamQuery.intentLabel);
 manager.addDocument('en', 'display %allianceMember% harpoon team', harpoonTeamQuery.intentLabel);
 manager.addDocument('en', 'show harpoon team for %allianceMember%', harpoonTeamQuery.intentLabel);
@@ -107,6 +134,7 @@ manager.addDocument('en', 'show %hero% %grade%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'show %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %hero% %grade%', showHeroGrading.intentLabel);
+manager.addDocument('en', '%hero% %grade%', showHeroGrading.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);

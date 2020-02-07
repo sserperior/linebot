@@ -1,4 +1,4 @@
 module.exports = {
     itemEntity: 'special',
-    pseudonyms: ['special', 'specials']
+    pseudonyms: ['special', 'specials', 'skill', 'skills']
 }

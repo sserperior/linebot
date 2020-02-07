@@ -12,7 +12,9 @@ const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHero = require('nlp/intents/showHero');
+const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
+const showHeroGrading = require('nlp/intents/showHeroGrading');
 const thanksCyber = require('nlp/intents/thanksCyber');
 
 describe('brain tests', () => {
@@ -89,26 +91,32 @@ describe('brain tests', () => {
             return getManager().process('show Little-John, Valen and Tibertus').then(checkShowHeroIntent);
         });
 
-        it('show me %heroes% should be classified as a show.me intent with the necessary entities', () => {
-            return getManager().process('show me Little-John, Valen and Tibertus').then(checkShowHeroIntent);
-        });
-
         it('display %heroes% should be classified as a show.me intent with the necessary entities', () => {
             return getManager().process('display Little-John, Valen and Tibertus').then(checkShowHeroIntent);
         });
 
-        it('show red hood should be classified correctly', () => {
-            return getManager().process('show red hood').then(result => {
-                expect(result.intent).to.equal('show.hero');
-                let redHoodFound = false;
-                for (let i=0;i<result.entities.length;i++) {
-                    if (result.entities[i].entity === 'hero' && result.entities[i].option === 'red hood') {
-                        redHoodFound = true;
-                        break;
-                    }
+        const checkSpecificHero = (result, heroId) => {
+            expect(result.intent).to.equal('show.hero');
+            let heroFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'hero' && result.entities[i].option === heroId) {
+                    heroFound = true;
+                    break;
                 }
-                expect(redHoodFound).to.be.true;
-            });
+            }
+            expect(heroFound, `${heroId} not found`).to.be.true;
+        }
+
+        it('show red hood should be classified correctly', () => {
+            return getManager().process('show red hood').then(result => checkSpecificHero(result, 'red hood'))
+        });
+
+        it('show puss in boots should be classified correctly', () => {
+            return getManager().process('show puss in boots').then(result => checkSpecificHero(result, 'puss in boots'));
+        });
+
+        it('show santa should be classified correctly', () => {
+            return getManager().process('show santa').then(result => checkSpecificHero(result, 'santa claus'));
         });
     });
 
@@ -338,8 +346,69 @@ describe('brain tests', () => {
     });
 
     describe('show.hero.grading tests', () => {
-        it('...', () => {
-            return getManager().process("show Bane's grading").then(console.log);
+        const checkShowHeroGradingIntent = result => {
+            expect(result.intent).to.equal(showHeroGrading.intentLabel);
+            expect(result.score).to.be.at.least(showHeroGrading.intentThreshold);
+        };
+
+        it('what is the %grade% for %hero% should trigger show.hero.grading', () => {
+            return getManager().process('what is the grading for Valen?').then(checkShowHeroGradingIntent);
+        });
+
+        it('what is %hero% %grade should trigger show.hero.grading', () => {
+            return getManager().process("what is Valen's grading?").then(checkShowHeroGradingIntent);
+        });
+
+        it('show %hero% %grade% should trigger show.hero.grading', () => {
+            return getManager().process("show Valen's grading").then(checkShowHeroGradingIntent);
+        });
+
+        it('show %grade% for %hero% should trigger show.hero.grading', () => {
+            return getManager().process('show grading for Valen').then(checkShowHeroGradingIntent);
+        });
+
+        it('display %grade% for %hero% should trigger show.hero.grading', () => {
+            return getManager().process('display grading for Valen').then(checkShowHeroGradingIntent);
+        });
+
+        it('display %hero% %grade% should trigger show.hero.grading', () => {
+            return getManager().process("display Valen's grading").then(checkShowHeroGradingIntent);
+        });
+
+        it('%hero% grading should trigger show.hero.grading', () => {
+            return getManager().process('Valen grading').then(checkShowHeroGradingIntent);
+        });
+    });
+
+    describe('show.event tests', () => {
+        const checkShowEventIntent = result => {
+            expect(result.intent).to.equal(showEvent.intentLabel);
+            expect(result.score).to.be.at.least(showEvent.intentThreshold);
+        };
+
+        it('show %event% should trigger show.event', () => {
+            return getManager().process('show pirates').then(checkShowEventIntent);
+        });
+
+        const checkSpecificEvent = (result, eventId) => {
+            expect(result.intent).to.equal(showEvent.intentLabel);
+            expect(result.score).to.be.at.least(showEvent.intentThreshold);
+            let eventFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'event' && result.entities[i].option === eventId) {
+                    eventFound = true;
+                    break;
+                }
+            }
+            return eventFound;
+        };
+
+        it("show santa's challenge should trigger show.event", () => {
+            return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "santa's challenge"));
+        });
+
+        it('display %event% should trigger show.event', () => {
+            return getManager().process('show pirates of corellia').then(checkShowEventIntent);
         });
     });
 });

@@ -2780,6 +2780,25 @@ const red5StarHeroes = {
             ]
         }
     },
+    'puss in boots': {
+        name: 'Puss in Boots',
+        attack: 764,
+        defense: 727,
+        health: 1322,
+        pseudonyms: ['puss', 'puss in boots'],
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/75/Puss_in_Boots_-_Hero_Card.gif/revision/latest?cb=20200106171351',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        special: {
+            name: 'Three Blind Mice',
+            description: [
+                'All Summoner allies summon a Minion for themselves.',
+                'Summons 3 Mouse Minions with 10% HP and 30% attack inherited from the caster. The Minions have -32% accuracy',
+                'All allies regenerate 548 HP over 4 turns.',
+                'All allies get +30% attack for 4 turns.'
+            ]
+        }
+    },
     'queen of hearts': {
         name: 'Queen of Hearts',
         attack: 638,

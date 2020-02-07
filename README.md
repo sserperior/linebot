@@ -1,12 +1,14 @@
 # Linebot for Empires and Puzzles
 This is a simple chatbot for the [LINE](https://line.me) app. For more information on how to implement LINE chatbots, see [here](https://developers.line.biz/en/docs/messaging-api/building-bot/).
 
-The chatbot is implemented in [NodeJS](https://www.nodejs.org). It is designed to act as an assistant for simple queries relating to the Empires and Puzzles mobile game. You can host it on any Cloud provider. You will need to override the follwing environment variables:
+The chatbot is implemented in [NodeJS](https://www.nodejs.org). It is designed to act as an assistant for simple queries relating to the Empires and Puzzles mobile game. You can host it on any Cloud provider. You will need to override the following environment variables:
 * CHANNEL_ACCESS_TOKEN - from LINE app
 * CHANNEL_SECRET - from LINE APP
 * TMTR_HARPOON_GOOGLE_SPREADSHEET_KEY - Google spreadsheet key with data containing two columns "Team A" and "Team B"
 * TMTR_HARPOON_GOOGLE_SPREADSHEET_URL - Google spreadsheet URL with data containing two columns "Team A" and "Team B"
 * GOOGLE_TRANSLATE_API_KEY - Google Cloud Translation API key
+* GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL - Google service account client email
+* GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY - Goolge service account private key
 
 To deploy this, execute:
 
@@ -32,3 +34,5 @@ Example Intents:
 4. Translate *some text*
 
 "Translate pourquoi?"
+
+5. Help

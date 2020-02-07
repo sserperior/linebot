@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const logger = require('logger');
 const herolist = require('nlp/entities/herolist');
-const heroIntentsHelper = require('nlp/intents/heroIntentsHelper')
+const intentsHelper = require('nlp/intents/intentsHelper')
 
 const intentLabel = 'show.hero.special';
 const intentThreshold = parseFloat(process.env.SHOW_HERO_SPECIAL_INTENT_THRESHOLD || 0.8);
@@ -25,7 +25,7 @@ const handle = entities => {
     logger.info(`handle ${intentLabel} intent`);
     const replyMessages = [];
     const broadcastMessages = [];
-    const uniqueHeroEntities = heroIntentsHelper.getUniqueHeroEntities(entities);
+    const uniqueHeroEntities = intentsHelper.getUniqueEntities(entities, 'hero');
 
     for (let i=0;i<Math.min(uniqueHeroEntities.length, 5);i++) {
         const heroId = uniqueHeroEntities[i].option;

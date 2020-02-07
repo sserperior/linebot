@@ -5,8 +5,10 @@ const { NlpManager } = require('node-nlp');
 const logger = require('logger');
 
 const translate = require('nlp/commands/translate');
+const help = require('nlp/commands/help');
 
 const showHero = require('nlp/intents/showHero');
+const showEvent = require('nlp/intents/showEvent');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
@@ -66,6 +68,8 @@ const generateCommandResponse = messageText => {
         if ((commandStructure = getCommandStructure(messageText, translate.commands)) != null)
         {
             return translate.handle(commandStructure);
+        } else if ((commandStructure = getCommandStructure(messageText, help.commands)) != null) {
+            return Promise.resolve(help.handle(commandStructure));
         }
     }
     return result;
@@ -89,6 +93,8 @@ const generateNLResponse = messageText => getManager().process(messageText).then
     const { intent, score } = result;
     if (isRecognizedIntent(intent, score, showHero)) {
         return Promise.resolve(showHero.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, showEvent)) {
+        return Promise.resolve(showEvent.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, harpoonTeamQuery)) {
         return Promise.resolve(harpoonTeamQuery.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroSpecial)) {
