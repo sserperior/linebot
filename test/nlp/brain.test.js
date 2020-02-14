@@ -450,6 +450,10 @@ describe('brain tests', () => {
             return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "Santa's Challenge"));
         });
 
+        it('show santa’s challenge should trigger show.event', () => {
+            return getManager().process('Show santa’s challenge').then(result => checkSpecificEvent(result, "Santa's Challenge"));
+        });
+
         it('display %event% should trigger show.event', () => {
             return getManager().process('show pirates of corellia').then(checkShowEventIntent);
         });

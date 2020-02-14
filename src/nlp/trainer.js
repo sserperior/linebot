@@ -120,6 +120,7 @@ manager.addDocument('en', 'display %hero%', showHero.intentLabel);
 // Show event questions
 manager.addDocument('en', 'show %event%', showEvent.intentLabel);
 manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
+manager.addDocument('en', 'show santa’s challenge', showEvent.intentLabel);
 manager.addDocument('en', 'display %event%', showEvent.intentLabel);
 
 // Harpoon team questions
