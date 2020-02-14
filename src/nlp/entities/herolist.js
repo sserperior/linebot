@@ -1,4 +1,5 @@
 const ManaSpeeds = require('nlp/heroModel/ManaSpeeds');
+const Classes = require('nlp/heroModel/Classes');
 
 const blue3StarHeroes = {
     gato: {
@@ -9,6 +10,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gato.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Swamp Slash',
             description: [
@@ -32,6 +34,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204440.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Wolf Bite',
             description: [
@@ -53,6 +56,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Spirit Link',
             description: [
@@ -73,6 +77,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204426.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Rush',
             description: [
@@ -91,6 +96,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204553.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Blizzard',
             description: [
@@ -111,6 +117,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204415.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Chilling Slash',
             description: [
@@ -131,6 +138,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Vodnik.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Trident Lunge',
             description: [
@@ -155,6 +163,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Arman.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Sand Breeze',
             description: [
@@ -178,6 +187,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Harmonic Slam',
             description: [
@@ -198,6 +208,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Dawa.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Leaping Attack',
             description: [
@@ -217,6 +228,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Gan-Ju.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Mystic Chop',
             description: [
@@ -236,6 +248,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Atlantean Sword',
             description: [
@@ -257,6 +270,7 @@ const yellow3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Kailani%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Spirit Link',
             description: [
@@ -268,6 +282,24 @@ const yellow3StarHeroes = {
             'Good hero for your first 30, rare events, special raid tournaments until you get a more durable replacement like Wilbur or Aegir'
         ]
     },
+    pixie: {
+        name: 'Pixie',
+        attack: 427,
+        defense: 436,
+        health: 848,
+        pseudonyms: ['pixie', 'pix'],
+        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/76/Pixie_-_Hero_Card.gif/revision/latest?cb=20200106170826',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Pixie Dust',
+            description: [
+                'Deals 290% damage to the target',
+                "Automatically does 21% damage to the target when the target's mana is full and reduces their mana by 50% for 3 turns."
+            ]
+        }
+    }
 };
 
 const green3StarHeroes = {
@@ -279,6 +311,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212224%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Calming Mist',
             description: [
@@ -298,6 +331,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212155%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Entangling Shot',
             description: [
@@ -317,6 +351,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Berserker Fury',
             description: [
@@ -336,6 +371,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-8.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Slash of four Blades',
             description: [
@@ -355,6 +391,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134417.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Have Faith',
             description: [
@@ -375,6 +412,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Hisan.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Sand Breeze',
             description: [
@@ -399,6 +437,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212203%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Ramming Rush',
             description: [
@@ -419,6 +458,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Mnesseus.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Atlantean Spear',
             description: [
@@ -439,6 +479,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Muggy.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Bruiser Bros',
             description: [
@@ -464,6 +505,7 @@ const green3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Shrubbear.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
         special: {
             name: 'Camouflage Foliage',
             description: [
@@ -484,6 +526,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193931%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Sharp Cut',
             description: [
@@ -504,6 +547,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Bauchan.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Goblin Fury',
             description: [
@@ -525,6 +569,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193953%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Wind Prayer',
             description: [
@@ -545,6 +590,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170524-192906%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Fireball',
             description: [
@@ -564,6 +610,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Namahage.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Bloodthirst',
             description: [
@@ -585,6 +632,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193903%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Burning Strike',
             description: [
@@ -604,6 +652,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Rudolph.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Antler Attack',
             description: [
@@ -622,6 +671,7 @@ const red3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Squire-Rabbit.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Recklass Stab',
             description: [
@@ -641,6 +691,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221520%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Electric Jolt',
             description: [
@@ -657,6 +708,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Chochin.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Unholy Light',
             description: [
@@ -674,6 +726,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Gil-Ra.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Lament of Regression',
             description: [
@@ -692,6 +745,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/c/cb/Guardian_Bat_-_Hero_Card.gif/revision/latest?cb=20200109125830',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Merciless Bite',
             description: [
@@ -708,6 +762,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221508%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Toxic Traps',
             description: [
@@ -723,6 +778,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221418%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Bleeding Stab',
             description: [
@@ -739,6 +795,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221500%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Leeching Stars',
             description: [
@@ -754,6 +811,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221559%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Piercing Hit',
             description: [
@@ -769,6 +827,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Vlad_(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Dawn of Sorrow',
             description: [
@@ -788,6 +847,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Agwe.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Rogue Wave',
             description: [
@@ -804,6 +864,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Boril%20(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Perfect Riposte',
             description: [
@@ -820,6 +881,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Captain-of-Diamonds.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Pest Control',
             description: [
@@ -837,6 +899,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204515.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Pulverizer',
             description: [
@@ -852,6 +915,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Kiril.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Blessed Brew',
             description: [
@@ -867,6 +931,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204507.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Piercing Strike',
             description: [
@@ -882,6 +947,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Triton.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Trident Throw',
             description: [
@@ -898,6 +964,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Valeria_(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Dusk of Sorrow',
             description: [
@@ -918,6 +985,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Chao.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Tactical Cut',
             description: [
@@ -935,6 +1003,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Danzaburo.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: "Trickster's Gambit",
             description: [
@@ -962,6 +1031,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Gretel.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Witch Slayer',
             description: [
@@ -980,6 +1050,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Hu-Tao%20(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Sonic Wall',
             description: [
@@ -996,6 +1067,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Guardian-Jackal.png',
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Ray Strike',
             description: [
@@ -1012,6 +1084,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-4.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Slash of Seven Blades',
             description: [
@@ -1028,6 +1101,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Wu-Kong.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: "Gambler's Stance",
             description: [
@@ -1046,6 +1120,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Buddy.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Gift Sack',
             description: [
@@ -1064,6 +1139,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212143%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Piercing Strike',
             description: [
@@ -1080,6 +1156,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gadeirus.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Empowering Bash',
             description: [
@@ -1097,6 +1174,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gobbler.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Minion Eater',
             description: [
@@ -1114,6 +1192,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Green-Hansel.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Witch Killer',
             description: [
@@ -1132,6 +1211,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Jack-OHare.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Reckless Slash',
             description: [
@@ -1149,6 +1229,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Kashhrek.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Swamp Skin',
             description: [
@@ -1165,6 +1246,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134427.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Massive Chop',
             description: [
@@ -1181,6 +1263,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212217%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Fog of the Fallen',
             description: [
@@ -1197,6 +1280,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Peters.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Buccaneers Blade',
             description: [
@@ -1214,6 +1298,7 @@ const green4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Skittleskull',
             description: [
@@ -1234,6 +1319,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-2.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Warcry',
             description: [
@@ -1249,6 +1335,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Colen.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Fire Storm',
             description: [
@@ -1257,13 +1344,14 @@ const red4StarHeroes = {
         }
     },
     falcon: {
-        name: 'Falcon',
+        name: 'Guardian Falcon',
         attack: 552,
         defense: 754,
         health: 1126,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Guardian-Falcon.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Blazing Beak',
             description: [
@@ -1279,6 +1367,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193939%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Pulverizer',
             description: [
@@ -1295,6 +1384,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Kelile.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Dance of Fire',
             description: [
@@ -1311,6 +1401,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sir-Lancelot_(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Inspiring Fencing',
             description: [
@@ -1329,6 +1420,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-194023%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Blade Barrage',
             description: [
@@ -1345,6 +1437,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sumitomo.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Oji-Waza',
             description: [
@@ -1362,6 +1455,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Wilbur.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Wonderful Feast',
             description: [
@@ -1384,6 +1478,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Ameonna.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Ghost',
             description: [
@@ -1396,13 +1491,15 @@ const purple4StarHeroes = {
         }
     },
     boomer: {
-        name: 'Boomer',
+        name: 'First Mate Boomer',
         attack: 541,
         defense: 663,
         health: 1323,
+        pseudonyms: ['boomer', 'first mate', 'first mate boomer'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Boomer_(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Watery Grave',
             description: [
@@ -1420,6 +1517,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cheshire-Cat.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Dazzling Grin',
             description: [
@@ -1437,6 +1535,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cyprian%20(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Perfect Riposte',
             description: [
@@ -1453,6 +1552,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Gafar.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Sand Gale',
             description: [
@@ -1472,6 +1572,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Jabbar.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Sand Gale',
             description: [
@@ -1490,6 +1591,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Merlin_(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Arcane Blast',
             description: [
@@ -1507,6 +1609,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Proteus.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Scar of the Depths',
             description: [
@@ -1523,6 +1626,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221453%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Purification',
             description: [
@@ -1538,6 +1642,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221551%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Fog of the Fallen',
             description: [
@@ -1545,15 +1650,16 @@ const purple4StarHeroes = {
             ]
         }
     },    
-    tibertus: {
-        name: 'Tibertus',
+    tiburtus: {
+        name: 'Tiburtus',
         attack: 660,
         defense: 633,
         health: 1045,
-        pseudonyms: ['burt', 'tibs', 'tibertus'],
+        pseudonyms: ['burt', 'tibs', 'tibertus', 'tiburtus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221432%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Ramming Pulverizer',
             description: [
@@ -1572,6 +1678,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Aegir%20(2).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Icy Resilience',
             description: [
@@ -1590,6 +1697,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alasie%20(2).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Spirit Arrow',
             description: [
@@ -1607,6 +1715,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alice_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Timeless Timepiece',
             description: [
@@ -1623,6 +1732,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Ariel%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Divine Protection',
             description: [
@@ -1640,6 +1750,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Athena.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: "Athena's Bow",
             description: [
@@ -1656,6 +1767,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Finley.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: "Commodore's Revenge",
             description: [
@@ -1673,6 +1785,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Frida%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Polar Bash',
             description: [
@@ -1691,6 +1804,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Glacial Shatter',
             description: [
@@ -1707,6 +1821,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-King-Arthur_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Excalibur',
             description: [
@@ -1725,6 +1840,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Magni.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Strike of the Ancients',
             description: [
@@ -1741,6 +1857,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Master-Lepus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Reckless Finisher',
             description: [
@@ -1757,6 +1874,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Miki_August-HOTM.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Wrath of Tundra',
             description: [
@@ -1774,6 +1892,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Misandra.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Chain Strike',
             description: [
@@ -1791,6 +1910,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray//5-Ice-Perseus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Everlasting Wound',
             description: [
@@ -1806,6 +1926,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204347.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Cloud Hammer',
             description: [
@@ -1822,6 +1943,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Rumpelstiltskin%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Legerdemain',
             description: [
@@ -1849,6 +1971,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/e/e6/Snow_White.png/revision/latest?cb=20191204181154',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Enchanted Edge',
             description: [
@@ -1866,6 +1989,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Thorne%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Icecold Finisher',
             description: [
@@ -1881,6 +2005,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Vela_January-HOTM.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Aquatic Outbreak',
             description: [
@@ -1904,6 +2029,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Delilah.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Summon Temple Guardians',
             description: [
@@ -1921,6 +2047,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Drake-Fong.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Flails of Fury',
             description: [
@@ -1939,6 +2066,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/5/5d/Guardian_Gazelle_-_Hero_Card.gif/revision/latest?cb=20200109132056',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Dance of Spirits',
             description: [
@@ -1963,6 +2091,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guardian-Owl%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_SLOW,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Stately Retribution',
             description: [
@@ -1982,6 +2111,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guinevere_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Word of the Queen',
             description: [
@@ -1999,6 +2129,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Inari.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Lucky Nine',
             description: [
@@ -2015,6 +2146,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-213228%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Solar Beam',
             description: [
@@ -2030,6 +2162,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Justice%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Rite of Judgement',
             description: [
@@ -2048,6 +2181,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Leonidas%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Spartan Cleave',
             description: [
@@ -2065,6 +2199,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Musashi%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Dragon Fang',
             description: [
@@ -2081,6 +2216,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Neith.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Sickle of Eradication',
             description: [
@@ -2099,6 +2235,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Onatel%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Eye of the Prophet',
             description: [
@@ -2117,6 +2254,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Poseidon.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Ruler of Seas',
             description: [
@@ -2135,6 +2273,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Rana.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Sand Storm',
             description: [
@@ -2153,6 +2292,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Ranvir_June-HOTM.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: "Mystic's Virtue",
             description: [
@@ -2171,6 +2311,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Omniheal',
             description: [
@@ -2186,6 +2327,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-White-Rabbit.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: "Rabbit's Watch",
             description: [
@@ -2206,6 +2348,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Alberich%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.DRUID,
         special: {
             name: "Midsummer's Dream",
             description: [
@@ -2223,6 +2366,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Atomos%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Immortal Annihilator',
             description: [
@@ -2241,6 +2385,7 @@ const green5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/2/26/Elkanen_-_Hero_Card.gif/revision/latest?cb=20190321142237',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Crescent Spear',
             description: [
@@ -2258,6 +2403,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Evelyn.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Shattering Warcry',
             description: [
@@ -2277,6 +2423,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Gregorion.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Unwavering Focus',
             description: [
@@ -2295,6 +2442,7 @@ const green5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/9/9d/Guardian_Chameleon_-_Hero_Card.gif/revision/latest?cb=20200109131113',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Elemental Magic',
             description: [
@@ -2315,6 +2463,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Anger of the Forest',
             description: [
@@ -2332,6 +2481,7 @@ const green5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/b/bd/Kadilen_-_Hero_Card.gif/revision/latest?cb=20190321142652',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Eclipse Shield',
             description: [
@@ -2348,6 +2498,7 @@ const green5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/8/80/Kingston_-_Hero_Card.gif/revision/latest?cb=20191001130313',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Stiletto Cyclone',
             description: [
@@ -2366,6 +2517,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-Locke.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Moolight Serenade',
             description: [
@@ -2383,6 +2535,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-of-the-Lake.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Magical Sword',
             description: [
@@ -2400,6 +2553,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212132%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Perfect Shot',
             description: [
@@ -2416,6 +2570,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Margaret_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Hide in Shadows',
             description: [
@@ -2433,6 +2588,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Morgan-Le-Fay_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Devourer of Vitality',
             description: [
@@ -2450,6 +2606,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Mother-North.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Super Porridge',
             description: [
@@ -2467,6 +2624,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Tarlak.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Martial Prowess',
             description: [
@@ -2488,6 +2646,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Hatter.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Mad as a Hatter',
             description: [
@@ -2505,6 +2664,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Yunan.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Sand Storm',
             description: [
@@ -2523,6 +2683,7 @@ const green5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Zeline%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Emerald Flash',
             description: [
@@ -2544,6 +2705,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Anzogh.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Flaming Grudge',
             description: [
@@ -2562,6 +2724,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Ares.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Might of Ares',
             description: [
@@ -2579,6 +2742,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Azlar.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Volcanic Eruption',
             description: [
@@ -2595,6 +2759,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Black-Knight.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Just a Flesh Wound',
             description: [
@@ -2613,6 +2778,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Captain-Kestrel.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Pirate Shot',
             description: [
@@ -2629,6 +2795,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Wall of Swords',
             description: [
@@ -2646,6 +2813,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Gravemaker%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ashes to Ashes',
             description: [
@@ -2665,6 +2833,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Grazul_September-HOTM_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Mending Mantra',
             description: [
@@ -2684,6 +2853,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Guardian-Kong%20(2).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Lord of the Jungle',
             description: [
@@ -2701,6 +2871,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Jean-Francois.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Seal of Fire',
             description: [
@@ -2719,6 +2890,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Khagan%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.RANGER,
         special: {
             name: "Khan's Order",
             description: [
@@ -2737,6 +2909,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Marjana.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Magma Smash',
             description: [
@@ -2753,6 +2926,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Mitsuko.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Mirror of Flames',
             description: [
@@ -2771,6 +2945,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Natalya%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Burning Chains',
             description: [
@@ -2789,6 +2964,7 @@ const red5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/75/Puss_in_Boots_-_Hero_Card.gif/revision/latest?cb=20200106171351',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Three Blind Mice',
             description: [
@@ -2808,6 +2984,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Queen-of-Hearts_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
         special: {
             name: 'Queen of Cards',
             description: [
@@ -2826,6 +3003,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Red-Hood.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Forest Friends',
             description: [
@@ -2843,6 +3021,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Santa-Claus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
         special: {
             name: 'Ultimate Gift Sack',
             description: [
@@ -2862,6 +3041,7 @@ const red5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Zimkitha.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Dawn Strike',
             description: [
@@ -2883,6 +3063,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Aeron.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
         special: {
             name: 'Nethershield',
             description: [
@@ -2902,6 +3083,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Boss-Wolf.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_SLOW,
+        classGrade: Classes.DRUID,
         special: {
             name: 'Unstoppable Growl',
             description: [
@@ -2919,6 +3101,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Domitia%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Shock Bolt',
             description: [
@@ -2936,6 +3119,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Grimble.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Gnomish Carnage',
             description: [
@@ -2954,6 +3138,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Hel.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Crush of Hel',
             description: [
@@ -2971,6 +3156,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Jabberwock.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.MONK,
         special: {
             name: 'Sideswipe',
             description: [
@@ -2988,6 +3174,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kageburado.png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Break Strike',
             description: [
@@ -3005,6 +3192,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Khiona.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
         special: {
             name: 'Bleeding Edge',
             description: [
@@ -3023,6 +3211,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kunchen.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.CLERIC,
         special: {
             name: 'Power of Ajna',
             description: [
@@ -3042,6 +3231,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Marie-Therese.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
         special: {
             name: 'Zombie Blessing',
             description: [
@@ -3066,6 +3256,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Mok-Arr.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Black Tide',
             description: [
@@ -3084,6 +3275,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20171023-110132.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
         special: {
             name: 'Cleave and Counter',
             description: [
@@ -3101,6 +3293,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Eye of the Panther',
             description: [
@@ -3116,6 +3309,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Thunder Ultimatum',
             description: [
@@ -3124,13 +3318,15 @@ const purple5StarHeroes = {
         }
     },
     sargasso: {
-        name: 'Sargasso',
+        name: 'Captain Sargasso',
         attack: 729,
         defense: 708,
         health: 1334,
+        pseudonyms: ['sargasso', 'captain sargasso'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Sargasso.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
         special: {
             name: 'Curse of Sargasso',
             description: [
@@ -3147,6 +3343,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221444%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Deathstrike',
             description: [
@@ -3162,6 +3359,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/3/3f/Seshat_-_Hero_Card.gif/revision/latest?cb=20190701162034',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
         special: {
             name: 'Conjuration Arrow',
             description: [
@@ -3181,6 +3379,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Thoth-Amun.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Skeletal Summon',
             description: [
@@ -3196,6 +3395,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Ursena_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
         special: {
             name: 'Depth Blast',
             description: [
@@ -3214,6 +3414,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Victor_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.WIZARD,
         special: {
             name: 'Night of Sorrow',
             description: [

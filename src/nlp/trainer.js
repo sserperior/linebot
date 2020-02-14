@@ -6,11 +6,14 @@ const elements = require('nlp/entities/elements');
 const cyber88 = require('nlp/entities/cyber88');
 const grade = require('nlp/entities/grade');
 const special = require('nlp/entities/special');
+const events = require('nlp/entities/events');
+const talent = require('nlp/entities/talent');
 
 const showHero = require('nlp/intents/showHero');
 const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
+const showHeroTalent = require('nlp/intents/showHeroTalent');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
@@ -34,16 +37,9 @@ Object.keys(eventsWrapper.events).forEach(eventKey => {
     eventsWrapper.itemEntity,
     eventKey,
     ['en'],
-    event.pseudonyms != null ? event.pseudonyms : [eventKey]
+    event.pseudonyms != null ? event.pseudonyms : [eventKey.toLowerCase()]
   );
 });
-
-manager.addNamedEntityText(
-  eventsWrapper.challengeEntity,
-  eventsWrapper.challengeEntity,
-  ['en'],
-  [eventsWrapper.challengeEntity]
-);
 
 Object.keys(AllianceMembers).forEach(allianceMemberKey => {
   const allianceMember = AllianceMembers[allianceMemberKey];
@@ -76,6 +72,13 @@ Object.keys(farmItem.itemMap).forEach(itemKey => {
 });
 
 manager.addNamedEntityText(
+  events.challengeItemEntity,
+  events.challengeItemEntity,
+  ['en'],
+  [events.challengeItemEntity]
+);
+
+manager.addNamedEntityText(
   cyber88.itemEntity,
   cyber88.itemEntity,
   ['en'],
@@ -94,7 +97,14 @@ manager.addNamedEntityText(
   special.itemEntity,
   ['en'],
   special.pseudonyms
-)
+);
+
+manager.addNamedEntityText(
+  talent.itemEntity,
+  talent.itemEntity,
+  ['en'],
+  talent.pseudonyms
+);
 
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
@@ -134,7 +144,14 @@ manager.addDocument('en', 'show %hero% %grade%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'show %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %hero% %grade%', showHeroGrading.intentLabel);
-manager.addDocument('en', '%hero% %grade%', showHeroGrading.intentLabel);
+
+// Hero talent questions
+manager.addDocument('en', 'what is the %talent% for %hero%', showHeroTalent.intentLabel);
+manager.addDocument('en', 'what is %hero% %talent%', showHeroTalent.intentLabel);
+manager.addDocument('en', 'show %hero% %talent%', showHeroTalent.intentLabel);
+manager.addDocument('en', 'show %talent% for %hero%', showHeroTalent.intentLabel);
+manager.addDocument('en', 'display %talent% for %hero%', showHeroTalent.intentLabel);
+manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);
@@ -148,7 +165,6 @@ manager.addDocument('en', 'what are the best places for %element% monsters', far
 manager.addDocument('en', 'show %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', 'farm %element% chest', farmElementalChest.intentLabel);
 manager.addDocument('en', 'farm %element% monsters', farmElementalChest.intentLabel);
-manager.addDocument('en', '%element% chest', farmElementalChest.intentLabel);
 
 // Farm item questions
 manager.addDocument('en', 'where do i find %farmableItem%', farmItem.intentLabel);
@@ -157,7 +173,6 @@ manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel)
 manager.addDocument('en', 'show %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'farm %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
-manager.addDocument('en', '%farmableItem%', farmItem.intentLabel);
 
 // Thanks Cyber
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);

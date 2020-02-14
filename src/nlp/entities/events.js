@@ -1,6 +1,6 @@
 module.exports = {
     itemEntity: 'event',
-    challengeEntity: 'challenge',
+    challengeItemEntity: 'challenge',
     events: {
         'Fables of Grimforest': {
             imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/1/411b2d4205f2c9f5c2f290937b12639b61746250.jpeg',

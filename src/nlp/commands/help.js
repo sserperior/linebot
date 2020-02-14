@@ -9,6 +9,7 @@ const gameHelpText = [
     '\u2022  show <hero>',
     '\u2022  show <hero> special',
     '\u2022  show <hero> grading',
+    '\u2022  show <hero> talent',
     '\u2022  <farmable item>',
     '\u2022  <color> chest',
     '\u2022  show <event>',

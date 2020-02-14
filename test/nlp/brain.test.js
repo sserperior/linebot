@@ -15,6 +15,7 @@ const showHero = require('nlp/intents/showHero');
 const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
+const showHeroTalent = require('nlp/intents/showHeroTalent');
 const thanksCyber = require('nlp/intents/thanksCyber');
 
 describe('brain tests', () => {
@@ -76,7 +77,7 @@ describe('brain tests', () => {
                             case 'valen':
                                 entityValenFound = true;
                                 break;
-                            case 'tibertus':
+                            case 'tiburtus':
                                 entityTibsFound = true;
                                 break;        
                         }
@@ -223,6 +224,13 @@ describe('brain tests', () => {
 
         it('display %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
             return getManager().process("display Bane's, Little John's, Melendor's and Valen's specials").then(checkShowHeroSpecialIntent);
+        });
+
+        it('%hero% %special% should trigger show.hero.special', () => {
+            return getManager().process('Joon special').then(result => {
+                expect(result.intent).to.equal(showHeroSpecial.intentLabel);
+                expect(result.score).to.be.at.least(showHeroSpecial.intentThreshold);
+            });
         });
     });
 
@@ -375,8 +383,43 @@ describe('brain tests', () => {
             return getManager().process("display Valen's grading").then(checkShowHeroGradingIntent);
         });
 
-        it('%hero% grading should trigger show.hero.grading', () => {
+        it('%hero% %grade% should trigger show.hero.grading', () => {
             return getManager().process('Valen grading').then(checkShowHeroGradingIntent);
+        });
+    });
+
+    describe('show.hero.talent tests', () => {
+        const checkShowHeroTalentIntent = result => {
+            expect(result.intent).to.equal(showHeroTalent.intentLabel);
+            expect(result.score).to.be.at.least(showHeroTalent.intentThreshold);
+        }
+
+        it('what is the %talent% for %hero% should trigger show.hero.talent', () => {
+            return getManager().process('what is the talent for Justice?').then(checkShowHeroTalentIntent);
+        });
+
+        it('what is %hero% %talent% should trigger show.hero.talent', () => {
+            return getManager().process('what is Justice talent?').then(checkShowHeroTalentIntent);
+        });
+
+        it('show %hero% %talent% should trigger show.hero.talent', () => {
+            return getManager().process('show Seshat talent').then(checkShowHeroTalentIntent);
+        });
+
+        it('show %talent% for %hero% should trigger show.hero.talent', () => {
+            return getManager().process('show talent for Vivica').then(checkShowHeroTalentIntent);
+        });
+
+        it('display %talent% for %hero% should trigger show.hero.talent', () => {
+            return getManager().process('display talent for Zeline').then(checkShowHeroTalentIntent);
+        });
+
+        it('display %hero% %talent% should trigger show.hero.talent', () => {
+            return getManager().process('display Marjana talent').then(checkShowHeroTalentIntent);
+        });
+
+        it('%hero% %talent% should trigger show.hero.talent', () => {
+            return getManager().process('Richard talent').then(checkShowHeroTalentIntent);
         });
     });
 
@@ -400,11 +443,11 @@ describe('brain tests', () => {
                     break;
                 }
             }
-            return eventFound;
+            expect(eventFound).to.be.true;
         };
 
         it("show santa's challenge should trigger show.event", () => {
-            return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "santa's challenge"));
+            return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "Santa's Challenge"));
         });
 
         it('display %event% should trigger show.event', () => {
