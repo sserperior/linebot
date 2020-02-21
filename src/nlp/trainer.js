@@ -129,6 +129,8 @@ manager.addDocument('en', 'what harpoon team is %allianceMember% part of?', harp
 manager.addDocument('en', 'display harpoon team for %allianceMember%', harpoonTeamQuery.intentLabel);
 manager.addDocument('en', 'display %allianceMember% harpoon team', harpoonTeamQuery.intentLabel);
 manager.addDocument('en', 'show harpoon team for %allianceMember%', harpoonTeamQuery.intentLabel);
+manager.addDocument('en', '%allianceMember% poon team', harpoonTeamQuery.intentLabel);
+manager.addDocument('en', '%allianceMember% harpoon team', harpoonTeamQuery.intentLabel);
 
 // Special questions
 manager.addDocument('en', 'what is the %special% for %hero%', showHeroSpecial.intentLabel);

@@ -4,7 +4,7 @@ const herolist = require('nlp/entities/herolist');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const intentLabel = 'show.hero.grading';
-const intentThreshold = parseFloat(process.env.SHOW_HERO_GRADING_INTENT_THRESHOLD || 0.8);
+const intentThreshold = parseFloat(process.env.SHOW_HERO_GRADING_INTENT_THRESHOLD || 0.7);
 
 const heroGradingSpreadsheetKey = process.env.HERO_GRADING_SPREADSHEET_KEY;
 

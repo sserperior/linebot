@@ -4,7 +4,7 @@ const herolist = require('nlp/entities/herolist');
 const intentsHelper = require('nlp/intents/intentsHelper')
 
 const intentLabel = 'show.hero.special';
-const intentThreshold = parseFloat(process.env.SHOW_HERO_SPECIAL_INTENT_THRESHOLD || 0.8);
+const intentThreshold = parseFloat(process.env.SHOW_HERO_SPECIAL_INTENT_THRESHOLD || 0.7);
 
 const generateSpecialText = heroData => {
     let specialText = `${heroData.name}'s special is ${_.get(heroData, 'special.name', 'Unknown')}`;

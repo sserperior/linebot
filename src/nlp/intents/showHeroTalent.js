@@ -6,7 +6,7 @@ const Classes = require('nlp/heroModel/Classes');
 const Stats = require('nlp/heroModel/Stats');
 
 const intentLabel = 'show.hero.talent';
-const intentThreshold = parseFloat(process.env.SHOW_HERO_TALENT_INTENT_THRESHOLD || 0.8);
+const intentThreshold = parseFloat(process.env.SHOW_HERO_TALENT_INTENT_THRESHOLD || 0.7);
 
 const generateOtherTalentText = ({ attack, defense, health, foodRequired, ironRequired, emblemsRequired, ... otherStats }) => {
     let otherTalentText = '';

@@ -2,6 +2,9 @@ module.exports = {
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
+    'AcousticWord': {
+        pseudonyms: ['aw', 'acousticworc']
+    },
     'Alundra': {
         pseudonyms: ['alundra', 'al']
     },
@@ -17,6 +20,9 @@ module.exports = {
     'Failinbad': {
         pseudonyms: ['failin', 'failinbad']
     },
+    'Fred Weasley': {
+        pseudonyms: ['fred weasley', 'fred']
+    },
     'Hotbox': {
         pseudonyms: ['hotbox']
     },
@@ -31,6 +37,9 @@ module.exports = {
     },
     'Julius': {
         pseudonyms: ['julius']
+    },
+    'Kakamo31': {
+        pseudonyms: ['kakamo', 'kakamo31']
     },
     'Karenee': {
         pseudonyms: ['karenee']
@@ -55,6 +64,9 @@ module.exports = {
     },
     'RebelRebel': {
         pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
+    },
+    'paperplanes726': {
+        pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726']
     },
     'richo': {
         pseudonyms: ['richo', 'richy', 'richyrich', 'richy-rich']

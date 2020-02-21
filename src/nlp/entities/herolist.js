@@ -69,6 +69,24 @@ const blue3StarHeroes = {
             'Good hero for your first 30, rare events, special raid tournaments.'
         ]
     },
+    'gunnar costume': {
+        name: 'Gunnar Costume',
+        attack: 415,
+        defense: 544,
+        health: 729,
+        pseudonyms: ['costume gunnar', 'gunnar costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar_(1).png?bwg=1576252820',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Steel Link',
+            description: [
+                'All enemies share received damage with each other for 5 turns.',
+                'All enemies get -44% defense for 5 turns.'
+            ]
+        }
+    },
     karil: {
         name: 'Karil',
         attack: 484,
@@ -199,6 +217,24 @@ const yellow3StarHeroes = {
             'Blindness is very useful to give you extra chances against hard hitting enemies.',
             'Useful hero for your first 30, rare events, special raid tournaments with 3*'
         ]
+    },
+    'bane costume': {
+        name: 'Bane Costume',
+        attack: 529,
+        defense: 423,
+        health: 682,
+        pseudonyms: ['costume bane', 'bane costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane_(1).png?bwg=1576252820',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Harmonic Bash',
+            description: [
+                'Deals 280% damage to the target.',
+                'The target gets -40% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.'
+            ]
+        }
     },
     dawa: {
         name: 'Dawa',
@@ -362,6 +398,23 @@ const green3StarHeroes = {
             'Attack buff that keeps ramping up is excellent and a rare ability for a 3*. She is good for everything.',
             'Limited survivability at around 7-8* titans'
         ]
+    },
+    'brienne costume': {
+        name: 'Brienne Costume',
+        attack: 466,
+        defense: 468,
+        health: 751,
+        pseudonyms: ['brienne costume', 'costume brienne'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne_(1).png?bwg=1576252820',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Jungle Fury',
+            description: [
+                'All enemies get -41% defense and a further -4% decrease every time they are hit for 4 turns.'
+            ]
+        }
     },
     carver: {
         name: 'Carver',
@@ -580,6 +633,24 @@ const red3StarHeroes = {
             'Good 3* healer. Second only to Belith.',
             'Good hero for your first 30, rare events, special raid tournaments.'
         ]
+    },
+    'hawkmoon costume': {
+        name: 'Hawkmoon Costume',
+        attack: 492,
+        defense: 472,
+        health: 707,
+        pseudonyms: ['hawkmoon costume', 'costume hawkmoon'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Hawkmoon.png?bwg=1576252820',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Wind Gospel',
+            description: [
+                'All allies regenerate 459 HP over 3 turns.',
+                'All allies get +30% attack for 3 turns.'
+            ]
+        }
     },
     jahangir: {
         name: 'Jahangir',
@@ -819,6 +890,24 @@ const purple3StarHeroes = {
             ]
         }
     },
+    'tyrum costume': {
+        name: 'Tyrum Costume',
+        attack: 415,
+        defense: 446,
+        health: 933,
+        pseudonyms: ['costume tyrum', 'tyrum costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Tyrum.png?bwg=1576252820',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Purifying Hit',
+            description: [
+                'Deals 310% damage to the target.',
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    },
     vlad: {
         name: 'Vlad',
         attack: 368,
@@ -936,6 +1025,24 @@ const blue4StarHeroes = {
             name: 'Piercing Strike',
             description: [
                 'Deal 345% damage to a single enemy and remove buffs from all enemies'
+            ]
+        }
+    },
+    'sonya costume': {
+        name: 'Sonya Costume',
+        attack: 646,
+        defense: 762,
+        health: 1103,
+        pseudonyms: ['sonya costume', 'costume sonya'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Sonya.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Purifying Strike',
+            description: [
+                'Deals 345% damage to the target.',
+                'Dispels status ailments from all allies.'
             ]
         }
     },
@@ -1089,6 +1196,24 @@ const yellow4StarHeroes = {
             name: 'Slash of Seven Blades',
             description: [
                 'Deal 150% damage to all enemies and reduce their mana by 20%'
+            ]
+        }
+    },
+    'li xiu costume': {
+        name: 'Li Xiu Costume',
+        attack: 660,
+        defense: 690,
+        health: 1189,
+        pseudonyms: ['costume li', 'li costume', 'costume li xiu', 'li xiu costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Li-Xiu.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Slash of Seven Daggers',
+            description: [
+                'Deals 180% damage to all enemies.',
+                'Reduces the mana of all enemies by 10%.'
             ]
         }
     },
@@ -1271,6 +1396,25 @@ const green4StarHeroes = {
             ]
         }
     },
+    'melendor costume': {
+        name: 'Melendor Costume',
+        attack: 698,
+        defense: 655,
+        health: 1151,
+        pseudonyms: ['costume mel', 'mel costume', 'saruman', 'sauruman', 'sarumon', 'saurumon'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Melendor.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
+        special: {
+            name: 'Fog of the Perished',
+            description: [
+                'All allies regenerate 609 HP over 3 turns.',
+                'All allies get +46% defense for 3 turns',
+                'Dispels buffs from all enemies'
+            ]
+        }
+    },
     peters: {
         name: 'Peters',
         attack: 643,
@@ -1300,10 +1444,28 @@ const green4StarHeroes = {
         manaSpeed: ManaSpeeds.SLOW,
         classGrade: Classes.SORCERER,
         special: {
-            name: 'Skittleskull',
+            name: 'Creeping Vines',
             description: [
                 'Deals 185% damage to all enemies.',
                 'All enemies get -34% attack for 6 turns.'
+            ]
+        }
+    },
+    'skittleskull costume': {
+        name: 'Skittleskull Costume',
+        attack: 778,
+        defense: 631,
+        health: 1035,
+        pseudonyms: ['skittles costume', 'costume skittles', 'costume skittleskull', 'skittleskull costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.jpg?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Candy Vines',
+            description: [
+                'Deals 175% damage to all enemies.',
+                'All Enemies get -39% attack for 6 turns.'
             ]
         }
     }
@@ -1326,6 +1488,25 @@ const red4StarHeroes = {
                 'Recover 27% health for all allies and they get +48% attack for 4 turns'
             ]
         }
+    },
+    'boldtusk costume': {
+        name: 'Boldtusk Costume',
+        attack: 621,
+        defense: 736,
+        health: 1230,
+        pseudonyms: ['boldtusk costume', 'costume boldtusk', 'costume bold', 'bold costume', 'costume bt', 'bt costume', 'chef'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Boldtusk.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'War Feast',
+            description: [
+                'Recovers 37% health for all allies.',
+                'All allies get +30% attack for 4 turns.'
+            ]
+        }
+
     },
     colen: {
         name: 'Colen',
@@ -1634,6 +1815,24 @@ const purple4StarHeroes = {
             ]
         }
     },
+    'rigard costume': {
+        name: 'Rigard Costume',
+        attack: 633,
+        defense: 702,
+        health: 1271,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Rigard.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Regeneration',
+            description: [
+                'All allies regenerate 609 HP over 3 turns.',
+                'All allies get +48% attack for 3 turns.',
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    },
     sabina: {
         name: 'Sabina',
         attack: 699,
@@ -1664,6 +1863,24 @@ const purple4StarHeroes = {
             name: 'Ramming Pulverizer',
             description: [
                 'Deal 295% damage to a single enemy and minor damage on nearby enemies and they get -34% defense for 6 turns'
+            ]
+        }
+    },
+    'tiburtus costume': {
+        name: 'Tiburtus Costume',
+        attack: 688,
+        defense: 675,
+        health: 1140,
+        pseudonyms: ['costume burt', 'burt costume', 'costume tibs', 'tibs costume', 'costume tibertus', 'tibertus costume', 'costume tiburtus', 'tiburtus costume'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Tiburtus.png?bwg=1576260933',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Symphonic Pulverizer',
+            description: [
+                'Deals 175% damage to all enemies.',
+                'All enemies get -34% defense for 4 turns.'
             ]
         }
     }
@@ -1812,6 +2029,24 @@ const blue5StarHeroes = {
             ]
         }
     },
+    'isarnia costume': {
+        name: 'Isarnia Costume',
+        attack: 869,
+        defense: 659,
+        health: 1293,
+        pseudonyms: ['isarnia costume', 'costume isarnia'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia_(1).png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Glacial Explosion',
+            description: [
+                'Deals 255% damage to all enemies.',
+                'All enemies get -34% defense for 6 turns.'
+            ]
+        }
+    },
     'king arthur': {
         name: 'King Arthur',
         attack: 708,
@@ -1931,6 +2166,24 @@ const blue5StarHeroes = {
             name: 'Cloud Hammer',
             description: [
                 'Deal 415% damage to a single enemy and minor damage on nearby enemies and they get -34% attack for 6 turns'
+            ]
+        }
+    },
+    'richard costume': {
+        name: 'Richard Costume',
+        attack: 682,
+        defense: 862,
+        health: 1361,
+        pseudonyms: ['richard costume', 'costume richard'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Richard.png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Cloud Axe',
+            description: [
+                'Deals 435% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies get -34% attack for 4 turns.'
             ]
         }
     },
@@ -2150,7 +2403,25 @@ const yellow5StarHeroes = {
         special: {
             name: 'Solar Beam',
             description: [
-                'Deal 467% damage to a single enemy and they are less accurate for 6 turns'
+                'Deal 467% damage to a single enemy and they are less accurate for 6 turns.'
+            ]
+        }
+    },
+    'joon costume': {
+        name: 'Joon Costume',
+        attack: 782,
+        defense: 678,
+        health: 1465,
+        pseudonyms: ['joon costume', 'costume joon'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Joon.png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Solar Strike',
+            description: [
+                'Deals 488% damage to the target.',
+                'The target gets -35% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.'
             ]
         }
     },
@@ -2319,6 +2590,25 @@ const yellow5StarHeroes = {
             ]
         }
     },
+    'vivica costume': {
+        name: 'Vivica Costume',
+        attack: 741,
+        defense: 735,
+        health: 1475,
+        pseudonyms: ['costume viv', 'viv costume', 'costume vivica', 'vivica costume', 'dirty viv'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica_(1).png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Omnicure',
+            description: [
+                'Recovers 44% health for all allies.',
+                'All enemies get -44% defense for 4 turns.',
+                'Dispels buffs for all enemies.'
+            ]
+        }
+    },
     'white rabbit': {
         name: 'White Rabbit',
         attack: 731,
@@ -2472,6 +2762,24 @@ const green5StarHeroes = {
             ]
         }
     },
+    'horghall costume': {
+        name: 'Horghall Costume',
+        attack: 691,
+        defense: 694,
+        health: 1669,
+        pseudonyms: ['costume groot', 'groot costume', 'costume tree', 'tree costume', 'costume horg', 'horg costume', 'costume horghall', 'horghall costume', 'jester'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall.png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Anger of the Jester',
+            description: [
+                'Deals 215% damage to all enemies.',
+                'All enemies get -54% attack for 6 turns.'
+            ]
+        }
+    },
     kadilen: {
         name: 'Kadilen',
         attack: 711,
@@ -2558,6 +2866,24 @@ const green5StarHeroes = {
             name: 'Perfect Shot',
             description: [
                 'Deal 512% damage to a single enemy'
+            ]
+        }
+    },
+    'lianna costume': {
+        name: 'Lianna Costume',
+        attack: 773,
+        defense: 745,
+        health: 1364,
+        pseudonyms: ['lianna costume', 'costume lianna', 'sailor lianna'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lianna-1.png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Pure Shot',
+            description: [
+                'Deals 482% damage to the target.',
+                'The target gets -34% mana generation for 3 turns.'
             ]
         }
     },
@@ -2801,6 +3127,24 @@ const red5StarHeroes = {
             description: [
                 'Deals 202% damage to all enemies.',
                 'The caster and nearby allies counterattack with 125% of the damage received for 5 turns.'
+            ]
+        }
+    },
+    'elena costume': {
+        name: 'Elena Costume',
+        attack: 845,
+        defense: 588,
+        health: 1494,
+        pseudonyms: ['elena costume', 'costume elena'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena.png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Sword Barricade',
+            description: [
+                'Deals 172% damage to all enemies.',
+                'The caster and nearby allies counterattack with 155% of the damage received for 5 turns.'
             ]
         }
     },
@@ -3314,6 +3658,24 @@ const purple5StarHeroes = {
             name: 'Thunder Ultimatum',
             description: [
                 'Deal 260% damage to all enemies'
+            ]
+        }
+    },
+    'quintus costume': {
+        name: 'Quintus Costume',
+        attack: 804,
+        defense: 663,
+        health: 1472,
+        pseudonyms: ['quintus costume', 'costume quintus'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus_(1).png?bwg=1576266897',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Shock Ultimatum',
+            description: [
+                'Deals 235% damage to all enemies.',
+                'All enemies get -34% attack for 4 turns.'
             ]
         }
     },

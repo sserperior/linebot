@@ -162,6 +162,14 @@ describe('brain tests', () => {
         it('show harpoon team for %allianceMember% should be classified as a harpoon.team.query and the member should be found', () => {
             return getManager().process('show harpoon team for werd').then(checkHarpoonTeamQueryIntent);
         });
+
+        it('%allianceMember% poon team should be classified as a harpoon.team.query and the member should be found', () => {
+            return getManager().process('werd poon team').then(checkHarpoonTeamQueryIntent);
+        });
+
+        it('%allianceMember% harpoon team should be classified as a harpoon.team.query and the member should be found.', () => {
+            return getManager().process('werd harpoon team').then(checkHarpoonTeamQueryIntent);
+        });
     });
 
     describe('show.hero.special intent tests', () => {
