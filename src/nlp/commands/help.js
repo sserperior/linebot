@@ -13,6 +13,7 @@ const gameHelpText = [
     '\u2022  <farmable item>',
     '\u2022  <color> chest',
     '\u2022  show <event>',
+    `\u2022  show <month> <year> calendar`,
     '\u2022  what harpoon team is <member> on?',
     '\u2022  thanks cyber'
 ];

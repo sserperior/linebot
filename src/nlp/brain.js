@@ -9,6 +9,7 @@ const help = require('nlp/commands/help');
 
 const showHero = require('nlp/intents/showHero');
 const showEvent = require('nlp/intents/showEvent');
+const showCalendar = require('nlp/intents/showCalendar');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
@@ -110,6 +111,8 @@ const generateNLResponse = messageText => getManager().process(messageText).then
         return Promise.resolve(farmItem.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, thanksCyber)) {
         return Promise.resolve(thanksCyber.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, showCalendar)) {
+        return showCalendar.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, doNothing)) {
         // default case.
     }

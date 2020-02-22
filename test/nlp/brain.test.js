@@ -1,3 +1,5 @@
+const util = require('util');
+
 const { expect } = require('chai');
 const sinon = require('sinon');
 
@@ -6,6 +8,8 @@ const fs = require('fs');
 const { NlpManager } = require('node-nlp');
 
 const { getManager } = require('nlp/brain');
+
+const intentsHelper = require('nlp/intents/intentsHelper');
 
 const doNothing = require('nlp/intents/doNothing');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
@@ -464,6 +468,86 @@ describe('brain tests', () => {
 
         it('display %event% should trigger show.event', () => {
             return getManager().process('show pirates of corellia').then(checkShowEventIntent);
+        });
+    });
+
+    describe('Calendar tests', () => {
+        const checkEntityDate = (entity, expectedYear, expectedMonth) => {
+            let detectedDate = null;
+            switch(entity.resolution.type) {
+                case 'interval':
+                    let currentDate = new Date(Date.now());
+                    let year = currentDate.getUTCFullYear();
+                    let timexArray = entity.resolution.timex.split('-');
+                    expect(timexArray[0]).to.equal('XXXX');
+                    detectedDate = new Date(`${year}-${timexArray[1]}-01T00:00:00.000Z`);
+                    break;
+                case 'daterange':
+                    detectedDate = new Date(`${entity.resolution.timex}-01T00:00:00.000Z`);
+                    break;
+            }
+            expect(detectedDate).to.not.be.null;
+            expect(detectedDate.getUTCFullYear()).to.equal(expectedYear);
+            expect(detectedDate.getUTCMonth()).to.equal(expectedMonth);
+        };
+
+        it('show January 2021 calendar should process correctly', () => {
+            let found = false;
+            return getManager().process('show January 2021 calendar').then(result => {
+                for (let i=0;i<result.entities.length;i++) {
+                    if (result.entities[i].entity === 'daterange') {
+                        checkEntityDate(result.entities[i], 2021, 0);
+                        found = true;
+                    }
+                }
+                expect(found).to.be.true;
+            });
+        });
+
+        it('show February calendar should process correctly with the current year', () => {
+            return getManager().process('show February calendar').then(result => {
+                const currentYear = new Date(Date.now()).getUTCFullYear();
+                const expectedMonth = 1;
+                let found = false;
+                for (let i=0;i<result.entities.length;i++) {
+                    if (result.entities[i].entity === 'daterange') {
+                        checkEntityDate(result.entities[i], currentYear, expectedMonth);
+                        found = true;
+                    }
+                }
+                expect(found).to.be.true;
+            });
+        });
+
+        it('show calendar should process correctly with only a calendar entity detected', () => {
+            return getManager().process('show calendar').then(result => {
+                const date = new Date(Date.now());
+                const currentYear = date.getUTCFullYear();
+                const currentMonth = date.getUTCMonth();
+                let foundDateRangeEntity = false;
+                let foundCalendarEntity = false;
+                for (let i=0;i<result.entities.length;i++) {
+                    if (result.entities[i].entity === 'daterange') {
+                        foundDateRangeEntity = true;
+                    } else if (result.entities[i].option === 'calendar') {
+                        foundCalendarEntity = true;
+                    }
+                }
+                expect(foundDateRangeEntity).to.be.false;
+                expect(foundCalendarEntity).to.be.true;
+            });
+        });
+
+        it('show January and March calendars', () => {
+            return getManager().process('show January and March calendars').then(result => {
+                const dateRangeEntities = intentsHelper.getUniqueDateEntities(result.entities);
+                const date = new Date(Date.now());
+                const currentYear = date.getUTCFullYear();
+                const expectedMonths = [0, 2]; // January and March
+                for (let i=0;i<dateRangeEntities.length;i++) {
+                    checkEntityDate(dateRangeEntities[i], currentYear, expectedMonths[i]);
+                }
+            });
         });
     });
 });

@@ -8,12 +8,14 @@ const grade = require('nlp/entities/grade');
 const special = require('nlp/entities/special');
 const events = require('nlp/entities/events');
 const talent = require('nlp/entities/talent');
+const Calendar = require('nlp/entities/Calendar');
 
 const showHero = require('nlp/intents/showHero');
 const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
+const showCalendar = require('nlp/intents/showCalendar');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
@@ -106,6 +108,13 @@ manager.addNamedEntityText(
   talent.pseudonyms
 );
 
+manager.addNamedEntityText(
+  Calendar.itemEntity,
+  Calendar.itemEntity,
+  ['en'],
+  [Calendar.itemEntity]
+);
+
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
 manager.addDocument('en', '%allianceMember%', 'do.nothing');
@@ -122,6 +131,9 @@ manager.addDocument('en', 'show %event%', showEvent.intentLabel);
 manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
 manager.addDocument('en', 'show santa’s challenge', showEvent.intentLabel);
 manager.addDocument('en', 'display %event%', showEvent.intentLabel);
+
+// Show calendar questions
+manager.addDocument('en', 'show %daterange% %calendar%', showCalendar.intentLabel);
 
 // Harpoon team questions
 manager.addDocument('en', 'which harpoon team is %allianceMember% on', harpoonTeamQuery.intentLabel);
