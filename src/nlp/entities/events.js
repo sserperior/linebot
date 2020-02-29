@@ -38,6 +38,11 @@ module.exports = {
         "Santa's Challenge": {
             imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/6/c/6cc6a15f9800bd69f9d53fbbdc3822ee031176e0.jpeg',
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge"]
+        },
+
+        'Path of Valor': {
+            imgUrl: 'https://lh3.googleusercontent.com/Q9zwW3PAx6UJuW1BEgJhyokGMPunJxOlgdgRJ8pCXYvTEVI1Rxg1uZ2Zm9NaF2p7xgjpRjuXeDoIwvzoD0mtkpP2UF36qn3vMzF6DeKVrYj_mIUmgURfYkpQhY73OAqr-U6l1DNuZqxyStxwtsSYYR9IfAW0Yct-8rxhON8uM0jw48yqe2TWysyB9f3as4QC2OB-XuN8OiAeaEhi0MSxa-sxXxn21xPEpPpLCWCwI0dV2Hf8xtx_oNeRxi9pUh6I2WrFuRvr1oo5txRgok_vMz__iYQGwxZ6VX_Ftmy_-pMLaZJ99H3-DTHL3JI1sZAgh7uLeZ6_eLabxEtheXdCm-LR_pNzgK8Q71TnwLSrVHtKF9qkydTqB-7_VrhuCok9_uAqF52aq3tHVgvCF_gHRgfSccl2LGlkdbp24I0QSd4jpCbH5bnH4kwLxWALc6kyzQRJ9Rz26vFxO0WrVt2OnIV2bqBp7eNfddamODO_9s12n5KZAQxOvfZtuX9e-CtT9x1Nskr0u49FHbGg997eTLRBaeR8_xWM-6w-8B1cmmXjxsY52jfA2h9-AicqnT0VJ14TxfCFVbWksfLoO9eLea_WkR0nXD80Wht6V1sCwq4vY6P0iPmJ2D2J7tIyuWt5VSD3K5k6jhKmz8r10GFcisHxtw5A0hyXslvA_2vNUQAg5uhjNNuyp7z5xLW7PAFllrgFpQH7WHQGFgn73t0DdVFZLea6xZLY5Z4lFVyIbbAizCI=w1080-h990-no',
+            pseudonyms: ['pov', 'path of valor', 'path of valour']
         }
     }
 };

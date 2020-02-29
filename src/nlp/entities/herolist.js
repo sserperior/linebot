@@ -105,7 +105,24 @@ const blue3StarHeroes = {
         synopsis: [
             'Not a very useful hero. Multiple Valens/Gatos/Graymanes are more valuable as attackers.'
         ]
-    },    
+    },
+    nordri: {
+        name: 'Nordri',
+        attack: 483,
+        defense: 401,
+        health: 808,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Frosty Axes',
+            description: [
+                'Deals 245% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies get -54% defense against ice for 4 turns.'
+            ]
+        }
+    }, 
     ulmer: {
         name: 'Ulmer',
         attack: 528,
@@ -276,27 +293,6 @@ const yellow3StarHeroes = {
             'Keep until you have better yellow stacking options.'
         ]
     },
-    melia: {
-        name: 'Melia',
-        attack: 505,
-        defense: 404,
-        health: 684,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
-        stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
-        classGrade: Classes.DRUID,
-        special: {
-            name: 'Atlantean Sword',
-            description: [
-                'Deals 120% damage to all enemies',
-                'All allies get +36% critical chance for 4 turns.'
-            ]
-        },
-        synopsis: [
-            'Good tile damage but low special attack. The key is the increased critical hit buff and fast mana.',
-            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
-        ]
-    },
     kailani: {
         name: 'Kailani',
         attack: 429,
@@ -316,6 +312,46 @@ const yellow3StarHeroes = {
         synopsis: [
             'Not an attacker. Spirit-link defense provides the increased shielding and shared damage that enables your team to survive tough enemies',
             'Good hero for your first 30, rare events, special raid tournaments until you get a more durable replacement like Wilbur or Aegir'
+        ]
+    },
+    kvasir: {
+        name: 'Kvasir',
+        attack: 424,
+        defense: 418,
+        health: 905,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Bee Bravado',
+            description: [
+                'Summons a Bee Minion for each ally. The Bee Minion inherits 15% HP and 17% attack from the caster.',
+                'Each hit from a Bee Minion gives the target the following status ailments:',
+                'The target receives 32 Poison damage over 2 turns.',
+                "The target can't receive new Minions for 4 turns."
+            ]
+        }
+    }, 
+    melia: {
+        name: 'Melia',
+        attack: 505,
+        defense: 404,
+        health: 684,
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Atlantean Sword',
+            description: [
+                'Deals 120% damage to all enemies',
+                'All allies get +36% critical chance for 4 turns.'
+            ]
+        },
+        synopsis: [
+            'Good tile damage but low special attack. The key is the increased critical hit buff and fast mana.',
+            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
         ]
     },
     pixie: {
@@ -413,6 +449,28 @@ const green3StarHeroes = {
             name: 'Jungle Fury',
             description: [
                 'All enemies get -41% defense and a further -4% decrease every time they are hit for 4 turns.'
+            ]
+        }
+    },
+    'by-ulf': {
+        name: 'By-Ulf',
+        attack: 431,
+        defense: 441,
+        health: 855,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Hollow Boast',
+            description: [
+                'The caster and nearby allies get +48% attack for 4 turns.',
+                'The caster and nearby allies get +46% defense for 4 turns.',
+                'The caster and nearby allies regenerate 612 HP for 4 turns.',
+                'After 4 turns the caster gets negative status effects.',
+                'The negative status effects that the caster gets after 4 turns are:',
+                "The caster gets -34% attack for 4 turns. This effect can't be dispelled",
+                "The caster gets -24% mana generation for 4 turns. This effect can't be dispelled"
             ]
         }
     },
@@ -614,6 +672,23 @@ const red3StarHeroes = {
             'Good hero for your first 30, rare events, special raid tournaments.'
         ]
     },
+    'ei-dunn': {
+        name: 'Ei-Dunn',
+        attack: 417,
+        defense: 476,
+        health: 841,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Tainted Axe',
+            description: [
+                'Deals 220% damage to the target and nearby enemies.',
+                'The target and nearby enemies get -24% mana generation for 4 turns.'
+            ]
+        }
+    },
     hawkmoon: {
         name: 'Hawkmoon',
         attack: 474,
@@ -767,6 +842,23 @@ const purple3StarHeroes = {
             name: 'Electric Jolt',
             description: [
                 'Deal 335% damage to a single enemy'
+            ]
+        }
+    },
+    bjorn: {
+        name: 'Bjorn',
+        attack: 453,
+        defense: 431,
+        health: 816,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Dual Slash',
+            description: [
+                'Deals 200% damage to the target',
+                'Deals 350% damage to a random different enemy. Deals extra damage if the target is Holy.'
             ]
         }
     },
@@ -1012,6 +1104,23 @@ const blue4StarHeroes = {
             ]
         }
     },
+    mireweave: {
+        name: 'Mireweave',
+        attack: 692,
+        defense: 592,
+        health: 1166,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Chain of Pain',
+            description: [
+                'Deals 150% damage to the target and nearby enemies.',
+                'Stack: The caster gets +10% attack. The maximum size of stack is 10.'
+            ]
+        }
+    },
     sonya: {
         name: 'Sonya',
         attack: 607,
@@ -1217,6 +1326,25 @@ const yellow4StarHeroes = {
             ]
         }
     },
+    mist: {
+        name: 'Mist',
+        attack: 682,
+        defense: 599,
+        health: 1187,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Valkyrie Charge',
+            description: [
+                'Deals 175% damage to the target and nearby enemies.',
+                'The target and nearby enemies are immune to buffs for 3 turns.',
+                'The target and nearby enemies get -34% defense against Special Skills for 3 turns.',
+                'The target and nearby enemies get -64% mana generation for 3 turns.'
+            ]
+        }
+    },
     'wu kong': {
         name: 'Wu Kong',
         attack: 707,
@@ -1237,6 +1365,25 @@ const yellow4StarHeroes = {
 };
 
 const green4StarHeroes = {
+    brynhild: {
+        name: 'Brynhild',
+        attack: 680,
+        defense: 605,
+        health: 1175,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Valkyrie Defense',
+            description: [
+                'Recovers 37% health for the caster and nearby allies.',
+                'The caster and nearby allies are immune to buff dispels for 3 turns.',
+                'The caster and nearby allies get +74% defense against Special Skills for 3 turns.',
+                'The caster and nearby allies get +24% mana generation for 3 turns.'
+            ]
+        }
+    },
     buddy: {
         name: 'Buddy',
         attack: 531,
@@ -1627,7 +1774,24 @@ const red4StarHeroes = {
                 'The caster regenerates a moderate amount of mana for each counterattack. The effect gets diminished for consecutive activations during the same turn.'
             ]
         }
-    },    
+    },
+    sumle: {
+        name: 'Sumle',
+        attack: 711,
+        defense: 624,
+        health: 1068,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Magma Boulders',
+            description: [
+                'Deals 235% damage to all enemies. Each hit has 80% accuracy.',
+                'The damage is increased by 70% per each dead enemy.'
+            ]
+        }
+    }, 
     wilbur: {
         name: 'Wilbur',
         attack: 605,
@@ -1848,7 +2012,28 @@ const purple4StarHeroes = {
                 'Recover 42% health for all allies and remove buffs from all enemies'
             ]
         }
-    },    
+    },
+    stonecleave: {
+        name: 'Stonecleave',
+        attack: 722,
+        defense: 618,
+        health: 1047,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Dire Ghost',
+            description: [
+                'Removes all dispellable and undispellable status effects and stacks from the caster.',
+                'The caster shifts into Dire Ghost form.',
+                'While in Dire Ghost form the caster automatically deals 150% damage against a random enemy each turn.',
+                "While in Dire Ghost form the caster can't gain mana but is immune to normal attacks, Special Skill attacks, status effects and stacks except the damage from enemies whose element is strong against the caster.",
+                'Dire Ghost form lasts for 4 turns.'
+            ]
+        }
+
+    }, 
     tiburtus: {
         name: 'Tiburtus',
         attack: 660,
@@ -1972,6 +2157,25 @@ const blue5StarHeroes = {
             name: "Athena's Bow",
             description: [
                 'Deal 305% damage to a single enemy and minor damage on nearby enemies and they get -41% defense and a further -4% decrease every time they are hit for 4 turns. Deals extra damage against Fire.'
+            ]
+        }
+    },
+    fenrir: {
+        name: 'Fenrir',
+        attack: 780,
+        defense: 737,
+        health: 1297,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/d/4d4b3a0b3c4a5576260f9d6861dbb7f474030d32.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Gargantuan Bite',
+            description: [
+                'Deals 300% damage to the target.',
+                'Deals 600% damage if the target has less than 50% health remaining.',
+                'The caster gains a moderate amount of mana for each enemy killed and a small amount of mana for each enemy minion killed.',
+                'Heals the caster of 50% of the damage dealt.'
             ]
         }
     },
@@ -2573,6 +2777,24 @@ const yellow5StarHeroes = {
             ]
         }
     },
+    sif: {
+        name: 'Sif',
+        attack: 788,
+        defense: 716,
+        health: 1306,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Gold Weaver',
+            description: [
+                'The caster and nearby allies counterattack with 100% of the damage received for 4 turns.',
+                'The caster and nearby allies reduce all received damage by -50% for 4 turns.',
+                'The caster and nearby allies get +24% mana generation for 4 turns.'
+            ]
+        }
+    },
     vivica: {
         name: 'Vivica',
         attack: 714,
@@ -2742,7 +2964,25 @@ const green5StarHeroes = {
                 'All allies get +36% critical chance for 4 turns.'
             ]
         }
-
+    },
+    heimdall: {
+        name: 'Heimdall',
+        attack: 655,
+        defense: 836,
+        health: 1402,
+        pseudonyms: ['heimdall', 'heimdal'],
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Boon of Gjallahorn',
+            description: [
+                'Boosts health of all allies by 500. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
+                'Each fallen ally has a 20% chance to get revived with 30% HP.',
+                'All allies get +30% attack for 4 turns.'
+            ]
+        }
     },
     horghall: {
         name: 'Horghall',
@@ -2939,6 +3179,24 @@ const green5StarHeroes = {
                 'Recovers 30% health for all allies.',
                 'Each fallen ally has a 50% chance to get revived with 10% HP.',
                 'Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.'
+            ]
+        }
+    },
+    'ratatoskr': {
+        name: 'Ratatoskr',
+        attack: 753,
+        defense: 741,
+        health: 1353,
+        pseudonyms: ['ratatoskr', 'rat'],
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/7/47da7c546b8d3fe02304e63194bfe1844fc1a81c.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Nutes of Yggdrasil',
+            description: [
+                'Recovers 42% health for all allies.',
+                'All Nature shields on the board become enhanced. Enhanced shields have +64% attack when attacking hero casts the special, and -57% attack when defending hero casts the special.'
             ]
         }
     },
@@ -3376,6 +3634,26 @@ const red5StarHeroes = {
             ]
         }
     },
+    tyr: {
+        name: 'Tyr',
+        attack: 760,
+        defense: 756,
+        health: 1312,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/a/8/a8d9052a4a9c55255a13bd4c8b879b2a61280de8.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Adamantite Claw',
+            description: [
+                'Deals 285% damage to the target.',
+                'The attack has a 60% chance to bypass all defensive buffs. This includes counterattacks.',
+                'The target receives 196 Bleed damage over 4 turns.',
+                'The caster regenerates 548 HP over 4 turns.',
+                'If the caster dies during the next 4 turns, they are resurrected at the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
+            ]
+        }
+    },
     zimkitha: {
         name: 'Zimkitha',
         attack: 714,
@@ -3452,6 +3730,41 @@ const purple5StarHeroes = {
                 'Deals 410% damage to the target.',
                 'The caster and nearby allies get +94% defense against Holy for 4 turns.',
                 'Dispels buffs from the target and nearby enemies.'
+            ]
+        }
+    },
+    freya: {
+        name: 'Freya',
+        attack: 766,
+        defense: 743,
+        health: 1339,
+        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/7/0748236051e2b9c18146824274daa6ea5e1ac499.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: "Raven's Vigil",
+            description: [
+                'Summons a Raven Minion for each ally with 20% HP and 20% attack inherited from the caster.',
+                "Raven Minion gives +120% attack to all its owner's other Minions.",
+                'All allies get +30% defense for 4 turns.'
+            ]
+        }
+    },
+    'guardian panther': {
+        name: 'Guardian Panther',
+        attack: 782,
+        defense: 622,
+        health: 1339,
+        pseudonyms: ['panther', 'guardian panther'],
+        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Eye of the Panther',
+            description: [
+                'Deal 210% damage to target and nearby enemies adn remove buffs from them and they get -54% defense against Dark for 4 turns'
             ]
         }
     },
@@ -3625,23 +3938,6 @@ const purple5StarHeroes = {
             description: [
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies.',
                 'The caster counterattacks with 115% of the damage received for 4 turns.'
-            ]
-        }
-    },
-    'guardian panther': {
-        name: 'Guardian Panther',
-        attack: 782,
-        defense: 622,
-        health: 1339,
-        pseudonyms: ['panther', 'guardian panther'],
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
-        stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
-        classGrade: Classes.FIGHTER,
-        special: {
-            name: 'Eye of the Panther',
-            description: [
-                'Deal 210% damage to target and nearby enemies adn remove buffs from them and they get -54% defense against Dark for 4 turns'
             ]
         }
     },
