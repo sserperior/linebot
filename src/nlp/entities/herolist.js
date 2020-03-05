@@ -3217,6 +3217,28 @@ const green5StarHeroes = {
             ]
         }
     },
+    telluria: {
+        name: 'Telluria',
+        attack: 613,
+        defense: 832,
+        health: 1425,
+        pseudonyms: ['telluria', 'teluria'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/telluria-1.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Force of Forest',
+            description: [
+                'Deals 130% damage to all enemies.',
+                'Summons a Forest Familiar Minion for all allies with 18% HP and 13% attack inherited from the caster',
+                'All allies regenerate 411 HP over 3 turns.',
+                'All enemies get -34% mana generation for 3 turns.',
+                "Element Link gives all Nature allies +10% critical chance for 6 turns. This effect can't be dispelled."
+
+            ]
+        }
+    },
     'the hatter': {
         name: 'The Hatter',
         attack: 735,
@@ -3286,6 +3308,7 @@ const red5StarHeroes = {
         attack: 698,
         defense: 793,
         health: 1279,
+        pseudonyms: ['anzogh', 'anzo'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Anzogh.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,

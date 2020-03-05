@@ -23,7 +23,7 @@ module.exports = {
             pseudonyms: ['wonderland', 'riddles', 'riddles of wonderland']
         },
 
-        'Sprinvale': {
+        'Springvale': {
             imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/d/4/d41d99c247c8dcf8415894f54c2c7216fd010fa6.jpeg',
             pseudonyms: ['spring', 'rabbits', 'springvale']
         },
