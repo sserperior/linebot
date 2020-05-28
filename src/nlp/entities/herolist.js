@@ -2,6 +2,24 @@ const ManaSpeeds = require('nlp/heroModel/ManaSpeeds');
 const Classes = require('nlp/heroModel/Classes');
 
 const blue3StarHeroes = {
+    'chick jr.': {
+        name: 'Chick Jr.',
+        attack: 523,
+        defense: 413,
+        health: 703,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/f/7f63e88b85fd43665b6cfec6dd388190c5584752.jpeg',
+        pseudonyms: ['chick', 'chick jr'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Compact Lance',
+            description: [
+                'Deals 180% damage to all enemies.',
+                "THe caster gets -20% attack for 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     gato: {
         name: 'Gato',
         attack: 516,
@@ -111,7 +129,7 @@ const blue3StarHeroes = {
         attack: 483,
         defense: 401,
         health: 808,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.BARBARIAN,
@@ -319,7 +337,7 @@ const yellow3StarHeroes = {
         attack: 424,
         defense: 418,
         health: 905,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.DRUID,
@@ -457,7 +475,7 @@ const green3StarHeroes = {
         attack: 431,
         defense: 441,
         health: 855,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.PALADIN,
@@ -677,7 +695,7 @@ const red3StarHeroes = {
         attack: 417,
         defense: 476,
         health: 841,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.PALADIN,
@@ -850,7 +868,7 @@ const purple3StarHeroes = {
         attack: 453,
         defense: 431,
         health: 816,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.MONK,
@@ -1109,7 +1127,7 @@ const blue4StarHeroes = {
         attack: 692,
         defense: 592,
         health: 1166,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
         classGrade: Classes.RANGER,
@@ -1290,7 +1308,25 @@ const yellow4StarHeroes = {
                 'Deal 270% damage to a single enemy and they get -54% defense against Holy for 4 turns'
             ]
         }
-    },         
+    },       
+    'lady wollerton': {
+        name: 'Lady Woolerton',
+        attack: 626,
+        defense: 667,
+        health: 1217,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/1/c199193c7398682367a645b6f5c53f188f4934be.jpeg',
+        stars: 4,
+        pseudonyms: ['woolerton', 'lady woolerton'],
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Smooth Treatment',
+            description: [
+                'Recovers 40% health for all allies.',
+                "The caster can't gain mana for 2 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     'li xiu': {
         name: 'Li Xiu',
         attack: 616,
@@ -1331,7 +1367,7 @@ const yellow4StarHeroes = {
         attack: 682,
         defense: 599,
         health: 1187,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.CLERIC,
@@ -1370,7 +1406,7 @@ const green4StarHeroes = {
         attack: 680,
         defense: 605,
         health: 1175,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.ROGUE,
@@ -1548,7 +1584,7 @@ const green4StarHeroes = {
         attack: 698,
         defense: 655,
         health: 1151,
-        pseudonyms: ['costume mel', 'mel costume', 'saruman', 'sauruman', 'sarumon', 'saurumon'],
+        pseudonyms: ['melendor costume', 'costume melendor', 'costume mel', 'mel costume', 'saruman', 'sauruman', 'sarumon', 'saurumon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Melendor.png?bwg=1576260933',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1780,7 +1816,7 @@ const red4StarHeroes = {
         attack: 711,
         defense: 624,
         health: 1068,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
         classGrade: Classes.MONK,
@@ -2018,7 +2054,7 @@ const purple4StarHeroes = {
         attack: 722,
         defense: 618,
         health: 1047,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.BARBARIAN,
@@ -2056,7 +2092,7 @@ const purple4StarHeroes = {
         attack: 688,
         defense: 675,
         health: 1140,
-        pseudonyms: ['costume burt', 'burt costume', 'costume tibs', 'tibs costume', 'costume tibertus', 'tibertus costume', 'costume tiburtus', 'tiburtus costume'],
+        pseudonyms: ['duke of rock', 'costume burt', 'burt costume', 'costume tibs', 'tibs costume', 'costume tibertus', 'tibertus costume', 'costume tiburtus', 'tiburtus costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Tiburtus.png?bwg=1576260933',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2165,7 +2201,7 @@ const blue5StarHeroes = {
         attack: 780,
         defense: 737,
         health: 1297,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/d/4d4b3a0b3c4a5576260f9d6861dbb7f474030d32.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/d/4d4b3a0b3c4a5576260f9d6861dbb7f474030d32.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.FIGHTER,
@@ -2459,6 +2495,7 @@ const blue5StarHeroes = {
         attack: 743,
         defense: 729,
         health: 1303,
+        pseudonyms: ['vela', 'velly'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Vela_January-HOTM.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2666,6 +2703,24 @@ const yellow5StarHeroes = {
             ]
         }
     },
+    malosi: {
+        name: 'Malosi',
+        attack: 743,
+        defense: 729,
+        health: 1303,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/b/9b75eafbd8b56a522e214c90c6ebf36a6718d7b2.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Power Punch',
+            description: [
+                'Deals 300% damage to the target.',
+                'The target cannot cast any new status effects or stacks on enemies or allies for 3 turns.',
+                "Element Link gives all Holy allies +10% critical chance for 6 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     musashi: {
         name: 'Musashi',
         attack: 786,
@@ -2699,6 +2754,24 @@ const yellow5StarHeroes = {
                 'Reduces the mana of all enemies by 10%.',
                 'All enemies get -35% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.',
                 "Element Link gives +4% mana generation for all Holy allies for 4 gturns. This effect can't be dispelled."
+            ]
+        }
+    },
+    norns: {
+        name: 'Norns',
+        attack: 770,
+        defense: 718,
+        health: 1369,
+        pseudonyms: ['norns', 'norn'],
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/9/39b56e8305d0a2015b21dde20f5e62f418bf8a74.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Twist of Fate',
+            description: [
+                'Deals 265% damage to the target and nearby enemies.',
+                'The target and nearby enemies become weak against the element they are strong against for 4 turns. They stay weak against the element they are normally weak against.'
             ]
         }
     },
@@ -2782,7 +2855,7 @@ const yellow5StarHeroes = {
         attack: 788,
         defense: 716,
         health: 1306,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.ROGUE,
@@ -2792,6 +2865,25 @@ const yellow5StarHeroes = {
                 'The caster and nearby allies counterattack with 100% of the damage received for 4 turns.',
                 'The caster and nearby allies reduce all received damage by -50% for 4 turns.',
                 'The caster and nearby allies get +24% mana generation for 4 turns.'
+            ]
+        }
+    },
+    'sir roostley': {
+        name: 'Sir Roostley',
+        attack: 778,
+        defense: 727,
+        health: 1347,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/b/cb7d94fcfcf1c39066febfca6e2e5b62dc14215f.jpeg',
+        pseudonyms: ['sir roostley', 'roostley'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Luminous Lance',
+            description: [
+                'Deals 280% damage to the target.',
+                'The attack chains through all enemies that are adjacent to any hit enemy',
+                "The caster gets -20% attack for 3 turns. This effect can't be dispelled."
             ]
         }
     },
@@ -2971,7 +3063,7 @@ const green5StarHeroes = {
         defense: 836,
         health: 1402,
         pseudonyms: ['heimdall', 'heimdal'],
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
         classGrade: Classes.PALADIN,
@@ -3188,7 +3280,7 @@ const green5StarHeroes = {
         defense: 741,
         health: 1353,
         pseudonyms: ['ratatoskr', 'rat'],
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/4/7/47da7c546b8d3fe02304e63194bfe1844fc1a81c.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/7/47da7c546b8d3fe02304e63194bfe1844fc1a81c.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.MONK,
@@ -3222,7 +3314,7 @@ const green5StarHeroes = {
         attack: 613,
         defense: 832,
         health: 1425,
-        pseudonyms: ['telluria', 'teluria'],
+        pseudonyms: ['telluria', 'teluria', 'telly'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/telluria-1.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3662,7 +3754,7 @@ const red5StarHeroes = {
         attack: 760,
         defense: 756,
         health: 1312,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/a/8/a8d9052a4a9c55255a13bd4c8b879b2a61280de8.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/8/a8d9052a4a9c55255a13bd4c8b879b2a61280de8.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.FIGHTER,
@@ -3719,6 +3811,26 @@ const purple5StarHeroes = {
             ]
         }
     },
+    alfrike: {
+        name: 'Alfrike',
+        attack: 659,
+        defense: 830,
+        health: 1421,
+        pseudonyms: ['alfrike', 'alf'],
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/2/e29273866f76f1242ce6654006314292df709f28.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
+        special: {
+            name: 'Cube of Dark Realm',
+            description: [
+                'Casts 5 Dark Cubes to random enemies.',
+                'Dark Cube deals 200% damage to the target.',
+                "Dark Cube reduces max health from the target by 224. Max health can't get lower than 30% of the original max health",
+                'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.'
+            ]
+        }
+    },
     'boss wolf': {
         name: 'Boss Wolf',
         attack: 566,
@@ -3735,6 +3847,25 @@ const purple5StarHeroes = {
                 "The caster and nearby allies get +24% mana generation for 4 turns. This effect can't be dispelled",
                 'All enemies get -34% mana generation for 4 turns.',
                 'The caster and nearby allies counterattack with 115% of the damage received for 4 turns.'
+            ]
+        }
+    },
+    clarissa: {
+        name: 'Clarissa',
+        attack: 733,
+        defense: 712,
+        health: 1367,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/3/e3b1e3167a36fdd7a04595367de040a3028cfd06.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Miasma Mace',
+            description: [
+                'Deals 135% damage to the target and nearby enemies.',
+                'The target and nearby enemies receive 224 Poison damage over 2 turns.',
+                'Deals extra damage against Holy.',
+                "Element Link gives Dark allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
         }
     },
@@ -3761,7 +3892,7 @@ const purple5StarHeroes = {
         attack: 766,
         defense: 743,
         health: 1339,
-        imgUrl: 'https://aws1.discourse-cdn.com/business4/uploads/smallgiantgames/original/3X/0/7/0748236051e2b9c18146824274daa6ea5e1ac499.jpeg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/0748236051e2b9c18146824274daa6ea5e1ac499.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.DRUID,
@@ -3882,6 +4013,23 @@ const purple5StarHeroes = {
             ]
         }
     },
+    killhare: {
+        name: 'Killhare',
+        attack: 741,
+        defense: 756,
+        health: 1382,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/optimized/3X/b/1/b199e9666bd8daa15da56bc66712b22d2c37f52c_2_715x750.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Reckless Swing',
+            description: [
+                'Deals 300% damage to all enemies.',
+                "All allies except the caster get -20% defense for 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     kunchen: {
         name: 'Kunchen',
         attack: 618,
@@ -3903,7 +4051,7 @@ const purple5StarHeroes = {
         }
     },
     'marie-thérèse': {
-        name: 'Marie-Thérèse',
+        name: 'Marie-Therese',
         attack: 774,
         defense: 723,
         health: 1301,
@@ -3944,6 +4092,24 @@ const purple5StarHeroes = {
                 'Deals 80% damage to all allies.',
                 'Deals extra damage against Holy.',
                 'All Dark allies and enemies are immune to this attack.'
+            ]
+        }
+    },
+    'myztero': {
+        name: 'Myztero',
+        attack: 772,
+        defense: 725,
+        health: 1332,
+        pseudonyms: ['mysterio', 'myztero', 'mystero'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/myztero.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Absordium Deflectors',
+            description: [
+                'Deals 100% damage to all enemies.',
+                'All status ailments memorized by the innate ability are cast to all enemies.'
             ]
         }
     },

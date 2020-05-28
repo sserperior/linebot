@@ -118,6 +118,7 @@ manager.addNamedEntityText(
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
 manager.addDocument('en', '%allianceMember%', 'do.nothing');
+manager.addDocument('en', '%event%', 'do.nothing');
 
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);

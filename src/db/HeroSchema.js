@@ -1,0 +1,58 @@
+const mongoose = require('mongoose');
+const timestamps = require('mongoose-timestamp');
+const SpecialSchema = require('db/SpecialSchema');
+
+const HeroSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        index: true
+    },
+    element: {
+        type: String,
+        required: true,
+        index: true
+    },
+    attack: {
+        type: Number,
+        required: true
+    },
+    defense: {
+        type: Number,
+        required: true
+    },
+    health: {
+        type: Number,
+        required: true
+    },
+    imgUrl: {
+        type: String,
+        required: true
+    },
+    pseudonyms: {
+        type: [String]
+    },
+    stars: {
+        type: Number,
+        required: true,
+        index: true
+    },
+    manaSpeed: {
+        type: String,
+        required: true,
+        index: true
+    },
+    classGrade: {
+        type: String,
+        required: true,
+        index: true
+    },
+    special: {
+        type: SpecialSchema,
+        required: true
+    }
+});
+
+HeroSchema.plugin(timestamps);
+
+module.exports = HeroSchema;

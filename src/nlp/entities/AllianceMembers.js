@@ -2,6 +2,9 @@ module.exports = {
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
+    'Archarry86': {
+        pseudonyms: ['chary', 'archarry', 'archary', 'archarry86']
+    },
     'AcousticWord': {
         pseudonyms: ['aw', 'acousticworc']
     },
@@ -11,8 +14,8 @@ module.exports = {
     'Baby Warrior': {
         pseudonyms: ['baby warrior', 'babywarrior', 'bw']
     },
-    'beCool': {
-        pseudonyms: ['becool']
+    'bignruff': {
+        pseudonyms: ['bignruff']
     },
     'Cole': {
         pseudonyms: ['cole']
@@ -29,6 +32,9 @@ module.exports = {
     'iala': {
         pseudonyms: ['trish/iala', 'iala']
     },
+    'JaJan': {
+        pseudonyms: ['jajan']
+    },
     'Jamison': {
         pseudonyms: ['jamison']
     },
@@ -40,9 +46,6 @@ module.exports = {
     },
     'Kakamo31': {
         pseudonyms: ['kakamo', 'kakamo31']
-    },
-    'Karenee': {
-        pseudonyms: ['karenee']
     },
     'Killjoy': {
         pseudonyms: ['killjoy', 'kj']
@@ -59,14 +62,14 @@ module.exports = {
     'Moosepoo': {
         pseudonyms: ['moosepoo', 'moose jr', 'moose junior', 'real moose']
     },
-    'Randrys': {
-        pseudonyms: ['randrys']
-    },
-    'RebelRebel': {
-        pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
+    'Nazgul': {
+        pseudonyms: ['nazgul', 'naz']
     },
     'paperplanes726': {
         pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726']
+    },
+    'RebelRebel': {
+        pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
     },
     'richo': {
         pseudonyms: ['richo', 'richy', 'richyrich', 'richy-rich']
@@ -85,6 +88,9 @@ module.exports = {
     },
     'Soulja_gurl': {
         pseudonyms: ['soulja_gurl', 'soulja']
+    },
+    'Stormspeace25': {
+        pseudonyms: ['storm', 'stormspeace', 'stormspeace25']
     },
     'toetapper': {
         pseudonyms: ['toetapper', 'tt']
