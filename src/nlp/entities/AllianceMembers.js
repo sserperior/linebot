@@ -2,6 +2,9 @@ module.exports = {
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
+    'Amelie': {
+        pseudonyms: ['amelie']
+    },
     'Archarry86': {
         pseudonyms: ['chary', 'archarry', 'archary', 'archarry86']
     },
@@ -16,6 +19,9 @@ module.exports = {
     },
     'bignruff': {
         pseudonyms: ['bignruff']
+    },
+    'Blue Thin Air': {
+        pseudonyms: ['Blue Thin Air', 'bta']
     },
     'Cole': {
         pseudonyms: ['cole']
@@ -32,12 +38,6 @@ module.exports = {
     'iala': {
         pseudonyms: ['trish/iala', 'iala']
     },
-    'JaJan': {
-        pseudonyms: ['jajan']
-    },
-    'Jamison': {
-        pseudonyms: ['jamison']
-    },
     'jacko': {
         pseudonyms: ['jacko', 'jack']
     },
@@ -46,6 +46,9 @@ module.exports = {
     },
     'Kakamo31': {
         pseudonyms: ['kakamo', 'kakamo31']
+    },
+    'Kenny': {
+        pseudonyms: ['kenny']
     },
     'Killjoy': {
         pseudonyms: ['killjoy', 'kj']
@@ -56,17 +59,17 @@ module.exports = {
     'magicmands': {
         pseudonyms: ['magic', 'mandibles', 'magicmands']
     },
-    'Major Chaos': {
-        pseudonyms: ['mc', 'major', 'major chaos', 'majorchaos']
+    'Marvin the Martian': {
+        pseudonyms: ['marv', 'marvin the martian', 'marvin']
+    },
+    'MHM': {
+        pseudonyms: ['mhm']
     },
     'Moosepoo': {
         pseudonyms: ['moosepoo', 'moose jr', 'moose junior', 'real moose']
     },
-    'Nazgul': {
-        pseudonyms: ['nazgul', 'naz']
-    },
     'paperplanes726': {
-        pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726']
+        pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726', 'pp']
     },
     'RebelRebel': {
         pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
@@ -86,6 +89,9 @@ module.exports = {
     'ssj50driver': {
         pseudonyms: ['ssj50driver', 'driver']
     },
+    'Sota': {
+        pseudonyms: ['sota']
+    },
     'Soulja_gurl': {
         pseudonyms: ['soulja_gurl', 'soulja']
     },
@@ -94,6 +100,9 @@ module.exports = {
     },
     'toetapper': {
         pseudonyms: ['toetapper', 'tt']
+    },
+    'ttttttttttttt': {
+        pseudonyms: ['ttttttttttttt', 'ts']
     },
     'The Moose': {
         pseudonyms: ['big moose', 'moose', 'the moose', 'spymoose', 'spy moose']

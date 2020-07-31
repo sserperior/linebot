@@ -1,4 +1,4 @@
 module.exports = {
     itemEntity: 'grade',
-    pseudonyms: ['grade', 'grading', 'grades']
+    pseudonyms: ['grade', 'grading', 'grades', 'rate']
 };

@@ -28,7 +28,7 @@ module.exports = {
             pseudonyms: ['spring', 'rabbits', 'springvale']
         },
         'Sand Empire': {
-            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/3/134c1961daf59cf40e33f46ba1ecf62fb999b158.jpeg',
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/1/61ad37d07fb12db8d8899fc335e2c322391df7ac.jpeg',
             pseudonyms: ['summer', 'sand', 'sand empire']
         },
         'Return to Morlovia': {

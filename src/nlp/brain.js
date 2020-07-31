@@ -94,15 +94,15 @@ const generateNLResponse = messageText => getManager().process(messageText).then
     logger.info(result);
     const { intent, score } = result;
     if (isRecognizedIntent(intent, score, showHero)) {
-        return Promise.resolve(showHero.handle(result.entities));
+        return showHero.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, showEvent)) {
         return Promise.resolve(showEvent.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, harpoonTeamQuery)) {
         return Promise.resolve(harpoonTeamQuery.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroSpecial)) {
-        return Promise.resolve(showHeroSpecial.handle(result.entities));
+        return showHeroSpecial.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, showHeroTalent)) {
-        return Promise.resolve(showHeroTalent.handle(result.entities));
+        return showHeroTalent.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, farmElementalChest)) {
         return Promise.resolve(farmElementalChest.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroGrading)) {

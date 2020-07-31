@@ -1,5 +1,6 @@
 const ManaSpeeds = require('nlp/heroModel/ManaSpeeds');
 const Classes = require('nlp/heroModel/Classes');
+const elements = require('nlp/entities/elements');
 
 const blue3StarHeroes = {
     'chick jr.': {
@@ -7,6 +8,7 @@ const blue3StarHeroes = {
         attack: 523,
         defense: 413,
         health: 703,
+        element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/f/7f63e88b85fd43665b6cfec6dd388190c5584752.jpeg',
         pseudonyms: ['chick', 'chick jr'],
         stars: 3,
@@ -25,6 +27,7 @@ const blue3StarHeroes = {
         attack: 516,
         defense: 401,
         health: 639,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gato.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -35,19 +38,14 @@ const blue3StarHeroes = {
                 'Deals 300% damage to the target.',
                 'The caster and nearby allies are immune to new status ailments for 3 turns.'
             ]
-        },
-        synopsis: [
-            'Fast mana sniper with excellent tile damage for a 3* with a very hard special hit that also provides immunity to status ailments for a trio.',
-            'Best on the wings of a defense team.',
-            'Combine with a defense dropper like Valen for faster kills.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },
     graymane: {
         name: 'Graymane',
         attack: 467,
         defense: 368,
         health: 789,
+        element: elements.ice.id,
         pseudonyms: ['greymane', 'graymane'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204440.png',
         stars: 3,
@@ -58,19 +56,14 @@ const blue3StarHeroes = {
             description: [
                 'Deal 225% damage to a single enemy and steal a moderate amount of dealt damage back'
             ]
-        },
-        synopsis: [
-            'Decent special attack with small amount of healing from damage dealt that can be life-saving.',
-            'Best on the wings or flanks of a defense team. Could be a tank in a pinch.',
-            'Combine with a defense dropper like Valen for faster kills.',
-            'Good hero for your first 30, rare events, special raid tournaments.',
-        ]
+        }
     },
     gunnar: {
         name: 'Gunnar',
         attack: 387,
         defense: 533,
         health: 656,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -80,18 +73,14 @@ const blue3StarHeroes = {
             description: [
                 'All allies get +63% defense and share received damage with all their allies for 5 turns'
             ]
-        },
-        synopsis: [
-            'Spirit-link defense provides the increased shielding and shared damage that enables your team to survive tough enemies',
-            'Flank, tank or winger. Preferrably left side for a winger.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },
     'gunnar costume': {
         name: 'Gunnar Costume',
         attack: 415,
         defense: 544,
         health: 729,
+        element: elements.ice.id,
         pseudonyms: ['costume gunnar', 'gunnar costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar_(1).png?bwg=1576252820',
         stars: 3,
@@ -105,11 +94,31 @@ const blue3StarHeroes = {
             ]
         }
     },
+    jarvur: {
+        name: 'Jarvur',
+        attack: 495,
+        defense: 417,
+        health: 764,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jarvur.jpg',
+        pseudonyms: ['jarvur', 'javer'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Jab and Hook',
+            description: [
+                'Deals 265% damage to the target.',
+                'Stack: The caster gets +10% attack. The maximum size of stack is 10. '
+            ]
+        }
+    },
     karil: {
         name: 'Karil',
         attack: 484,
         defense: 378,
         health: 733,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204426.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -129,6 +138,7 @@ const blue3StarHeroes = {
         attack: 483,
         defense: 401,
         health: 808,
+        element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -146,6 +156,7 @@ const blue3StarHeroes = {
         attack: 528,
         defense: 359,
         health: 677,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204553.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
@@ -167,6 +178,7 @@ const blue3StarHeroes = {
         attack: 479,
         defense: 411,
         health: 679,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204415.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -176,18 +188,14 @@ const blue3StarHeroes = {
             description: [
                 'Deal 300% damage to a single enemy and they get -34% defense for 6 turns'
             ]
-        },
-        synopsis: [
-            'Excellent 3* Defense dropper with good attack.',
-            'Combine with other hitters to form devastating attack teams.',
-            'Good hero for your first 30, rare events, special raid tournaments with 3* and until you get Grimm.'
-        ]
+        }
     },
     vodnik: {
         name: 'Vodnik',
         attack: 439,
         defense: 429,
         health: 834,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Vodnik.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -198,21 +206,35 @@ const blue3StarHeroes = {
                 'Deals 280% damage to the target',
                 'The more mana the enemies have, the more damage they will receive, up to 400%'
             ]
-        },
-        synopsis: [
-            'Decent hitter with damage proportionate to target mana. Looks sturdy.',
-            'Combine with a defense dropper like Valen.',
-            'Good hero for your first 30, rare events, special raid tournaments with 3* and until you get Sonya or Triton.'
-        ]
+        }
     }
 };
 
 const yellow3StarHeroes = {
+    agnes: {
+        name: 'Agnes',
+        attack: 550,
+        defense: 481,
+        health: 481,
+        element: elements.holy.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/agnes.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Precise Chop',
+            description: [
+                'Deals 320% damage to the target.',
+                'The attack has a 60% chance to bypass defensive buffs. This includes counterattacks.'
+            ]
+        }
+    },
     arman: {
         name: 'Arman',
         attack: 477,
         defense: 418,
         health: 712,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Arman.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
@@ -237,6 +259,7 @@ const yellow3StarHeroes = {
         attack: 469,
         defense: 410,
         health: 693,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -258,6 +281,7 @@ const yellow3StarHeroes = {
         attack: 529,
         defense: 423,
         health: 682,
+        element: elements.holy.id,
         pseudonyms: ['costume bane', 'bane costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane_(1).png?bwg=1576252820',
         stars: 3,
@@ -276,6 +300,7 @@ const yellow3StarHeroes = {
         attack: 488,
         defense: 391,
         health: 679,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Dawa.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -295,6 +320,7 @@ const yellow3StarHeroes = {
         attack: 467,
         defense: 363,
         health: 811,
+        element: elements.holy.id,
         pseudonyms: ['gan', 'ju', 'gan ju', 'gan-ju'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Gan-Ju.png',
         stars: 3,
@@ -316,6 +342,7 @@ const yellow3StarHeroes = {
         attack: 429,
         defense: 453,
         health: 729,
+        element: elements.holy.id,
         pseudonyms: ['kailani', 'kalani'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Kailani%20(1).png',
         stars: 3,
@@ -337,6 +364,7 @@ const yellow3StarHeroes = {
         attack: 424,
         defense: 418,
         health: 905,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -356,6 +384,7 @@ const yellow3StarHeroes = {
         attack: 505,
         defense: 404,
         health: 684,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -377,6 +406,7 @@ const yellow3StarHeroes = {
         attack: 427,
         defense: 436,
         health: 848,
+        element: elements.holy.id,
         pseudonyms: ['pixie', 'pix'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/76/Pixie_-_Hero_Card.gif/revision/latest?cb=20200106170826',
         stars: 3,
@@ -398,6 +428,7 @@ const green3StarHeroes = {
         attack: 425,
         defense: 450,
         health: 729,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212224%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -418,6 +449,7 @@ const green3StarHeroes = {
         attack: 470,
         defense: 425,
         health: 688,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212155%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -438,6 +470,7 @@ const green3StarHeroes = {
         attack: 446,
         defense: 448,
         health: 674,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -458,6 +491,7 @@ const green3StarHeroes = {
         attack: 466,
         defense: 468,
         health: 751,
+        element: elements.nature.id,
         pseudonyms: ['brienne costume', 'costume brienne'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne_(1).png?bwg=1576252820',
         stars: 3,
@@ -475,6 +509,7 @@ const green3StarHeroes = {
         attack: 431,
         defense: 441,
         health: 855,
+        element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -497,6 +532,7 @@ const green3StarHeroes = {
         attack: 464,
         defense: 448,
         health: 653,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-8.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -506,17 +542,34 @@ const green3StarHeroes = {
             description: [
                 'Deal 125% damage to all enemies and reduce their mana by 16%'
             ]
-        },
-        synopsis: [
-            'Ok on defense for a 3*. Very limited beyond this world.'
-        ]
-    },            
+        }
+    },
+    'carver costume': {
+        name: 'Carver Costume',
+        attack: 505,
+        defense: 452,
+        health: 708,
+        element: elements.nature.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/carver-costume-the-cutthroat-1.jpg',
+        pseudonyms: ['costume carver', 'carver costume'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Stab of Four Blades',
+            description: [
+                'Deals 125% damage to all enemies.',
+                "All enemies get -24% mana generation for 3 turns. This effect can't be dispelled."
+            ]
+        }
+    },         
     'friar tuck': {
         name: 'Friar Tuck',
         attack: 458,
         defense: 450,
         health: 681,
-        pseudonyms: ['friar', 'friar tuck'],
+        element: elements.nature.id,
+        pseudonyms: ['friar', 'friar tuck', 'tuck'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134417.png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -526,17 +579,52 @@ const green3StarHeroes = {
             description: [
                 'Recover 37% health for nearby allies and they get +24% mana generation for 3 turns'
             ]
-        },
-        synopsis: [
-            'Decent partial healer with mana generation buff.',
-            'Kashhrek is a good replacement.'
-        ]
+        }
+    },
+    'friar tuck costume': {
+        name: 'Friar Tuck Costume',
+        attack: 473,
+        defense: 468,
+        health: 779,
+        element: elements.nature.id,
+        pseudonyms: ['costume friar', 'friar costume', 'friar tuck costume', 'costume friar tuck', 'costume tuck', 'tuck costume'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/friar-tuck-costume-jovial-explorer.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Gain Hope',
+            description: [
+                'Recovers 22% health for all allies.',
+                'All allies get +24% mana generation for 3 turns.'
+            ]
+        }
+    },
+    grevle: {
+        name: 'Grevle',
+        attack: 398,
+        defense: 608,
+        health: 613,
+        element: elements.nature.id,
+        pseudonyms: ['grevle', 'grev', 'raccoon', 'racoon'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/grevle.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
+        special: {
+            name: "Traveler's Snack",
+            description: [
+                'Boosts health of all allies by 250. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
+                'All allies get +30% attack for 4 turns.'
+            ]
+        }
     },
     hisan: {
         name: 'Hisan',
         attack: 540,
         defense: 391,
         health: 608,
+        element: elements.nature.id,
         pseudonyms: ['hissan', 'hisan'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Hisan.png',
         stars: 3,
@@ -550,18 +638,14 @@ const green3StarHeroes = {
                 "The target gets -100% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.' 
             ]
-        },
-        synopsis: [
-            'Excellent tile damage for a 3* with hard special hit, damage over time and heal blocking.',
-            'Special attack also cures status ailments on himself.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },   
     isshtak: {
         name: 'Isshtak',
         attack: 453,
         defense: 417,
         health: 764,
+        element: elements.nature.id,
         pseudonyms: ['ishtak', 'ishhtak', 'isshtak'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212203%20(1).png',
         stars: 3,
@@ -572,17 +656,14 @@ const green3StarHeroes = {
             description: [
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies'
             ]
-        },
-        synopsis: [
-            'Nice attack 3 but having multiple hard hitting greens like Hisan and Berden might be a better option.',
-            'Keep on first 30 if you have him and use on rare events, special raid tournaments as needed.'
-        ]
+        }
     },
     mnesseus: {
         name: 'Mnesseus',
         attack: 474,
         defense: 431,
         health: 691,
+        element: elements.nature.id,
         pseudonyms: ['mneusseus', 'menusseus', 'mneussus', 'menussus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Mnesseus.png',
         stars: 3,
@@ -594,17 +675,14 @@ const green3StarHeroes = {
                 'Deals 320% damage to the target.',
                 'Dispels buffs from all enemies.'
             ]
-        },
-        synopsis: [
-            'Good hard special hit and dispel.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },    
     muggy: {
         name: 'Muggy',
         attack: 634,
         defense: 373,
         health: 420,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Muggy.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -619,18 +697,14 @@ const green3StarHeroes = {
                 'Devastating Special Skill: Fierce Slash.',
                 'This effect cannot be dispelled.'
             ]
-        },
-        synopsis: [
-            'Highest tile damage for a 3* hero. Special resurrection can give your attack/defense team extra lives.',
-            'Use in a trio with titan shields against really big titans for amazing damage.',
-            'Good hero for your first 30, rare events, special raid tournaments and big titans if you want to try the titan shields trick.'
-        ]
+        }
     },
     shrubbear: {
         name: 'Shrubbear',
         attack: 351,
         defense: 512,
         health: 888,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Shrubbear.png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
@@ -652,6 +726,7 @@ const red3StarHeroes = {
         attack: 493,
         defense: 413,
         health: 651,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193931%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -661,17 +736,14 @@ const red3StarHeroes = {
             description: [
                 'Deal 280% damage to a single enemy and reduce their mana by 25%'
             ]
-        },
-        synopsis: [
-            'Decent damage for a 3* with mana reduction similar to Gan Ju.',
-            'Keep on first 30 if you have her and use on rare events, special raid tournaments as needed.'
-        ]
+        }
     },    
     bauchan: {
         name: 'Bauchan',
         attack: 420,
         defense: 453,
         health: 830,
+        element: elements.fire.id,
         pseudonyms: ['bauchen', 'bauchan'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Bauchan.jpg',
         stars: 3,
@@ -684,17 +756,14 @@ const red3StarHeroes = {
                 'Reduces the mana of all enemies by 20%.',
                 'All allies get +24% mana generation for 4 turns.'
             ]
-        },
-        synopsis: [
-            '3* Guinevere with the mana reduction. Combine with fast mana hitters to increase offence.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },
     'ei-dunn': {
         name: 'Ei-Dunn',
         attack: 417,
         defense: 476,
         health: 841,
+        element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -712,6 +781,7 @@ const red3StarHeroes = {
         attack: 474,
         defense: 446,
         health: 637,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193953%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -721,17 +791,14 @@ const red3StarHeroes = {
             description: [
                 'Recover 32% health for all allies'
             ]
-        },
-        synopsis: [
-            'Good 3* healer. Second only to Belith.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },
     'hawkmoon costume': {
         name: 'Hawkmoon Costume',
         attack: 492,
         defense: 472,
         health: 707,
+        element: elements.fire.id,
         pseudonyms: ['hawkmoon costume', 'costume hawkmoon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Hawkmoon.png?bwg=1576252820',
         stars: 3,
@@ -750,6 +817,7 @@ const red3StarHeroes = {
         attack: 498,
         defense: 436,
         health: 599,
+        element: elements.fire.id,
         pseudonyms: ['jahangar', 'jahangir'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170524-192906%20(1).png',
         stars: 3,
@@ -760,17 +828,14 @@ const red3StarHeroes = {
             description: [
                 'Deal 145% damage to all enemies and they receive 114 damage over 6 turns'
             ]
-        },
-        synopsis: [
-            'Heavy damage and damage over time hitter limited only by slow mana.',
-            'Good hero for your first 30, rare events and special raid tournaments - especially where mana is very fast and you can only use 3* heroes.'
-        ]
+        }
     },
     namahage: {
         name: 'Namahage',
         attack: 526,
         defense: 418,
         health: 597,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Namahage.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -781,18 +846,14 @@ const red3StarHeroes = {
                 'Deals 290% damage to the target.',
                 'The caster gets +45% attack and a further 20% increase every time they are hit during 5 turns.'
             ]
-        },
-        synopsis: [
-            'High tile damage for a 3* with a hard special hit and ramping attack buff like Brienne.',
-            'A bit squishy.',
-            'Good hero for your first 30, rare events, special raid tournaments.'
-        ]
+        }
     },    
     nashgar: {
         name: 'Nashgar',
         attack: 514,
         defense: 366,
         health: 684,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193903%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -802,17 +863,14 @@ const red3StarHeroes = {
             description: [
                 'Deal 290% damage to a single enemy and they receive 120 damage over 6 turns'
             ]
-        },
-        synopsis: [
-            'High tile damage for a 3* with a hard special hit and good damage over time on one target.',
-            ''
-        ]
+        }
     },
     rudolph: {
         name: 'Rudolph',
         attack: 540,
         defense: 391,
         health: 608,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Rudolph.png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -831,6 +889,7 @@ const red3StarHeroes = {
         attack: 538,
         defense: 382,
         health: 608,
+        element: elements.fire.id,
         pseudonyms: ['squire-rabbit', 'squire-wabbit', 'squire', 'wabbit'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Squire-Rabbit.png',
         stars: 3,
@@ -843,15 +902,53 @@ const red3StarHeroes = {
                 "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
             ]
         }
+    },
+    'sudri': {
+        name: 'Sudri',
+        attack: 434,
+        defense: 479,
+        health: 764,
+        element: elements.fire.id,
+        pseudonyms: ['sudri', 'sundry', 'sudry'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/sudri.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Burning Shields',
+            description: [
+                'Deals 100% damage to all enemies.',
+                'Deals additional 24% damage per each Fire shield on the board, up to 340% damage in total.'
+            ]
+        }
     }
 };
 
 const purple3StarHeroes = {
+    'an-windr': {
+        name: 'An-Windr',
+        attack: 416,
+        defense: 498,
+        health: 782,
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/an-windr.jpg',
+        pseudonyms: ['anwindr', 'anwinder', 'an-windr', 'winder', 'windr'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Tribal Rage',
+            description: [
+                'The caster gets +45% attack, and a further 20% increase every time they or any of their allies are hit during 3 turns. When the effect ends, the caster deals 164% damage on all enemies. Each hit on the caster or their allies during the duration increases the damage by 10% to a maximum of 284% damage.'
+            ]
+        }
+    },
     balthazar: {
         name: 'Balthazar',
         attack: 483,
         defense: 422,
         health: 648,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221520%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -868,6 +965,7 @@ const purple3StarHeroes = {
         attack: 453,
         defense: 431,
         health: 816,
+        element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -885,6 +983,7 @@ const purple3StarHeroes = {
         attack: 413,
         defense: 512,
         health: 684,
+        element: elements.dark.id,
         pseudonyms: ['cochin', 'chochin', 'lantern head', 'lantern-head'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Chochin.png',
         stars: 3,
@@ -903,6 +1002,7 @@ const purple3StarHeroes = {
         attack: 436,
         defense: 453,
         health: 747,
+        element: elements.dark.id,
         pseudonyms: ['gil-ra', 'gilra', 'gill-ra', 'gillra'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Gil-Ra.png',
         stars: 3,
@@ -922,6 +1022,7 @@ const purple3StarHeroes = {
         attack: 437,
         defense: 418,
         health: 862,
+        element: elements.dark.id,
         pseudonyms: ['bat', 'guardian bat'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/c/cb/Guardian_Bat_-_Hero_Card.gif/revision/latest?cb=20200109125830',
         stars: 3,
@@ -940,6 +1041,7 @@ const purple3StarHeroes = {
         attack: 422,
         defense: 411,
         health: 839,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221508%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW,
@@ -956,7 +1058,8 @@ const purple3StarHeroes = {
         attack: 413,
         defense: 464,
         health: 761,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221418%20(1).png',
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/prisca.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.PALADIN,
@@ -967,13 +1070,32 @@ const purple3StarHeroes = {
             ]
         }
     },
+    'prisca costume': {
+        name: 'Prisca Costume',
+        attack: 415,
+        defense: 466,
+        health: 930,
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/prisca-costume-resolute-overseer-1.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Bleeding Thrust',
+            description: [
+                'Deals 205% damage to the target and minor damage to nearby enemies.',
+                'Heals the caster for 30% of damage dealt.'
+            ]
+        }
+    },
     renfeld: {
         name: 'Renfeld',
         attack: 488,
         defense: 398,
         health: 700,
+        element: elements.dark.id,
         pseudonyms: ['renfeld', 'renfield'],
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221500%20(1).png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/renfeld.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.FIGHTER,
@@ -984,11 +1106,31 @@ const purple3StarHeroes = {
             ]
         }
     },
+    'renfeld costume': {
+        name: 'Renfeld Costume',
+        attack: 428,
+        defense: 455,
+        health: 904,
+        element: elements.dark.id,
+        pseudonyms: ['renfeld costume', 'renfield costume', 'costume renfeld', 'costume renfield'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/renfeld-costume-unhinged-surgeon-1.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.CLERIC,
+        special: {
+            name: 'Leeching Saw',
+            description: [
+                'Deals 195% damage to the target.',
+                "The caster steals generated mana of the target and the nearby enemies over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be dispelled, but gets removed if the caster dies."
+            ]
+        }
+    },
     tyrum: {
         name: 'Tyrum',
         attack: 387,
         defense: 422,
         health: 879,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221559%20(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST,
@@ -1005,6 +1147,7 @@ const purple3StarHeroes = {
         attack: 415,
         defense: 446,
         health: 933,
+        element: elements.dark.id,
         pseudonyms: ['costume tyrum', 'tyrum costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Tyrum.png?bwg=1576252820',
         stars: 3,
@@ -1023,6 +1166,7 @@ const purple3StarHeroes = {
         attack: 368,
         defense: 486,
         health: 855,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Vlad_(1).png',
         stars: 3,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -1043,6 +1187,7 @@ const blue4StarHeroes = {
         attack: 686,
         defense: 616,
         health: 1079,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Agwe.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1060,6 +1205,7 @@ const blue4StarHeroes = {
         attack: 501,
         defense: 792,
         health: 1151,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Boril%20(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1071,11 +1217,30 @@ const blue4StarHeroes = {
             ]
         }
     },
+    'boril costume': {
+        name: 'Boril Costume',
+        attack: 504,
+        defense: 851,
+        health: 1287,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/boril-costume-heavyweight-defender-1.jpg',
+        stars: 4,
+        pseudonyms: ['costume boril', 'boril costume'],
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Sturdy Riposte',
+            description: [
+                'All allies counterattack with 60% of the damage received for 4 turns.'
+            ]
+        }
+    },
     'captain of diamonds': {
         name: 'Captain of Diamonds',
         attack: 620,
         defense: 682,
         health: 1126,
+        element: elements.ice.id,
         pseudonyms: ['captain of diamonds', 'diamonds'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Captain-of-Diamonds.png',
         stars: 4,
@@ -1095,6 +1260,7 @@ const blue4StarHeroes = {
         attack: 716,
         defense: 531,
         health: 1132,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204515.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1105,12 +1271,32 @@ const blue4StarHeroes = {
                 'Deal 295% damage to a single enemy and minor damage on nearby enemies and they get -34% defense for 6 turns'
             ]
         }
-    },        
+    },
+    jott: {
+        name: 'Jott',
+        attack: 716,
+        defense: 603,
+        health: 1117,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jott.jpg',
+        pseudonyms: ['jott', 'jot'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Ice Bloom',
+            description: [
+                'Deals 200% damage to all enemies.',
+                'All Ice shields on the board become enhanced. Enhanced shields have +64% attack when cast from attacker side and -57% attack when cast from defender side.'
+            ]
+        }
+    },     
     kiril: {
         name: 'Kiril',
         attack: 656,
         defense: 673,
         health: 1034,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Kiril.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1122,11 +1308,32 @@ const blue4StarHeroes = {
             ]
         }
     },
+    'kiril costume': {
+        name: 'Kiril Costume',
+        attack: 702,
+        defense: 680,
+        health: 1153,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kiril-costume-master-shredder-1.jpg',
+        stars: 4,
+        pseudonyms: ['costume kiril', 'kiril costume'],
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Blessed Solo',
+            description: [
+                'Recovers 28% health for all allies.',
+                'All enemies get -34% attack for 3 turns.',
+                'All enemies get -34% defense for 3 turns.'
+            ]
+        }
+    },
     mireweave: {
         name: 'Mireweave',
         attack: 692,
         defense: 592,
         health: 1166,
+        element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -1144,6 +1351,7 @@ const blue4StarHeroes = {
         attack: 607,
         defense: 731,
         health: 1011,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204507.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1160,6 +1368,7 @@ const blue4StarHeroes = {
         attack: 646,
         defense: 762,
         health: 1103,
+        element: elements.ice.id,
         pseudonyms: ['sonya costume', 'costume sonya'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Sonya.png?bwg=1576260933',
         stars: 4,
@@ -1178,6 +1387,7 @@ const blue4StarHeroes = {
         attack: 720,
         defense: 601,
         health: 1049,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Triton.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1195,6 +1405,7 @@ const blue4StarHeroes = {
         attack: 609,
         defense: 656,
         health: 1196,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Valeria_(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -1216,6 +1427,7 @@ const yellow4StarHeroes = {
         attack: 607,
         defense: 675,
         health: 1115,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Chao.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1233,6 +1445,7 @@ const yellow4StarHeroes = {
         attack: 622,
         defense: 637,
         health: 1224,
+        element: elements.holy.id,
         pseudonyms: ['danzaburo', 'danza', 'ewok'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Danzaburo.png',
         stars: 4,
@@ -1262,6 +1475,7 @@ const yellow4StarHeroes = {
         attack: 703,
         defense: 599,
         health: 1056,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Gretel.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1275,11 +1489,31 @@ const yellow4StarHeroes = {
             ]
         }
     },
+    gullinbursti: {
+        name: 'Gullinbursti',
+        attack: 603,
+        defense: 603,
+        health: 1387,
+        element: elements.holy.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/gullinbursti.jpg',
+        pseudonyms: ['gullinbursti', 'gutbuster', 'gull'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Angry Boar',
+            description: [
+                'Boosts health of all allies by 400. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
+                'The caster gets +45% attack, and a further 20% increase every time they or any of their allies are hit during 3 turns. When the effect ends, the caster deals 164% damage on all enemies. Each hit on the caster or their allies during the duration increases the damage by 10% to a maximum of 284% damage.'
+            ]
+        }
+    },
     'hu tao': {
         name: 'Hu Tao',
         attack: 603,
         defense: 631,
         health: 1183,
+        element: elements.holy.id,
         pseudonyms: ['hu', 'hu tao', 'hu-tao'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Hu-Tao%20(1).jpg',
         stars: 4,
@@ -1293,12 +1527,14 @@ const yellow4StarHeroes = {
             ]
         }
     },
-    jackal: {
+    'guardian jackal': {
         name: 'Guardian Jackal',
         attack: 765,
         defense: 531,
         health: 1032,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Guardian-Jackal.png',
+        pseudonyms: ['jackal', 'guardian jackal'],
         stars: 4,
         manaSpeed: ManaSpeeds.VERY_FAST,
         classGrade: Classes.ROGUE,
@@ -1314,6 +1550,7 @@ const yellow4StarHeroes = {
         attack: 626,
         defense: 667,
         health: 1217,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/1/c199193c7398682367a645b6f5c53f188f4934be.jpeg',
         stars: 4,
         pseudonyms: ['woolerton', 'lady woolerton'],
@@ -1332,6 +1569,7 @@ const yellow4StarHeroes = {
         attack: 616,
         defense: 665,
         health: 1098,
+        element: elements.holy.id,
         pseudonyms: ['li', 'li xiu', 'li-xiu'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-4.png',
         stars: 4,
@@ -1349,6 +1587,7 @@ const yellow4StarHeroes = {
         attack: 660,
         defense: 690,
         health: 1189,
+        element: elements.holy.id,
         pseudonyms: ['costume li', 'li costume', 'costume li xiu', 'li xiu costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Li-Xiu.png?bwg=1576260933',
         stars: 4,
@@ -1367,6 +1606,7 @@ const yellow4StarHeroes = {
         attack: 682,
         defense: 599,
         health: 1187,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1386,6 +1626,7 @@ const yellow4StarHeroes = {
         attack: 707,
         defense: 620,
         health: 992,
+        element: elements.holy.id,
         pseudonyms: ['wu', 'wu kong', 'wu-kong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Wu-Kong.png',
         stars: 4,
@@ -1401,11 +1642,32 @@ const yellow4StarHeroes = {
 };
 
 const green4StarHeroes = {
+    almur: {
+        name: 'Almur',
+        attack: 622,
+        defense: 643,
+        health: 1253,
+        element: elements.nature.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/almur.jpg',
+        pseudonyms: ['almur', 'almer', 'elmo'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Shadow Sweep',
+            description: [
+                'Deals 120% damage to the target and nearby enemies.',
+                "Reduces max health from the target and nearby enemies by 75. Max health can't get lower than 30% of the original max health.",
+                'The target and nearby enemies get -54% defense against Nature for 4 turns.'
+            ]
+        }
+    },
     brynhild: {
         name: 'Brynhild',
         attack: 680,
         defense: 605,
         health: 1175,
+        element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1425,6 +1687,7 @@ const green4StarHeroes = {
         attack: 531,
         defense: 690,
         health: 1323,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Buddy.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1443,6 +1706,7 @@ const green4StarHeroes = {
         attack: 635,
         defense: 637,
         health: 1128,
+        element: elements.nature.id,
         pseudonyms: ['caed', 'caedmon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212143%20(1).png',
         stars: 4,
@@ -1460,6 +1724,7 @@ const green4StarHeroes = {
         attack: 618,
         defense: 690,
         health: 1096,
+        element: elements.nature.id,
         pseudonyms: ['gaed', 'gad', 'gaedirus', 'gadeirus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gadeirus.png',
         stars: 4,
@@ -1479,6 +1744,7 @@ const green4StarHeroes = {
         attack: 737,
         defense: 450,
         health: 1302,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gobbler.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1497,6 +1763,7 @@ const green4StarHeroes = {
         attack: 699,
         defense: 601,
         health: 1064,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Green-Hansel.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1515,6 +1782,7 @@ const green4StarHeroes = {
         attack: 743,
         defense: 603,
         health: 960,
+        element: elements.nature.id,
         pseudonyms: ['jack', "jack o'hare", 'jack ohare', 'jack hare'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Jack-OHare.png',
         stars: 4,
@@ -1533,6 +1801,7 @@ const green4StarHeroes = {
         attack: 548,
         defense: 648,
         health: 1321,
+        element: elements.nature.id,
         pseudonyms: ['kash', 'kashrek', 'kashhrek'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Kashhrek.png',
         stars: 4,
@@ -1545,11 +1814,30 @@ const green4StarHeroes = {
             ]
         }
     },
+    'kashhrek costume': {
+        name: 'Kashhrek Costume',
+        attack: 585,
+        defense: 690,
+        health: 1409,
+        element: elements.nature.id,
+        pseudonyms: ['costume kash', 'kash costume', 'costume kashrek', 'kashrek costume', 'costume kashhrek', 'kashhrek costume'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kashhrek-costume-lizardfolk-elder-1.jpg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Second Skin',
+            description: [
+                'Boosts health of the caster and nearby allies by 450. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.'
+            ]
+        }
+    },
     'little john': {
         name: 'Little John',
         attack: 741,
         defense: 569,
         health: 988,
+        element: elements.nature.id,
         pseudonyms: ['lj', 'little john', 'little-john'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134427.png',
         stars: 4,
@@ -1561,12 +1849,32 @@ const green4StarHeroes = {
                 'Deal 185% damage to all enemies and they get -64% mana generation for 3 turns'
             ]
         }
-    },          
+    },
+    'little john costume': {
+        name: 'Little John Costume',
+        attack: 756,
+        defense: 624,
+        health: 1086,
+        element: elements.nature.id,
+        pseudonyms: ['costume lj', 'lj costume', 'costume little john', 'little john costume'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/little-john-costume-stealthy-brother-1.jpg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Massive Cleave',
+            description: [
+                'Deals 185% damage to all enemies.',
+                'The caster and nearby allies have from +30% to +70% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 4 turns.'
+            ]
+        }
+    },       
     melendor: {
         name: 'Melendor',
         attack: 714,
         defense: 586,
         health: 1000,
+        element: elements.nature.id,
         pseudonyms: ['mel', 'melendor', 'gandalf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212217%20(1).png',
         stars: 4,
@@ -1584,6 +1892,7 @@ const green4StarHeroes = {
         attack: 698,
         defense: 655,
         health: 1151,
+        element: elements.nature.id,
         pseudonyms: ['melendor costume', 'costume melendor', 'costume mel', 'mel costume', 'saruman', 'sauruman', 'sarumon', 'saurumon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Melendor.png?bwg=1576260933',
         stars: 4,
@@ -1603,6 +1912,7 @@ const green4StarHeroes = {
         attack: 643,
         defense: 641,
         health: 1113,
+        element: elements.nature.id,
         pseudonyms: ['cabin boy', 'peters', 'cabin boy peters', 'cabinboy', 'cabinboy peters'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Peters.jpg',
         stars: 4,
@@ -1621,6 +1931,7 @@ const green4StarHeroes = {
         attack: 728,
         defense: 605,
         health: 969,
+        element: elements.nature.id,
         pseudonyms: ['skittles', 'skittleskull'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.png',
         stars: 4,
@@ -1639,6 +1950,7 @@ const green4StarHeroes = {
         attack: 778,
         defense: 631,
         health: 1035,
+        element: elements.nature.id,
         pseudonyms: ['skittles costume', 'costume skittles', 'costume skittleskull', 'skittleskull costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.jpg?bwg=1576260933',
         stars: 4,
@@ -1660,6 +1972,7 @@ const red4StarHeroes = {
         attack: 588,
         defense: 711,
         health: 1107,
+        element: elements.fire.id,
         pseudonyms: ['boldtusk', 'bold', 'bt'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-2.png',
         stars: 4,
@@ -1677,6 +1990,7 @@ const red4StarHeroes = {
         attack: 621,
         defense: 736,
         health: 1230,
+        element: elements.fire.id,
         pseudonyms: ['boldtusk costume', 'costume boldtusk', 'costume bold', 'bold costume', 'costume bt', 'bt costume', 'chef'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Boldtusk.png?bwg=1576260933',
         stars: 4,
@@ -1696,6 +2010,7 @@ const red4StarHeroes = {
         attack: 728,
         defense: 537,
         health: 1094,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Colen.png',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
@@ -1707,12 +2022,14 @@ const red4StarHeroes = {
             ]
         }
     },
-    falcon: {
+    'guardian falcon': {
         name: 'Guardian Falcon',
         attack: 552,
         defense: 754,
         health: 1126,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Guardian-Falcon.png',
+        pseudonyms: ['falcon', 'guardian falcon'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.PALADIN,
@@ -1728,6 +2045,7 @@ const red4StarHeroes = {
         attack: 569,
         defense: 565,
         health: 1430,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193939%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1744,6 +2062,7 @@ const red4StarHeroes = {
         attack: 675,
         defense: 686,
         health: 935,
+        element: elements.fire.id,
         pseudonyms: ['kelile', 'kellile'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Kelile.png',
         stars: 4,
@@ -1761,6 +2080,7 @@ const red4StarHeroes = {
         attack: 756,
         defense: 533,
         health: 1047,
+        element: elements.fire.id,
         pseudonyms: ['lance', 'sir lancelot', 'lancelot', 'sir lance'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sir-Lancelot_(1).jpg',
         stars: 4,
@@ -1780,6 +2100,7 @@ const red4StarHeroes = {
         attack: 767,
         defense: 507,
         health: 1039,
+        element: elements.fire.id,
         pseudonyms: ['scarlet', 'scarlett'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-194023%20(1).png',
         stars: 4,
@@ -1792,11 +2113,35 @@ const red4StarHeroes = {
             ]
         }
     },
+    shadereave: {
+        name: 'Shadereave',
+        attack: 590,
+        defense: 631,
+        health: 1349,
+        element: elements.fire.id,
+        pseudonyms: ['shadereave', 'shadereve', 'shadoweaver'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/shadereave.jpg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Eternal Servitude',
+            description: [
+                'All allies get +30% attack for 4 turns.',
+                'All allies get +30% critical chance for 4 turns.',
+                'All allies receive Draugr Blessing. If the blessed Hero dies in the next 4 turns, they will be reborn as a Draugr with:',
+                '70% inherited health.',
+                '500 attack.',
+                '500 defense.'
+            ]
+        }
+    },
     sumitomo: {
         name: 'Sumitomo',
         attack: 665,
         defense: 633,
         health: 1113,
+        element: elements.fire.id,
         pseudonyms: ['sumi', 'sumitomo'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sumitomo.png',
         stars: 4,
@@ -1816,6 +2161,7 @@ const red4StarHeroes = {
         attack: 711,
         defense: 624,
         health: 1068,
+        element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW,
@@ -1833,6 +2179,7 @@ const red4StarHeroes = {
         attack: 605,
         defense: 690,
         health: 1143,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Wilbur.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1855,7 +2202,8 @@ const purple4StarHeroes = {
         attack: 771,
         defense: 527,
         health: 1054,
-        pseudonyms: ['ameona, ammeona, ameonna, ammeonna, ghost girl, ghost-girl'],
+        element: elements.dark.id,
+        pseudonyms: ['ameona', 'ammeona', 'ameonna', 'ammeonna', 'ghost girl', 'ghost-girl'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Ameonna.png',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST,
@@ -1872,10 +2220,11 @@ const purple4StarHeroes = {
         }
     },
     boomer: {
-        name: 'First Mate Boomer',
+        name: 'Boomer',
         attack: 541,
         defense: 663,
         health: 1323,
+        element: elements.dark.id,
         pseudonyms: ['boomer', 'first mate', 'first mate boomer'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Boomer_(1).jpg',
         stars: 4,
@@ -1894,6 +2243,7 @@ const purple4StarHeroes = {
         attack: 658,
         defense: 641,
         health: 1105,
+        element: elements.dark.id,
         pseudonyms: ['chesire', 'cat', 'chesire-cat', 'chesire cat'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cheshire-Cat.png',
         stars: 4,
@@ -1913,6 +2263,7 @@ const purple4StarHeroes = {
         attack: 563,
         defense: 605,
         health: 1362,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cyprian%20(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1924,11 +2275,32 @@ const purple4StarHeroes = {
             ]
         }
     },
+    fura: {
+        name: 'Fura',
+        attack: 703,
+        defense: 624,
+        health: 1075,
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/06/fura.jpg',
+        pseudonyms: ['fura', 'fury'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.WIZARD,
+        special: {
+            name: 'Nightglade Pollen',
+            description: [
+                'Deals 150% damage to all enemies.',
+                "Reduces max health from all enemies by 100. Max health can't get lower than 30% of the original max health.",
+                'All enemies get -50% decrease for any healing received for 4 turns.'
+            ]
+        }
+    },
     gafar: {
         name: 'Gafar',
         attack: 711,
         defense: 633,
         health: 988,
+        element: elements.dark.id,
         pseudonyms: ['gafar', 'gaffar'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Gafar.png',
         stars: 4,
@@ -1949,6 +2321,7 @@ const purple4StarHeroes = {
         attack: 531,
         defense: 690,
         health: 1323,
+        element: elements.dark.id,
         pseudonyms: ['jabar', 'jabbar', 'sandcastle', 'sand castle', 'walking sand castle'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Jabbar.png',
         stars: 4,
@@ -1969,6 +2342,7 @@ const purple4StarHeroes = {
         attack: 682,
         defense: 660,
         health: 975,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Merlin_(1).jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -1987,6 +2361,7 @@ const purple4StarHeroes = {
         attack: 707,
         defense: 595,
         health: 1079,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Proteus.png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2004,6 +2379,7 @@ const purple4StarHeroes = {
         attack: 595,
         defense: 673,
         health: 1166,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221453%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2020,6 +2396,7 @@ const purple4StarHeroes = {
         attack: 633,
         defense: 702,
         health: 1271,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Rigard.png?bwg=1576260933',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2038,6 +2415,7 @@ const purple4StarHeroes = {
         attack: 699,
         defense: 578,
         health: 1060,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221551%20(1).png',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2054,6 +2432,7 @@ const purple4StarHeroes = {
         attack: 722,
         defense: 618,
         health: 1047,
+        element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2075,6 +2454,7 @@ const purple4StarHeroes = {
         attack: 660,
         defense: 633,
         health: 1045,
+        element: elements.dark.id,
         pseudonyms: ['burt', 'tibs', 'tibertus', 'tiburtus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221432%20(1).png',
         stars: 4,
@@ -2092,6 +2472,7 @@ const purple4StarHeroes = {
         attack: 688,
         defense: 675,
         health: 1140,
+        element: elements.dark.id,
         pseudonyms: ['duke of rock', 'costume burt', 'burt costume', 'costume tibs', 'tibs costume', 'costume tibertus', 'tibertus costume', 'costume tiburtus', 'tiburtus costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Tiburtus.png?bwg=1576260933',
         stars: 4,
@@ -2113,6 +2494,7 @@ const blue5StarHeroes = {
         attack: 615,
         defense: 823,
         health: 1446,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Aegir%20(2).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2132,6 +2514,7 @@ const blue5StarHeroes = {
         attack: 739,
         defense: 706,
         health: 1336,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alasie%20(2).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2150,6 +2533,7 @@ const blue5StarHeroes = {
         attack: 741,
         defense: 714,
         health: 1326,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alice_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2167,6 +2551,7 @@ const blue5StarHeroes = {
         attack: 731,
         defense: 768,
         health: 1260,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Ariel%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2185,6 +2570,7 @@ const blue5StarHeroes = {
         attack: 737,
         defense: 692,
         health: 1349,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Athena.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2201,6 +2587,7 @@ const blue5StarHeroes = {
         attack: 780,
         defense: 737,
         health: 1297,
+        element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/d/4d4b3a0b3c4a5576260f9d6861dbb7f474030d32.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2220,6 +2607,7 @@ const blue5StarHeroes = {
         attack: 753,
         defense: 745,
         health: 1314,
+        element: elements.ice.id,
         pseudonyms: ['fin', 'finley'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Finley.png',
         stars: 5,
@@ -2239,6 +2627,7 @@ const blue5StarHeroes = {
         attack: 733,
         defense: 723,
         health: 1330,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Frida%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2258,6 +2647,7 @@ const blue5StarHeroes = {
         attack: 797,
         defense: 655,
         health: 1200,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -2274,6 +2664,7 @@ const blue5StarHeroes = {
         attack: 869,
         defense: 659,
         health: 1293,
+        element: elements.ice.id,
         pseudonyms: ['isarnia costume', 'costume isarnia'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia_(1).png?bwg=1576266897',
         stars: 5,
@@ -2292,6 +2683,7 @@ const blue5StarHeroes = {
         attack: 708,
         defense: 733,
         health: 1336,
+        element: elements.ice.id,
         pseudonyms: ['arthur', 'ka', 'king arthur', 'king-arthur'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-King-Arthur_(1).jpg',
         stars: 5,
@@ -2312,7 +2704,8 @@ const blue5StarHeroes = {
         attack: 793,
         defense: 591,
         health: 1334,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Magni.png',
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/magni.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.FIGHTER,
@@ -2323,11 +2716,31 @@ const blue5StarHeroes = {
             ]
         }
     },
+    'magni costume': {
+        name: 'Magni Costume',
+        attack: 743,
+        defense: 732,
+        health: 1467,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/magni-costume-monolith-of-ice-1.jpg',
+        pseudonyms: ['magni costume', 'costume magni'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Strike of the Monolith',
+            description: [
+                'Deals 420% damage to the target.',
+                'The target and nearby enemies get -34% defense for 4 turns.'
+            ]
+        }
+    },
     'master lepus': {
         name: 'Master Lepus',
         attack: 795,
         defense: 690,
         health: 1194,
+        element: elements.ice.id,
         pseudonyms: ['master lepus', 'lepus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Master-Lepus.png',
         stars: 5,
@@ -2341,11 +2754,12 @@ const blue5StarHeroes = {
             ]
         }
     },
-    'miki': {
+    miki: {
         name: 'Miki',
         attack: 712,
         defense: 778,
         health: 1275,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Miki_August-HOTM.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -2364,6 +2778,7 @@ const blue5StarHeroes = {
         attack: 723,
         defense: 751,
         health: 1330,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Misandra.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2382,6 +2797,7 @@ const blue5StarHeroes = {
         attack: 725,
         defense: 698,
         health: 1367,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray//5-Ice-Perseus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2393,11 +2809,34 @@ const blue5StarHeroes = {
             ]
         }
     },
+    raffaele: {
+        name: 'Raffaele',
+        attack: 650,
+        defense: 803,
+        health: 1402,
+        element: elements.ice.id,
+        // TODO: Update with better image
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/06/img_8450.jpg',
+        pseudonyms: ['raffaele', 'raffy', 'raff', 'rafaele'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Ice Treatment',
+            description: [
+                'Heals all allies who have less than 50% HP left to 50% health',
+                'All allies regenerate 812 HP over 4 turns.',
+                'Dispels status ailments from all allies.',
+                "Element Link gives all ice allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     richard: {
         name: 'Richard',
         attack: 644,
         defense: 817,
         health: 1260,
+        element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204347.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2414,6 +2853,7 @@ const blue5StarHeroes = {
         attack: 682,
         defense: 862,
         health: 1361,
+        element: elements.ice.id,
         pseudonyms: ['richard costume', 'costume richard'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Richard.png?bwg=1576266897',
         stars: 5,
@@ -2432,6 +2872,7 @@ const blue5StarHeroes = {
         attack: 733,
         defense: 698,
         health: 1359,
+        element: elements.ice.id,
         pseudonyms: ['rumple', 'rumpel', 'rumplestiltskin', 'rumpelstiltskin', 'rumplestilskin', 'rumpelstilskin', 'rump'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Rumpelstiltskin%20(1).png',
         stars: 5,
@@ -2456,11 +2897,32 @@ const blue5StarHeroes = {
             ]
         }
     },
+    'skadi': {
+        name: 'Skadi',
+        attack: 696,
+        defense: 793,
+        health: 1411,
+        element: elements.ice.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/07/skadi.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Iceberg Crush',
+            description: [
+                'Deals 170% damage to all enemies.',
+                'The damage is increased by 70% per each dead enemy.',
+                'Stack: all enemies receive 30 Frost damage per each killed enemy or enemy minion at the end of each turn. The maximum size of stack is 10.',
+                'Stack: all enemies get -6% mana generation per each killed enemy or enemy minion. The maximum size of stack is 10.'
+            ]
+        }
+    },
     'snow white': {
         name: 'Snow White',
         attack: 756,
         defense: 747,
         health: 1299,
+        element: elements.ice.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/e/e6/Snow_White.png/revision/latest?cb=20191204181154',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -2478,6 +2940,7 @@ const blue5StarHeroes = {
         attack: 638,
         defense: 793,
         health: 1339,
+        element: elements.ice.id,
         pseudonyms: ['thorne', 'thorn'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Thorne%20(1).jpg',
         stars: 5,
@@ -2495,6 +2958,7 @@ const blue5StarHeroes = {
         attack: 743,
         defense: 729,
         health: 1303,
+        element: elements.ice.id,
         pseudonyms: ['vela', 'velly'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Vela_January-HOTM.jpg',
         stars: 5,
@@ -2519,6 +2983,7 @@ const yellow5StarHeroes = {
         attack: 737,
         defense: 704,
         health: 1345,
+        element: elements.holy.id,
         pseudonyms: ['del', 'delilah'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Delilah.png',
         stars: 5,
@@ -2537,6 +3002,7 @@ const yellow5StarHeroes = {
         attack: 727,
         defense: 712,
         health: 1353,
+        element: elements.holy.id,
         pseudonyms: ['drake', 'drake fong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Drake-Fong.png',
         stars: 5,
@@ -2556,6 +3022,7 @@ const yellow5StarHeroes = {
         attack: 751,
         defense: 741,
         health: 1324,
+        element: elements.holy.id,
         pseudonyms: ['gazelle', 'guardian gazelle'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/5/5d/Guardian_Gazelle_-_Hero_Card.gif/revision/latest?cb=20200109132056',
         stars: 5,
@@ -2581,6 +3048,7 @@ const yellow5StarHeroes = {
         attack: 601,
         defense: 795,
         health: 1483,
+        element: elements.holy.id,
         pseudonyms: ['owl', 'guardian owl'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guardian-Owl%20(1).png',
         stars: 5,
@@ -2601,6 +3069,7 @@ const yellow5StarHeroes = {
         attack: 669,
         defense: 778,
         health: 1347,
+        element: elements.holy.id,
         pseudonyms: ['guin', 'guinevere'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guinevere_(1).jpg',
         stars: 5,
@@ -2620,6 +3089,7 @@ const yellow5StarHeroes = {
         attack: 813,
         defense: 642,
         health: 1312,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Inari.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2637,6 +3107,7 @@ const yellow5StarHeroes = {
         attack: 749,
         defense: 636,
         health: 1339,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-213228%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2653,6 +3124,7 @@ const yellow5StarHeroes = {
         attack: 782,
         defense: 678,
         health: 1465,
+        element: elements.holy.id,
         pseudonyms: ['joon costume', 'costume joon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Joon.png?bwg=1576266897',
         stars: 5,
@@ -2671,6 +3143,7 @@ const yellow5StarHeroes = {
         attack: 609,
         defense: 776,
         health: 1425,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Justice%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -2689,6 +3162,7 @@ const yellow5StarHeroes = {
         attack: 731,
         defense: 718,
         health: 1221,
+        element: elements.holy.id,
         pseudonyms: ['leo', 'leonidas'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Leonidas%20(1).png',
         stars: 5,
@@ -2708,6 +3182,7 @@ const yellow5StarHeroes = {
         attack: 743,
         defense: 729,
         health: 1303,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/b/9b75eafbd8b56a522e214c90c6ebf36a6718d7b2.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -2726,6 +3201,7 @@ const yellow5StarHeroes = {
         attack: 786,
         defense: 679,
         health: 1248,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Musashi%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2743,6 +3219,7 @@ const yellow5StarHeroes = {
         attack: 735,
         defense: 737,
         health: 1299,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Neith.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2762,6 +3239,7 @@ const yellow5StarHeroes = {
         attack: 770,
         defense: 718,
         health: 1369,
+        element: elements.holy.id,
         pseudonyms: ['norns', 'norn'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/9/39b56e8305d0a2015b21dde20f5e62f418bf8a74.jpeg',
         stars: 5,
@@ -2780,6 +3258,7 @@ const yellow5StarHeroes = {
         attack: 618,
         defense: 815,
         health: 1437,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Onatel%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2799,6 +3278,7 @@ const yellow5StarHeroes = {
         attack: 745,
         defense: 718,
         health: 1349,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Poseidon.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2817,6 +3297,7 @@ const yellow5StarHeroes = {
         attack: 735,
         defense: 710,
         health: 1367,
+        element: elements.holy.id,
         pseudonyms: ['rana', 'sandqueen', 'sand-queen'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Rana.png',
         stars: 5,
@@ -2837,6 +3318,7 @@ const yellow5StarHeroes = {
         attack: 768,
         defense: 782,
         health: 1126,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Ranvir_June-HOTM.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2850,11 +3332,31 @@ const yellow5StarHeroes = {
             ]
         }
     },
+    roc: {
+        name: 'Roc',
+        attack: 762,
+        defense: 739,
+        health: 1361,
+        element: elements.holy.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/07/roc.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Sand Cyclone',
+            description: [
+                'All enemies receive 366 damage over 3 turns.',
+                "All enemies get -50% decrease for any healing received for 2 turns. This effect can't be dispelled.",
+                'Dispels status ailments from all allies.'
+            ]
+        }
+    },
     sif: {
         name: 'Sif',
         attack: 788,
         defense: 716,
         health: 1306,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -2873,6 +3375,7 @@ const yellow5StarHeroes = {
         attack: 778,
         defense: 727,
         health: 1347,
+        element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/b/cb7d94fcfcf1c39066febfca6e2e5b62dc14215f.jpeg',
         pseudonyms: ['sir roostley', 'roostley'],
         stars: 5,
@@ -2892,6 +3395,7 @@ const yellow5StarHeroes = {
         attack: 714,
         defense: 694,
         health: 1328,
+        element: elements.holy.id,
         pseudonyms: ['viv', 'vivica'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica.png',
         stars: 5,
@@ -2909,6 +3413,7 @@ const yellow5StarHeroes = {
         attack: 741,
         defense: 735,
         health: 1475,
+        element: elements.holy.id,
         pseudonyms: ['costume viv', 'viv costume', 'costume vivica', 'vivica costume', 'dirty viv'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica_(1).png?bwg=1576266897',
         stars: 5,
@@ -2928,6 +3433,7 @@ const yellow5StarHeroes = {
         attack: 731,
         defense: 749,
         health: 1353,
+        element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-White-Rabbit.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -2948,6 +3454,7 @@ const green5StarHeroes = {
         attack: 725,
         defense: 741,
         health: 1277,
+        element: elements.nature.id,
         pseudonyms: ['alby', 'alberich'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Alberich%20(1).png',
         stars: 5,
@@ -2967,6 +3474,7 @@ const green5StarHeroes = {
         attack: 733,
         defense: 727,
         health: 1336,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Atomos%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -2985,8 +3493,9 @@ const green5StarHeroes = {
         attack: 675,
         defense: 802,
         health: 1266,
+        element: elements.nature.id,
         pseudonyms: ['elk', 'elkanen'],
-        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/2/26/Elkanen_-_Hero_Card.gif/revision/latest?cb=20190321142237',
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/elkanen.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.CLERIC,
@@ -2998,11 +3507,31 @@ const green5StarHeroes = {
             ]
         }
     },
+    'elkanen costume': {
+        name: 'Elkanen Costume',
+        attack: 687,
+        defense: 862,
+        health: 1370,
+        element: elements.nature.id,
+        pseudonyms: ['elk costume', 'elkanen costume', 'costume elk', 'costume elkanen'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/elkanen-costume-moonlit-conqueror-1.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Eclipse Spear',
+            description: [
+                'Deals 280% damage to the target and nearby enemies.',
+                'The caster steals 61% of any healing applied to the target and nearby enemies for 3 turns.'
+            ]
+        }
+    },
     evelyn: {
         name: 'Evelyn',
         attack: 727,
         defense: 712,
         health: 1355,
+        element: elements.nature.id,
         pseudonyms: ['eve', 'evelyn'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Evelyn.png',
         stars: 5,
@@ -3023,6 +3552,7 @@ const green5StarHeroes = {
         attack: 729,
         defense: 710,
         health: 1351,
+        element: elements.nature.id,
         pseudonyms: ['greg', 'gregorion'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Gregorion.png',
         stars: 5,
@@ -3042,6 +3572,7 @@ const green5StarHeroes = {
         attack: 714,
         defense: 780,
         health: 1339,
+        element: elements.nature.id,
         pseudonyms: ['chameleon', 'guardian chameleon'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/9/9d/Guardian_Chameleon_-_Hero_Card.gif/revision/latest?cb=20200109131113',
         stars: 5,
@@ -3062,6 +3593,7 @@ const green5StarHeroes = {
         attack: 655,
         defense: 836,
         health: 1402,
+        element: elements.nature.id,
         pseudonyms: ['heimdall', 'heimdal'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
         stars: 5,
@@ -3081,6 +3613,7 @@ const green5StarHeroes = {
         attack: 657,
         defense: 650,
         health: 1545,
+        element: elements.nature.id,
         pseudonyms: ['groot', 'tree', 'horg', 'horghall'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall%20(1).jpg',
         stars: 5,
@@ -3099,6 +3632,7 @@ const green5StarHeroes = {
         attack: 691,
         defense: 694,
         health: 1669,
+        element: elements.nature.id,
         pseudonyms: ['costume groot', 'groot costume', 'costume tree', 'tree costume', 'costume horg', 'horg costume', 'costume horghall', 'horghall costume', 'jester'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall.png?bwg=1576266897',
         stars: 5,
@@ -3117,8 +3651,9 @@ const green5StarHeroes = {
         attack: 711,
         defense: 766,
         health: 1246,
+        element: elements.nature.id,
         pseudonyms: ['kadilen', 'kad'],
-        imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/b/bd/Kadilen_-_Hero_Card.gif/revision/latest?cb=20190321142652',
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/kadilen.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.DRUID,
@@ -3130,11 +3665,32 @@ const green5StarHeroes = {
             ]
         }
     },
+    'kadilen costume': {
+        name: 'Kadilen Costume',
+        attack: 698,
+        defense: 830,
+        health: 1398,
+        element: elements.nature.id,
+        pseudonyms: ['kadilen costume', 'kad costume', 'costume kadilen', 'costume kad'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kadilen-costume-priestess-of-moonlight-1.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Crescent Shield',
+            description: [
+                'Deals 170% damage to all enemies.',
+                'All allies get +45% chance to dodge Special Skills for 3 turns. Each dodge summons a Thorn Minion.',
+                'Thorn Minion has 15% HP and 15% attack inherited from the caster.'
+            ]
+        }
+    },
     kingston: {
         name: 'Kingston',
         attack: 749,
         defense: 735,
         health: 1266,
+        element: elements.nature.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/8/80/Kingston_-_Hero_Card.gif/revision/latest?cb=20191001130313',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3153,6 +3709,7 @@ const green5StarHeroes = {
         attack: 805,
         defense: 665,
         health: 1231,
+        element: elements.nature.id,
         pseudonyms: ['lady locke', 'locke'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-Locke.jpg',
         stars: 5,
@@ -3171,6 +3728,7 @@ const green5StarHeroes = {
         attack: 756,
         defense: 741,
         health: 1312,
+        element: elements.nature.id,
         pseudonyms: ['lady of the lake', 'lady lake', 'lady-of-the-lake', 'lady-lake', 'lake lady', 'lake-lady', 'lake'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-of-the-Lake.jpg',
         stars: 5,
@@ -3190,6 +3748,7 @@ const green5StarHeroes = {
         attack: 729,
         defense: 718,
         health: 1248,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212132%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3206,6 +3765,7 @@ const green5StarHeroes = {
         attack: 773,
         defense: 745,
         health: 1364,
+        element: elements.nature.id,
         pseudonyms: ['lianna costume', 'costume lianna', 'sailor lianna'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lianna-1.png?bwg=1576266897',
         stars: 5,
@@ -3224,6 +3784,7 @@ const green5StarHeroes = {
         attack: 821,
         defense: 648,
         health: 1260,
+        element: elements.nature.id,
         pseudonyms: ['marg', 'margaret'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Margaret_(1).png',
         stars: 5,
@@ -3242,6 +3803,7 @@ const green5StarHeroes = {
         attack: 716,
         defense: 721,
         health: 1343,
+        element: elements.nature.id,
         pseudonyms: ['morgan', 'morgan le fay', 'le fay', 'morgan-le-fay', 'le-fay'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Morgan-Le-Fay_(1).jpg',
         stars: 5,
@@ -3260,6 +3822,7 @@ const green5StarHeroes = {
         attack: 605,
         defense: 819,
         health: 1462,
+        element: elements.nature.id,
         pseudonyms: ['mn', 'mother north'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Mother-North.png',
         stars: 5,
@@ -3279,6 +3842,7 @@ const green5StarHeroes = {
         attack: 753,
         defense: 741,
         health: 1353,
+        element: elements.nature.id,
         pseudonyms: ['ratatoskr', 'rat'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/7/47da7c546b8d3fe02304e63194bfe1844fc1a81c.jpeg',
         stars: 5,
@@ -3297,6 +3861,7 @@ const green5StarHeroes = {
         attack: 824,
         defense: 667,
         health: 1240,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Tarlak.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3314,6 +3879,7 @@ const green5StarHeroes = {
         attack: 613,
         defense: 832,
         health: 1425,
+        element: elements.nature.id,
         pseudonyms: ['telluria', 'teluria', 'telly'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/telluria-1.jpg',
         stars: 5,
@@ -3336,6 +3902,7 @@ const green5StarHeroes = {
         attack: 735,
         defense: 710,
         health: 1341,
+        element: elements.nature.id,
         pseudonyms: [
             'hatter',
             'mad hatter',
@@ -3358,6 +3925,7 @@ const green5StarHeroes = {
         attack: 618,
         defense: 815,
         health: 1437,
+        element: elements.nature.id,
         pseudonyms: ['yunan', 'sandking', 'sand-king', 'sand king'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Yunan.png',
         stars: 5,
@@ -3378,6 +3946,7 @@ const green5StarHeroes = {
         attack: 764,
         defense: 688,
         health: 1308,
+        element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Zeline%20(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3400,6 +3969,7 @@ const red5StarHeroes = {
         attack: 698,
         defense: 793,
         health: 1279,
+        element: elements.fire.id,
         pseudonyms: ['anzogh', 'anzo'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Anzogh.jpg',
         stars: 5,
@@ -3419,6 +3989,7 @@ const red5StarHeroes = {
         attack: 659,
         defense: 741,
         health: 1442,
+        element: elements.fire.id,
         pseudonyms: ['ares', 'aries'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Ares.png',
         stars: 5,
@@ -3438,7 +4009,8 @@ const red5StarHeroes = {
         attack: 793,
         defense: 607,
         health: 1322,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Azlar.png',
+        element: elements.fire.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/azlar.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
         classGrade: Classes.BARBARIAN,
@@ -3449,11 +4021,51 @@ const red5StarHeroes = {
             ]
         }
     },
+    'azlar costume': {
+        name: 'Azlar Costume',
+        attack: 821,
+        defense: 663,
+        health: 1431,
+        element: elements.fire.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/azlar-costume-king-of-the-leors-1.jpg',
+        pseudonyms: ['alzar costume', 'costume azlar'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.PALADIN,
+        special: {
+            name: 'Volcanic Flareup',
+            description: [
+                'Deals 205% damage to the target and nearby enemies.',
+                'Deals 410% damage if the target has less than 50% health remaining.',
+                "The target and nearby enemies receive 430 Burn damage over 2 turns. This effect can't be dispelled."
+            ]
+        }
+    },
+    'baldur': {
+        name: 'Baldur',
+        attack: 807,
+        defense: 696,
+        health: 1326,
+        element: elements.fire.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/06/baldur.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Unbreakable Brawler',
+            description: [
+                'Booses health of the caster by 1000. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
+                'All allies resist direct mana reduction for as long as the caster has boosted health. This effect cannot be dispelled.',
+                'Deals 110% damage to a random enemy each turn for as long as the caster has boosted health. This effect cannot be dispelled.'
+            ]
+        }
+    },
     'black knight': {
         name: 'Black Knight',
         attack: 611,
         defense: 846,
         health: 1458,
+        element: elements.fire.id,
         pseudonyms: ['black knight', 'knight', 'black-knight', 'dark knight', 'dark-knight'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Black-Knight.png',
         stars: 5,
@@ -3473,6 +4085,7 @@ const red5StarHeroes = {
         attack: 727,
         defense: 702,
         health: 1353,
+        element: elements.fire.id,
         pseudonyms: ['kestrel', 'captain kestrel'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Captain-Kestrel.jpg',
         stars: 5,
@@ -3491,6 +4104,7 @@ const red5StarHeroes = {
         attack: 809,
         defense: 578,
         health: 1312,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -3508,6 +4122,7 @@ const red5StarHeroes = {
         attack: 845,
         defense: 588,
         health: 1494,
+        element: elements.fire.id,
         pseudonyms: ['elena costume', 'costume elena'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena.png?bwg=1576266897',
         stars: 5,
@@ -3526,6 +4141,7 @@ const red5StarHeroes = {
         attack: 727,
         defense: 708,
         health: 1363,
+        element: elements.fire.id,
         pseudonyms: ['grave', 'gm', 'gravemaker'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Gravemaker%20(1).png',
         stars: 5,
@@ -3546,6 +4162,7 @@ const red5StarHeroes = {
         attack: 628,
         defense: 817,
         health: 1406,
+        element: elements.fire.id,
         pseudonyms: ['grazul', 'graz'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Grazul_September-HOTM_(1).jpg',
         stars: 5,
@@ -3566,6 +4183,7 @@ const red5StarHeroes = {
         attack: 886,
         defense: 587,
         health: 1433,
+        element: elements.fire.id,
         pseudonyms: ['kong', 'guardian kong', 'guardiankong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Guardian-Kong%20(2).png',
         stars: 5,
@@ -3584,6 +4202,7 @@ const red5StarHeroes = {
         attack: 737,
         defense: 723,
         health: 1332,
+        element: elements.fire.id,
         pseudonyms: ['jean-françois', 'jean francois', 'jean françois', 'jf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Jean-Francois.png',
         stars: 5,
@@ -3604,6 +4223,7 @@ const red5StarHeroes = {
         attack: 710,
         defense: 642,
         health: 1458,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Khagan%20(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -3617,11 +4237,31 @@ const red5StarHeroes = {
             ]
         }
     },
+    'lady loki': {
+        name: 'Lady Loki',
+        attack: 747,
+        defense: 776,
+        health: 1312,
+        element: elements.fire.id,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/2/229954dbbc40c3b032ba5bc1d83bd0acc973b5bb.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: "Trickster's Malice",
+            description: [
+                'Takes all dispellable status ailments from all allies and randomly casts them on all enemies.',
+                'Deals 150% damage to all enemies.',
+                'Deals additional 8% damage per allocated status effect, up to 278% damage in total.'
+            ]
+        }
+    },
     marjana: {
         name: 'Marjana',
         attack: 669,
         defense: 712,
         health: 1404,
+        element: elements.fire.id,
         pseudonyms: ['marj', 'marjana'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Marjana.png',
         stars: 5,
@@ -3639,6 +4279,7 @@ const red5StarHeroes = {
         attack: 696,
         defense: 727,
         health: 1450,
+        element: elements.fire.id,
         pseudonyms: ['mits', 'mitsuko'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Mitsuko.png',
         stars: 5,
@@ -3658,6 +4299,7 @@ const red5StarHeroes = {
         attack: 718,
         defense: 697,
         health: 1455,
+        element: elements.fire.id,
         pseudonyms: ['nat', 'natalya'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Natalya%20(1).jpg',
         stars: 5,
@@ -3672,11 +4314,31 @@ const red5StarHeroes = {
             ]
         }
     },
+    noor: {
+        name: 'Noor',
+        attack: 704,
+        defense: 782,
+        health: 1314,
+        element: elements.fire.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/07/noor.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW,
+        classGrade: Classes.DRUID,
+        special: {
+            name: 'Sparrow Fury',
+            description: [
+                'Summons an Sparrow Minion for each ally. The Sparrow Minion inherits 25% HP and 25% attack from the caster.',
+                'Before Sparrow Minion hits target, it destroys all Minions from the target.',
+                "Element Link gives all Fire allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     'puss in boots': {
         name: 'Puss in Boots',
         attack: 764,
         defense: 727,
         health: 1322,
+        element: elements.fire.id,
         pseudonyms: ['puss', 'puss in boots'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/75/Puss_in_Boots_-_Hero_Card.gif/revision/latest?cb=20200106171351',
         stars: 5,
@@ -3697,6 +4359,7 @@ const red5StarHeroes = {
         attack: 638,
         defense: 729,
         health: 1545,
+        element: elements.fire.id,
         pseudonyms: ['qoh', 'queen of hearts'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Queen-of-Hearts_(1).png',
         stars: 5,
@@ -3717,6 +4380,7 @@ const red5StarHeroes = {
         attack: 729,
         defense: 708,
         health: 1353,
+        element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Red-Hood.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3734,6 +4398,7 @@ const red5StarHeroes = {
         attack: 618,
         defense: 830,
         health: 1437,
+        element: elements.fire.id,
         pseudonyms: ['santa', 'claus', 'santa claus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Santa-Claus.png',
         stars: 5,
@@ -3754,6 +4419,7 @@ const red5StarHeroes = {
         attack: 760,
         defense: 756,
         health: 1312,
+        element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/8/a8d9052a4a9c55255a13bd4c8b879b2a61280de8.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3774,6 +4440,7 @@ const red5StarHeroes = {
         attack: 714,
         defense: 681,
         health: 1454,
+        element: elements.fire.id,
         pseudonyms: ['zimkitty', 'zim', 'zimkitha'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Zimkitha.jpg',
         stars: 5,
@@ -3797,6 +4464,7 @@ const purple5StarHeroes = {
         attack: 733,
         defense: 712,
         health: 1341,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Aeron.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3816,6 +4484,7 @@ const purple5StarHeroes = {
         attack: 659,
         defense: 830,
         health: 1421,
+        element: elements.dark.id,
         pseudonyms: ['alfrike', 'alf'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/2/e29273866f76f1242ce6654006314292df709f28.jpeg',
         stars: 5,
@@ -3836,6 +4505,7 @@ const purple5StarHeroes = {
         attack: 566,
         defense: 826,
         health: 1524,
+        element: elements.dark.id,
         pseudonyms: ['boss wolf', 'boss', 'wolf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Boss-Wolf.jpg',
         stars: 5,
@@ -3855,6 +4525,7 @@ const purple5StarHeroes = {
         attack: 733,
         defense: 712,
         health: 1367,
+        element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/3/e3b1e3167a36fdd7a04595367de040a3028cfd06.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -3874,7 +4545,8 @@ const purple5StarHeroes = {
         attack: 725,
         defense: 677,
         health: 1349,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Domitia%20(1).jpg',
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/domitia.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
         classGrade: Classes.ROGUE,
@@ -3887,11 +4559,32 @@ const purple5StarHeroes = {
             ]
         }
     },
+    'domitia costume': {
+        name: 'Domitia Costume',
+        attack: 778,
+        defense: 724,
+        health: 1411,
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/domitia-costume-steampunk-sniper-1.jpg',
+        pseudonyms: ['domitia costume', 'costume domitia'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Poison Bolt',
+            description: [
+                'Deals 390% damage on the target.',
+                'The target and nearby enemies receive 324 Poison damage over 4 turns.',
+                'Dispels status ailments from the caster and nearby allies.'
+            ]
+        }
+    },
     freya: {
         name: 'Freya',
         attack: 766,
         defense: 743,
         health: 1339,
+        element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/0748236051e2b9c18146824274daa6ea5e1ac499.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -3910,6 +4603,7 @@ const purple5StarHeroes = {
         attack: 782,
         defense: 622,
         health: 1339,
+        element: elements.dark.id,
         pseudonyms: ['panther', 'guardian panther'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
         stars: 5,
@@ -3927,6 +4621,7 @@ const purple5StarHeroes = {
         attack: 615,
         defense: 824,
         health: 1425,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Grimble.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3946,6 +4641,7 @@ const purple5StarHeroes = {
         attack: 745,
         defense: 692,
         health: 1328,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Hel.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -3963,6 +4659,7 @@ const purple5StarHeroes = {
         attack: 743,
         defense: 747,
         health: 1328,
+        element: elements.dark.id,
         pseudonyms: ['jabber', 'jabberwock', 'jabberwocky'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Jabberwock.png',
         stars: 5,
@@ -3981,6 +4678,7 @@ const purple5StarHeroes = {
         attack: 780,
         defense: 714,
         health: 1248,
+        element: elements.dark.id,
         pseudonyms: ['kage', 'kageburado'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kageburado.png',
         stars: 5,
@@ -4000,6 +4698,7 @@ const purple5StarHeroes = {
         attack: 739,
         defense: 708,
         health: 1336,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Khiona.png',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -4018,6 +4717,7 @@ const purple5StarHeroes = {
         attack: 741,
         defense: 756,
         health: 1382,
+        element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/optimized/3X/b/1/b199e9666bd8daa15da56bc66712b22d2c37f52c_2_715x750.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -4035,6 +4735,7 @@ const purple5StarHeroes = {
         attack: 618,
         defense: 815,
         health: 1437,
+        element: elements.dark.id,
         pseudonyms: ['kunch', 'kunchen'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kunchen.png',
         stars: 5,
@@ -4055,6 +4756,7 @@ const purple5StarHeroes = {
         attack: 774,
         defense: 723,
         health: 1301,
+        element: elements.dark.id,
         pseudonyms: ['marie', 'marie-therese', 'therese'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Marie-Therese.png',
         stars: 5,
@@ -4080,6 +4782,7 @@ const purple5StarHeroes = {
         attack: 741,
         defense: 688,
         health: 1400,
+        element: elements.dark.id,
         pseudonyms: ['mok', 'mok-arr'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Mok-Arr.jpg',
         stars: 5,
@@ -4100,6 +4803,7 @@ const purple5StarHeroes = {
         attack: 772,
         defense: 725,
         health: 1332,
+        element: elements.dark.id,
         pseudonyms: ['mysterio', 'myztero', 'mystero'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/myztero.jpg',
         stars: 5,
@@ -4118,6 +4822,7 @@ const purple5StarHeroes = {
         attack: 762,
         defense: 638,
         health: 1328,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20171023-110132.png',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -4135,6 +4840,7 @@ const purple5StarHeroes = {
         attack: 747,
         defense: 636,
         health: 1380,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus.png',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW,
@@ -4151,6 +4857,7 @@ const purple5StarHeroes = {
         attack: 804,
         defense: 663,
         health: 1472,
+        element: elements.dark.id,
         pseudonyms: ['quintus costume', 'costume quintus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus_(1).png?bwg=1576266897',
         stars: 5,
@@ -4169,6 +4876,7 @@ const purple5StarHeroes = {
         attack: 729,
         defense: 708,
         health: 1334,
+        element: elements.dark.id,
         pseudonyms: ['sargasso', 'captain sargasso'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Sargasso.jpg',
         stars: 5,
@@ -4187,7 +4895,8 @@ const purple5StarHeroes = {
         attack: 694,
         defense: 700,
         health: 1382,
-        imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221444%20(1).png',
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/sartana.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
         classGrade: Classes.WIZARD,
@@ -4198,11 +4907,30 @@ const purple5StarHeroes = {
             ]
         }
     },
+    'sartana costume': {
+        name: 'Sartana Costume',
+        attack: 685,
+        defense: 771,
+        health: 1558,
+        element: elements.dark.id,
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/05/sartana-costume-monstress-of-descenthia-1.jpg',
+        pseudonyms: ['sartana costume', 'costume sartana'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST,
+        classGrade: Classes.FIGHTER,
+        special: {
+            name: 'Dreadstrike',
+            description: [
+                'Deals 532% damage to the target.'
+            ]
+        }
+    },
     seshat: {
         name: 'Seshat',
         attack: 760,
         defense: 683,
         health: 1345,
+        element: elements.dark.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/3/3f/Seshat_-_Hero_Card.gif/revision/latest?cb=20190701162034',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST,
@@ -4222,6 +4950,7 @@ const purple5StarHeroes = {
         attack: 731,
         defense: 694,
         health: 1361,
+        element: elements.dark.id,
         pseudonyms: ['thoth', 'thoth-amun'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Thoth-Amun.png',
         stars: 5,
@@ -4239,6 +4968,7 @@ const purple5StarHeroes = {
         attack: 760,
         defense: 731,
         health: 1283,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Ursena_(1).jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE,
@@ -4258,6 +4988,7 @@ const purple5StarHeroes = {
         attack: 778,
         defense: 671,
         health: 1347,
+        element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Victor_(1).png',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST,
@@ -4298,23 +5029,5 @@ const heroes = {
 };
 
 module.exports = {
-    blue3StarHeroes,
-    yellow3StarHeroes,
-    green3StarHeroes,
-    red3StarHeroes,
-    purple3StarHeroes,
-
-    blue4StarHeroes,
-    yellow4StarHeroes,
-    green4StarHeroes,
-    red4StarHeroes,
-    purple4StarHeroes,
-
-    blue5StarHeroes,
-    yellow5StarHeroes,
-    green5StarHeroes,
-    red5StarHeroes,
-    purple5StarHeroes,
-
     heroes
 }

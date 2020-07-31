@@ -3,6 +3,11 @@ const timestamps = require('mongoose-timestamp');
 const SpecialSchema = require('db/SpecialSchema');
 
 const HeroSchema = new mongoose.Schema({
+    heroId: {
+        type: String,
+        required: true,
+        index: true
+    },
     name: {
         type: String,
         required: true,

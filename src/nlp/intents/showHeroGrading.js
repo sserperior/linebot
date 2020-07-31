@@ -1,6 +1,6 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const logger = require('logger');
-const herolist = require('nlp/entities/herolist');
+const HeroesDao = require('dao/HeroesDao');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const intentLabel = 'show.hero.grading';
@@ -9,7 +9,7 @@ const intentThreshold = parseFloat(process.env.SHOW_HERO_GRADING_INTENT_THRESHOL
 const heroGradingSpreadsheetKey = process.env.HERO_GRADING_SPREADSHEET_KEY;
 
 const startingRow = 3;
-const endingRow = 222;
+const endingRow = 282;
 
 // Load the heroes column (B-startingRow:B-endingRow)
 const loadHeroNameToRowIndex = worksheet => {
@@ -121,17 +121,24 @@ const generateGradingText = gradingData => {
     return result;
 };
 
-const handle = entities => {
+const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);
     const replyMessages = [];
     const broadcastMessages = [];
     const uniqueHeroEntities = intentsHelper.getUniqueEntities(entities, 'hero');
     const promises = [];
+    const heroIds = [];
     for (let i=0;i<Math.min(uniqueHeroEntities.length, 5);i++) {
-        const heroId = uniqueHeroEntities[i].option;
-        const heroData = herolist.heroes[heroId];
-        promises.push(findGradingData(heroData.name));
+        heroIds.push(uniqueHeroEntities[i].option);
     }
+
+    const heroModels = await HeroesDao.findHeroesByHeroIds(heroIds);
+
+    heroModels.forEach(heroModel => {
+        if (heroModel != null) {
+            promises.push(findGradingData(heroModel.name));
+        }
+    });
 
     return Promise.all(promises).then(results => {
         results.forEach(result => {
