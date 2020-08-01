@@ -8,7 +8,8 @@ The chatbot is implemented in [NodeJS](https://www.nodejs.org). It is designed t
 * TMTR_HARPOON_GOOGLE_SPREADSHEET_URL - Google spreadsheet URL with data containing two columns "Team A" and "Team B"
 * GOOGLE_TRANSLATE_API_KEY - Google Cloud Translation API key
 * GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL - Google service account client email
-* GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY - Goolge service account private key
+* GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY - Google service account private key
+* MONGODB_CONNECTION_URI - URI for a MongoDB connection
 
 To deploy this, execute:
 

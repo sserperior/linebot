@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cross-env NODE_PATH=src node src/server.js",
     "test": "cross-env NODE_PATH=src:test mocha --timeout 50000 test/**/*.test.js",
-    "importdb": "cross-env NODE_PATH=src node -r dotenv/config src/db/importHeroes.js"
+    "importdb": "cross-env NODE_PATH=src node -r dotenv/config src/db/importHeroes.js",
+    "scratch": "cross-env NODE_PATH=src node src/scratchpad/scratch.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "express": "^4.17.1",
     "google-spreadsheet": "^3.0.2",
     "google-translate": "^3.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongoose": "^5.9.26",
     "mongoose-timestamp": "^0.6.0",
     "node-nlp": "^3.10.2",

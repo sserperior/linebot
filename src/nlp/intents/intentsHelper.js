@@ -13,6 +13,16 @@ module.exports = {
         return uniqueEntities;
     },
 
+    getUniqueNumberEntities: entities => {
+        const uniqueValues = [];
+        entities.forEach(entity => {
+            if (entity.entity === 'number' && !uniqueValues.includes(entity.resolution.value)) {
+                uniqueValues.push(entity.resolution.value);
+            }
+        });
+        return uniqueValues;
+    },
+
     getUniqueDateEntities: entities => {
         const timexToDateEntitiesMap = {};
         entities.forEach(entity => {

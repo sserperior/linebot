@@ -8,6 +8,7 @@ describe('herolist tests', () => {
     it('Every hero should include known properties and expected settings where necessary', () => {
         Object.keys(heroes).forEach(heroKey => {
             expect(heroes[heroKey].name, `hero key ${heroKey} has an empty name`).to.be.an('string').that.is.not.empty;
+            expect(heroes[heroKey].element, `hero key ${heroKey} has an invalid element`).to.be.an('string').that.is.not.empty;
             expect(heroes[heroKey].attack, `hero key ${heroKey} has an invalid attack`).to.be.at.least(1);
             expect(heroes[heroKey].defense, `hero key ${heroKey} has an invalid defense`).to.be.at.least(1);
             expect(heroes[heroKey].health, `hero key ${heroKey} has an invalid health`).to.be.at.least(1);

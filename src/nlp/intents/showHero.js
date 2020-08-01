@@ -3,7 +3,7 @@ const HeroesDao = require('dao/HeroesDao');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const intentLabel = 'show.hero';
-const intentThreshold = parseFloat(process.env.SHOW_HERO_INTENT_THRESHOLD || 0.8);
+const intentThreshold = parseFloat(process.env.SHOW_HERO_INTENT_THRESHOLD || 0.7);
 
 const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);

@@ -12,6 +12,7 @@ const { getManager } = require('nlp/brain');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const doNothing = require('nlp/intents/doNothing');
+const listHeroes = require('nlp/intents/listHeroes');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
@@ -246,12 +247,83 @@ describe('brain tests', () => {
         });
     });
 
+    describe('list.heroes intent tests', () => {
+        const checkListHeroesIntent = (result, expectedEntityOption) => {
+            expect(result.intent).to.equal('list.heroes');
+            expect(result.score).to.be.at.least(listHeroes.intentThreshold);
+            if (expectedEntityOption != null) {
+                let expectedEntityFound = false;
+                for (let i=0;i<result.entities.length;i++) {
+                    if (result.entities[i].entity === 'element' && result.entities[i].option === expectedEntityOption) {
+                        expectedEntityFound = true;
+                        break;
+                    }
+                }
+                expect(expectedEntityFound).to.be.true;
+            }
+        }
+
+        const checkStars = (result, expectedValue) => {
+            let expectedEntityFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'number' && result.entities[i].resolution.value === expectedValue) {
+                    expectedEntityFound = true;
+                    break;
+                }
+            }
+            expect(expectedEntityFound).to.be.true;
+        }
+
+        it('should understand list heroes', async () => {
+            const result = await getManager().process('list heroes');
+            checkListHeroesIntent(result, null);
+        });
+
+        it('should understand list 5* heroes', async () => {
+            const result = await getManager().process('list 5* heroes');
+            checkListHeroesIntent(result, null);
+            checkStars(result, 5);
+        });
+
+        it('should understand list 5* ice heroes', async () => {
+            const result = await getManager().process('list 5* ice heroes');
+            checkListHeroesIntent(result, 'ice');
+            checkStars(result, 5);
+        });
+
+        it('should list ice heroes', async () => {
+            const result = await getManager().process('list ice heroes');
+            checkListHeroesIntent(result, 'ice');
+        });
+
+        it('should list fire heroes', async () => {
+            const result = await getManager().process('list fire heroes');
+            checkListHeroesIntent(result, 'fire');
+        });
+
+        it('should list nature heroes', async () => {
+            const result = await getManager().process('list nature heroes');
+            checkListHeroesIntent(result, 'nature');
+        });
+
+        it('should list holy heroes', async () => {
+            const result = await getManager().process('list holy heroes');
+            checkListHeroesIntent(result, 'holy');
+        });
+
+        it('should list dark heroes', async () => {
+            const result = await getManager().process('list dark heroes');
+            checkListHeroesIntent(result, 'dark');
+        });
+    });
+
     describe('farm.elemental.chest intent tests', () => {
         const checkFarmElementalChestIntent = (result, expectedEntityOption) => {
             let expectedEntityFound = false;
             for (let i=0;i<result.entities.length;i++) {
                 if (result.entities[i].entity === 'element' && result.entities[i].option === expectedEntityOption) {
                     expectedEntityFound = true;
+                    break;
                 }
             }
             expect(expectedEntityFound).to.be.true;

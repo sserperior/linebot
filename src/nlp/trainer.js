@@ -11,6 +11,7 @@ const talent = require('nlp/entities/talent');
 const Calendar = require('nlp/entities/Calendar');
 
 const showHero = require('nlp/intents/showHero');
+const listHeroes = require('nlp/intents/listHeroes');
 const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
@@ -168,6 +169,12 @@ manager.addDocument('en', 'show %hero% %talent%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'show %talent% for %hero%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'display %talent% for %hero%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel);
+
+// List heroes questions
+manager.addDocument('en', 'list %element% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% %element% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);
