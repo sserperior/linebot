@@ -1,4 +1,7 @@
 module.exports = {
+    '[REDACTED]': {
+        pseudonyms: ['redacted', '[redacted]']
+    },
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },

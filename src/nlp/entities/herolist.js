@@ -1,4 +1,4 @@
-const ManaSpeeds = require('nlp/heroModel/ManaSpeeds');
+const ManaSpeeds = require('nlp/entities/ManaSpeeds');
 const Classes = require('nlp/heroModel/Classes');
 const elements = require('nlp/entities/elements');
 
@@ -12,7 +12,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/f/7f63e88b85fd43665b6cfec6dd388190c5584752.jpeg',
         pseudonyms: ['chick', 'chick jr'],
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Compact Lance',
@@ -30,7 +30,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gato.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Swamp Slash',
@@ -49,7 +49,7 @@ const blue3StarHeroes = {
         pseudonyms: ['greymane', 'graymane'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204440.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Wolf Bite',
@@ -66,7 +66,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Spirit Link',
@@ -84,7 +84,7 @@ const blue3StarHeroes = {
         pseudonyms: ['costume gunnar', 'gunnar costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Gunnar_(1).png?bwg=1576252820',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Steel Link',
@@ -103,7 +103,7 @@ const blue3StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jarvur.jpg',
         pseudonyms: ['jarvur', 'javer'],
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Jab and Hook',
@@ -121,7 +121,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204426.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Rush',
@@ -141,7 +141,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Frosty Axes',
@@ -159,7 +159,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204553.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Blizzard',
@@ -181,7 +181,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204415.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Chilling Slash',
@@ -198,7 +198,7 @@ const blue3StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Ice-Vodnik.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Trident Lunge',
@@ -219,7 +219,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/agnes.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Precise Chop',
@@ -237,7 +237,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Arman.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Sand Breeze',
@@ -262,7 +262,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Harmonic Slam',
@@ -285,7 +285,7 @@ const yellow3StarHeroes = {
         pseudonyms: ['costume bane', 'bane costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Bane_(1).png?bwg=1576252820',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Harmonic Bash',
@@ -303,7 +303,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Dawa.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Leaping Attack',
@@ -324,7 +324,7 @@ const yellow3StarHeroes = {
         pseudonyms: ['gan', 'ju', 'gan ju', 'gan-ju'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Gan-Ju.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Mystic Chop',
@@ -346,7 +346,7 @@ const yellow3StarHeroes = {
         pseudonyms: ['kailani', 'kalani'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Kailani%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Spirit Link',
@@ -367,7 +367,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Bee Bravado',
@@ -387,7 +387,7 @@ const yellow3StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Holy-Melia.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Atlantean Sword',
@@ -410,7 +410,7 @@ const yellow3StarHeroes = {
         pseudonyms: ['pixie', 'pix'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/76/Pixie_-_Hero_Card.gif/revision/latest?cb=20200106170826',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Pixie Dust',
@@ -431,7 +431,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212224%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Calming Mist',
@@ -452,7 +452,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212155%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Entangling Shot',
@@ -473,7 +473,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Berserker Fury',
@@ -495,7 +495,7 @@ const green3StarHeroes = {
         pseudonyms: ['brienne costume', 'costume brienne'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Brienne_(1).png?bwg=1576252820',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Jungle Fury',
@@ -512,7 +512,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Hollow Boast',
@@ -535,7 +535,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-8.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Slash of four Blades',
@@ -553,7 +553,7 @@ const green3StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/carver-costume-the-cutthroat-1.jpg',
         pseudonyms: ['costume carver', 'carver costume'],
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Stab of Four Blades',
@@ -572,7 +572,7 @@ const green3StarHeroes = {
         pseudonyms: ['friar', 'friar tuck', 'tuck'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134417.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Have Faith',
@@ -590,7 +590,7 @@ const green3StarHeroes = {
         pseudonyms: ['costume friar', 'friar costume', 'friar tuck costume', 'costume friar tuck', 'costume tuck', 'tuck costume'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/friar-tuck-costume-jovial-explorer.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Gain Hope',
@@ -609,7 +609,7 @@ const green3StarHeroes = {
         pseudonyms: ['grevle', 'grev', 'raccoon', 'racoon'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/grevle.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: "Traveler's Snack",
@@ -628,7 +628,7 @@ const green3StarHeroes = {
         pseudonyms: ['hissan', 'hisan'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Hisan.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Sand Breeze',
@@ -649,7 +649,7 @@ const green3StarHeroes = {
         pseudonyms: ['ishtak', 'ishhtak', 'isshtak'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212203%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Ramming Rush',
@@ -667,7 +667,7 @@ const green3StarHeroes = {
         pseudonyms: ['mneusseus', 'menusseus', 'mneussus', 'menussus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Mnesseus.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Atlantean Spear',
@@ -685,7 +685,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Muggy.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Bruiser Bros',
@@ -707,7 +707,7 @@ const green3StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Nature-Shrubbear.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Camouflage Foliage',
@@ -729,7 +729,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193931%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Sharp Cut',
@@ -747,7 +747,7 @@ const red3StarHeroes = {
         pseudonyms: ['bauchen', 'bauchan'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Bauchan.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Goblin Fury',
@@ -766,7 +766,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Tainted Axe',
@@ -784,7 +784,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193953%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Wind Prayer',
@@ -802,7 +802,7 @@ const red3StarHeroes = {
         pseudonyms: ['hawkmoon costume', 'costume hawkmoon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Hawkmoon.png?bwg=1576252820',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Wind Gospel',
@@ -821,7 +821,7 @@ const red3StarHeroes = {
         pseudonyms: ['jahangar', 'jahangir'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170524-192906%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Fireball',
@@ -838,7 +838,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Namahage.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Bloodthirst',
@@ -856,7 +856,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193903%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Burning Strike',
@@ -873,7 +873,7 @@ const red3StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Rudolph.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Antler Attack',
@@ -893,7 +893,7 @@ const red3StarHeroes = {
         pseudonyms: ['squire-rabbit', 'squire-wabbit', 'squire', 'wabbit'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Fire-Squire-Rabbit.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Recklass Stab',
@@ -912,7 +912,7 @@ const red3StarHeroes = {
         pseudonyms: ['sudri', 'sundry', 'sudry'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/sudri.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Burning Shields',
@@ -934,7 +934,7 @@ const purple3StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/an-windr.jpg',
         pseudonyms: ['anwindr', 'anwinder', 'an-windr', 'winder', 'windr'],
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Tribal Rage',
@@ -951,7 +951,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221520%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Electric Jolt',
@@ -968,7 +968,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Dual Slash',
@@ -987,7 +987,7 @@ const purple3StarHeroes = {
         pseudonyms: ['cochin', 'chochin', 'lantern head', 'lantern-head'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Chochin.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Unholy Light',
@@ -1006,7 +1006,7 @@ const purple3StarHeroes = {
         pseudonyms: ['gil-ra', 'gilra', 'gill-ra', 'gillra'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Gil-Ra.png',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Lament of Regression',
@@ -1026,7 +1026,7 @@ const purple3StarHeroes = {
         pseudonyms: ['bat', 'guardian bat'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/c/cb/Guardian_Bat_-_Hero_Card.gif/revision/latest?cb=20200109125830',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Merciless Bite',
@@ -1044,7 +1044,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221508%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Toxic Traps',
@@ -1061,7 +1061,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/prisca.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Bleeding Stab',
@@ -1078,7 +1078,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/prisca-costume-resolute-overseer-1.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Bleeding Thrust',
@@ -1097,7 +1097,7 @@ const purple3StarHeroes = {
         pseudonyms: ['renfeld', 'renfield'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/renfeld.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Leeching Stars',
@@ -1115,7 +1115,7 @@ const purple3StarHeroes = {
         pseudonyms: ['renfeld costume', 'renfield costume', 'costume renfeld', 'costume renfield'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/renfeld-costume-unhinged-surgeon-1.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Leeching Saw',
@@ -1133,7 +1133,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221559%20(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Piercing Hit',
@@ -1151,7 +1151,7 @@ const purple3StarHeroes = {
         pseudonyms: ['costume tyrum', 'tyrum costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Tyrum.png?bwg=1576252820',
         stars: 3,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Purifying Hit',
@@ -1169,7 +1169,7 @@ const purple3StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/3-Dark-Vlad_(1).png',
         stars: 3,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Dawn of Sorrow',
@@ -1190,7 +1190,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Agwe.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Rogue Wave',
@@ -1208,7 +1208,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Boril%20(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Perfect Riposte',
@@ -1226,7 +1226,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/boril-costume-heavyweight-defender-1.jpg',
         stars: 4,
         pseudonyms: ['costume boril', 'boril costume'],
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Sturdy Riposte',
@@ -1244,7 +1244,7 @@ const blue4StarHeroes = {
         pseudonyms: ['captain of diamonds', 'diamonds'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Captain-of-Diamonds.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Pest Control',
@@ -1263,7 +1263,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204515.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Pulverizer',
@@ -1281,7 +1281,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jott.jpg',
         pseudonyms: ['jott', 'jot'],
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ice Bloom',
@@ -1299,7 +1299,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Kiril.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Blessed Brew',
@@ -1317,7 +1317,7 @@ const blue4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kiril-costume-master-shredder-1.jpg',
         stars: 4,
         pseudonyms: ['costume kiril', 'kiril costume'],
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Blessed Solo',
@@ -1336,7 +1336,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
         stars: 4,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Chain of Pain',
@@ -1354,7 +1354,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204507.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Piercing Strike',
@@ -1372,7 +1372,7 @@ const blue4StarHeroes = {
         pseudonyms: ['sonya costume', 'costume sonya'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Sonya.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Purifying Strike',
@@ -1390,7 +1390,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Triton.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Trident Throw',
@@ -1408,7 +1408,7 @@ const blue4StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Ice-Valeria_(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Dusk of Sorrow',
@@ -1430,7 +1430,7 @@ const yellow4StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Chao.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Tactical Cut',
@@ -1449,7 +1449,7 @@ const yellow4StarHeroes = {
         pseudonyms: ['danzaburo', 'danza', 'ewok'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Danzaburo.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: "Trickster's Gambit",
@@ -1457,7 +1457,7 @@ const yellow4StarHeroes = {
                 'Perform a trick for a specific effect:',
                 '',
                 'Swords:',
-                'Deals 240% damage to all enemies',
+                'Deals 255% damage to all enemies',
                 'All enemies get -54% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills',
                 '',
                 'Bottle:',
@@ -1478,7 +1478,7 @@ const yellow4StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Gretel.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Witch Slayer',
@@ -1498,7 +1498,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/gullinbursti.jpg',
         pseudonyms: ['gullinbursti', 'gutbuster', 'gull'],
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Angry Boar',
@@ -1517,13 +1517,13 @@ const yellow4StarHeroes = {
         pseudonyms: ['hu', 'hu tao', 'hu-tao'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Hu-Tao%20(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Sonic Wall',
             description: [
-                'Deals 200% damage to all enemies.',
-                'All enemies get -35% accuracy for 4 turns. Chance to miss also applies to offensive special skills.'
+                'Deals 210% damage to all enemies.',
+                'All enemies get -40% accuracy for 4 turns. Chance to miss also applies to offensive special skills.'
             ]
         }
     },
@@ -1536,7 +1536,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Guardian-Jackal.png',
         pseudonyms: ['jackal', 'guardian jackal'],
         stars: 4,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Ray Strike',
@@ -1554,7 +1554,7 @@ const yellow4StarHeroes = {
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/1/c199193c7398682367a645b6f5c53f188f4934be.jpeg',
         stars: 4,
         pseudonyms: ['woolerton', 'lady woolerton'],
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Smooth Treatment',
@@ -1573,7 +1573,7 @@ const yellow4StarHeroes = {
         pseudonyms: ['li', 'li xiu', 'li-xiu'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-4.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Slash of Seven Blades',
@@ -1591,7 +1591,7 @@ const yellow4StarHeroes = {
         pseudonyms: ['costume li', 'li costume', 'costume li xiu', 'li xiu costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Li-Xiu.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Slash of Seven Daggers',
@@ -1609,7 +1609,7 @@ const yellow4StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Valkyrie Charge',
@@ -1630,7 +1630,7 @@ const yellow4StarHeroes = {
         pseudonyms: ['wu', 'wu kong', 'wu-kong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Holy-Wu-Kong.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: "Gambler's Stance",
@@ -1651,7 +1651,7 @@ const green4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/almur.jpg',
         pseudonyms: ['almur', 'almer', 'elmo'],
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Shadow Sweep',
@@ -1670,7 +1670,7 @@ const green4StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Valkyrie Defense',
@@ -1690,7 +1690,7 @@ const green4StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Buddy.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Gift Sack',
@@ -1710,7 +1710,7 @@ const green4StarHeroes = {
         pseudonyms: ['caed', 'caedmon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212143%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Piercing Strike',
@@ -1728,7 +1728,7 @@ const green4StarHeroes = {
         pseudonyms: ['gaed', 'gad', 'gaedirus', 'gadeirus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gadeirus.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Empowering Bash',
@@ -1741,20 +1741,20 @@ const green4StarHeroes = {
     },
     gobbler: {
         name: 'Gobbler',
-        attack: 737,
-        defense: 450,
-        health: 1302,
+        attack: 641,
+        defense: 614,
+        health: 1215,
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Gobbler.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Minion Eater',
             description: [
-                'Deals 155% damage to all enemies.',
+                'Deals 170% damage to all enemies.',
                 'Destroys all minions from all enemies.',
-                'All allies recovere 50 health for each eaten minion.'
+                'All allies recover 80 health for each eaten minion.'
             ]
         }
     },
@@ -1766,7 +1766,7 @@ const green4StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Green-Hansel.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Witch Killer',
@@ -1783,10 +1783,10 @@ const green4StarHeroes = {
         defense: 603,
         health: 960,
         element: elements.nature.id,
-        pseudonyms: ['jack', "jack o'hare", 'jack ohare', 'jack hare'],
+        pseudonyms: ['jack', "jack o'hare", 'jack ohare', 'jack hare', 'jack o’hare'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Jack-OHare.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Reckless Slash',
@@ -1805,7 +1805,7 @@ const green4StarHeroes = {
         pseudonyms: ['kash', 'kashrek', 'kashhrek'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Kashhrek.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Swamp Skin',
@@ -1823,7 +1823,7 @@ const green4StarHeroes = {
         pseudonyms: ['costume kash', 'kash costume', 'costume kashrek', 'kashrek costume', 'costume kashhrek', 'kashhrek costume'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kashhrek-costume-lizardfolk-elder-1.jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Second Skin',
@@ -1841,7 +1841,7 @@ const green4StarHeroes = {
         pseudonyms: ['lj', 'little john', 'little-john'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170629-134427.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Massive Chop',
@@ -1859,7 +1859,7 @@ const green4StarHeroes = {
         pseudonyms: ['costume lj', 'lj costume', 'costume little john', 'little john costume'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/little-john-costume-stealthy-brother-1.jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Massive Cleave',
@@ -1878,7 +1878,7 @@ const green4StarHeroes = {
         pseudonyms: ['mel', 'melendor', 'gandalf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212217%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Fog of the Fallen',
@@ -1896,7 +1896,7 @@ const green4StarHeroes = {
         pseudonyms: ['melendor costume', 'costume melendor', 'costume mel', 'mel costume', 'saruman', 'sauruman', 'sarumon', 'saurumon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Melendor.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Fog of the Perished',
@@ -1916,7 +1916,7 @@ const green4StarHeroes = {
         pseudonyms: ['cabin boy', 'peters', 'cabin boy peters', 'cabinboy', 'cabinboy peters'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Peters.jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Buccaneers Blade',
@@ -1935,7 +1935,7 @@ const green4StarHeroes = {
         pseudonyms: ['skittles', 'skittleskull'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Creeping Vines',
@@ -1954,7 +1954,7 @@ const green4StarHeroes = {
         pseudonyms: ['skittles costume', 'costume skittles', 'costume skittleskull', 'skittleskull costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Nature-Skittleskull.jpg?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Candy Vines',
@@ -1976,7 +1976,7 @@ const red4StarHeroes = {
         pseudonyms: ['boldtusk', 'bold', 'bt'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Hel-2.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Warcry',
@@ -1994,7 +1994,7 @@ const red4StarHeroes = {
         pseudonyms: ['boldtusk costume', 'costume boldtusk', 'costume bold', 'bold costume', 'costume bt', 'bt costume', 'chef'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Boldtusk.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'War Feast',
@@ -2013,7 +2013,7 @@ const red4StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Colen.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Fire Storm',
@@ -2031,7 +2031,7 @@ const red4StarHeroes = {
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Guardian-Falcon.png',
         pseudonyms: ['falcon', 'guardian falcon'],
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Blazing Beak',
@@ -2048,7 +2048,7 @@ const red4StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-193939%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ramming Pulverizer',
@@ -2066,7 +2066,7 @@ const red4StarHeroes = {
         pseudonyms: ['kelile', 'kellile'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Kelile.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Dance of Fire',
@@ -2084,12 +2084,12 @@ const red4StarHeroes = {
         pseudonyms: ['lance', 'sir lancelot', 'lancelot', 'sir lance'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sir-Lancelot_(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Inspiring Fencing',
             description: [
-                'Deals 250% damage to the target.',
+                'Deals 265% damage to the target.',
                 'The caster and nearby allies get +24% mana generation for 4 turns.',
                 'The caster and nearby allies get +48% attack for 4 turns.'
             ]
@@ -2104,7 +2104,7 @@ const red4StarHeroes = {
         pseudonyms: ['scarlet', 'scarlett'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-194023%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Blade Barrage',
@@ -2122,7 +2122,7 @@ const red4StarHeroes = {
         pseudonyms: ['shadereave', 'shadereve', 'shadoweaver'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/shadereave.jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Eternal Servitude',
@@ -2145,12 +2145,12 @@ const red4StarHeroes = {
         pseudonyms: ['sumi', 'sumitomo'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Sumitomo.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Oji-Waza',
             description: [
-                'Deals 280% damage to the target',
+                'Deals 300% damage to the target',
                 'The caster counterattacks with 135% of the damage received for 5 turns.',
                 'The caster regenerates a moderate amount of mana for each counterattack. The effect gets diminished for consecutive activations during the same turn.'
             ]
@@ -2164,7 +2164,7 @@ const red4StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
         stars: 4,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Magma Boulders',
@@ -2182,7 +2182,7 @@ const red4StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Fire-Wilbur.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Wonderful Feast',
@@ -2206,7 +2206,7 @@ const purple4StarHeroes = {
         pseudonyms: ['ameona', 'ammeona', 'ameonna', 'ammeonna', 'ghost girl', 'ghost-girl'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Ameonna.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Ghost',
@@ -2228,7 +2228,7 @@ const purple4StarHeroes = {
         pseudonyms: ['boomer', 'first mate', 'first mate boomer'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Boomer_(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Watery Grave',
@@ -2247,7 +2247,7 @@ const purple4StarHeroes = {
         pseudonyms: ['chesire', 'cat', 'chesire-cat', 'chesire cat'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cheshire-Cat.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Dazzling Grin',
@@ -2266,7 +2266,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Cyprian%20(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Perfect Riposte',
@@ -2284,7 +2284,7 @@ const purple4StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/06/fura.jpg',
         pseudonyms: ['fura', 'fury'],
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Nightglade Pollen',
@@ -2304,7 +2304,7 @@ const purple4StarHeroes = {
         pseudonyms: ['gafar', 'gaffar'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Gafar.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Sand Gale',
@@ -2325,7 +2325,7 @@ const purple4StarHeroes = {
         pseudonyms: ['jabar', 'jabbar', 'sandcastle', 'sand castle', 'walking sand castle'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Jabbar.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Sand Gale',
@@ -2345,7 +2345,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Merlin_(1).jpg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Arcane Blast',
@@ -2364,7 +2364,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Proteus.png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Scar of the Depths',
@@ -2382,7 +2382,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221453%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Purification',
@@ -2399,7 +2399,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Rigard.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Regeneration',
@@ -2418,7 +2418,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221551%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Fog of the Fallen',
@@ -2435,7 +2435,7 @@ const purple4StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Dire Ghost',
@@ -2458,7 +2458,7 @@ const purple4StarHeroes = {
         pseudonyms: ['burt', 'tibs', 'tibertus', 'tiburtus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-221432%20(1).png',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Ramming Pulverizer',
@@ -2476,7 +2476,7 @@ const purple4StarHeroes = {
         pseudonyms: ['duke of rock', 'costume burt', 'burt costume', 'costume tibs', 'tibs costume', 'costume tibertus', 'tibertus costume', 'costume tiburtus', 'tiburtus costume'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/4-Dark-Tiburtus.png?bwg=1576260933',
         stars: 4,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Symphonic Pulverizer',
@@ -2497,7 +2497,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Aegir%20(2).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Icy Resilience',
@@ -2517,7 +2517,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alasie%20(2).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Spirit Arrow',
@@ -2536,7 +2536,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Alice_(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Timeless Timepiece',
@@ -2554,7 +2554,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Ariel%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Divine Protection',
@@ -2573,7 +2573,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Athena.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: "Athena's Bow",
@@ -2590,7 +2590,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/d/4d4b3a0b3c4a5576260f9d6861dbb7f474030d32.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Gargantuan Bite',
@@ -2611,7 +2611,7 @@ const blue5StarHeroes = {
         pseudonyms: ['fin', 'finley'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Finley.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: "Commodore's Revenge",
@@ -2630,7 +2630,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Frida%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Polar Bash',
@@ -2650,7 +2650,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Glacial Shatter',
@@ -2668,7 +2668,7 @@ const blue5StarHeroes = {
         pseudonyms: ['isarnia costume', 'costume isarnia'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Isarnia_(1).png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Glacial Explosion',
@@ -2687,7 +2687,7 @@ const blue5StarHeroes = {
         pseudonyms: ['arthur', 'ka', 'king arthur', 'king-arthur'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-King-Arthur_(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Excalibur',
@@ -2707,7 +2707,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/magni.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Strike of the Ancients',
@@ -2725,7 +2725,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/magni-costume-monolith-of-ice-1.jpg',
         pseudonyms: ['magni costume', 'costume magni'],
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Strike of the Monolith',
@@ -2744,7 +2744,7 @@ const blue5StarHeroes = {
         pseudonyms: ['master lepus', 'lepus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Master-Lepus.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Reckless Finisher',
@@ -2762,7 +2762,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Miki_August-HOTM.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Wrath of Tundra',
@@ -2781,7 +2781,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Misandra.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Chain Strike',
@@ -2800,7 +2800,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray//5-Ice-Perseus.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Everlasting Wound',
@@ -2819,7 +2819,7 @@ const blue5StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/06/img_8450.jpg',
         pseudonyms: ['raffaele', 'raffy', 'raff', 'rafaele'],
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Ice Treatment',
@@ -2839,7 +2839,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-204347.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Cloud Hammer',
@@ -2857,7 +2857,7 @@ const blue5StarHeroes = {
         pseudonyms: ['richard costume', 'costume richard'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Richard.png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Cloud Axe',
@@ -2876,7 +2876,7 @@ const blue5StarHeroes = {
         pseudonyms: ['rumple', 'rumpel', 'rumplestiltskin', 'rumpelstiltskin', 'rumplestilskin', 'rumpelstilskin', 'rump'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Rumpelstiltskin%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Legerdemain',
@@ -2905,7 +2905,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/07/skadi.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Iceberg Crush',
@@ -2925,7 +2925,7 @@ const blue5StarHeroes = {
         element: elements.ice.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/e/e6/Snow_White.png/revision/latest?cb=20191204181154',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Enchanted Edge',
@@ -2944,7 +2944,7 @@ const blue5StarHeroes = {
         pseudonyms: ['thorne', 'thorn'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Ice-Thorne%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Icecold Finisher',
@@ -2962,14 +2962,14 @@ const blue5StarHeroes = {
         pseudonyms: ['vela', 'velly'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Vela_January-HOTM.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Aquatic Outbreak',
             description: [
                 'Deals 150% damage to all enemies.',
                 'All enemies receive 208 Water damage over 4 turns.',
-                'All Fire enemies get -54% attack for 4 turns.',
+                'All Fire enemies get -34% attack for 4 turns.',
                 'Deals extra damage against Fire.',
                 "Element Link gives all ice allies +10% critial chance for 6 turns. This effect can't be dispelled."
             ]
@@ -2987,7 +2987,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['del', 'delilah'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Delilah.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Summon Temple Guardians',
@@ -3006,7 +3006,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['drake', 'drake fong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Drake-Fong.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Flails of Fury',
@@ -3026,7 +3026,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['gazelle', 'guardian gazelle'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/5/5d/Guardian_Gazelle_-_Hero_Card.gif/revision/latest?cb=20200109132056',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Dance of Spirits',
@@ -3052,13 +3052,13 @@ const yellow5StarHeroes = {
         pseudonyms: ['owl', 'guardian owl'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guardian-Owl%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_SLOW,
+        manaSpeed: ManaSpeeds.VERY_SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Stately Retribution',
             description: [
-                'Deals 235% damage to all enemies.',
-                'Damage is increased by 60% per each dead ally.',
+                'Deals 280% damage to all enemies.',
+                'Damage is increased by 50% per each dead ally.',
                 'The caster gets +46% defense for 5 turns.',
                 'The caster regenerates 765 HP over 5 turns.'
             ]
@@ -3073,7 +3073,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['guin', 'guinevere'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Guinevere_(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Word of the Queen',
@@ -3092,7 +3092,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Inari.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Lucky Nine',
@@ -3110,7 +3110,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-213228%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Solar Beam',
@@ -3128,7 +3128,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['joon costume', 'costume joon'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Joon.png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Solar Strike',
@@ -3146,7 +3146,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Justice%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Rite of Judgement',
@@ -3166,7 +3166,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['leo', 'leonidas'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Leonidas%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Spartan Cleave',
@@ -3185,7 +3185,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/b/9b75eafbd8b56a522e214c90c6ebf36a6718d7b2.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Power Punch',
@@ -3204,7 +3204,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Musashi%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Dragon Fang',
@@ -3222,7 +3222,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Neith.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Sickle of Eradication',
@@ -3243,7 +3243,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['norns', 'norn'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/9/39b56e8305d0a2015b21dde20f5e62f418bf8a74.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Twist of Fate',
@@ -3261,7 +3261,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Onatel%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Eye of the Prophet',
@@ -3281,7 +3281,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Poseidon.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Ruler of Seas',
@@ -3301,7 +3301,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['rana', 'sandqueen', 'sand-queen'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Rana.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Sand Storm',
@@ -3321,7 +3321,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Ranvir_June-HOTM.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: "Mystic's Virtue",
@@ -3340,7 +3340,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/07/roc.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Sand Cyclone',
@@ -3359,7 +3359,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Gold Weaver',
@@ -3379,7 +3379,7 @@ const yellow5StarHeroes = {
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/b/cb7d94fcfcf1c39066febfca6e2e5b62dc14215f.jpeg',
         pseudonyms: ['sir roostley', 'roostley'],
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Luminous Lance',
@@ -3399,7 +3399,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['viv', 'vivica'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Omniheal',
@@ -3417,7 +3417,7 @@ const yellow5StarHeroes = {
         pseudonyms: ['costume viv', 'viv costume', 'costume vivica', 'vivica costume', 'dirty viv'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-Vivica_(1).png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Omnicure',
@@ -3436,7 +3436,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Holy-White-Rabbit.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: "Rabbit's Watch",
@@ -3458,7 +3458,7 @@ const green5StarHeroes = {
         pseudonyms: ['alby', 'alberich'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Alberich%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: "Midsummer's Dream",
@@ -3477,13 +3477,13 @@ const green5StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Atomos%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Immortal Annihilator',
             description: [
-                'Deals 150% damage to all enemies.',
-                'The more mana the enemies have, the more damage they will receive, up to 270%.',
+                'Deals 170% damage to all enemies.',
+                'The more mana the enemies have, the more damage they will receive, up to 290%.',
                 'If the caster dies during the next 5 turns they are resurrected in the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
             ]
         }
@@ -3497,7 +3497,7 @@ const green5StarHeroes = {
         pseudonyms: ['elk', 'elkanen'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/elkanen.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Crescent Spear',
@@ -3516,7 +3516,7 @@ const green5StarHeroes = {
         pseudonyms: ['elk costume', 'elkanen costume', 'costume elk', 'costume elkanen'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/elkanen-costume-moonlit-conqueror-1.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Eclipse Spear',
@@ -3535,7 +3535,7 @@ const green5StarHeroes = {
         pseudonyms: ['eve', 'evelyn'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Evelyn.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Shattering Warcry',
@@ -3556,7 +3556,7 @@ const green5StarHeroes = {
         pseudonyms: ['greg', 'gregorion'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Gregorion.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Unwavering Focus',
@@ -3576,13 +3576,13 @@ const green5StarHeroes = {
         pseudonyms: ['chameleon', 'guardian chameleon'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/9/9d/Guardian_Chameleon_-_Hero_Card.gif/revision/latest?cb=20200109131113',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Elemental Magic',
             description: [
                 'Removes all dispellable and undispellable status effects from all enemies.',
-                'Changes the element of all enemies to the element they are strong against for 3 turns',
+                'Changes the element of all enemies to the element they are strong against for 4 turns',
                 'All allies get +54% attack for 4 turns.',
                 'All allies get +36% critical chance for 4 turns.'
             ]
@@ -3597,7 +3597,7 @@ const green5StarHeroes = {
         pseudonyms: ['heimdall', 'heimdal'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Boon of Gjallahorn',
@@ -3617,7 +3617,7 @@ const green5StarHeroes = {
         pseudonyms: ['groot', 'tree', 'horg', 'horghall'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Anger of the Forest',
@@ -3636,7 +3636,7 @@ const green5StarHeroes = {
         pseudonyms: ['costume groot', 'groot costume', 'costume tree', 'tree costume', 'costume horg', 'horg costume', 'costume horghall', 'horghall costume', 'jester'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Horghall.png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Anger of the Jester',
@@ -3655,7 +3655,7 @@ const green5StarHeroes = {
         pseudonyms: ['kadilen', 'kad'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/kadilen.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Eclipse Shield',
@@ -3674,7 +3674,7 @@ const green5StarHeroes = {
         pseudonyms: ['kadilen costume', 'kad costume', 'costume kadilen', 'costume kad'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/kadilen-costume-priestess-of-moonlight-1.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Crescent Shield',
@@ -3693,7 +3693,7 @@ const green5StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/8/80/Kingston_-_Hero_Card.gif/revision/latest?cb=20191001130313',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Stiletto Cyclone',
@@ -3713,7 +3713,7 @@ const green5StarHeroes = {
         pseudonyms: ['lady locke', 'locke'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-Locke.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Moolight Serenade',
@@ -3732,7 +3732,7 @@ const green5StarHeroes = {
         pseudonyms: ['lady of the lake', 'lady lake', 'lady-of-the-lake', 'lady-lake', 'lake lady', 'lake-lady', 'lake'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lady-of-the-Lake.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Magical Sword',
@@ -3751,7 +3751,7 @@ const green5StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20170529-212132%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Perfect Shot',
@@ -3769,7 +3769,7 @@ const green5StarHeroes = {
         pseudonyms: ['lianna costume', 'costume lianna', 'sailor lianna'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Lianna-1.png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Pure Shot',
@@ -3788,12 +3788,13 @@ const green5StarHeroes = {
         pseudonyms: ['marg', 'margaret'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Margaret_(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Hide in Shadows',
             description: [
-                'The caster and nearby allies have from +20% to +90% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 3 turns.',
+                'Deals 150% damage to the target and nearby enemies.',
+                'The caster and nearby allies have from +30% to +90% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 3 turns.',
                 "Element Link gives all Nature allies +46% defense against Fire for 4 turns. This effect can't be dispelled."
             ]
         }
@@ -3807,7 +3808,7 @@ const green5StarHeroes = {
         pseudonyms: ['morgan', 'morgan le fay', 'le fay', 'morgan-le-fay', 'le-fay'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Morgan-Le-Fay_(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Devourer of Vitality',
@@ -3826,7 +3827,7 @@ const green5StarHeroes = {
         pseudonyms: ['mn', 'mother north'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Mother-North.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Super Porridge',
@@ -3846,7 +3847,7 @@ const green5StarHeroes = {
         pseudonyms: ['ratatoskr', 'rat'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/7/47da7c546b8d3fe02304e63194bfe1844fc1a81c.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Nutes of Yggdrasil',
@@ -3864,7 +3865,7 @@ const green5StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Tarlak.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Martial Prowess',
@@ -3883,15 +3884,15 @@ const green5StarHeroes = {
         pseudonyms: ['telluria', 'teluria', 'telly'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/telluria-1.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Force of Forest',
             description: [
                 'Deals 130% damage to all enemies.',
-                'Summons a Forest Familiar Minion for all allies with 18% HP and 13% attack inherited from the caster',
-                'All allies regenerate 411 HP over 3 turns.',
-                'All enemies get -34% mana generation for 3 turns.',
+                'Summons a Forest Familiar Minion for all allies with 13% HP and 13% attack inherited from the caster',
+                'All allies regenerate 306 HP over 2 turns.',
+                'All enemies get -24% mana generation for 3 turns.',
                 "Element Link gives all Nature allies +10% critical chance for 6 turns. This effect can't be dispelled."
 
             ]
@@ -3910,7 +3911,7 @@ const green5StarHeroes = {
         ],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Hatter.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Mad as a Hatter',
@@ -3929,7 +3930,7 @@ const green5StarHeroes = {
         pseudonyms: ['yunan', 'sandking', 'sand-king', 'sand king'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Yunan.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Sand Storm',
@@ -3949,7 +3950,7 @@ const green5StarHeroes = {
         element: elements.nature.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Nature-Zeline%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Emerald Flash',
@@ -3958,6 +3959,26 @@ const green5StarHeroes = {
                 'All enemies get -34% attack for 4 turns.',
                 'Deals extra damage against Ice.',
                 'Removes buffs from all enemies.'
+            ]
+        }
+    },
+    zocc: {
+        name: 'Zocc',
+        attack: 739,
+        defense: 725,
+        health: 1351,
+        element: elements.nature.id,
+        imgUrl: 'https://i2.wp.com/7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Zocc_August-HOTM.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Keyknife Typhoon',
+            description: [
+                'Deals 300% damage to the target.',
+                'Increases the mana of the target by 50%',
+                'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.',
+                "Element Link gives all Nature allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
         }
     }
@@ -3973,7 +3994,7 @@ const red5StarHeroes = {
         pseudonyms: ['anzogh', 'anzo'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Anzogh.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Flaming Grudge',
@@ -3993,7 +4014,7 @@ const red5StarHeroes = {
         pseudonyms: ['ares', 'aries'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Ares.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Might of Ares',
@@ -4012,7 +4033,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/azlar.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Volcanic Eruption',
@@ -4030,7 +4051,7 @@ const red5StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/azlar-costume-king-of-the-leors-1.jpg',
         pseudonyms: ['alzar costume', 'costume azlar'],
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Volcanic Flareup',
@@ -4049,7 +4070,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/06/baldur.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Unbreakable Brawler',
@@ -4069,7 +4090,7 @@ const red5StarHeroes = {
         pseudonyms: ['black knight', 'knight', 'black-knight', 'dark knight', 'dark-knight'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Black-Knight.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Just a Flesh Wound',
@@ -4089,7 +4110,7 @@ const red5StarHeroes = {
         pseudonyms: ['kestrel', 'captain kestrel'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Captain-Kestrel.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Pirate Shot',
@@ -4107,7 +4128,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Wall of Swords',
@@ -4126,7 +4147,7 @@ const red5StarHeroes = {
         pseudonyms: ['elena costume', 'costume elena'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Elena.png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Sword Barricade',
@@ -4145,7 +4166,7 @@ const red5StarHeroes = {
         pseudonyms: ['grave', 'gm', 'gravemaker'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Gravemaker%20(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Ashes to Ashes',
@@ -4166,7 +4187,7 @@ const red5StarHeroes = {
         pseudonyms: ['grazul', 'graz'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Grazul_September-HOTM_(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Mending Mantra',
@@ -4187,12 +4208,13 @@ const red5StarHeroes = {
         pseudonyms: ['kong', 'guardian kong', 'guardiankong'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Guardian-Kong%20(2).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Lord of the Jungle',
             description: [
-                'Deals 220% damage to all enemies.',
+                'Deals 250% damage to all enemies.',
+                'Removes status ailments from all allies',
                 'All allies get +94% defense against Ice for 4 turns.'
             ]
         }
@@ -4206,7 +4228,7 @@ const red5StarHeroes = {
         pseudonyms: ['jean-françois', 'jean francois', 'jean françois', 'jf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Jean-Francois.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Seal of Fire',
@@ -4226,7 +4248,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Khagan%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.RANGER,
         special: {
             name: "Khan's Order",
@@ -4245,7 +4267,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/2/229954dbbc40c3b032ba5bc1d83bd0acc973b5bb.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: "Trickster's Malice",
@@ -4265,7 +4287,7 @@ const red5StarHeroes = {
         pseudonyms: ['marj', 'marjana'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Marjana.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Magma Smash',
@@ -4283,7 +4305,7 @@ const red5StarHeroes = {
         pseudonyms: ['mits', 'mitsuko'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Mitsuko.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Mirror of Flames',
@@ -4303,7 +4325,7 @@ const red5StarHeroes = {
         pseudonyms: ['nat', 'natalya'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Natalya%20(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Burning Chains',
@@ -4322,7 +4344,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/07/noor.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Sparrow Fury',
@@ -4342,7 +4364,7 @@ const red5StarHeroes = {
         pseudonyms: ['puss', 'puss in boots'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/75/Puss_in_Boots_-_Hero_Card.gif/revision/latest?cb=20200106171351',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Three Blind Mice',
@@ -4363,13 +4385,13 @@ const red5StarHeroes = {
         pseudonyms: ['qoh', 'queen of hearts'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Queen-of-Hearts_(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Queen of Cards',
             description: [
-                'Deals 230% damage to the target and nearby enemies.',
-                'Summons a Playing Card Minion with 13% HP and 30% attack inherited from the caster.',
+                'Deals 240% damage to the target and nearby enemies.',
+                'Summons a Playing Card Minion with 16% HP and 30% attack inherited from the caster.',
                 "The Playing Card Minion gives its owner Taunt. Taunt prevents the enemies from using their Special Sklls on Minion owner's allies",
                 'The caster gets 74% defense against Special Skills for 4 turns.'
             ]
@@ -4383,7 +4405,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Red-Hood.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Forest Friends',
@@ -4402,7 +4424,7 @@ const red5StarHeroes = {
         pseudonyms: ['santa', 'claus', 'santa claus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Santa-Claus.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Ultimate Gift Sack',
@@ -4422,7 +4444,7 @@ const red5StarHeroes = {
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/8/a8d9052a4a9c55255a13bd4c8b879b2a61280de8.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Adamantite Claw',
@@ -4444,7 +4466,7 @@ const red5StarHeroes = {
         pseudonyms: ['zimkitty', 'zim', 'zimkitha'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Fire-Zimkitha.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Dawn Strike',
@@ -4467,7 +4489,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Aeron.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Nethershield',
@@ -4488,7 +4510,7 @@ const purple5StarHeroes = {
         pseudonyms: ['alfrike', 'alf'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/2/e29273866f76f1242ce6654006314292df709f28.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.VERY_SLOW.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Cube of Dark Realm',
@@ -4509,7 +4531,7 @@ const purple5StarHeroes = {
         pseudonyms: ['boss wolf', 'boss', 'wolf'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Boss-Wolf.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_SLOW,
+        manaSpeed: ManaSpeeds.VERY_SLOW.value,
         classGrade: Classes.DRUID,
         special: {
             name: 'Unstoppable Growl',
@@ -4528,7 +4550,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/3/e3b1e3167a36fdd7a04595367de040a3028cfd06.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.PALADIN,
         special: {
             name: 'Miasma Mace',
@@ -4548,7 +4570,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/domitia.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Shock Bolt',
@@ -4568,7 +4590,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/domitia-costume-steampunk-sniper-1.jpg',
         pseudonyms: ['domitia costume', 'costume domitia'],
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Poison Bolt',
@@ -4587,7 +4609,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/0748236051e2b9c18146824274daa6ea5e1ac499.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID,
         special: {
             name: "Raven's Vigil",
@@ -4607,7 +4629,7 @@ const purple5StarHeroes = {
         pseudonyms: ['panther', 'guardian panther'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Guardian-Panther.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Eye of the Panther',
@@ -4624,7 +4646,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Grimble.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Gnomish Carnage',
@@ -4644,7 +4666,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Hel.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Crush of Hel',
@@ -4663,7 +4685,7 @@ const purple5StarHeroes = {
         pseudonyms: ['jabber', 'jabberwock', 'jabberwocky'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Jabberwock.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Sideswipe',
@@ -4682,7 +4704,7 @@ const purple5StarHeroes = {
         pseudonyms: ['kage', 'kageburado'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kageburado.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Break Strike',
@@ -4701,7 +4723,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Khiona.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Bleeding Edge',
@@ -4720,7 +4742,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/optimized/3X/b/1/b199e9666bd8daa15da56bc66712b22d2c37f52c_2_715x750.jpeg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Reckless Swing',
@@ -4739,7 +4761,7 @@ const purple5StarHeroes = {
         pseudonyms: ['kunch', 'kunchen'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Kunchen.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC,
         special: {
             name: 'Power of Ajna',
@@ -4760,7 +4782,7 @@ const purple5StarHeroes = {
         pseudonyms: ['marie', 'marie-therese', 'therese'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Marie-Therese.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Zombie Blessing',
@@ -4786,13 +4808,13 @@ const purple5StarHeroes = {
         pseudonyms: ['mok', 'mok-arr'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Mok-Arr.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Black Tide',
             description: [
-                'Deals 250% damage to all enemies.',
-                'Deals 80% damage to all allies.',
+                'Deals 270% damage to all enemies.',
+                'Deals 50% damage to all allies.',
                 'Deals extra damage against Holy.',
                 'All Dark allies and enemies are immune to this attack.'
             ]
@@ -4807,7 +4829,7 @@ const purple5StarHeroes = {
         pseudonyms: ['mysterio', 'myztero', 'mystero'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/myztero.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.ROGUE,
         special: {
             name: 'Absordium Deflectors',
@@ -4825,7 +4847,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Screenshot_20171023-110132.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN,
         special: {
             name: 'Cleave and Counter',
@@ -4843,7 +4865,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Thunder Ultimatum',
@@ -4861,7 +4883,7 @@ const purple5StarHeroes = {
         pseudonyms: ['quintus costume', 'costume quintus'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Quintus_(1).png?bwg=1576266897',
         stars: 5,
-        manaSpeed: ManaSpeeds.SLOW,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK,
         special: {
             name: 'Shock Ultimatum',
@@ -4872,7 +4894,7 @@ const purple5StarHeroes = {
         }
     },
     sargasso: {
-        name: 'Captain Sargasso',
+        name: 'Sargasso',
         attack: 729,
         defense: 708,
         health: 1334,
@@ -4880,7 +4902,7 @@ const purple5StarHeroes = {
         pseudonyms: ['sargasso', 'captain sargasso'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Sargasso.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Curse of Sargasso',
@@ -4898,7 +4920,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/sartana.jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Deathstrike',
@@ -4916,7 +4938,7 @@ const purple5StarHeroes = {
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/sartana-costume-monstress-of-descenthia-1.jpg',
         pseudonyms: ['sartana costume', 'costume sartana'],
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER,
         special: {
             name: 'Dreadstrike',
@@ -4933,7 +4955,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/3/3f/Seshat_-_Hero_Card.gif/revision/latest?cb=20190701162034',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER,
         special: {
             name: 'Conjuration Arrow',
@@ -4954,7 +4976,7 @@ const purple5StarHeroes = {
         pseudonyms: ['thoth', 'thoth-amun'],
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Thoth-Amun.png',
         stars: 5,
-        manaSpeed: ManaSpeeds.FAST,
+        manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Skeletal Summon',
@@ -4971,7 +4993,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Ursena_(1).jpg',
         stars: 5,
-        manaSpeed: ManaSpeeds.AVERAGE,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER,
         special: {
             name: 'Depth Blast',
@@ -4991,7 +5013,7 @@ const purple5StarHeroes = {
         element: elements.dark.id,
         imgUrl: 'https://7ddgaming.com/wp-content/uploads/photo-gallery/imported_from_media_libray/5-Dark-Victor_(1).png',
         stars: 5,
-        manaSpeed: ManaSpeeds.VERY_FAST,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.WIZARD,
         special: {
             name: 'Night of Sorrow',

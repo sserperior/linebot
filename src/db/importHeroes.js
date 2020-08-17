@@ -26,5 +26,7 @@ const HeroSchema = require('db/HeroSchema');
     
     await Promise.all(savePromises);
 
+    console.log('Successfully imported heroes!');
+
     await connection.close();
 })();

@@ -1,6 +1,7 @@
 const logger = require('logger');
 const HeroesDao = require('dao/HeroesDao');
 const elements = require('nlp/entities/elements');
+const ManaSpeeds = require('nlp/entities/ManaSpeeds');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const intentLabel = 'list.heroes';
@@ -10,17 +11,18 @@ const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);
     const replyMessages = [];
     const uniqueElementEntities = intentsHelper.getUniqueEntities(entities, 'element');
+    const uniqueManaSpeedEntities = intentsHelper.getUniqueEntities(entities, 'manaSpeed');
     const uniqueStarEntities = intentsHelper.getUniqueNumberEntities(entities);
     const elementIds = [];
-    const stars = [];
+    const manaSpeeds = [];
 
-    for (let i=0;i<Math.min(uniqueElementEntities.length, 5);i++) {
-        elementIds.push(uniqueElementEntities[i].option);
-    }
+    uniqueElementEntities.forEach(uniqueElementEntity => {
+        elementIds.push(elements[uniqueElementEntity.option].id);
+    });
 
-    for (let i=0;i<Math.min(uniqueStarEntities.length, 5);i++) {
-        stars.push(uniqueStarEntities[i]);
-    }
+    uniqueManaSpeedEntities.forEach(uniqueManaSpeedEntity => {
+        manaSpeeds.push(ManaSpeeds[uniqueManaSpeedEntity.option].value);
+    });
 
     if (elementIds.length === 0) {
         elementIds.push(elements.ice.id);
@@ -30,13 +32,21 @@ const handle = async entities => {
         elementIds.push(elements.dark.id);
     }
 
-    if (stars.length === 0) {
-        stars.push(3);
-        stars.push(4);
-        stars.push(5);
+    if (manaSpeeds.length === 0) {
+        manaSpeeds.push(ManaSpeeds.VERY_FAST.value);
+        manaSpeeds.push(ManaSpeeds.FAST.value);
+        manaSpeeds.push(ManaSpeeds.AVERAGE.value);
+        manaSpeeds.push(ManaSpeeds.SLOW.value);
+        manaSpeeds.push(ManaSpeeds.VERY_SLOW.value);
     }
 
-    const heroModels = await HeroesDao.findHeroNamesByElementIdsAndStars(elementIds, stars);
+    if (uniqueStarEntities.length === 0) {
+        uniqueStarEntities.push(3);
+        uniqueStarEntities.push(4);
+        uniqueStarEntities.push(5);
+    }
+
+    const heroModels = await HeroesDao.findHeroNames(elementIds, uniqueStarEntities, manaSpeeds);
 
     let displayText = `${heroModels.length} heroes found:`;
     heroModels.forEach(heroModel => {

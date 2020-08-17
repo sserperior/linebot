@@ -39,9 +39,8 @@ module.exports = {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/c/6cc6a15f9800bd69f9d53fbbdc3822ee031176e0.jpeg',
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge"]
         },
-
         'Path of Valor': {
-            imgUrl: 'https://lh3.googleusercontent.com/rXvCLEB4vb__w08mmYFNyOe1ar4hcvDyABGDcvBfl1yjDXKx9vBe4gDcTal6tClHvNWl_M-tJnjjIaKqvA-nfC1HH29BY2DfnWces1a3GJA9AWfEcpoyvL3Q68AhRnNC4NQR0g86dhODJKsk3SJBljHSfzNmYXlnSKPFx8o0xoZYNv0Urw1pK0tmiZZl_Gncx2o_a83x-kVtNZdeqa_kNlH1ZcSnqZ0xxNlvY-MEScfaj-aN1p1OiUcUMXvveXY_ZngGOU3aqSqw35kIxyAp0cxBrQyLM26vfJqroFGy6ZkgX_qfHuDdfXI9ILj0ieCAun7sN6qQCFhy2QigWMZhTh1uaJtuK_DtSEXoI0R8cmGEeoaE2-g7C9Gcp4H_shO6gYesmt0LSXcAGxokFifJRFrYXI5ArORmfNPgrcLJUhNIXvp31_IlHBfN_BmJrn9LGj1QLZmAMrGFODGyrDIs6A1LxZW_YbIC-4qCqK1YidyP0epBz92gThewTIRsiXlYURoFl1qz8u64tYgrB1vERg3gXFNPq2lPtQFd9p5beiB-GIhUzJJt8i71b5LK3FOvpfl-VB443XpK9tuEs9YhkzvCZQs8drxx1JiiXl5RBZo1J6937VgE6qoLlntI8KiQeOhgXfzBTCuG2-cepcdWxtKwqnWmHoignNBXqOG0j_PZQ46yz5xqopi6jafGHopSZfd5dblpG0lPiOziVB8BwBfn7UGIYlVZ-tucjDDXZxyEe2bXoJLi=w1080-h990-no',
+            imgUrl: 'https://lh3.googleusercontent.com/30Cs9Z9Po0_stxm2sKP7fzuY1iz_OJXxeEePJWUe-saazmQfNIp_JRlxIJNaX92QmAS8WxI3jhk-Upt3Ug=w1000-no-tmp.jpg',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
         }
     }

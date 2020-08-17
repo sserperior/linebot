@@ -9,6 +9,7 @@ const special = require('nlp/entities/special');
 const events = require('nlp/entities/events');
 const talent = require('nlp/entities/talent');
 const Calendar = require('nlp/entities/Calendar');
+const ManaSpeeds = require('nlp/entities/ManaSpeeds');
 
 const showHero = require('nlp/intents/showHero');
 const listHeroes = require('nlp/intents/listHeroes');
@@ -31,6 +32,16 @@ Object.keys(heroes).forEach(heroKey => {
     heroKey,
     ['en'],
     hero.pseudonyms != null ? hero.pseudonyms : [heroKey]
+  );
+});
+
+Object.keys(ManaSpeeds).forEach(manaSpeedKey => {
+  const manaSpeed = ManaSpeeds[manaSpeedKey];
+  manager.addNamedEntityText(
+    'manaSpeed',
+    manaSpeedKey,
+    ['en'],
+    manaSpeed.pseudonyms
   );
 });
 
@@ -123,10 +134,14 @@ manager.addDocument('en', '%event%', 'do.nothing');
 
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);
-manager.addDocument('en', 'show red hood', showHero.intentLabel);
-manager.addDocument('en', 'show puss in boots', showHero.intentLabel);
-manager.addDocument('en', 'show santa', showHero.intentLabel);
 manager.addDocument('en', 'display %hero%', showHero.intentLabel);
+manager.addDocument('en', 'show red hood', showHero.intentLabel);
+manager.addDocument('en', 'display red hood', showHero.intentLabel);
+manager.addDocument('en', 'show puss in boots', showHero.intentLabel);
+manager.addDocument('en', 'display puss in boots', showHero.intentLabel);
+manager.addDocument('en', 'show santa', showHero.intentLabel);
+manager.addDocument('en', 'display santa', showHero.intentLabel);
+manager.addDocument('en', 'show jack ohare', showHero.intentLabel);
 
 // Show event questions
 manager.addDocument('en', 'show %event%', showEvent.intentLabel);
@@ -172,8 +187,9 @@ manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel)
 
 // List heroes questions
 manager.addDocument('en', 'list %element% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %number% %element% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% %element% %manaSpeed% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list %number% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %manaSpeed% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
 
 // Elemental chest questions

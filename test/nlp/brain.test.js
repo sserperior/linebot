@@ -124,6 +124,10 @@ describe('brain tests', () => {
         it('show santa should be classified correctly', () => {
             return getManager().process('show santa').then(result => checkSpecificHero(result, 'santa claus'));
         });
+
+        it("show jack o’hare should be classified properly", () => {
+            return getManager().process('show jack o’hare').then(result => checkSpecificHero(result, "jack o'hare"));
+        });
     });
 
     describe('harpoon.team.query intent tests', () => {
@@ -273,6 +277,23 @@ describe('brain tests', () => {
             }
             expect(expectedEntityFound).to.be.true;
         }
+
+        const checkManaSpeed = (result, expectedEntityOption) => {
+            let expectedEntityFound = false;
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'manaSpeed' && result.entities[i].option === expectedEntityOption) {
+                    expectedEntityFound = true;
+                    break;
+                }
+            }
+            expect(expectedEntityFound).to.be.true;
+        }
+
+        it('should understand list very slow heroes', async () => {
+            const result = await getManager().process('list very slow heroes');
+            checkListHeroesIntent(result, null);
+            checkManaSpeed(result, 'VERY_SLOW');
+        });
 
         it('should understand list heroes', async () => {
             const result = await getManager().process('list heroes');
