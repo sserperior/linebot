@@ -11,6 +11,9 @@ module.exports = {
     'Archarry86': {
         pseudonyms: ['chary', 'archarry', 'archary', 'archarry86']
     },
+    'ArthurV': {
+        pseudonyms: ['arthur', 'arthurv']
+    },
     'AcousticWord': {
         pseudonyms: ['aw', 'acousticworc']
     },
@@ -25,6 +28,9 @@ module.exports = {
     },
     'Blue Thin Air': {
         pseudonyms: ['Blue Thin Air', 'bta']
+    },
+    'Cloud': {
+        pseudonyms: ['cloud']
     },
     'Cole': {
         pseudonyms: ['cole']
@@ -104,11 +110,11 @@ module.exports = {
     'toetapper': {
         pseudonyms: ['toetapper', 'tt']
     },
-    'ttttttttttttt': {
-        pseudonyms: ['ttttttttttttt', 'ts']
-    },
     'The Moose': {
         pseudonyms: ['big moose', 'moose', 'the moose', 'spymoose', 'spy moose']
+    },
+    'UNITED STATE': {
+        pseudonyms: ['united state', 'us']
     },
     'Werd5': {
         pseudonyms: ['werd', 'werd5', 'werdy', 'werdles']

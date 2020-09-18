@@ -451,6 +451,10 @@ describe('brain tests', () => {
             return getManager().process('thx cyber').then(checkResult);
         });
 
+        it('should trigger for "ty cyber"', () => {
+            return getManager().process('ty cyber').then(checkResult);
+        });
+
         it('"Do you think cyber?" should not trigger "thanks cyber"', () => {
             return getManager().process('Do you think cyber?').then(result => {
                 expect(result.score).to.be.lessThan(thanksCyber.intentThreshold);
@@ -490,6 +494,14 @@ describe('brain tests', () => {
 
         it('%hero% %grade% should trigger show.hero.grading', () => {
             return getManager().process('Valen grading').then(checkShowHeroGradingIntent);
+        });
+
+        it('grade %hero% should trigger show.hero.grading', () => {
+            return getManager().process('grade valen').then(checkShowHeroGradingIntent);
+        });
+
+        it('rate %hero% should trigger show.hero.grading', () => {
+            return getManager().process('rate valen').then(checkShowHeroGradingIntent);
         });
     });
 

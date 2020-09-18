@@ -9,7 +9,7 @@ const intentThreshold = parseFloat(process.env.SHOW_HERO_GRADING_INTENT_THRESHOL
 const heroGradingSpreadsheetKey = process.env.HERO_GRADING_SPREADSHEET_KEY;
 
 const startingRow = 3;
-const endingRow = 282;
+const endingRow = 286;
 
 // Load the heroes column (B-startingRow:B-endingRow)
 const loadHeroNameToRowIndex = worksheet => {
@@ -76,7 +76,7 @@ const findGradingData = heroName => {
         logger.info('Authenticated with grading spreadsheet');
         return doc.loadInfo();
     }).then(() => {
-        worksheet = doc.sheetsByIndex[0];
+        worksheet = doc.sheetsByIndex[1];
         return loadHeroNameToRowIndex(worksheet);
     }).then(heroNameToRowIndex => {
         let index = heroNameToRowIndex[heroName];

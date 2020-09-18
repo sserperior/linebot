@@ -2978,6 +2978,27 @@ const blue5StarHeroes = {
 }
 
 const yellow5StarHeroes = {
+    'bai yeong': {
+        name: 'Bai Yeong',
+        attack: 749,
+        defense: 735,
+        health: 1314,
+        element: elements.holy.id,
+        pseudonyms: ['bai yeong', 'bai', 'yeong', 'bai yong', 'yong', 'bai yeung', 'yeung'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/09/bai-yeong.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.RANGER,
+        special: {
+            name: 'Stunning Steel',
+            description: [
+                'Deals 320% damage to the target.',
+                'The target gets -75% accuracy for 2 turns. Chance to miss also applies to offensive Special Skills.',
+                'The target gets -75% decrease for any healing received for 2 turns.',
+                "Element Link gives all Holy allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
+            ]
+        }
+    },
     delilah: {
         name: 'Delilah',
         attack: 737,
@@ -3544,6 +3565,26 @@ const green5StarHeroes = {
                 'The target and nearby enemies get -54% defense against Nature for 4 turns.',
                 "Element Link recovers 4% health for all Nature allies for 6 turns. This effect can't be dispelled.",
                 'Dispels buffs from the target and nearby enemies.'
+            ]
+        }
+    },
+    frigg: {
+        name: 'Frigg',
+        attack: 753,
+        defense: 760,
+        health: 1320,
+        element: elements.nature.id,
+        pseudonyms: ['frigg'],
+        imgUrl: 'https://1.bp.blogspot.com/-QJzqTiY9dWg/X0fU7sGgJGI/AAAAAAAAEgs/kUrXDz8f2lYcf9PVfistRd73aBa9i-ZGQCLcBGAsYHQ/s623/Frigg_card.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Brittling Force',
+            description: [
+                'Deals 100% damage to all enemies.',
+                'Deals additional 18% damage per Nature shield on the board, up to 244% damage in total.',
+                'All enemies get -8% defense, and a further -4% decrease per each Nature shield on the board for 3 turns up to -44% defense.',
             ]
         }
     },

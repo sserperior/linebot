@@ -176,6 +176,7 @@ manager.addDocument('en', 'show %hero% %grade%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'show %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %grade% for %hero%', showHeroGrading.intentLabel);
 manager.addDocument('en', 'display %hero% %grade%', showHeroGrading.intentLabel);
+manager.addDocument('en', '%grade% %hero%', showHeroGrading.intentLabel);
 
 // Hero talent questions
 manager.addDocument('en', 'what is the %talent% for %hero%', showHeroTalent.intentLabel);
@@ -217,6 +218,7 @@ manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thank you %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thx %cyber%', thanksCyber.intentLabel);
+manager.addDocument('en', 'ty %cyber%', thanksCyber.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');
