@@ -96,9 +96,9 @@ const blue3StarHeroes = {
     },
     jarvur: {
         name: 'Jarvur',
-        attack: 495,
-        defense: 417,
-        health: 764,
+        attack: 500,
+        defense: 422,
+        health: 775,
         element: elements.ice.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jarvur.jpg',
         pseudonyms: ['jarvur', 'javer'],
@@ -108,7 +108,7 @@ const blue3StarHeroes = {
         special: {
             name: 'Jab and Hook',
             description: [
-                'Deals 265% damage to the target.',
+                'Deals 285% damage to the target.',
                 'Stack: The caster gets +10% attack. The maximum size of stack is 10. '
             ]
         }
@@ -135,9 +135,9 @@ const blue3StarHeroes = {
     },
     nordri: {
         name: 'Nordri',
-        attack: 483,
-        defense: 401,
-        health: 808,
+        attack: 488,
+        defense: 406,
+        health: 818,
         element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/f/cf125372719694e2fffae63c2d4853bd0902a81a.jpeg',
         stars: 3,
@@ -213,9 +213,9 @@ const blue3StarHeroes = {
 const yellow3StarHeroes = {
     agnes: {
         name: 'Agnes',
-        attack: 550,
-        defense: 481,
-        health: 481,
+        attack: 556,
+        defense: 486,
+        health: 491,
         element: elements.holy.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/agnes.jpg',
         stars: 3,
@@ -361,9 +361,9 @@ const yellow3StarHeroes = {
     },
     kvasir: {
         name: 'Kvasir',
-        attack: 424,
-        defense: 418,
-        health: 905,
+        attack: 429,
+        defense: 424,
+        health: 915,
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/7/07670012f75975430109a63916df96b68c24b6e8.jpeg',
         stars: 3,
@@ -506,9 +506,9 @@ const green3StarHeroes = {
     },
     'by-ulf': {
         name: 'By-Ulf',
-        attack: 431,
-        defense: 441,
-        health: 855,
+        attack: 436,
+        defense: 446,
+        health: 865,
         element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/d/2d7d2c6abd59ce43ae69a3042cb70b0a78860ce4.jpeg',
         stars: 3,
@@ -602,9 +602,9 @@ const green3StarHeroes = {
     },
     grevle: {
         name: 'Grevle',
-        attack: 398,
-        defense: 608,
-        health: 613,
+        attack: 403,
+        defense: 613,
+        health: 623,
         element: elements.nature.id,
         pseudonyms: ['grevle', 'grev', 'raccoon', 'racoon'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/grevle.jpg',
@@ -760,9 +760,9 @@ const red3StarHeroes = {
     },
     'ei-dunn': {
         name: 'Ei-Dunn',
-        attack: 417,
-        defense: 476,
-        health: 841,
+        attack: 422,
+        defense: 481,
+        health: 851,
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/b/0bc95de00f38b32293e109875e10d6b89b205c48.jpeg',
         stars: 3,
@@ -771,7 +771,7 @@ const red3StarHeroes = {
         special: {
             name: 'Tainted Axe',
             description: [
-                'Deals 220% damage to the target and nearby enemies.',
+                'Deals 240% damage to the target and nearby enemies.',
                 'The target and nearby enemies get -24% mana generation for 4 turns.'
             ]
         }
@@ -905,9 +905,9 @@ const red3StarHeroes = {
     },
     'sudri': {
         name: 'Sudri',
-        attack: 434,
-        defense: 479,
-        health: 764,
+        attack: 439,
+        defense: 484,
+        health: 775,
         element: elements.fire.id,
         pseudonyms: ['sudri', 'sundry', 'sudry'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/sudri.jpg',
@@ -917,8 +917,8 @@ const red3StarHeroes = {
         special: {
             name: 'Burning Shields',
             description: [
-                'Deals 100% damage to all enemies.',
-                'Deals additional 24% damage per each Fire shield on the board, up to 340% damage in total.'
+                'Deals 120% damage to all enemies.',
+                'Deals additional 24% damage per each Fire shield on the board, up to 360% damage in total.'
             ]
         }
     }
@@ -927,9 +927,9 @@ const red3StarHeroes = {
 const purple3StarHeroes = {
     'an-windr': {
         name: 'An-Windr',
-        attack: 416,
-        defense: 498,
-        health: 782,
+        attack: 424,
+        defense: 504,
+        health: 792,
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/an-windr.jpg',
         pseudonyms: ['anwindr', 'anwinder', 'an-windr', 'winder', 'windr'],
@@ -962,9 +962,9 @@ const purple3StarHeroes = {
     },
     bjorn: {
         name: 'Bjorn',
-        attack: 453,
-        defense: 431,
-        health: 816,
+        attack: 458,
+        defense: 436,
+        health: 827,
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/0/107b771571f3c247ca390e03a58eb28b8db9d287.jpeg',
         stars: 3,
@@ -1274,9 +1274,9 @@ const blue4StarHeroes = {
     },
     jott: {
         name: 'Jott',
-        attack: 716,
-        defense: 603,
-        health: 1117,
+        attack: 720,
+        defense: 607,
+        health: 1126,
         element: elements.ice.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/jott.jpg',
         pseudonyms: ['jott', 'jot'],
@@ -1330,9 +1330,9 @@ const blue4StarHeroes = {
     },
     mireweave: {
         name: 'Mireweave',
-        attack: 692,
-        defense: 592,
-        health: 1166,
+        attack: 697,
+        defense: 597,
+        health: 1175,
         element: elements.ice.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/a/4a88a48bda443e8dba6a81b1ae4094ffeb23b032.jpeg',
         stars: 4,
@@ -1491,9 +1491,9 @@ const yellow4StarHeroes = {
     },
     gullinbursti: {
         name: 'Gullinbursti',
-        attack: 603,
-        defense: 603,
-        health: 1387,
+        attack: 607,
+        defense: 607,
+        health: 1396,
         element: elements.holy.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/gullinbursti.jpg',
         pseudonyms: ['gullinbursti', 'gutbuster', 'gull'],
@@ -1603,9 +1603,9 @@ const yellow4StarHeroes = {
     },
     mist: {
         name: 'Mist',
-        attack: 682,
-        defense: 599,
-        health: 1187,
+        attack: 686,
+        defense: 603,
+        health: 1196,
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/3/835fcb7b107638cdc4f5f0e5b028cbb60446e6e0.jpeg',
         stars: 4,
@@ -1644,9 +1644,9 @@ const yellow4StarHeroes = {
 const green4StarHeroes = {
     almur: {
         name: 'Almur',
-        attack: 622,
-        defense: 643,
-        health: 1253,
+        attack: 626,
+        defense: 648,
+        health: 1262,
         element: elements.nature.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/almur.jpg',
         pseudonyms: ['almur', 'almer', 'elmo'],
@@ -1656,7 +1656,7 @@ const green4StarHeroes = {
         special: {
             name: 'Shadow Sweep',
             description: [
-                'Deals 120% damage to the target and nearby enemies.',
+                'Deals 150% damage to the target and nearby enemies.',
                 "Reduces max health from the target and nearby enemies by 75. Max health can't get lower than 30% of the original max health.",
                 'The target and nearby enemies get -54% defense against Nature for 4 turns.'
             ]
@@ -1664,9 +1664,9 @@ const green4StarHeroes = {
     },
     brynhild: {
         name: 'Brynhild',
-        attack: 680,
-        defense: 605,
-        health: 1175,
+        attack: 684,
+        defense: 609,
+        health: 1183,
         element: elements.nature.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/4/64a9e4ed7512e6302193a8268dcfe348e84d4b3d.jpeg',
         stars: 4,
@@ -2115,9 +2115,9 @@ const red4StarHeroes = {
     },
     shadereave: {
         name: 'Shadereave',
-        attack: 590,
-        defense: 631,
-        health: 1349,
+        attack: 595,
+        defense: 635,
+        health: 1357,
         element: elements.fire.id,
         pseudonyms: ['shadereave', 'shadereve', 'shadoweaver'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/shadereave.jpg',
@@ -2130,7 +2130,7 @@ const red4StarHeroes = {
                 'All allies get +30% attack for 4 turns.',
                 'All allies get +30% critical chance for 4 turns.',
                 'All allies receive Draugr Blessing. If the blessed Hero dies in the next 4 turns, they will be reborn as a Draugr with:',
-                '70% inherited health.',
+                '100% inherited health.',
                 '500 attack.',
                 '500 defense.'
             ]
@@ -2158,9 +2158,9 @@ const red4StarHeroes = {
     },
     sumle: {
         name: 'Sumle',
-        attack: 711,
-        defense: 624,
-        health: 1068,
+        attack: 716,
+        defense: 629,
+        health: 1077,
         element: elements.fire.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/4/f40e99fd16f944cfe51b186938adea2746167211.jpeg',
         stars: 4,
@@ -2277,9 +2277,9 @@ const purple4StarHeroes = {
     },
     fura: {
         name: 'Fura',
-        attack: 703,
-        defense: 624,
-        health: 1075,
+        attack: 707,
+        defense: 629,
+        health: 1083,
         element: elements.dark.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/06/fura.jpg',
         pseudonyms: ['fura', 'fury'],
@@ -2429,9 +2429,9 @@ const purple4StarHeroes = {
     },
     stonecleave: {
         name: 'Stonecleave',
-        attack: 722,
-        defense: 618,
-        health: 1047,
+        attack: 726,
+        defense: 622,
+        health: 1056,
         element: elements.dark.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/f/3fa862b69d4ff5b46ddd9bbe7096a00b8767d898.jpeg',
         stars: 4,
@@ -2442,7 +2442,7 @@ const purple4StarHeroes = {
             description: [
                 'Removes all dispellable and undispellable status effects and stacks from the caster.',
                 'The caster shifts into Dire Ghost form.',
-                'While in Dire Ghost form the caster automatically deals 150% damage against a random enemy each turn.',
+                'While in Dire Ghost form the caster automatically deals 175% damage against a random enemy each turn.',
                 "While in Dire Ghost form the caster can't gain mana but is immune to normal attacks, Special Skill attacks, status effects and stacks except the damage from enemies whose element is strong against the caster.",
                 'Dire Ghost form lasts for 4 turns.'
             ]
@@ -2595,8 +2595,8 @@ const blue5StarHeroes = {
         special: {
             name: 'Gargantuan Bite',
             description: [
-                'Deals 300% damage to the target.',
-                'Deals 600% damage if the target has less than 50% health remaining.',
+                'Deals 320% damage to the target.',
+                'Deals 640% damage if the target has less than 50% health remaining.',
                 'The caster gains a moderate amount of mana for each enemy killed and a small amount of mana for each enemy minion killed.',
                 'Heals the caster of 50% of the damage dealt.'
             ]
@@ -2868,7 +2868,7 @@ const blue5StarHeroes = {
         }
     },
     rumpelstiltskin: {
-        name: 'RumpleStiltskin',
+        name: 'Rumpelstiltskin',
         attack: 733,
         defense: 698,
         health: 1359,
@@ -2969,7 +2969,7 @@ const blue5StarHeroes = {
             description: [
                 'Deals 150% damage to all enemies.',
                 'All enemies receive 208 Water damage over 4 turns.',
-                'All Fire enemies get -34% attack for 4 turns.',
+                'All Fire enemies get -24% attack for 4 turns.',
                 'Deals extra damage against Fire.',
                 "Element Link gives all ice allies +10% critial chance for 6 turns. This effect can't be dispelled."
             ]
@@ -3270,7 +3270,7 @@ const yellow5StarHeroes = {
             name: 'Twist of Fate',
             description: [
                 'Deals 265% damage to the target and nearby enemies.',
-                'The target and nearby enemies become weak against the element they are strong against for 4 turns. They stay weak against the element they are normally weak against.'
+                'The target and nearby enemies become weak against the element they are strong against for 5 turns. They stay weak against the element they are normally weak against.'
             ]
         }
     },
@@ -3376,7 +3376,7 @@ const yellow5StarHeroes = {
         name: 'Sif',
         attack: 788,
         defense: 716,
-        health: 1306,
+        health: 1339,
         element: elements.holy.id,
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/6/e664c7b1a20a1d3556b5cd236dcae00b6171d673.jpeg',
         stars: 5,
@@ -3632,8 +3632,8 @@ const green5StarHeroes = {
     heimdall: {
         name: 'Heimdall',
         attack: 655,
-        defense: 836,
-        health: 1402,
+        defense: 844,
+        health: 1417,
         element: elements.nature.id,
         pseudonyms: ['heimdall', 'heimdal'],
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e49ea82d7ca4ed8e49036a4a37528b5e6a2f7aa5.jpeg',
@@ -3893,7 +3893,7 @@ const green5StarHeroes = {
         special: {
             name: 'Nutes of Yggdrasil',
             description: [
-                'Recovers 42% health for all allies.',
+                'Recovers 44% health for all allies.',
                 'All Nature shields on the board become enhanced. Enhanced shields have +64% attack when attacking hero casts the special, and -57% attack when defending hero casts the special.'
             ]
         }
@@ -3930,9 +3930,9 @@ const green5StarHeroes = {
         special: {
             name: 'Force of Forest',
             description: [
-                'Deals 130% damage to all enemies.',
-                'Summons a Forest Familiar Minion for all allies with 13% HP and 13% attack inherited from the caster',
-                'All allies regenerate 306 HP over 2 turns.',
+                'Deals 90% damage to all enemies.',
+                'Summons a Forest Familiar Minion for all allies with 9% HP and 13% attack inherited from the caster',
+                'All allies regenerate 274 HP over 2 turns.',
                 'All enemies get -24% mana generation for 3 turns.',
                 "Element Link gives all Nature allies +10% critical chance for 6 turns. This effect can't be dispelled."
 
@@ -4118,7 +4118,7 @@ const red5StarHeroes = {
             description: [
                 'Booses health of the caster by 1000. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
                 'All allies resist direct mana reduction for as long as the caster has boosted health. This effect cannot be dispelled.',
-                'Deals 110% damage to a random enemy each turn for as long as the caster has boosted health. This effect cannot be dispelled.'
+                'Deals 165% damage to a random enemy each turn for as long as the caster has boosted health. This effect cannot be dispelled.'
             ]
         }
     },
@@ -4314,8 +4314,8 @@ const red5StarHeroes = {
             name: "Trickster's Malice",
             description: [
                 'Takes all dispellable status ailments from all allies and randomly casts them on all enemies.',
-                'Deals 150% damage to all enemies.',
-                'Deals additional 8% damage per allocated status effect, up to 278% damage in total.'
+                'Deals 170% damage to all enemies.',
+                'Deals additional 8% damage per allocated status effect, up to 298% damage in total.'
             ]
         }
     },
@@ -4479,7 +4479,7 @@ const red5StarHeroes = {
     },
     tyr: {
         name: 'Tyr',
-        attack: 760,
+        attack: 772,
         defense: 756,
         health: 1312,
         element: elements.fire.id,
@@ -4545,7 +4545,7 @@ const purple5StarHeroes = {
     alfrike: {
         name: 'Alfrike',
         attack: 659,
-        defense: 830,
+        defense: 844,
         health: 1421,
         element: elements.dark.id,
         pseudonyms: ['alfrike', 'alf'],
@@ -4560,6 +4560,26 @@ const purple5StarHeroes = {
                 'Dark Cube deals 200% damage to the target.',
                 "Dark Cube reduces max health from the target by 224. Max health can't get lower than 30% of the original max health",
                 'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.'
+            ]
+        }
+    },
+    bera: {
+        name: 'Bera',
+        attack: 743,
+        defense: 749,
+        health: 1369,
+        element: elements.dark.id,
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/0/4024b910a150082a24c6b6f1e6c86013faeb4e86.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.MONK,
+        special: {
+            name: 'Disir of Dusk',
+            description: [
+                'Summons a Moth Minion for each ally. The Moth Minion inherits 20% HP and 20% attack from the caster.',
+                'Each hit from a Moth Minion gives the target the following status ailments:',
+                'The target receives 180 Poison damage over 3 turns.',
+                "The target can't receive new Minions for 3 turns."
             ]
         }
     },
@@ -4644,7 +4664,7 @@ const purple5StarHeroes = {
     },
     freya: {
         name: 'Freya',
-        attack: 766,
+        attack: 776,
         defense: 743,
         health: 1339,
         element: elements.dark.id,
@@ -5059,7 +5079,7 @@ const purple5StarHeroes = {
         special: {
             name: 'Night of Sorrow',
             description: [
-                'Deals 196% damage to the target.',
+                'Deals 211% damage to the target.',
                 'The target receives 225 damage over 5 turns. If a target already has this effect, the duration will be refreshed and the damage will be increased by 300, up to 825 damage in total.',
                 'The caster steals 61% of any healing applied to the target for 3 turns.',
                 'All allies get +30% defense for 3 turns.'
