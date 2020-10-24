@@ -23,5 +23,10 @@ module.exports = {
         id: 'very slow',
         value: 4,
         pseudonyms: ['very slow', 'vslow', 'veryslow', 'slowest']
+    },
+    CHARGE: {
+        id: 'charge',
+        value: 5,
+        pseudonyms: ['charge']
     }
 };

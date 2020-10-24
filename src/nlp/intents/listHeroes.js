@@ -38,6 +38,7 @@ const handle = async entities => {
         manaSpeeds.push(ManaSpeeds.AVERAGE.value);
         manaSpeeds.push(ManaSpeeds.SLOW.value);
         manaSpeeds.push(ManaSpeeds.VERY_SLOW.value);
+        manaSpeeds.push(ManaSpeeds.CHARGE.value);
     }
 
     if (uniqueStarEntities.length === 0) {

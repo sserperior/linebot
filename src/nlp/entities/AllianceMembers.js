@@ -35,8 +35,8 @@ module.exports = {
     'Fred Weasley': {
         pseudonyms: ['fred weasley', 'fred']
     },
-    "Grim D'Lock": {
-        pseudonyms: ['grim', 'grimlock', "grim d'lock", "grim d’lock"]
+    'Hictor': {
+        pseudonyms: ['hictor']
     },
     'Hotbox': {
         pseudonyms: ['hotbox']
@@ -68,7 +68,7 @@ module.exports = {
     'MHM': {
         pseudonyms: ['mhm']
     },
-    'paperplanes726': {
+    'paperplanes': {
         pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726', 'pp']
     },
     'RebelRebel': {
@@ -95,10 +95,7 @@ module.exports = {
     'Stormspeace25': {
         pseudonyms: ['storm', 'stormspeace', 'stormspeace25']
     },
-    'Trevor536': {
-        pseudonyms: ['trevor', 'trevor536']
-    },
-    'toetapper': {
+    'Toetapper': {
         pseudonyms: ['toetapper', 'tt']
     },
     'The Moose': {

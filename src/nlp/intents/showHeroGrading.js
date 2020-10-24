@@ -9,7 +9,7 @@ const intentThreshold = parseFloat(process.env.SHOW_HERO_GRADING_INTENT_THRESHOL
 const heroGradingSpreadsheetKey = process.env.HERO_GRADING_SPREADSHEET_KEY;
 
 const startingRow = 3;
-const endingRow = 288;
+const endingRow = 297;
 
 // Load the heroes column (B-startingRow:B-endingRow)
 const loadHeroNameToRowIndex = worksheet => {

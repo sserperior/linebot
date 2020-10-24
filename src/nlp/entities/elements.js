@@ -2,7 +2,7 @@ module.exports = {
     ice: {
         id: 'ice',
         pseudonyms: ['ice', 'blue'],
-        chestFarmingImgUrl: 'https://lh3.googleusercontent.com/U5VZdGD_nJHxgnfIRBbrnpUIhXietNHyukfwJnWbt20DEp-K6x0IAjq5xHgJU_kFCMhLeOA-mgf0zr-qzg=w1000-no-tmp.jpg'
+        chestFarmingImgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3ch1iARnuZedXn337HZSweZryJue5b_ARq4EQXTb7nB0cCF5nNvzW_BSZy-3jFtxT_UN8pDJ99E74-QxetKmijf07_IfyMCL36TtVy7GuaoARQLkPbRb2iWS833KGk0sATjGt2GSrFXVT4_Jtt-7lnd=w1000-no-tmp.jpg',
     },
     fire: {
         id: 'fire',
