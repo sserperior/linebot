@@ -32,7 +32,7 @@ module.exports = {
             pseudonyms: ['summer', 'sand', 'sand empire']
         },
         'Return to Morlovia': {
-            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/0/404a2870dfd1b758218518394325ca96944161c9.jpeg',
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/f/5f4d9e062b0f42f4b82f0377a83fbd6809c8924a.jpeg',
             pseudonyms: ['fall', 'autumn', 'morlovia', 'return to morlovia', 'vampires']
         },
         "Santa's Challenge": {
