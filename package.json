@@ -7,7 +7,7 @@
     "start": "cross-env NODE_PATH=src node src/server.js",
     "test": "cross-env NODE_PATH=src:test mocha --timeout 50000 test/**/*.test.js",
     "importdb": "cross-env NODE_PATH=src node -r dotenv/config src/db/importHeroes.js",
-    "scratch": "cross-env NODE_PATH=src node src/scratchpad/scratch.js"
+    "scratch": "cross-env NODE_PATH=src node -r dotenv/config src/scratchpad/scratch.js"
   },
   "repository": {
     "type": "git",

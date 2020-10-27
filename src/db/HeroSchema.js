@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const timestamps = require('mongoose-timestamp');
 const SpecialSchema = require('db/SpecialSchema');
+const GradingSchema = require('db/GradingSchema');
 
 const HeroSchema = new mongoose.Schema({
     heroId: {
@@ -54,6 +55,10 @@ const HeroSchema = new mongoose.Schema({
     },
     special: {
         type: SpecialSchema,
+        required: true
+    },
+    grading: {
+        type: GradingSchema,
         required: true
     }
 });

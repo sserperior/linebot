@@ -5143,7 +5143,7 @@ const purple5StarHeroes = {
         }
     },
     'marie-thérèse': {
-        name: 'Marie-Therese',
+        name: 'Marie-Thérèse',
         attack: 774,
         defense: 723,
         health: 1301,
@@ -5295,7 +5295,7 @@ const purple5StarHeroes = {
         }
     },
     sargasso: {
-        name: 'Sargasso',
+        name: 'Captain Sargasso',
         attack: 729,
         defense: 708,
         health: 1334,
