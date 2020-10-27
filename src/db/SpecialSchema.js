@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const timestamps = require('mongoose-timestamp');
 
 const SpecialSchema = new mongoose.Schema({
     name: {
@@ -11,7 +10,5 @@ const SpecialSchema = new mongoose.Schema({
         required: true
     }
 });
-
-SpecialSchema.plugin(timestamps);
 
 module.exports = SpecialSchema;
