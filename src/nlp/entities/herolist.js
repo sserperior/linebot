@@ -1100,6 +1100,26 @@ const purple3StarHeroes = {
             ]
         }
     },
+    jack: {
+        name: 'Jack',
+        attack: 491,
+        defense: 450,
+        health: 752,
+        element: elements.dark.id,
+        pseudonyms: ['pumpkin', 'pumpkinhead', 'jack'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/kQ8ffWXtRTWa2DCUDB7WiR330XgM_Hp6dPSBlY_1o4sOhvs1Si1qJBSSMCQpMHs2aLKmioZW_PfV9Zi8gw=w1000-no-tmp.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.WIZARD,
+        special: {
+            name: "Explosive O'Latern",
+            description: [
+                'Deals 200% damage to the target.',
+                'The target receives a Pumpkin Bomb. After 3 turns the Pumpkin Bomb explodes and deals 206 damage to the target and nearby targets. The Pumpkin Bomb also explodes when the target is defeated.'
+            ]
+        }
+    },
     oberon: {
         name: 'Oberon',
         attack: 422,
@@ -1317,6 +1337,25 @@ const blue4StarHeroes = {
                 'Destroys all minions from the target',
                 'Deals 260% damage to the target.',
                 'Attacks randomly a new target if any minions were destroyed.'
+            ]
+        }
+    },
+    frank: {
+        name: 'Frank',
+        attack: 635,
+        defense: 639,
+        health: 1292,
+        element: elements.ice.id,
+        imgUrl: 'https://lh3.googleusercontent.com/JxQeIkMg4sMSrjyXx_qn_HLqrUdUWjSOVaKxWYJ47UZAfpp7KQH_3zuhZyEZw_4wV7_aGKNNKWhaQhcW0Q=w1000-no-tmp.jpg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.BARBARIAN,
+        special: {
+            name: 'Undead Razer',
+            description: [
+                'Deals 200% damage to all enemies.',
+                'The damage is increased by 45% per each dead enemy.',
+                'All enemies get -44% defense for 4 turns.'
             ]
         }
     },
@@ -1896,7 +1935,7 @@ const green4StarHeroes = {
         defense: 603,
         health: 960,
         element: elements.nature.id,
-        pseudonyms: ['jack', "jack o'hare", 'jack ohare', 'jack hare', 'jack o’hare'],
+        pseudonyms: ["jack o'hare", 'jack ohare', 'jack hare', 'jack o’hare'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/04/jack-ohare.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -3800,6 +3839,26 @@ const green5StarHeroes = {
             ]
         }
     },
+    francine: {
+        name: 'Francine',
+        attack: 780,
+        defense: 743,
+        health: 1353,
+        element: elements.nature.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/Nb7elKKLLawu-Ck2_n_tq_zhFEPtF-9vndKV5oIV-JCbI296eo1xFcGRQNzFZwDfYLI7o1ve-t6X_u4DDw=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE,
+        special: {
+            name: 'Electric Cut',
+            description: [
+                'Deals 225% damage to the target and nearby enemies.',
+                'Cleanses status ailments from all allies at the end of each turn for 3 turns.',
+                'Deals extra damage against Ice.'
+            ]
+        }
+    },
     frigg: {
         name: 'Frigg',
         attack: 753,
@@ -4803,6 +4862,26 @@ const red5StarHeroes = {
                 'The target receives 196 Bleed damage over 4 turns.',
                 'The caster regenerates 548 HP over 4 turns.',
                 'If the caster dies during the next 4 turns, they are resurrected at the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
+            ]
+        }
+    },
+    vanda: {
+        name: 'Vanda',
+        attack: 774,
+        defense: 735,
+        health: 1384,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/hCNI0PxQgUQH7h0vRPigT2KMIvyUYvQu5AA1Es0qBJuHzHHcWjRWpLRYHCAA-R8TjsZD9LyRigAcuSKiSg=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
+        classGrade: Classes.SORCERER,
+        special: {
+            name: 'Twilight of Sorrow',
+            description: [
+                'Deals 125% damage to all enemies.',
+                'The caster steals 61% of any healing applied to all enemies for 2 turns.',
+                'All allies are immune to new status ailments for 2 turns.'
             ]
         }
     },

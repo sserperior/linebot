@@ -40,7 +40,7 @@ module.exports = {
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge"]
         },
         'Path of Valor': {
-            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3cfj2xENqQ44T6-PT-zyY3IcsXKW0Lsy6HIn7ojZQPNfXu_h4GDzE-LgAWfZZhI64hr7KGDxUM7f7MU12U7fYSNlZce0lxqv3jTtB_3SHf8_eAjB6RSjf3pcTw0YmBeB2hIlMMxxYs_daIoyYx-d8_V=w1000-no-tmp.jpg',
+            imgUrl: 'https://lh3.googleusercontent.com/FSptnOWmz7f6Pdw9QZnVk2gIopoKqNxVrOCxRQFytDzeXfc76cKAssZ6N4EuWqVweK-F2VYB5YjTNrAWsw=w1000-no-tmp.jpg',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
         }
     }
