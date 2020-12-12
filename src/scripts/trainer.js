@@ -174,6 +174,7 @@ manager.addDocument('en', '%allianceMember% poon team', harpoonTeamQuery.intentL
 manager.addDocument('en', '%allianceMember% harpoon team', harpoonTeamQuery.intentLabel);
 
 // Special questions
+manager.addDocument('en', '%hero% %special%', showHeroSpecial.intentLabel);
 manager.addDocument('en', 'what is the %special% for %hero%', showHeroSpecial.intentLabel);
 manager.addDocument('en', 'what is %hero% %special%', showHeroSpecial.intentLabel);
 manager.addDocument('en', 'show %hero% %special%', showHeroSpecial.intentLabel);
@@ -191,6 +192,7 @@ manager.addDocument('en', 'display %hero% %grade%', showHeroGrading.intentLabel)
 manager.addDocument('en', '%grade% %hero%', showHeroGrading.intentLabel);
 
 // Hero talent questions
+manager.addDocument('en', '%hero% %talent%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'what is the %talent% for %hero%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'what is %hero% %talent%', showHeroTalent.intentLabel);
 manager.addDocument('en', 'show %hero% %talent%', showHeroTalent.intentLabel);
@@ -220,6 +222,7 @@ manager.addDocument('en', 'farm %element% chest', farmElementalChest.intentLabel
 manager.addDocument('en', 'farm %element% monsters', farmElementalChest.intentLabel);
 
 // Farm item questions
+manager.addDocument('en', 'show hardwood lumber', farmItem.intentLabel);
 manager.addDocument('en', 'where do i find %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'where do i farm %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel);
@@ -229,6 +232,7 @@ manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', '%farmableitem%', farmItem.intentLabel);
 
 // Thanks Cyber
+manager.addDocument('en', 'thank you cyber 88', thanksCyber.intentLabel);
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thank you %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thx %cyber%', thanksCyber.intentLabel);
@@ -239,6 +243,10 @@ manager.addDocument('en', 'tyvm %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'how do you feel %cyber%', checkCyberHealth.intentLabel);
 manager.addDocument('en', 'how are you %cyber%', checkCyberHealth.intentLabel);
 
-manager.train().then(() => {
+const execute = () => manager.train().then(() => {
   manager.save('hero-brain.nlp');
 });
+
+module.exports = {
+  execute
+};

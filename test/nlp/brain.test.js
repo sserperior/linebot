@@ -26,7 +26,7 @@ const checkCyberHealth = require('nlp/intents/checkCyberHealth');
 
 describe('brain tests', () => {
     before(() => {
-        return require('scripts/trainer');
+        return require('scripts/trainer').execute();
     });
 
     afterEach(() => {
@@ -183,7 +183,19 @@ describe('brain tests', () => {
     });
 
     describe('show.hero.special intent tests', () => {
-        const checkShowHeroSpecialIntent = result => {
+
+        const checkShowHeroSpecialIntent = (result, heroId) => {
+            expect(result.intent).to.equal('show.hero.special');
+            expect(result.score).to.be.at.least(showHeroSpecial.intentThreshold);
+            for (let i=0;i<result.entities.length;i++) {
+                if (result.entities[i].entity === 'hero' && result.entities[i].option === heroId) {
+                    return;
+                }
+            }
+            expect(true, `hero ${heroId} was not found amongst the captured entities`).to.be.false;
+        };
+
+        const checkShowHeroesSpecialIntent = result => {
             expect(result.intent).to.equal('show.hero.special');
             expect(result.score).to.be.at.least(showHeroSpecial.intentThreshold);
             let baneFound = false;
@@ -213,42 +225,39 @@ describe('brain tests', () => {
         };
 
         it("what's the special for %hero% should be classified as a show.hero.special intent and the expected entities should be found", () => {
-            return getManager().process("what's the special for Bane, Valen, Little John and Melendor?").then(checkShowHeroSpecialIntent);
+            return getManager().process("what's the special for Bane, Valen, Little John and Melendor?").then(checkShowHeroesSpecialIntent);
         });
 
         it('what are the specials for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process('what are the specials for Bane, Valen, Little John and Melendor please?').then(checkShowHeroSpecialIntent);
+            return getManager().process('what are the specials for Bane, Valen, Little John and Melendor please?').then(checkShowHeroesSpecialIntent);
         });
 
         it('what is the special for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process('what is the special for Bane, Valen, Little John, and Melendor?').then(checkShowHeroSpecialIntent);
+            return getManager().process('what is the special for Bane, Valen, Little John, and Melendor?').then(checkShowHeroesSpecialIntent);
         });
 
         it('what are %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process("What are Bane's, Valen's, Little John's and Melendor's specials?").then(checkShowHeroSpecialIntent);
+            return getManager().process("What are Bane's, Valen's, Little John's and Melendor's specials?").then(checkShowHeroesSpecialIntent);
         });
 
         it('show %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process("show Bane's, Valen's, Little John's and Melendor's specials").then(checkShowHeroSpecialIntent);
+            return getManager().process("show Bane's, Valen's, Little John's and Melendor's specials").then(checkShowHeroesSpecialIntent);
         });
 
         it('show special for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process('show specials for Bane, Valen, Little John and Melendor').then(checkShowHeroSpecialIntent);
+            return getManager().process('show specials for Bane, Valen, Little John and Melendor').then(checkShowHeroesSpecialIntent);
         });
 
         it('display special for %hero% should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process('display specials for Bane, Little John, Melendor and Valen').then(checkShowHeroSpecialIntent);
+            return getManager().process('display specials for Bane, Little John, Melendor and Valen').then(checkShowHeroesSpecialIntent);
         });
 
         it('display %hero% special should be classified as a show.hero.special intent and the expected entities should be found', () => {
-            return getManager().process("display Bane's, Little John's, Melendor's and Valen's specials").then(checkShowHeroSpecialIntent);
+            return getManager().process("display Bane's, Little John's, Melendor's and Valen's specials").then(checkShowHeroesSpecialIntent);
         });
 
-        it('%hero% %special% should trigger show.hero.special', () => {
-            return getManager().process('Joon special').then(result => {
-                expect(result.intent).to.equal(showHeroSpecial.intentLabel);
-                expect(result.score).to.be.at.least(showHeroSpecial.intentThreshold);
-            });
+        it('%hero% %special% should be classified as a show.hero.special intent and the expected entities should be found', () => {
+            return getManager().process("Bane's special").then(result => checkShowHeroSpecialIntent(result, 'bane'));
         });
     });
 

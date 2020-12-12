@@ -37,7 +37,7 @@ module.exports = {
         },
         "Santa's Challenge": {
             imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3d0fbLR9ZOjFi9hWG3S2T2VK0lSqt7Q6CQcRW3yZVRf8F0WSdS6TG9QF3xeTrhdVrFFRwBblAsq7of2JBvyQIeozKXaBk-dFa8BbO6ym0K7SaC0gALGOkYpzDYwfPwWZBmGzb7EsKXf5b_xP0HucgqF=w1000-no-tmp.jpg',
-            pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge"]
+            pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge", 'santa’s challenge']
         },
         'Path of Valor': {
             imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dijI88JgqijatrgxIDFChdUyzgbnpCFCg0D6XWj9rJZ-5-HcnoZTaJyRFyUIGPsrT9GBXdFKIx0ksZGYKlMh17TepwFbaylgs-Mu2LKVA4Uq4iH9uUnG0bPHs1FvACr2T9LkV16_5bUCYMn4-0GAV5=w1000-no-tmp.jpg',

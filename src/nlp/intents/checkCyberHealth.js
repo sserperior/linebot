@@ -32,7 +32,8 @@ const handle = async entities => {
             const statusMessages = [
                 `Here's how I'm doing:`,
                 `\u2022  MongoDB: ${mongoose.STATES[ConnectionManager.getConnection().readyState]}`,
-                `\u2022  Calendar: ${calendarStatus}`
+                `\u2022  Calendar: ${calendarStatus}`,
+                `\u2022  Node ver: ${process.version}`
             ];
 
             return {

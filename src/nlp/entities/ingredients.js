@@ -1,5 +1,6 @@
 module.exports = {
     "Clean Cloth": {
+        pseudonyms: ['clean cloth', 'cloth'],
         imgUrl: 'https://vignette.wikia.nocookie.net/empiresandpuzzles/images/7/79/Clean_Cloth.jpg/revision/latest?cb=20181224074133',
         farmData: {
             best: [

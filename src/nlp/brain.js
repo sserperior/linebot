@@ -25,7 +25,7 @@ let manager = null;
 
 const getManager = () => {
     if (fs.existsSync('hero-brain.nlp') && manager == null) {
-        manager = new NlpManager({ languages: ['en'] });
+        manager = new NlpManager({ languages: ['en'], forceNER: true });
         manager.load('hero-brain.nlp');
     }
     return manager;
