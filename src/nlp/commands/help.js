@@ -1,4 +1,5 @@
 const logger = require('logger');
+const cybUtil = require('cybUtil');
 
 const commands = [
     'help'
@@ -16,7 +17,8 @@ const gameHelpText = [
     '\u2022  show <event>',
     `\u2022  show <month> <year> calendar`,
     '\u2022  what harpoon team is <member> on?',
-    '\u2022  thanks cyber'
+    '\u2022  thanks cyber',
+    `\u2022  how are you cyber?`
 ];
 
 const extraText = [
@@ -25,26 +27,15 @@ const extraText = [
     '\u2022  help'
 ];
 
-const convertStringArrayToString = stringArray => {
-    let result = '';
-    stringArray.forEach(line => {
-        if (result.length > 0) {
-            result += '\n';
-        }
-        result += line;
-    });
-    return result;
-}
-
 const handle = () => ({
     replyMessages: [
         {
             type: 'text',
-            text: convertStringArrayToString(gameHelpText)
+            text: cybUtil.convertStringArrayToString(gameHelpText)
         },
         {
             type: 'text',
-            text: convertStringArrayToString(extraText)
+            text: cybUtil.convertStringArrayToString(extraText)
         }
     ]
 });

@@ -77,7 +77,7 @@ const handle = ({ subCommand, parameter }) => detectLanguageAction(parameter).th
             replyMessages: [
                 {
                     type: 'text',
-                    text: `Language detected: ${destinationLanguage}\n\n${translatedText}`
+                    text: `Language detected: ${detectedLanguage}\n\n${translatedText}`
                 }
             ]
         }));

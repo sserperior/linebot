@@ -25,4 +25,4 @@ module.exports = {
     handle,
     intentLabel,
     intentThreshold
-}
+};

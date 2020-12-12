@@ -23,6 +23,7 @@ const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
+const checkCyberHealth = require('nlp/intents/checkCyberHealth');
 
 const manager = new NlpManager({ languages: ['en'] });
 
@@ -233,6 +234,10 @@ manager.addDocument('en', 'thank you %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thx %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'ty %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'tyvm %cyber%', thanksCyber.intentLabel);
+
+// Check Cyber health
+manager.addDocument('en', 'how do you feel %cyber%', checkCyberHealth.intentLabel);
+manager.addDocument('en', 'how are you %cyber%', checkCyberHealth.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');

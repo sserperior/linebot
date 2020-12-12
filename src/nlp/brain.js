@@ -18,6 +18,7 @@ const listHeroes = require('nlp/intents/listHeroes');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
+const checkCyberHealth = require('nlp/intents/checkCyberHealth');
 const doNothing = require('nlp/intents/doNothing');
 
 let manager = null;
@@ -114,6 +115,8 @@ const generateNLResponse = messageText => getManager().process(messageText).then
         return Promise.resolve(farmItem.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, thanksCyber)) {
         return Promise.resolve(thanksCyber.handle(result.entities));
+    } else if (isRecognizedIntent(intent, score, checkCyberHealth)) {
+        return checkCyberHealth.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, showCalendar)) {
         return showCalendar.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, doNothing)) {

@@ -22,6 +22,7 @@ const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
 const thanksCyber = require('nlp/intents/thanksCyber');
+const checkCyberHealth = require('nlp/intents/checkCyberHealth');
 
 describe('brain tests', () => {
     before(() => {
@@ -482,6 +483,23 @@ describe('brain tests', () => {
             return getManager().process('Do you think cyber?').then(result => {
                 expect(result.score).to.be.lessThan(thanksCyber.intentThreshold);
             });
+        });
+    });
+
+    describe('check Cyber health tests', () => {
+        const checkResult = result => {
+            expect(result.intent).to.equal(checkCyberHealth.intentLabel);
+            expect(result.score).to.be.at.least(checkCyberHealth.intentThreshold);
+        };
+
+        it('should trigger for "how do you feel cyber?"', async () => {
+            const result = await getManager().process('how do you feel cyber?');
+            checkResult(result);
+        });
+
+        it('should trigger for "how are you cyber?"', async () => {
+            const result = await getManager().process('how are you cyber?');
+            checkResult(result);
         });
     });
 

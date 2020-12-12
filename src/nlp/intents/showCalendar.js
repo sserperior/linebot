@@ -32,6 +32,14 @@ const getCalendarUrl = yyyymmString => {
     });
 };
 
+const getCalendarUrlForToday = () => {
+    const today = new Date(Date.now());
+    const year = today.getUTCFullYear();
+    const month = getMonthAsTwoDigitString(today.getUTCMonth());
+    const yyyymmString = `${year}-${month}`;
+    return getCalendarUrl(yyyymmString);
+};
+
 const getDateForEntity = (entity, today) => {
     const entityType = _.get(entity, 'resolution.type');
     let timex = null;
@@ -143,6 +151,7 @@ const handle = entities => {
 
 module.exports = {
     handle,
+    getCalendarUrlForToday,
     intentLabel,
     intentThreshold
 };

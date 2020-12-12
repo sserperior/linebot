@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const logger = require('logger');
 const lineUtils = require('line/LineUtils');
 const brain = require('nlp/brain');
-const HeroesDao = require('dao/HeroesDao');
+const ConnectionManager = require('dao/ConnectionManager');
 
 const app = express();
 const port = cfenv.getAppEnv().port || 3000;
@@ -19,6 +19,6 @@ app.post('/', lineUtils.middleware(brain.generateResponse));
         useCreateIndex: true
     });
 
-    HeroesDao.init(connection);
+    ConnectionManager.init(connection);
     app.listen(port, () => logger.info(`Listening on port ${port}`));
 })();
