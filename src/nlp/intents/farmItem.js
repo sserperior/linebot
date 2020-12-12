@@ -5,7 +5,7 @@ const itemMap = {
 };
 
 const intentLabel = 'farm.item';
-const intentThreshold = parseFloat(process.env.FARM_ITEM_INTENT_THRESHOLD || 0.8);
+const intentThreshold = parseFloat(process.env.FARM_ITEM_INTENT_THRESHOLD || 0.7);
 const itemEntity = 'farmableItem';
 
 const generateFarmingTextSection = section => {

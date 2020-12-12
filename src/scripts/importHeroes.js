@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
-const herolist = require('nlp/entities/herolist');
+const herolist = require('scripts/herolist');
 const HeroSchema = require('db/HeroSchema');
 
 const getDefaultGradeValue = value => value == null ? '' : value;

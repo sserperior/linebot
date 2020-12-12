@@ -25,7 +25,7 @@ const thanksCyber = require('nlp/intents/thanksCyber');
 
 describe('brain tests', () => {
     before(() => {
-        return require('nlp/trainer');
+        return require('scripts/trainer');
     });
 
     afterEach(() => {
@@ -265,7 +265,7 @@ describe('brain tests', () => {
                 }
                 expect(expectedEntityFound).to.be.true;
             }
-        }
+        };
 
         const checkStars = (result, expectedValue) => {
             let expectedEntityFound = false;
@@ -276,23 +276,30 @@ describe('brain tests', () => {
                 }
             }
             expect(expectedEntityFound).to.be.true;
-        }
+        };
 
-        const checkManaSpeed = (result, expectedEntityOption) => {
+        const checkQualifier = (result, qualifier, expectedEntityOption) => {
             let expectedEntityFound = false;
             for (let i=0;i<result.entities.length;i++) {
-                if (result.entities[i].entity === 'manaSpeed' && result.entities[i].option === expectedEntityOption) {
+                if (result.entities[i].entity === qualifier && result.entities[i].option === expectedEntityOption) {
                     expectedEntityFound = true;
                     break;
                 }
             }
             expect(expectedEntityFound).to.be.true;
-        }
+        };
 
         it('should understand list very slow heroes', async () => {
             const result = await getManager().process('list very slow heroes');
             checkListHeroesIntent(result, null);
-            checkManaSpeed(result, 'VERY_SLOW');
+            checkQualifier(result, 'manaSpeed', 'VERY_SLOW');
+        });
+
+
+        it('should understand list paladin heroes', async () => {
+            const result = await getManager().process('list paladin heroes');
+            checkListHeroesIntent(result, null);
+            checkQualifier(result, 'class', 'PALADIN');
         });
 
         it('should understand list heroes', async () => {
@@ -335,6 +342,21 @@ describe('brain tests', () => {
         it('should list dark heroes', async () => {
             const result = await getManager().process('list dark heroes');
             checkListHeroesIntent(result, 'dark');
+        });
+
+        it('should list 5* dark very slow heroes', async () => {
+            const result = await getManager().process('list 5* dark very slow heroes');
+            checkListHeroesIntent(result, 'dark');
+            checkStars(result, 5);
+            checkQualifier(result, 'manaSpeed', 'VERY_SLOW');
+        });
+
+        it('should understand list 5* fire fast paladin heroes', async () => {
+            const result = await getManager().process('list 5* fire fast paladin heroes');
+            checkListHeroesIntent(result, 'fire');
+            checkStars(result, 5);
+            checkQualifier(result, 'manaSpeed', 'FAST');
+            checkQualifier(result, 'class', 'PALADIN');
         });
     });
 
@@ -408,10 +430,11 @@ describe('brain tests', () => {
             for (let i=0;i<result.entities.length;i++) {
                 if (result.entities[i].entity === farmItem.itemEntity && result.entities[i].option === expectedEntityOption) {
                     expectedEntityFound = true;
+                    break;
                 }
             }
-            expect(expectedEntityFound).to.be.true;
-            expect(result.score).to.be.at.least(farmItem.intentThreshold);
+            expect(expectedEntityFound, `"${result.utterance}": ${expectedEntityOption} not found!`).to.be.true;
+            expect(result.score, `"${result.utterance}": ${expectedEntityOption} found but score is too low`).to.be.at.least(farmItem.intentThreshold);
         };
 
         it('all items should be identified correctly', () => {

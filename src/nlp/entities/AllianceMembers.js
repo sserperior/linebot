@@ -1,4 +1,7 @@
 module.exports = {
+    '[A*H]mmd': {
+        pseudonyms: ['mmd', '[a*h]mmd']
+    },
     '88pokemon': {
         pseudonyms: ['88', '88pokemon', 'boss', 'obi']
     },
@@ -18,25 +21,19 @@ module.exports = {
         pseudonyms: ['arthur', 'arthurv']
     },
     'AcousticWord': {
-        pseudonyms: ['aw', 'acousticworc']
+        pseudonyms: ['aw', 'acousticword']
     },
     'Alundra': {
         pseudonyms: ['alundra', 'al']
     },
-    'bignruff': {
-        pseudonyms: ['bignruff']
-    },
-    'Blue Thin Air': {
-        pseudonyms: ['Blue Thin Air', 'bta']
-    },
     'Cole': {
         pseudonyms: ['cole']
     },
+    'CrudeDude': {
+        pseudonyms: ['crude', 'dude', 'crudedude']
+    },
     'Fred Weasley': {
         pseudonyms: ['fred weasley', 'fred']
-    },
-    'Hictor': {
-        pseudonyms: ['hictor']
     },
     'Hotbox': {
         pseudonyms: ['hotbox']
@@ -65,14 +62,14 @@ module.exports = {
     'magicmands': {
         pseudonyms: ['magic', 'mandibles', 'magicmands']
     },
-    'MHM': {
-        pseudonyms: ['mhm']
-    },
     'paperplanes': {
         pseudonyms: ['paperplanes', 'paper planes', 'paperplanes726', 'pp']
     },
     'RebelRebel': {
         pseudonyms: ['rebel', 'rebs', 'rebs2', 'rebelrebel', 'rebellious']
+    },
+    'Roland in the Derp': {
+        pseudonyms: ['roland', 'r2', 'derpy', 'roland in the derp']
     },
     'richo': {
         pseudonyms: ['richo', 'richy', 'richyrich', 'richy-rich']

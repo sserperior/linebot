@@ -1,5 +1,5 @@
 const { NlpManager } = require('node-nlp');
-const { heroes } = require('nlp/entities/herolist');
+const { heroes } = require('scripts/herolist');
 const eventsWrapper = require('nlp/entities/events');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
@@ -10,6 +10,7 @@ const events = require('nlp/entities/events');
 const talent = require('nlp/entities/talent');
 const Calendar = require('nlp/entities/Calendar');
 const ManaSpeeds = require('nlp/entities/ManaSpeeds');
+const Classes = require('nlp/entities/Classes');
 
 const showHero = require('nlp/intents/showHero');
 const listHeroes = require('nlp/intents/listHeroes');
@@ -42,6 +43,16 @@ Object.keys(ManaSpeeds).forEach(manaSpeedKey => {
     manaSpeedKey,
     ['en'],
     manaSpeed.pseudonyms
+  );
+});
+
+Object.keys(Classes).forEach(classKey => {
+  const classGrade = Classes[classKey];
+  manager.addNamedEntityText(
+    'class',
+    classKey,
+    ['en'],
+    classGrade.pseudonyms != null ? classGrade.pseudonyms : [classGrade.value.toLowerCase()]
   );
 });
 
@@ -188,7 +199,8 @@ manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel)
 
 // List heroes questions
 manager.addDocument('en', 'list %element% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %number% %element% %manaSpeed% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% %element% %manaSpeed% %class% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %class% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list %number% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list %manaSpeed% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
@@ -213,12 +225,14 @@ manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel)
 manager.addDocument('en', 'show %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'farm %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', '%farmableitem%', farmItem.intentLabel);
 
 // Thanks Cyber
 manager.addDocument('en', 'thanks %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thank you %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'thx %cyber%', thanksCyber.intentLabel);
 manager.addDocument('en', 'ty %cyber%', thanksCyber.intentLabel);
+manager.addDocument('en', 'tyvm %cyber%', thanksCyber.intentLabel);
 
 manager.train().then(() => {
   manager.save('hero-brain.nlp');

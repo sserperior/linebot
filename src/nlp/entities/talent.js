@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Classes = require('nlp/heroModel/Classes');
+const Classes = require('nlp/entities/Classes');
 
 const Stats = require('nlp/heroModel/Stats');
 
@@ -603,43 +603,43 @@ const clericShieldPath = costs => ([
 ]);
 
 const classToPathsMap = {
-    [Classes.BARBARIAN]: {
+    [Classes.BARBARIAN.value]: {
         swordPath: barbarianSwordPath,
         shieldPath: barbarianShieldPath
     },
-    [Classes.CLERIC]: {
+    [Classes.CLERIC.value]: {
         swordPath: clericSwordPath,
         shieldPath: clericShieldPath
     },
-    [Classes.DRUID]: {
+    [Classes.DRUID.value]: {
         swordPath: druidSwordPath,
         shieldPath: druidShieldPath
     },
-    [Classes.FIGHTER]: {
+    [Classes.FIGHTER.value]: {
         swordPath: fighterSwordPath,
         shieldPath: fighterShieldPath
     },
-    [Classes.MONK]: {
+    [Classes.MONK.value]: {
         swordPath: monkSwordPath,
         shieldPath: monkShieldPath
     },
-    [Classes.RANGER]: {
+    [Classes.RANGER.value]: {
         swordPath: rangerSwordPath,
         shieldPath: rangerShieldPath
     },
-    [Classes.ROGUE]: {
+    [Classes.ROGUE.value]: {
         swordPath: rogueSwordPath,
         shieldPath: rogueShieldPath
     },
-    [Classes.PALADIN]: {
+    [Classes.PALADIN.value]: {
         swordPath: paladinSwordPath,
         shieldPath: paladinShieldPath
     },
-    [Classes.SORCERER]: {
+    [Classes.SORCERER.value]: {
         swordPath: sorcererSwordPath,
         shieldPath: sorcererShieldPath
     },
-    [Classes.WIZARD]: {
+    [Classes.WIZARD.value]: {
         swordPath: wizardSwordPath,
         shieldPath: wizardShieldPath
     }

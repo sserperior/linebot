@@ -36,11 +36,11 @@ module.exports = {
             pseudonyms: ['fall', 'autumn', 'morlovia', 'return to morlovia', 'vampires']
         },
         "Santa's Challenge": {
-            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/c/6cc6a15f9800bd69f9d53fbbdc3822ee031176e0.jpeg',
+            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3d0fbLR9ZOjFi9hWG3S2T2VK0lSqt7Q6CQcRW3yZVRf8F0WSdS6TG9QF3xeTrhdVrFFRwBblAsq7of2JBvyQIeozKXaBk-dFa8BbO6ym0K7SaC0gALGOkYpzDYwfPwWZBmGzb7EsKXf5b_xP0HucgqF=w1000-no-tmp.jpg',
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge"]
         },
         'Path of Valor': {
-            imgUrl: 'https://lh3.googleusercontent.com/FSptnOWmz7f6Pdw9QZnVk2gIopoKqNxVrOCxRQFytDzeXfc76cKAssZ6N4EuWqVweK-F2VYB5YjTNrAWsw=w1000-no-tmp.jpg',
+            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dijI88JgqijatrgxIDFChdUyzgbnpCFCg0D6XWj9rJZ-5-HcnoZTaJyRFyUIGPsrT9GBXdFKIx0ksZGYKlMh17TepwFbaylgs-Mu2LKVA4Uq4iH9uUnG0bPHs1FvACr2T9LkV16_5bUCYMn4-0GAV5=w1000-no-tmp.jpg',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
         }
     }
