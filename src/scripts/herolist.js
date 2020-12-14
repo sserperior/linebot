@@ -129,7 +129,7 @@ const blue3StarHeroes = {
             name: 'Jab and Hook',
             description: [
                 'Deals 285% damage to the target.',
-                'Stack: The caster gets +10% attack. The maximum size of stack is 10. '
+                'Stack: The caster gets +10% attack. The maximum size of stack is 10.'
             ]
         }
     },

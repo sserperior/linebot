@@ -98,13 +98,6 @@ Object.keys(farmItem.itemMap).forEach(itemKey => {
 });
 
 manager.addNamedEntityText(
-  events.challengeItemEntity,
-  events.challengeItemEntity,
-  ['en'],
-  [events.challengeItemEntity]
-);
-
-manager.addNamedEntityText(
   cyber88.itemEntity,
   cyber88.itemEntity,
   ['en'],
@@ -157,6 +150,9 @@ manager.addDocument('en', 'show jack ohare', showHero.intentLabel);
 
 // Show event questions
 manager.addDocument('en', 'show %event%', showEvent.intentLabel);
+manager.addDocument('en', 'show riddles of wonderland', showEvent.intentLabel);
+manager.addDocument('en', 'show sand empire', showEvent.intentLabel);
+manager.addDocument('en', 'show guardians of teltoc', showEvent.intentLabel);
 manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
 manager.addDocument('en', 'show santa’s challenge', showEvent.intentLabel);
 manager.addDocument('en', 'display %event%', showEvent.intentLabel);

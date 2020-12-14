@@ -1,7 +1,14 @@
 module.exports = {
     itemEntity: 'event',
-    challengeItemEntity: 'challenge',
     events: {
+        'Atlantis': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/5/95aefdb740a434637af8c9d0cad735a6f9367ac7.jpeg',
+            pseudonyms: ['atlantis', 'season 2', 'season ii']
+        },
+        'Darklord': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/c/4c7c27adf53b973cb3b5fc3a8101e24b329df0a2.jpeg',
+            pseudonyms: ['darklord', 'season 1', 'season i']
+        },
         'Fables of Grimforest': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/1/411b2d4205f2c9f5c2f290937b12639b61746250.jpeg',
             pseudonyms: ['fables', 'grimforest', 'fables of grimforest']
@@ -25,7 +32,7 @@ module.exports = {
 
         'Springvale': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/5/25516f3ed75926713e0ab17582b3df58615edee1.jpeg',
-            pseudonyms: ['spring', 'rabbits', 'springvale']
+            pseudonyms: ['spring', 'rabbits', 'springvale', 'easter']
         },
         'Sand Empire': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/1/61ad37d07fb12db8d8899fc335e2c322391df7ac.jpeg',
@@ -42,6 +49,10 @@ module.exports = {
         'Path of Valor': {
             imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dijI88JgqijatrgxIDFChdUyzgbnpCFCg0D6XWj9rJZ-5-HcnoZTaJyRFyUIGPsrT9GBXdFKIx0ksZGYKlMh17TepwFbaylgs-Mu2LKVA4Uq4iH9uUnG0bPHs1FvACr2T9LkV16_5bUCYMn4-0GAV5=w1000-no-tmp.jpg',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
+        },
+        'Valhalla': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/1/f167ec8ac77b52c31b24f3d3e78665670f8e03c0.jpeg',
+            pseudonyms: ['valhalla', 'season 3', 'season iii']
         }
     }
 };

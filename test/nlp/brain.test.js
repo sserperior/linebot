@@ -613,6 +613,18 @@ describe('brain tests', () => {
             expect(eventFound).to.be.true;
         };
 
+        it('show riddles of wonderland should trigger show.event', () => {
+            return getManager().process('show riddles of wonderland').then(result => checkSpecificEvent(result, 'Riddles of Wonderland'));
+        });
+
+        it('show guardians of teltoc should trigger show.event', () => {
+            return getManager().process('show guardians of teltoc').then(result => checkSpecificEvent(result, 'Guardians of Teltoc'));
+        });
+
+        it('show sand empire should trigger show.event', () => {
+            return getManager().process('show sand empire').then(result => checkSpecificEvent(result, 'Sand Empire'));
+        });
+
         it("show santa's challenge should trigger show.event", () => {
             return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "Santa's Challenge"));
         });

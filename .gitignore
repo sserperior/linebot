@@ -3,4 +3,5 @@ manifest.yml
 cf-push.*
 .cfignore
 hero-brain.nlp
+model.nlp
 .env

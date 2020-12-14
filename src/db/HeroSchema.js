@@ -19,6 +19,11 @@ const HeroSchema = new mongoose.Schema({
         required: true,
         index: true
     },
+    family: {
+        type: String,
+        required: false,
+        index: true
+    },
     attack: {
         type: Number,
         required: true

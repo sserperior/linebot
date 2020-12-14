@@ -24,16 +24,24 @@ const checkCalendar = async () => {
     return result;
 };
 
+const computeMemoryInMB = memoryBytes => Math.round(memoryBytes/1024/1024*100)/100;
+
 const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);
     const calendarStatus = await checkCalendar();
+    const memoryUsed = process.memoryUsage();
     for (let i=0;i<entities.length;i++) {
         if (entities[i].entity === cyber88.itemEntity) {
             const statusMessages = [
                 `Here's how I'm doing:`,
                 `\u2022  MongoDB: ${mongoose.STATES[ConnectionManager.getConnection().readyState]}`,
                 `\u2022  Calendar: ${calendarStatus}`,
-                `\u2022  Node ver: ${process.version}`
+                `\u2022  Node ver: ${process.version}`,
+                `\u2022  Mem rss: ${computeMemoryInMB(memoryUsed['rss'])} MB`,
+                `\u2022  Mem heapTotal: ${computeMemoryInMB(memoryUsed['heapTotal'])} MB`,
+                `\u2022  Mem heapUsed: ${computeMemoryInMB(memoryUsed['heapUsed'])} MB`,
+                `\u2022  Mem external: ${computeMemoryInMB(memoryUsed['external'])} MB`,
+                `\u2022  Mem arrayBuffers: ${computeMemoryInMB(memoryUsed['arrayBuffers'])} MB`
             ];
 
             return {
