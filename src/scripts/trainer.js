@@ -139,14 +139,16 @@ manager.addDocument('en', '%event%', 'do.nothing');
 
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);
-manager.addDocument('en', 'display %hero%', showHero.intentLabel);
 manager.addDocument('en', 'show red hood', showHero.intentLabel);
-manager.addDocument('en', 'display red hood', showHero.intentLabel);
 manager.addDocument('en', 'show puss in boots', showHero.intentLabel);
-manager.addDocument('en', 'display puss in boots', showHero.intentLabel);
 manager.addDocument('en', 'show santa', showHero.intentLabel);
-manager.addDocument('en', 'display santa', showHero.intentLabel);
 manager.addDocument('en', 'show jack ohare', showHero.intentLabel);
+manager.addDocument('en', 'show jack o’hare', showHero.intentLabel);
+manager.addDocument('en', 'show jack', showHero.intentLabel);
+manager.addDocument('en', 'show li xiu', showHero.intentLabel);
+manager.addDocument('en', 'show hu tao', showHero.intentLabel);
+manager.addDocument('en', 'show wu kong', showHero.intentLabel);
+manager.addDocument('en', 'show boldtusk costume', showHero.intentLabel);
 
 // Show event questions
 manager.addDocument('en', 'show %event%', showEvent.intentLabel);
@@ -155,10 +157,12 @@ manager.addDocument('en', 'show sand empire', showEvent.intentLabel);
 manager.addDocument('en', 'show guardians of teltoc', showEvent.intentLabel);
 manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
 manager.addDocument('en', 'show santa’s challenge', showEvent.intentLabel);
-manager.addDocument('en', 'display %event%', showEvent.intentLabel);
+manager.addDocument('en', 'show al', showEvent.intentLabel);
 
 // Show calendar questions
 manager.addDocument('en', 'show %daterange% %calendar%', showCalendar.intentLabel);
+manager.addDocument('en', 'show %calendar%', showCalendar.intentLabel);
+manager.addDocument('en', '%calendar%', showCalendar.intentLabel);
 
 // Harpoon team questions
 manager.addDocument('en', 'which harpoon team is %allianceMember% on', harpoonTeamQuery.intentLabel);
@@ -219,6 +223,7 @@ manager.addDocument('en', 'farm %element% monsters', farmElementalChest.intentLa
 
 // Farm item questions
 manager.addDocument('en', 'show hardwood lumber', farmItem.intentLabel);
+manager.addDocument('en', 'show crude iron', farmItem.intentLabel);
 manager.addDocument('en', 'where do i find %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'where do i farm %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel);

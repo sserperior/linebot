@@ -94,12 +94,8 @@ describe('brain tests', () => {
                 expect(entityTibsFound).to.be.true;
         };
 
-        it('show %heroes% should be classified as a show.me intent with the necessary entities', () => {
+        it('show %heroes% should be classified as a show.heroes intent with the necessary entities', () => {
             return getManager().process('show Little-John, Valen and Tibertus').then(checkShowHeroIntent);
-        });
-
-        it('display %heroes% should be classified as a show.me intent with the necessary entities', () => {
-            return getManager().process('display Little-John, Valen and Tibertus').then(checkShowHeroIntent);
         });
 
         const checkSpecificHero = (result, heroId) => {
@@ -126,8 +122,37 @@ describe('brain tests', () => {
             return getManager().process('show santa').then(result => checkSpecificHero(result, 'santa claus'));
         });
 
+        it("show jack ohare should be classified properly", () => {
+            return getManager().process('show jack ohare').then(result => checkSpecificHero(result, "jack o'hare"));
+        });
+
         it("show jack o’hare should be classified properly", () => {
             return getManager().process('show jack o’hare').then(result => checkSpecificHero(result, "jack o'hare"));
+        });
+
+        it('show jack should be classified properly', async () => {
+            const result = await getManager().process('show jack');
+            checkSpecificHero(result, 'jack');
+        });
+
+        it('show li xiu should be classified properly', async () => {
+            const result = await getManager().process('show li xiu');
+            checkSpecificHero(result, 'li xiu');
+        });
+
+        it('show hu tao should be classified properly', async () => {
+            const result = await getManager().process('show hu tao');
+            checkSpecificHero(result, 'hu tao');
+        });
+
+        it('show wu kong should be classified properly', async () => {
+            const result = await getManager().process('show wu kong');
+            checkSpecificHero(result, 'wu kong');
+        });
+
+        it('show boldtusk costume should be classified properly', async () => {
+            const result = await getManager().process('show boldtusk costume');
+            checkSpecificHero(result, 'boldtusk costume');
         });
     });
 
@@ -633,9 +658,26 @@ describe('brain tests', () => {
             return getManager().process('Show santa’s challenge').then(result => checkSpecificEvent(result, "Santa's Challenge"));
         });
 
-        it('display %event% should trigger show.event', () => {
-            return getManager().process('show pirates of corellia').then(checkShowEventIntent);
+        it('show hero academy should trigger show.event', async () => {
+            const result = await getManager().process('show hero academy');
+            checkSpecificEvent(result, 'Hero Academy');
         });
+
+        it('show ha should trigger show.event', async () => {
+            const result = await getManager().process('show ha');
+            checkSpecificEvent(result, 'Hero Academy');
+        });
+
+        it('show alchemy lab should trigger show.event', async () => {
+            const result = await getManager().process('show alchemy lab');
+            checkSpecificEvent(result, 'Alchemy Lab');
+        });
+
+        it('show al should trigger show.event', async () => {
+            const result = await getManager().process('show al');
+            checkSpecificEvent(result, 'Alchemy Lab');
+        });
+
     });
 
     describe('Calendar tests', () => {

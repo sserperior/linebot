@@ -1,13 +1,17 @@
 module.exports = {
     itemEntity: 'event',
     events: {
+        'Alchemy Lab': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/8/8845ba51af059c81c49ca48691adccfe4362e07f.jpeg',
+            pseudonyms: ['alchemy lab', 'al']
+        },
         'Atlantis': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/5/95aefdb740a434637af8c9d0cad735a6f9367ac7.jpeg',
             pseudonyms: ['atlantis', 'season 2', 'season ii']
         },
-        'Darklord': {
+        'Season 1': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/c/4c7c27adf53b973cb3b5fc3a8101e24b329df0a2.jpeg',
-            pseudonyms: ['darklord', 'season 1', 'season i']
+            pseudonyms: ['season 1', 'season i']
         },
         'Fables of Grimforest': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/1/411b2d4205f2c9f5c2f290937b12639b61746250.jpeg',
@@ -17,9 +21,17 @@ module.exports = {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/6/56c7b95e43cb9567730e49031eb0c9cff8eba654.jpeg',
             pseudonyms: ['guardians', 'teltoc', 'guardians of teltoc']
         },
+        'Hero Academy': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/optimized/3X/f/0/f05f1d0b32f5a25d0ef11b39ec3651f4a3ba84d2_2_1035x637.jpeg',
+            pseudonyms: ['ha', 'hero academy']
+        },
         'Knights of Avalon': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/2/827ba5afb02b3fba09dc3bb3e0dd0109ef0fb027.png',
             pseudonyms: ['avalon', 'knights', 'knights of avalon']
+        },
+        'Ninja Tower': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/2/6273571e6da828e7b154182ef30ea00020cb5754.jpeg',
+            pseudonyms: ['ninja tower', 'tower']
         },
         'Pirates of Corellia': {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/4/043f379e36381a267b52edd5f1ea79b6369e8e45.png',
