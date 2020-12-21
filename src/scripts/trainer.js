@@ -14,6 +14,7 @@ const Classes = require('nlp/entities/Classes');
 
 const showHero = require('nlp/intents/showHero');
 const listHeroes = require('nlp/intents/listHeroes');
+const listEvents = require('nlp/intents/listEvents');
 const showEvent = require('nlp/intents/showEvent');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
@@ -207,6 +208,9 @@ manager.addDocument('en', 'list %class% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list %number% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list %manaSpeed% heroes', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
+
+// List events questions
+manager.addDocument('en', 'list events', listEvents.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);

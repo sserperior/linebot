@@ -8,6 +8,7 @@ const commands = [
 const gameHelpText = [
     'I can help with the game:',
     '\u2022  list <stars> <color> <speed> <class> heroes',
+    '\u2022  list events',
     '\u2022  show <hero>',
     '\u2022  show <hero> special',
     '\u2022  show <hero> grading',

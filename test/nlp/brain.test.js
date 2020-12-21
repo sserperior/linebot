@@ -13,6 +13,7 @@ const intentsHelper = require('nlp/intents/intentsHelper');
 
 const doNothing = require('nlp/intents/doNothing');
 const listHeroes = require('nlp/intents/listHeroes');
+const listEvents = require('nlp/intents/listEvents');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
@@ -678,6 +679,38 @@ describe('brain tests', () => {
             checkSpecificEvent(result, 'Alchemy Lab');
         });
 
+        it('show hl should trigger show.event', async () => {
+            const result = await getManager().process('show hl');
+            checkSpecificEvent(result, "Hunter's Lodge");
+        });
+
+        it('show crafting should trigger show.event', async () => {
+            const result = await getManager().process('show crafting');
+            checkSpecificEvent(result, 'Crafting');
+        });
+
+        it('show forge should trigger show.event', async () => {
+            const result = await getManager().process('show forge');
+            checkSpecificEvent(result, 'Crafting');
+        });
+
+        it('show loot tier should trigger show.event', async () => {
+            const result = await getManager().process('show loot tier');
+            checkSpecificEvent(result, 'Titan Loot');
+        });
+
+        it('show titan loot should trigger show.event', async () => {
+            const result = await getManager().process('show titan loot');
+            checkSpecificEvent(result, 'Titan Loot');
+        });
+    });
+
+    describe('list events tests', () => {
+        it('should return the correct intent', async () => {
+            const result = await getManager().process('list events');
+            expect(result.intent).to.equal(listEvents.intentLabel);
+            expect(result.score).to.be.at.least(listEvents.intentThreshold);
+        });
     });
 
     describe('Calendar tests', () => {
