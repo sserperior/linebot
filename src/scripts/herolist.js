@@ -5034,7 +5034,7 @@ const red5StarHeroes = {
         health: 1454,
         element: elements.fire.id,
         pseudonyms: ['zimkitty', 'zim', 'zimkitha'],
-        imgUrl: 'https://sgephome.files.wordpress.com/2020/03/zimkitha.jpg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/09/zimkitha.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID.value,
