@@ -703,6 +703,31 @@ describe('brain tests', () => {
             const result = await getManager().process('show titan loot');
             checkSpecificEvent(result, 'Titan Loot');
         });
+
+        it('show "the masquerade" should trigger show.event', async () => {
+            const result = await getManager().process('show the masquerade');
+            checkSpecificEvent(result, 'The Masquerade');
+        });
+
+        it('show "masquerade" should trigger show.event', async () => {
+            const result = await getManager().process('show masquerade');
+            checkSpecificEvent(result, 'The Masquerade');
+        });
+
+        it('show "costumes" should trigger show.event', async () => {
+            const result = await getManager().process('show costumes');
+            checkSpecificEvent(result, 'The Masquerade');
+        });
+
+        it('show "costume event" should trigger show.event', async () => {
+            const result = await getManager().process('show costume event');
+            checkSpecificEvent(result, 'The Masquerade');
+        });
+
+        it('show "costumes event" should trigger show.event', async () => {
+            const result = await getManager().process('show costumes event');
+            checkSpecificEvent(result, 'The Masquerade');
+        });
     });
 
     describe('list events tests', () => {

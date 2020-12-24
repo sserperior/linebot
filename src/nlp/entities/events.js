@@ -69,6 +69,10 @@ module.exports = {
             imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3d0fbLR9ZOjFi9hWG3S2T2VK0lSqt7Q6CQcRW3yZVRf8F0WSdS6TG9QF3xeTrhdVrFFRwBblAsq7of2JBvyQIeozKXaBk-dFa8BbO6ym0K7SaC0gALGOkYpzDYwfPwWZBmGzb7EsKXf5b_xP0HucgqF=w1000-no-tmp.jpg',
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge", 'santa’s challenge']
         },
+        'The Masquerade': {
+            imgUrl: 'The Masquerade',
+            pseudonyms: ['the masquerade', 'masquerade', 'costumes', 'costume event', 'costumes event']
+        },
         'Titan Loot': {
             imgUrl: 'https://cdn.discordapp.com/attachments/507404166323372042/790363689819045939/titan-loot-tiers.jpg',
             pseudonyms: ['titan loot', 'loot tiers']

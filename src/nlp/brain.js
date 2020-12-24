@@ -99,7 +99,7 @@ const generateNLResponse = messageText => getManager().process(messageText).then
     if (isRecognizedIntent(intent, score, showHero)) {
         return showHero.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, showEvent)) {
-        return Promise.resolve(showEvent.handle(result.entities));
+        return showEvent.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, harpoonTeamQuery)) {
         return Promise.resolve(harpoonTeamQuery.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroSpecial)) {

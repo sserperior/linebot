@@ -3019,6 +3019,28 @@ const blue5StarHeroes = {
             ]
         }
     },
+    'lord loki': {
+        name: 'Lord Loki',
+        attack: 774,
+        defense: 743,
+        health: 1312,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/48403253_2182786468655049_3440468339686637568_n.jpg?_nc_cat=102&ccb=2&_nc_sid=8024bb&_nc_ohc=hPkiN7NnzSwAX8jontk&_nc_ht=scontent.fybz1-1.fna&oh=600a8c880874cf4321a01f8f9aa0d19c&oe=600B8430',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: "Trickster's Mischief",
+            description: [
+                "Copies target's Special Skill and uses ut as uf ut was tge caster's own Special Skill.",
+                "If the target does not have a Special Skill, or it can't be copied, the following Special skill will be cast:",
+                '',
+                'Villan Swing:',
+                'Deals 275% damage to the target.'
+            ]
+        }
+    },
     magni: {
         name: 'Magni',
         attack: 793,

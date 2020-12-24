@@ -8,12 +8,13 @@ const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);
     const replyMessages = [];
 
-    let displayText = `${Object.keys(events.events).length} events found:`
-    Object.keys(events.events).forEach(eventKey => {
+    const eventNames = Object.keys(events.events).sort();
+    let displayText = `${eventNames.length} events found:`
+    eventNames.forEach(eventName => {
         if (displayText.length > 0) {
             displayText += '\n';
         }
-        displayText += `\u2022 ${eventKey}`;
+        displayText += `\u2022 ${eventName}`;
     });
     displayText += `\n\nUse 'show' to display the specific event.`
 
