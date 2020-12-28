@@ -1365,7 +1365,7 @@ const blue4StarHeroes = {
         defense: 639,
         health: 1292,
         element: elements.ice.id,
-        imgUrl: 'https://lh3.googleusercontent.com/JxQeIkMg4sMSrjyXx_qn_HLqrUdUWjSOVaKxWYJ47UZAfpp7KQH_3zuhZyEZw_4wV7_aGKNNKWhaQhcW0Q=w1000-no-tmp.jpg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2020/10/frank.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.BARBARIAN.value,
@@ -3026,7 +3026,7 @@ const blue5StarHeroes = {
         health: 1312,
         element: elements.ice.id,
         // TODO
-        imgUrl: 'https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-9/48403253_2182786468655049_3440468339686637568_n.jpg?_nc_cat=102&ccb=2&_nc_sid=8024bb&_nc_ohc=hPkiN7NnzSwAX8jontk&_nc_ht=scontent.fybz1-1.fna&oh=600a8c880874cf4321a01f8f9aa0d19c&oe=600B8430',
+        imgUrl: 'https://1.bp.blogspot.com/-6MALnaB-vhs/X-TxdPQInpI/AAAAAAAAFLE/w0uam8eJ2dAJSm-_aPGvJ4o0R9qJbVG_ACLcBGAsYHQ/s1072/Lord%2BLoki.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD.value,
@@ -5014,7 +5014,7 @@ const red5StarHeroes = {
         health: 1384,
         element: elements.fire.id,
         // TODO
-        imgUrl: 'https://lh3.googleusercontent.com/hCNI0PxQgUQH7h0vRPigT2KMIvyUYvQu5AA1Es0qBJuHzHHcWjRWpLRYHCAA-R8TjsZD9LyRigAcuSKiSg=w1000-no-tmp.jpg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/2/728e3218592c4a8124bbde5b3b2c4926c516dd91.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.SORCERER.value,

@@ -66,7 +66,7 @@ module.exports = {
             pseudonyms: ['summer', 'sand', 'sand empire']
         },
         "Santa's Challenge": {
-            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3d0fbLR9ZOjFi9hWG3S2T2VK0lSqt7Q6CQcRW3yZVRf8F0WSdS6TG9QF3xeTrhdVrFFRwBblAsq7of2JBvyQIeozKXaBk-dFa8BbO6ym0K7SaC0gALGOkYpzDYwfPwWZBmGzb7EsKXf5b_xP0HucgqF=w1000-no-tmp.jpg',
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/a/9a089a0066dd984e35ab3eb5c7497e065f76ad8c.jpeg',
             pseudonyms: ['winter', 'christmas', 'xmas', 'x-mas', "santa's challenge", 'santa’s challenge']
         },
         'The Masquerade': {

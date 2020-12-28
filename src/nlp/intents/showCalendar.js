@@ -8,7 +8,7 @@ const intentLabel = 'show.calendar';
 const intentThreshold = parseFloat(process.env.SHOW_CALENDAR_THRESHOLD || 0.8);
 
 const getCalendarUrl = yyyymmString => {
-    logger.info('getCalenderUrl');
+    logger.info(`getCalenderUrl(${yyyymmString})`);
     const doc = new GoogleSpreadsheet(process.env.CALENDAR_SPREADSHEET_KEY);
     return doc.useServiceAccountAuth({
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL,
@@ -32,12 +32,34 @@ const getCalendarUrl = yyyymmString => {
     });
 };
 
-const getCalendarUrlForToday = () => {
+const getCalendarInfoForToday = () => {
+    logger.info('getCalendarInfoForToday');
     const today = new Date(Date.now());
     const year = today.getUTCFullYear();
     const month = getMonthAsTwoDigitString(today.getUTCMonth());
     const yyyymmString = `${year}-${month}`;
-    return getCalendarUrl(yyyymmString);
+    return {
+        urlPromise: getCalendarUrl(yyyymmString),
+        yyyymmString
+    }
+};
+
+const getCalendarInfoForNextMonth = () => {
+    logger.info('getCalendarInfoForNextMonth');
+    const today = new Date(Date.now());
+    let utcYear = today.getUTCFullYear();
+    let utcMonth = today.getUTCMonth();
+    if (utcMonth === 11) {
+        // Last month of the year, set to January of the following year
+        utcYear += 1;
+        utcMonth = 0;
+    }
+    const month = getMonthAsTwoDigitString(utcMonth);
+    const yyyymmString = `${utcYear}-${month}`;
+    return {
+        urlPromise: getCalendarUrl(yyyymmString),
+        yyyymmString
+    }
 };
 
 const getDateForEntity = (entity, today) => {
@@ -63,8 +85,13 @@ const getDateForEntity = (entity, today) => {
             timex = _.get(entity, 'resolution.timex');
             if (timex != null) {
                 logger.info(timex);
-                const year = today.getUTCFullYear();
+                let year = today.getUTCFullYear();
                 const monthString = timex.split('-')[1];
+                const currentMonthString = getMonthAsTwoDigitString(today.getUTCMonth());
+                if (currentMonthString > monthString) {
+                    // Month has already passed in the current year so add another year.
+                    year += 1;
+                }
                 return new Date(`${year}-${monthString}-01T00:00:00.000Z`);
             }
             break;
@@ -151,7 +178,8 @@ const handle = entities => {
 
 module.exports = {
     handle,
-    getCalendarUrlForToday,
+    getCalendarInfoForToday,
+    getCalendarInfoForNextMonth,
     intentLabel,
     intentThreshold
 };

@@ -202,11 +202,11 @@ manager.addDocument('en', 'display %talent% for %hero%', showHeroTalent.intentLa
 manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel);
 
 // List heroes questions
-manager.addDocument('en', 'list %element% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %number% %element% %manaSpeed% %class% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %class% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %number% heroes', listHeroes.intentLabel);
-manager.addDocument('en', 'list %manaSpeed% heroes', listHeroes.intentLabel);
+manager.addDocument('en', 'list %element%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% %element% %manaSpeed% %class%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %class%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %manaSpeed%', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
 
 // List events questions
