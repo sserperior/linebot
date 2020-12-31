@@ -8,14 +8,14 @@ const translate = require('nlp/commands/translate');
 const help = require('nlp/commands/help');
 
 const showHero = require('nlp/intents/showHero');
-const showEvent = require('nlp/intents/showEvent');
+const showReference = require('nlp/intents/showReference');
 const showCalendar = require('nlp/intents/showCalendar');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
 const listHeroes = require('nlp/intents/listHeroes');
-const listEvents = require('nlp/intents/listEvents');
+const listEvents = require('nlp/intents/listReferences');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
@@ -98,8 +98,8 @@ const generateNLResponse = messageText => getManager().process(messageText).then
     const { intent, score } = result;
     if (isRecognizedIntent(intent, score, showHero)) {
         return showHero.handle(result.entities);
-    } else if (isRecognizedIntent(intent, score, showEvent)) {
-        return showEvent.handle(result.entities);
+    } else if (isRecognizedIntent(intent, score, showReference)) {
+        return showReference.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, harpoonTeamQuery)) {
         return Promise.resolve(harpoonTeamQuery.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroSpecial)) {

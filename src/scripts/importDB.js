@@ -4,6 +4,9 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const herolist = require('scripts/herolist');
 const HeroSchema = require('db/HeroSchema');
 
+const references = require('scripts/references');
+const ReferenceSchema = require('db/ReferenceSchema');
+
 const getDefaultGradeValue = value => value == null ? '' : value;
 
 const retrieveGradingData = async () => {
@@ -115,7 +118,7 @@ const createEmptyGrading = () => ({
     console.log('Successfully cleared heroes collection!');
     const savePromises = [];
 
-    Object.keys(herolist.heroes).forEach(async heroId => {
+    Object.keys(herolist.heroes).forEach(heroId => {
         const heroName = herolist.heroes[heroId].name;
         herolist.heroes[heroId].grading = heroNameToGradingMap[heroName];
         if (herolist.heroes[heroId].grading == null) {
@@ -126,10 +129,25 @@ const createEmptyGrading = () => ({
         hero.heroId = heroId;
         savePromises.push(hero.save().catch(err => console.log(`could not save ${hero.heroId}. ${hero.grading}`)));
     });
+
+    const ReferenceModel = connection.model('reference', ReferenceSchema, 'references');
+
+    console.log('Clearing references collection...');
+    await ReferenceModel.deleteMany({});
+    console.log('Successfully cleared references collection!');
+    
+    Object.keys(references.items).forEach(referenceName => {
+        const reference = new ReferenceModel({
+            name: referenceName,
+            imgUrl: references.items[referenceName].imgUrl,
+            type: references.items[referenceName].type
+        });
+        savePromises.push(reference.save().catch(err => console.log(`could not save ${referenceName}`)));
+    });
     
     await Promise.all(savePromises);
 
-    console.log('Successfully imported heroes!');
+    console.log('Successfully imported DB!');
 
     await connection.close();
 })();

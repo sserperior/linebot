@@ -13,12 +13,12 @@ const intentsHelper = require('nlp/intents/intentsHelper');
 
 const doNothing = require('nlp/intents/doNothing');
 const listHeroes = require('nlp/intents/listHeroes');
-const listEvents = require('nlp/intents/listEvents');
+const listReferences = require('nlp/intents/listReferences');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
 const showHero = require('nlp/intents/showHero');
-const showEvent = require('nlp/intents/showEvent');
+const showReference = require('nlp/intents/showReference');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
@@ -616,125 +616,186 @@ describe('brain tests', () => {
         });
     });
 
-    describe('show.event tests', () => {
-        const checkShowEventIntent = result => {
-            expect(result.intent).to.equal(showEvent.intentLabel);
-            expect(result.score).to.be.at.least(showEvent.intentThreshold);
+    describe('show.reference tests', () => {
+        const checkShowReferenceIntent = result => {
+            expect(result.intent).to.equal(showReference.intentLabel);
+            expect(result.score).to.be.at.least(showReference.intentThreshold);
         };
 
-        it('show %event% should trigger show.event', () => {
-            return getManager().process('show pirates').then(checkShowEventIntent);
+        it('show %reference% should trigger show.reference', () => {
+            return getManager().process('show pirates').then(checkShowReferenceIntent);
         });
 
-        const checkSpecificEvent = (result, eventId) => {
-            expect(result.intent).to.equal(showEvent.intentLabel);
-            expect(result.score).to.be.at.least(showEvent.intentThreshold);
-            let eventFound = false;
+        const checkSpecificReference = (result, referenceId) => {
+            expect(result.intent).to.equal(showReference.intentLabel);
+            expect(result.score).to.be.at.least(showReference.intentThreshold);
+            let referenceFound = false;
             for (let i=0;i<result.entities.length;i++) {
-                if (result.entities[i].entity === 'event' && result.entities[i].option === eventId) {
-                    eventFound = true;
+                if (result.entities[i].entity === 'reference' && result.entities[i].option === referenceId) {
+                    referenceFound = true;
                     break;
                 }
             }
-            expect(eventFound).to.be.true;
+            expect(referenceFound).to.be.true;
         };
 
-        it('show riddles of wonderland should trigger show.event', () => {
-            return getManager().process('show riddles of wonderland').then(result => checkSpecificEvent(result, 'Riddles of Wonderland'));
+        it('show riddles of wonderland should trigger show.reference', () => {
+            return getManager().process('show riddles of wonderland').then(result => checkSpecificReference(result, 'Riddles of Wonderland'));
         });
 
-        it('show guardians of teltoc should trigger show.event', () => {
-            return getManager().process('show guardians of teltoc').then(result => checkSpecificEvent(result, 'Guardians of Teltoc'));
+        it('show guardians of teltoc should trigger show.reference', () => {
+            return getManager().process('show guardians of teltoc').then(result => checkSpecificReference(result, 'Guardians of Teltoc'));
         });
 
-        it('show sand empire should trigger show.event', () => {
-            return getManager().process('show sand empire').then(result => checkSpecificEvent(result, 'Sand Empire'));
+        it('show sand empire should trigger show.reference', () => {
+            return getManager().process('show sand empire').then(result => checkSpecificReference(result, 'Sand Empire'));
         });
 
-        it("show santa's challenge should trigger show.event", () => {
-            return getManager().process("show santa's challenge").then(result => checkSpecificEvent(result, "Santa's Challenge"));
+        it("show santa's challenge should trigger show.reference", () => {
+            return getManager().process("show santa's challenge").then(result => checkSpecificReference(result, "Santa's Challenge"));
         });
 
-        it('show santa’s challenge should trigger show.event', () => {
-            return getManager().process('Show santa’s challenge').then(result => checkSpecificEvent(result, "Santa's Challenge"));
+        it('show santa’s challenge should trigger show.reference', () => {
+            return getManager().process('Show santa’s challenge').then(result => checkSpecificReference(result, "Santa's Challenge"));
         });
 
-        it('show hero academy should trigger show.event', async () => {
+        it('show hero academy should trigger show.reference', async () => {
             const result = await getManager().process('show hero academy');
-            checkSpecificEvent(result, 'Hero Academy');
+            checkSpecificReference(result, 'Hero Academy');
         });
 
-        it('show ha should trigger show.event', async () => {
+        it('show ha should trigger show.reference', async () => {
             const result = await getManager().process('show ha');
-            checkSpecificEvent(result, 'Hero Academy');
+            checkSpecificReference(result, 'Hero Academy');
         });
 
-        it('show alchemy lab should trigger show.event', async () => {
+        it('show alchemy lab should trigger show.reference', async () => {
             const result = await getManager().process('show alchemy lab');
-            checkSpecificEvent(result, 'Alchemy Lab');
+            checkSpecificReference(result, 'Alchemy Lab');
         });
 
-        it('show al should trigger show.event', async () => {
+        it('show al should trigger show.reference', async () => {
             const result = await getManager().process('show al');
-            checkSpecificEvent(result, 'Alchemy Lab');
+            checkSpecificReference(result, 'Alchemy Lab');
         });
 
-        it('show hl should trigger show.event', async () => {
+        it('show hl should trigger show.reference', async () => {
             const result = await getManager().process('show hl');
-            checkSpecificEvent(result, "Hunter's Lodge");
+            checkSpecificReference(result, "Hunter's Lodge");
         });
 
-        it('show crafting should trigger show.event', async () => {
+        it('show crafting should trigger show.reference', async () => {
             const result = await getManager().process('show crafting');
-            checkSpecificEvent(result, 'Crafting');
+            checkSpecificReference(result, 'Crafting');
         });
 
-        it('show forge should trigger show.event', async () => {
+        it('show forge should trigger show.reference', async () => {
             const result = await getManager().process('show forge');
-            checkSpecificEvent(result, 'Crafting');
+            checkSpecificReference(result, 'Crafting');
         });
 
-        it('show loot tier should trigger show.event', async () => {
+        it('show loot tier should trigger show.reference', async () => {
             const result = await getManager().process('show loot tier');
-            checkSpecificEvent(result, 'Titan Loot');
+            checkSpecificReference(result, 'Titan Loot');
         });
 
-        it('show titan loot should trigger show.event', async () => {
+        it('show titan loot should trigger show.reference', async () => {
             const result = await getManager().process('show titan loot');
-            checkSpecificEvent(result, 'Titan Loot');
+            checkSpecificReference(result, 'Titan Loot');
         });
 
-        it('show "the masquerade" should trigger show.event', async () => {
+        it('show "the masquerade" should trigger show.reference', async () => {
             const result = await getManager().process('show the masquerade');
-            checkSpecificEvent(result, 'The Masquerade');
+            checkSpecificReference(result, 'The Masquerade');
         });
 
-        it('show "masquerade" should trigger show.event', async () => {
+        it('show "masquerade" should trigger show.reference', async () => {
             const result = await getManager().process('show masquerade');
-            checkSpecificEvent(result, 'The Masquerade');
+            checkSpecificReference(result, 'The Masquerade');
         });
 
-        it('show "costumes" should trigger show.event', async () => {
+        it('show "costumes" should trigger show.reference', async () => {
             const result = await getManager().process('show costumes');
-            checkSpecificEvent(result, 'The Masquerade');
+            checkSpecificReference(result, 'The Masquerade');
         });
 
-        it('show "costume event" should trigger show.event', async () => {
+        it('show "costume event" should trigger show.reference', async () => {
             const result = await getManager().process('show costume event');
-            checkSpecificEvent(result, 'The Masquerade');
+            checkSpecificReference(result, 'The Masquerade');
         });
 
-        it('show "costumes event" should trigger show.event', async () => {
+        it('show "costumes event" should trigger show.reference', async () => {
             const result = await getManager().process('show costumes event');
-            checkSpecificEvent(result, 'The Masquerade');
+            checkSpecificReference(result, 'The Masquerade');
         });
+
+        it('show "season 2 avatars" should trigger show.reference', async () => {
+            const result = await getManager().process('show season 2 avatars');
+            checkSpecificReference(result, 'Season 2 Avatars');
+        });
+
+        it('show avatars 2 should trigger show.reference', async () => {
+            const result = await getManager().process('show avatars 2');
+            checkSpecificReference(result, 'Season 2 Avatars');
+        });
+
+        it('show "season 3 avatars" should trigger show.reference', async () => {
+            const result = await getManager().process('show season 3 avatars');
+            checkSpecificReference(result, 'Season 3 Avatars');
+        });
+
+        it('show avatars 3 should trigger show.reference', async () => {
+            const result = await getManager().process('show avatars 3');
+            checkSpecificReference(result, 'Season 3 Avatars');
+        });
+
+        it('show "midgard" should trigger show reference', async () => {
+            const result = await getManager().process('show midgard');
+            checkSpecificReference(result, 'Midgard');
+        });
+
+        it('show "jotunheim" should trigger show reference', async () => {
+            const result = await getManager().process('show jotunheim');
+            checkSpecificReference(result, 'Jotunheim');
+        });
+
+        it('show "niflheim" should trigger show reference', async () => {
+            const result = await getManager().process('show niflheim');
+            checkSpecificReference(result, 'Niflheim');
+        });
+
+        it('show "muspelheim" should trigger show reference', async () => {
+            const result = await getManager().process('show muspelheim');
+            checkSpecificReference(result, 'Muspelheim');
+        });
+
+        it('show "vanaheim" should trigger show reference', async () => {
+            const result = await getManager().process('show vanaheim');
+            checkSpecificReference(result, 'Vanaheim');
+        });
+
+        it('show "svartalfheim" should trigger show reference', async () => {
+            const result = await getManager().process('show svartalfheim');
+            checkSpecificReference(result, 'Svartalfheim');
+        });
+
+        it('show "helheim" should trigger show reference', async () => {
+            const result = await getManager().process('show helheim');
+            checkSpecificReference(result, 'Helheim');
+        });        
     });
 
-    describe('list events tests', () => {
+    describe('list references tests', () => {
         it('should return the correct intent', async () => {
-            const result = await getManager().process('list events');
-            expect(result.intent).to.equal(listEvents.intentLabel);
-            expect(result.score).to.be.at.least(listEvents.intentThreshold);
+            const result = await getManager().process('list references');
+            expect(result.intent).to.equal(listReferences.intentLabel);
+            expect(result.score).to.be.at.least(listReferences.intentThreshold);
+        });
+
+        it('should return the correct intent', async () => {
+            const result = await getManager().process('list refs');
+            expect(result.intent).to.equal(listReferences.intentLabel);
+            expect(result.score).to.be.at.least(listReferences.intentThreshold);
         });
     });
 

@@ -1,4 +1,5 @@
 const logger = require('logger');
+const cybUtil = require('cybUtil');
 const HeroesDao = require('dao/HeroesDao');
 const elements = require('nlp/entities/elements');
 const ManaSpeeds = require('nlp/entities/ManaSpeeds');
@@ -69,17 +70,16 @@ const handle = async entities => {
 
     const heroModels = await HeroesDao.findHeroNames(elementIds, uniqueStarEntities, manaSpeeds, classes);
 
-    let displayText = `${heroModels.length} heroes found:`;
+    let displayTextArray = [];
+    displayTextArray.push(`${heroModels.length} heroes found:`);
     heroModels.forEach(heroModel => {
-        if (displayText.length > 0) {
-            displayText += '\n';
-        }
-        displayText += `\u2022 ${heroModel.name}`
+        displayTextArray.push(`\u2022 ${heroModel.name}`);
     });
+    displayTextArray.push(`\nUse 'show' to display the specific hero.`);
 
     replyMessages.push({
         type: 'text',
-        text: displayText
+        text: cybUtil.convertStringArrayToString(displayTextArray)
     });
 
     return {

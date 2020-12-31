@@ -1,14 +1,13 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const logger = require('logger');
-const events = require('nlp/entities/events').events;
-const eventEntity = require('nlp/entities/events').itemEntity;
+const ReferencesDao = require('dao/ReferencesDao');
 const intentsHelper = require('nlp/intents/intentsHelper');
 
-const intentLabel = 'show.event';
-const intentThreshold = parseFloat(process.env.SHOW_EVENT_THRESHOLD || 0.8);
+const intentLabel = 'show.reference';
+const intentThreshold = parseFloat(process.env.SHOW_REFERENCE_THRESHOLD || 0.8);
 
-const handleTheMasquerade = async replyMessages => {
+const handleTheMasquerade = async () => {
     logger.info('handleTheMasquerade');
     const doc = new GoogleSpreadsheet(process.env.MASQUERADE_SPREADSHEET_KEY);
     await doc.useServiceAccountAuth({
@@ -25,12 +24,7 @@ const handleTheMasquerade = async replyMessages => {
         logger.info(rows[i]['Description']);
         logger.info(rows[i]['Link']);
         if (rows[i]['State'] === 'active') {
-            replyMessages.push({
-                type: 'image',
-                originalContentUrl: rows[i]['Link'],
-                previewImageUrl: rows[i]['Link']
-            });
-            return;
+            return rows[i]['Link'];
         }
     }
 };
@@ -39,28 +33,27 @@ const handle = async entities => {
     logger.info(`handle ${intentLabel} intent`);
     const replyMessages = [];
     const broadcastMessages = [];
-    const uniqueEvents = intentsHelper.getUniqueEntities(entities, eventEntity);
+    const uniqueReferences = intentsHelper.getUniqueEntities(entities, 'reference');
 
-    for (let i=0;i<Math.min(uniqueEvents.length, 5); i++) {
-        const eventId = uniqueEvents[i].option;
-        const eventData = events[eventId];
-        switch (eventData.imgUrl) {
+    for (let i=0;i<Math.min(uniqueReferences.length, 5); i++) {
+        const referenceId = uniqueReferences[i].option;
+        const referenceModel = await ReferencesDao.findReferenceByName(referenceId);
+        switch (referenceModel.imgUrl) {
             case 'The Masquerade':
-                await handleTheMasquerade(replyMessages);
+                referenceModel.imgUrl = await handleTheMasquerade();
                 break;
-            default:
-                replyMessages.push({
-                    type: 'image',
-                    originalContentUrl: eventData.imgUrl,
-                    previewImageUrl: eventData.imgUrl
-                });
         }
+        replyMessages.push({
+            type: 'image',
+            originalContentUrl: referenceModel.imgUrl,
+            previewImageUrl: referenceModel.imgUrl
+        });
     }
 
-    if (uniqueEvents.length > 5) {
+    if (uniqueReferences.length > 5) {
         broadcastMessages.push({
             type: 'text',
-            text: 'I can only show up to five events 😢'
+            text: 'I can only show up to five references 😢'
         });
     }
 

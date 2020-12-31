@@ -1,12 +1,11 @@
 const { NlpManager } = require('node-nlp');
 const { heroes } = require('scripts/herolist');
-const eventsWrapper = require('nlp/entities/events');
+const referencesWrapper = require('scripts/references');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
 const cyber88 = require('nlp/entities/cyber88');
 const grade = require('nlp/entities/grade');
 const special = require('nlp/entities/special');
-const events = require('nlp/entities/events');
 const talent = require('nlp/entities/talent');
 const Calendar = require('nlp/entities/Calendar');
 const ManaSpeeds = require('nlp/entities/ManaSpeeds');
@@ -14,8 +13,8 @@ const Classes = require('nlp/entities/Classes');
 
 const showHero = require('nlp/intents/showHero');
 const listHeroes = require('nlp/intents/listHeroes');
-const listEvents = require('nlp/intents/listEvents');
-const showEvent = require('nlp/intents/showEvent');
+const listReferences = require('nlp/intents/listReferences');
+const showReference = require('nlp/intents/showReference');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
@@ -58,13 +57,13 @@ Object.keys(Classes).forEach(classKey => {
   );
 });
 
-Object.keys(eventsWrapper.events).forEach(eventKey => {
-  const event = eventsWrapper.events[eventKey];
+Object.keys(referencesWrapper.items).forEach(itemKey => {
+  const reference = referencesWrapper.items[itemKey];
   manager.addNamedEntityText(
-    eventsWrapper.itemEntity,
-    eventKey,
+    referencesWrapper.itemEntity,
+    itemKey,
     ['en'],
-    event.pseudonyms != null ? event.pseudonyms : [eventKey.toLowerCase()]
+    reference.pseudonyms != null ? reference.pseudonyms : [itemKey.toLowerCase()]
   );
 });
 
@@ -136,7 +135,7 @@ manager.addNamedEntityText(
 // Outliers to ignore
 manager.addDocument('en', '%hero%', 'do.nothing');
 manager.addDocument('en', '%allianceMember%', 'do.nothing');
-manager.addDocument('en', '%event%', 'do.nothing');
+manager.addDocument('en', '%reference%', 'do.nothing');
 
 // Show hero questions
 manager.addDocument('en', 'show %hero%', showHero.intentLabel);
@@ -151,14 +150,14 @@ manager.addDocument('en', 'show hu tao', showHero.intentLabel);
 manager.addDocument('en', 'show wu kong', showHero.intentLabel);
 manager.addDocument('en', 'show boldtusk costume', showHero.intentLabel);
 
-// Show event questions
-manager.addDocument('en', 'show %event%', showEvent.intentLabel);
-manager.addDocument('en', 'show riddles of wonderland', showEvent.intentLabel);
-manager.addDocument('en', 'show sand empire', showEvent.intentLabel);
-manager.addDocument('en', 'show guardians of teltoc', showEvent.intentLabel);
-manager.addDocument('en', "show santa's challenge", showEvent.intentLabel);
-manager.addDocument('en', 'show santa’s challenge', showEvent.intentLabel);
-manager.addDocument('en', 'show al', showEvent.intentLabel);
+// Show reference questions
+manager.addDocument('en', 'show %reference%', showReference.intentLabel);
+manager.addDocument('en', 'show riddles of wonderland', showReference.intentLabel);
+manager.addDocument('en', 'show sand empire', showReference.intentLabel);
+manager.addDocument('en', 'show guardians of teltoc', showReference.intentLabel);
+manager.addDocument('en', "show santa's challenge", showReference.intentLabel);
+manager.addDocument('en', 'show santa’s challenge', showReference.intentLabel);
+manager.addDocument('en', 'show al', showReference.intentLabel);
 
 // Show calendar questions
 manager.addDocument('en', 'show %daterange% %calendar%', showCalendar.intentLabel);
@@ -209,8 +208,9 @@ manager.addDocument('en', 'list %number%', listHeroes.intentLabel);
 manager.addDocument('en', 'list %manaSpeed%', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
 
-// List events questions
-manager.addDocument('en', 'list events', listEvents.intentLabel);
+// List references questions
+manager.addDocument('en', 'list references', listReferences.intentLabel);
+manager.addDocument('en', 'list refs', listReferences.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);
