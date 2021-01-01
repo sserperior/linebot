@@ -8,6 +8,7 @@ const commands = [
 ];
 
 const detectLanguageAction = text => {
+    logger.info(`detecting language for "${text}"...`);
     return new Promise((resolve, reject) => {
         googleTranslate.detectLanguage(text, (err, detection) => {
             if (!err) {

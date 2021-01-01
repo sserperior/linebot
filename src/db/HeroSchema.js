@@ -21,7 +21,7 @@ const HeroSchema = new mongoose.Schema({
     },
     family: {
         type: String,
-        required: false,
+        required: true,
         index: true
     },
     attack: {

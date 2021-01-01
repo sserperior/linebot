@@ -1,6 +1,7 @@
 const ManaSpeeds = require('nlp/entities/ManaSpeeds');
 const Classes = require('nlp/entities/Classes');
 const elements = require('nlp/entities/elements');
+const References = require('nlp/entities/references');
 
 const blue3StarHeroes = {
     'chick jr.': {
@@ -20,7 +21,8 @@ const blue3StarHeroes = {
                 'Deals 180% damage to all enemies.',
                 "THe caster gets -20% attack for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     frosty: {
         name: 'Frosty',
@@ -40,7 +42,8 @@ const blue3StarHeroes = {
                 'Recovers 32% health for all allies.',
                 'Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     gato: {
         name: 'Gato',
@@ -58,7 +61,8 @@ const blue3StarHeroes = {
                 'Deals 300% damage to the target.',
                 'The caster and nearby allies are immune to new status ailments for 3 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_2
     },
     graymane: {
         name: 'Graymane',
@@ -76,7 +80,8 @@ const blue3StarHeroes = {
             description: [
                 'Deal 225% damage to a single enemy and steal a moderate amount of dealt damage back'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     gunnar: {
         name: 'Gunnar',
@@ -93,7 +98,8 @@ const blue3StarHeroes = {
             description: [
                 'All allies get +63% defense and share received damage with all their allies for 5 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'gunnar costume': {
         name: 'Gunnar Costume',
@@ -112,7 +118,8 @@ const blue3StarHeroes = {
                 'All enemies share received damage with each other for 5 turns.',
                 'All enemies get -44% defense for 5 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     jarvur: {
         name: 'Jarvur',
@@ -131,7 +138,8 @@ const blue3StarHeroes = {
                 'Deals 285% damage to the target.',
                 'Stack: The caster gets +10% attack. The maximum size of stack is 10.'
             ]
-        }
+        },
+        family: References.realms.SVARTALFHEIM
     },
     karil: {
         name: 'Karil',
@@ -149,9 +157,7 @@ const blue3StarHeroes = {
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies'
             ]
         },
-        synopsis: [
-            'Not a very useful hero. Multiple Valens/Gatos/Graymanes are more valuable as attackers.'
-        ]
+        family: References.maps.SEASON_1
     },
     nordri: {
         name: 'Nordri',
@@ -169,7 +175,8 @@ const blue3StarHeroes = {
                 'Deals 245% damage to the target and minor damage to nearby enemies.',
                 'The target and nearby enemies get -54% defense against ice for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.JOTUNHEIM
     }, 
     ulmer: {
         name: 'Ulmer',
@@ -186,7 +193,8 @@ const blue3StarHeroes = {
             description: [
                 'Deal 116% damage to all enemies and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },            
     valen: {
         name: 'Valen',
@@ -203,7 +211,8 @@ const blue3StarHeroes = {
             description: [
                 'Deal 300% damage to a single enemy and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     vodnik: {
         name: 'Vodnik',
@@ -221,8 +230,9 @@ const blue3StarHeroes = {
                 'Deals 280% damage to the target',
                 'The more mana the enemies have, the more damage they will receive, up to 400%'
             ]
-        }
-    }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
+    },
 };
 
 const yellow3StarHeroes = {
@@ -242,7 +252,8 @@ const yellow3StarHeroes = {
                 'Deals 320% damage to the target.',
                 'The attack has a 60% chance to bypass defensive buffs. This includes counterattacks.'
             ]
-        }
+        },
+        family: References.realms.ASGARD
     },
     arman: {
         name: 'Arman',
@@ -263,11 +274,7 @@ const yellow3StarHeroes = {
                 'Cures status ailments from the caster.'
             ]
         },
-        synopsis: [
-            'Decent hit-all hitter with damage over time and heal blocking, Good for using in healing mode wars.',
-            'Deteriment is slow mana',
-            'Useful hero for your first 30, rare events, special raid tournaments with 3* where slow mana becomes very fast.'
-        ]
+        family: References.seasonalEvents.SAND_EMPIRE
     },    
     bane: {
         name: 'Bane',
@@ -285,11 +292,7 @@ const yellow3StarHeroes = {
                 'Deal 300% damage to a single enemy and they are less accurate for 4 turns.'
             ]
         },
-        synopsis: [
-            'One of the best 3* snipers. Everyone has one. Keep it!',
-            'Blindness is very useful to give you extra chances against hard hitting enemies.',
-            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
-        ]
+        family: References.maps.SEASON_1
     },
     'bane costume': {
         name: 'Bane Costume',
@@ -308,7 +311,8 @@ const yellow3StarHeroes = {
                 'Deals 280% damage to the target.',
                 'The target gets -40% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     dawa: {
         name: 'Dawa',
@@ -326,9 +330,7 @@ const yellow3StarHeroes = {
                 'Deal 210% damage to a single enemy and minor damage on nearby enemies'
             ]
         },
-        synopsis: [
-            'Not a very useful hero. Stay away.'
-        ]
+        family: References.maps.SEASON_1
     },
     'gan ju': {
         name: 'Gan Ju',
@@ -347,10 +349,7 @@ const yellow3StarHeroes = {
                 'Deal 270% damage to a single enemy and reduce their mana by 25%'
             ]
         },
-        synopsis: [
-            'Some damage with mana control. Good to pair with Bane perhaps.',
-            'Keep until you have better yellow stacking options.'
-        ]
+        family: References.maps.SEASON_1
     },
     kailani: {
         name: 'Kailani',
@@ -369,10 +368,7 @@ const yellow3StarHeroes = {
                 'All allies get +63% defense and share received damage with all their allies for 5 turns'
             ]
         },
-        synopsis: [
-            'Not an attacker. Spirit-link defense provides the increased shielding and shared damage that enables your team to survive tough enemies',
-            'Good hero for your first 30, rare events, special raid tournaments until you get a more durable replacement like Wilbur or Aegir'
-        ]
+        family: References.maps.SEASON_1
     },
     kvasir: {
         name: 'Kvasir',
@@ -392,7 +388,8 @@ const yellow3StarHeroes = {
                 'The target receives 32 Poison damage over 2 turns.',
                 "The target can't receive new Minions for 4 turns."
             ]
-        }
+        },
+        family: References.realms.ALFHEIM
     }, 
     melia: {
         name: 'Melia',
@@ -411,10 +408,7 @@ const yellow3StarHeroes = {
                 'All allies get +36% critical chance for 4 turns.'
             ]
         },
-        synopsis: [
-            'Good tile damage but low special attack. The key is the increased critical hit buff and fast mana.',
-            'Useful hero for your first 30, rare events, special raid tournaments with 3*'
-        ]
+        family: References.atlantisFamilies.ATLANTIS
     },
     pixie: {
         name: 'Pixie',
@@ -433,7 +427,8 @@ const yellow3StarHeroes = {
                 'Deals 290% damage to the target',
                 "Automatically does 21% damage to the target when the target's mana is full and reduces their mana by 50% for 3 turns."
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     }
 };
 
@@ -453,7 +448,8 @@ const green3StarHeroes = {
             description: [
                 'Recover 32% health for all allies and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'belith costume': {
         name: 'Belith Costume',
@@ -472,7 +468,8 @@ const green3StarHeroes = {
                 'All allies regenerate 459 HP over 3 turns.',
                 'All allies are immune to buff dispels for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     }, 
     berden: {
         name: 'Berden',
@@ -490,6 +487,7 @@ const green3StarHeroes = {
                 'Deal 325% damage to a single enemy and they get -34% attack for 6 turns'
             ]
         },
+        family: References.maps.SEASON_1
     },
     'berden costume': {
         name: 'Berden Costume',
@@ -508,7 +506,8 @@ const green3StarHeroes = {
                 'Deal 325% damage to the target.',
                 'The target gets -34% defense for 6 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     brienne: {
         name: 'Brienne',
@@ -526,10 +525,7 @@ const green3StarHeroes = {
                 'All allies get +45% attack and a further 20% increase every time they are hit for 5 turns'
             ]
         },
-        synopsis: [
-            'Attack buff that keeps ramping up is excellent and a rare ability for a 3*. She is good for everything.',
-            'Limited survivability at around 7-8* titans'
-        ]
+        family: References.maps.SEASON_1
     },
     'brienne costume': {
         name: 'Brienne Costume',
@@ -547,7 +543,8 @@ const green3StarHeroes = {
             description: [
                 'All enemies get -41% defense and a further -4% decrease every time they are hit for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'by-ulf': {
         name: 'By-Ulf',
@@ -571,7 +568,8 @@ const green3StarHeroes = {
                 "The caster gets -34% attack for 4 turns. This effect can't be dispelled",
                 "The caster gets -24% mana generation for 4 turns. This effect can't be dispelled"
             ]
-        }
+        },
+        family: References.realms.NIFLHEIM
     },
     carver: {
         name: 'Carver',
@@ -588,7 +586,8 @@ const green3StarHeroes = {
             description: [
                 'Deal 125% damage to all enemies and reduce their mana by 16%'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'carver costume': {
         name: 'Carver Costume',
@@ -607,7 +606,8 @@ const green3StarHeroes = {
                 'Deals 125% damage to all enemies.',
                 "All enemies get -24% mana generation for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },         
     'friar tuck': {
         name: 'Friar Tuck',
@@ -625,7 +625,8 @@ const green3StarHeroes = {
             description: [
                 'Recover 37% health for nearby allies and they get +24% mana generation for 3 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'friar tuck costume': {
         name: 'Friar Tuck Costume',
@@ -644,7 +645,8 @@ const green3StarHeroes = {
                 'Recovers 22% health for all allies.',
                 'All allies get +24% mana generation for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     grevle: {
         name: 'Grevle',
@@ -663,7 +665,8 @@ const green3StarHeroes = {
                 'Boosts health of all allies by 250. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
                 'All allies get +30% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.ALFHEIM
     },
     hisan: {
         name: 'Hisan',
@@ -684,7 +687,8 @@ const green3StarHeroes = {
                 "The target gets -100% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.' 
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },   
     isshtak: {
         name: 'Isshtak',
@@ -702,7 +706,8 @@ const green3StarHeroes = {
             description: [
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'isshtak costume': {
         name: 'Isshtak Costume',
@@ -721,7 +726,8 @@ const green3StarHeroes = {
                 'Deals 185% damage to the target and minor damage to nearby enemies.',
                 'The target and nearby enemies get -44% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     mnesseus: {
         name: 'Mnesseus',
@@ -740,7 +746,8 @@ const green3StarHeroes = {
                 'Deals 320% damage to the target.',
                 'Dispels buffs from all enemies.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },    
     muggy: {
         name: 'Muggy',
@@ -762,7 +769,8 @@ const green3StarHeroes = {
                 'Devastating Special Skill: Fierce Slash.',
                 'This effect cannot be dispelled.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     shrubbear: {
         name: 'Shrubbear',
@@ -781,7 +789,8 @@ const green3StarHeroes = {
                 'The caster gets +63% defense for 4 turns.',
                 'The caster gets +74% defense againse Special Skills for 4 turns.'
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     }
 };
 
@@ -801,7 +810,8 @@ const red3StarHeroes = {
             description: [
                 'Deal 280% damage to a single enemy and reduce their mana by 25%'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },    
     bauchan: {
         name: 'Bauchan',
@@ -821,7 +831,8 @@ const red3StarHeroes = {
                 'Reduces the mana of all enemies by 20%.',
                 'All allies get +24% mana generation for 4 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     'ei-dunn': {
         name: 'Ei-Dunn',
@@ -839,7 +850,8 @@ const red3StarHeroes = {
                 'Deals 240% damage to the target and nearby enemies.',
                 'The target and nearby enemies get -24% mana generation for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.NIFLHEIM
     },
     hawkmoon: {
         name: 'Hawkmoon',
@@ -856,7 +868,8 @@ const red3StarHeroes = {
             description: [
                 'Recover 32% health for all allies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'hawkmoon costume': {
         name: 'Hawkmoon Costume',
@@ -875,7 +888,8 @@ const red3StarHeroes = {
                 'All allies regenerate 459 HP over 3 turns.',
                 'All allies get +30% attack for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     jahangir: {
         name: 'Jahangir',
@@ -893,7 +907,8 @@ const red3StarHeroes = {
             description: [
                 'Deal 145% damage to all enemies and they receive 114 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     namahage: {
         name: 'Namahage',
@@ -911,7 +926,8 @@ const red3StarHeroes = {
                 'Deals 290% damage to the target.',
                 'The caster gets +45% attack and a further 20% increase every time they are hit during 5 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },    
     nashgar: {
         name: 'Nashgar',
@@ -928,7 +944,8 @@ const red3StarHeroes = {
             description: [
                 'Deal 290% damage to a single enemy and they receive 120 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     rudolph: {
         name: 'Rudolph',
@@ -947,7 +964,8 @@ const red3StarHeroes = {
                 'Reduces the mana of the target by 20%',
                 'Summons an Elf Minion with 10% HP and 10% attack inherited from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     'squire wabbit': {
         name: 'Squire Wabbit',
@@ -966,7 +984,8 @@ const red3StarHeroes = {
                 'Deals 355% damage to the target.',
                 "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     'sudri': {
         name: 'Sudri',
@@ -985,7 +1004,8 @@ const red3StarHeroes = {
                 'Deals 120% damage to all enemies.',
                 'Deals additional 24% damage per each Fire shield on the board, up to 360% damage in total.'
             ]
-        }
+        },
+        family: References.realms.MUSPELHEIM
     }
 };
 
@@ -1006,7 +1026,8 @@ const purple3StarHeroes = {
             description: [
                 'The caster gets +45% attack, and a further 20% increase every time they or any of their allies are hit during 3 turns. When the effect ends, the caster deals 164% damage on all enemies. Each hit on the caster or their allies during the duration increases the damage by 10% to a maximum of 284% damage.'
             ]
-        }
+        },
+        family: References.realms.NIFLHEIM
     },
     balthazar: {
         name: 'Balthazar',
@@ -1023,7 +1044,8 @@ const purple3StarHeroes = {
             description: [
                 'Deal 335% damage to a single enemy'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'balthazar costume': {
         name: 'Balthazar Costume',
@@ -1042,7 +1064,8 @@ const purple3StarHeroes = {
                 'Deals 315% damage to the target.',
                 'The target receives 60 Poison damage over 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     bjorn: {
         name: 'Bjorn',
@@ -1060,7 +1083,8 @@ const purple3StarHeroes = {
                 'Deals 200% damage to the target',
                 'Deals 350% damage to a random different enemy. Deals extra damage if the target is Holy.'
             ]
-        }
+        },
+        family: References.realms.MIDGARD
     },
     chochin: {
         name: 'Chochin',
@@ -1079,7 +1103,8 @@ const purple3StarHeroes = {
                 'Deals 215% damage to the target and nearby enemies.',
                 'The target and nearby enemies get -24% mana generation for 3 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     'gill-ra': {
         name: 'Gill-Ra',
@@ -1099,7 +1124,8 @@ const purple3StarHeroes = {
                 'All enemies get -34% attack for 4 turns.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     'guardian bat': {
         name: 'Guardian Bat',
@@ -1118,7 +1144,8 @@ const purple3StarHeroes = {
                 'Deals 270% damage to the target and minor damage to nearby enemies.',
                 'The damage is increased by 60% per each dead ally.'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     jack: {
         name: 'Jack',
@@ -1137,7 +1164,8 @@ const purple3StarHeroes = {
                 'Deals 200% damage to the target.',
                 'The target receives a Pumpkin Bomb. After 3 turns the Pumpkin Bomb explodes and deals 206 damage to the target and nearby targets. The Pumpkin Bomb also explodes when the target is defeated.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     },
     oberon: {
         name: 'Oberon',
@@ -1154,7 +1182,8 @@ const purple3StarHeroes = {
             description: [
                 'Deal 121% damage to all enemies and they receive 96 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     prisca: {
         name: 'Prisca',
@@ -1171,7 +1200,8 @@ const purple3StarHeroes = {
             description: [
                 'Deal 235% damage to a single enemy and steal a moderate amount of dealt damage back'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'prisca costume': {
         name: 'Prisca Costume',
@@ -1190,7 +1220,8 @@ const purple3StarHeroes = {
                 'Deals 205% damage to the target and minor damage to nearby enemies.',
                 'Heals the caster for 30% of damage dealt.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     renfeld: {
         name: 'Renfeld',
@@ -1208,7 +1239,8 @@ const purple3StarHeroes = {
             description: [
                 'Deal 215% damage to a single enemy and steal a moderate amount of dealt damage back'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'renfeld costume': {
         name: 'Renfeld Costume',
@@ -1227,7 +1259,8 @@ const purple3StarHeroes = {
                 'Deals 195% damage to the target.',
                 "The caster steals generated mana of the target and the nearby enemies over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be dispelled, but gets removed if the caster dies."
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     tyrum: {
         name: 'Tyrum',
@@ -1244,7 +1277,8 @@ const purple3StarHeroes = {
             description: [
                 'Deal 310% damage to a single enemy and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'tyrum costume': {
         name: 'Tyrum Costume',
@@ -1263,7 +1297,8 @@ const purple3StarHeroes = {
                 'Deals 310% damage to the target.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     vlad: {
         name: 'Vlad',
@@ -1281,7 +1316,8 @@ const purple3StarHeroes = {
                 'The target receives 65 damage over 5 turns. If a target already has this effect, the duration will be refreshed and the damage will be increased by 115, up to 295 damage in total.',
                 'The caster steals 61% of any healing applied to the target for 3 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     }
 };
 
@@ -1302,7 +1338,8 @@ const blue4StarHeroes = {
                 'Deals 190% damage to all enemies',
                 'All allies get +54% defense against Nature for 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     boril: {
         name: 'Boril',
@@ -1319,7 +1356,8 @@ const blue4StarHeroes = {
             description: [
                 'The caster and nearby allies counter attack with 125% of the damage received for 5 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'boril costume': {
         name: 'Boril Costume',
@@ -1337,7 +1375,8 @@ const blue4StarHeroes = {
             description: [
                 'All allies counterattack with 60% of the damage received for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'captain of diamonds': {
         name: 'Captain of Diamonds',
@@ -1357,7 +1396,8 @@ const blue4StarHeroes = {
                 'Deals 260% damage to the target.',
                 'Attacks randomly a new target if any minions were destroyed.'
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     frank: {
         name: 'Frank',
@@ -1376,7 +1416,8 @@ const blue4StarHeroes = {
                 'The damage is increased by 45% per each dead enemy.',
                 'All enemies get -44% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     },
     grimm: {
         name: 'Grimm',
@@ -1393,7 +1434,8 @@ const blue4StarHeroes = {
             description: [
                 'Deal 295% damage to a single enemy and minor damage on nearby enemies and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     jott: {
         name: 'Jott',
@@ -1412,7 +1454,8 @@ const blue4StarHeroes = {
                 'Deals 200% damage to all enemies.',
                 'All Ice shields on the board become enhanced. Enhanced shields have +64% attack when cast from attacker side and -57% attack when cast from defender side.'
             ]
-        }
+        },
+        family: References.realms.JOTUNHEIM
     },     
     kiril: {
         name: 'Kiril',
@@ -1429,7 +1472,8 @@ const blue4StarHeroes = {
             description: [
                 'Recover 28% health for all allies and they get +30% attack and +30% defense for 3 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'kiril costume': {
         name: 'Kiril Costume',
@@ -1449,7 +1493,8 @@ const blue4StarHeroes = {
                 'All enemies get -34% attack for 3 turns.',
                 'All enemies get -34% defense for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     mireweave: {
         name: 'Mireweave',
@@ -1467,7 +1512,8 @@ const blue4StarHeroes = {
                 'Deals 150% damage to the target and nearby enemies.',
                 'Stack: The caster gets +10% attack. The maximum size of stack is 10.'
             ]
-        }
+        },
+        family: References.realms.VANAHEIM
     },
     sapphire: {
         name: 'Sapphire',
@@ -1496,7 +1542,8 @@ const blue4StarHeroes = {
                 'Deals 200% damage to all enemies.',
                 'The attack has a 85% chance to bypass defensive buffs. This includes counterattacks.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     sonya: {
         name: 'Sonya',
@@ -1513,7 +1560,8 @@ const blue4StarHeroes = {
             description: [
                 'Deal 345% damage to a single enemy and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'sonya costume': {
         name: 'Sonya Costume',
@@ -1532,7 +1580,8 @@ const blue4StarHeroes = {
                 'Deals 345% damage to the target.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     triton: {
         name: 'Triton',
@@ -1550,7 +1599,8 @@ const blue4StarHeroes = {
                 'Deals 335% damage to the target.',
                 'All allies get +39% healing received for 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     valeria: {
         name: 'Valeria',
@@ -1569,7 +1619,8 @@ const blue4StarHeroes = {
                 'The target receives 150 damage over 5 turns. If a target already has this effect, the duration will be refreshed and the damage will be increased by 220, up to 580 damage in total',
                 'The caster steals 61% of any healing applied to the target for 3 turns'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     }
 };
 
@@ -1590,7 +1641,8 @@ const yellow4StarHeroes = {
                 'Deals 315% damage to the target.',
                 'Reduces the mana of the target by 25%.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     danzaburo: {
         name: 'Danzaburo',
@@ -1619,8 +1671,8 @@ const yellow4StarHeroes = {
                 'Freeze:',
                 "The caster can't game mana for 2 turns. This effect can't be dispelled"
             ]
-        }
-
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     gretel: {
         name: 'Gretel',
@@ -1639,7 +1691,8 @@ const yellow4StarHeroes = {
                 'Automatically does 21% damage to the target when their mana is full and reduces their mana to 50% for 3 turns.',
                 'The caster gets +74% defense against Special Skills for 3 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     gullinbursti: {
         name: 'Gullinbursti',
@@ -1658,7 +1711,8 @@ const yellow4StarHeroes = {
                 'Boosts health of all allies by 400. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
                 'The caster gets +45% attack, and a further 20% increase every time they or any of their allies are hit during 3 turns. When the effect ends, the caster deals 164% damage on all enemies. Each hit on the caster or their allies during the duration increases the damage by 10% to a maximum of 284% damage.'
             ]
-        }
+        },
+        family: References.realms.ASGARD
     },
     'hu tao': {
         name: 'Hu Tao',
@@ -1677,7 +1731,8 @@ const yellow4StarHeroes = {
                 'Deals 210% damage to all enemies.',
                 'All enemies get -40% accuracy for 4 turns. Chance to miss also applies to offensive special skills.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'guardian jackal': {
         name: 'Guardian Jackal',
@@ -1695,7 +1750,8 @@ const yellow4StarHeroes = {
             description: [
                 'Deal 270% damage to a single enemy and they get -54% defense against Holy for 4 turns'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },       
     'lady woolerton': {
         name: 'Lady Woolerton',
@@ -1714,7 +1770,8 @@ const yellow4StarHeroes = {
                 'Recovers 40% health for all allies.',
                 "The caster can't gain mana for 2 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     'li xiu': {
         name: 'Li Xiu',
@@ -1732,7 +1789,8 @@ const yellow4StarHeroes = {
             description: [
                 'Deal 150% damage to all enemies and reduce their mana by 20%'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'li xiu costume': {
         name: 'Li Xiu Costume',
@@ -1751,7 +1809,8 @@ const yellow4StarHeroes = {
                 'Deals 180% damage to all enemies.',
                 'Reduces the mana of all enemies by 10%.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     mist: {
         name: 'Mist',
@@ -1771,7 +1830,8 @@ const yellow4StarHeroes = {
                 'The target and nearby enemies get -34% defense against Special Skills for 3 turns.',
                 'The target and nearby enemies get -64% mana generation for 3 turns.'
             ]
-        }
+        },
+        family: References.realms.MIDGARD
     },
     'wu kong': {
         name: 'Wu Kong',
@@ -1789,7 +1849,8 @@ const yellow4StarHeroes = {
             description: [
                 'All allies get +185% attack with -32% accuracy for 5 turns. Chance to miss applies also to Special Skills.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     }
 };
 
@@ -1812,7 +1873,8 @@ const green4StarHeroes = {
                 "Reduces max health from the target and nearby enemies by 75. Max health can't get lower than 30% of the original max health.",
                 'The target and nearby enemies get -54% defense against Nature for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.SVARTALFHEIM
     },
     brynhild: {
         name: 'Brynhild',
@@ -1832,7 +1894,8 @@ const green4StarHeroes = {
                 'The caster and nearby allies get +74% defense against Special Skills for 3 turns.',
                 'The caster and nearby allies get +24% mana generation for 3 turns.'
             ]
-        }
+        },
+        family: References.realms.MIDGARD
     },
     buddy: {
         name: 'Buddy',
@@ -1851,7 +1914,8 @@ const green4StarHeroes = {
                 'Summons an Elf Minion for the caster and nearby allies with 10% HP and 10% attack inherited from the caster.',
                 'The target and nearby enemies get -34% defense for 3 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     caedmon: {
         name: 'Caedmon',
@@ -1869,7 +1933,8 @@ const green4StarHeroes = {
             description: [
                 'Deal 345% damage to a single enemy and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'caedmon costume': {
         name: 'Caedmon Costume',
@@ -1888,7 +1953,8 @@ const green4StarHeroes = {
                 'Deals 345% damage to the target.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     gadeirus: {
         name: 'Gadeirus',
@@ -1908,7 +1974,8 @@ const green4StarHeroes = {
                 'The caster and nearby allies get +48% attack for 4 turns.',
                 'The caster and nearby allies regenerate 612 HP over 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     gobbler: {
         name: 'Gobbler',
@@ -1927,7 +1994,8 @@ const green4StarHeroes = {
                 'Destroys all minions from all enemies.',
                 'All allies recover 80 health for each eaten minion.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     hansel: {
         name: 'Hansel',
@@ -1946,7 +2014,8 @@ const green4StarHeroes = {
                 'Automatically does 21% damage to the target when their mana is full and reduces their mana to 50% for 3 turns.',
                 'The caster gets +74% defense against Special Skills for 3 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     "jack o'hare": {
         name: "Jack O'Hare",
@@ -1965,7 +2034,8 @@ const green4StarHeroes = {
                 'Deals 180% damage to all enemies.',
                 "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },    
     kashhrek: {
         name: 'Kashhrek',
@@ -1983,7 +2053,8 @@ const green4StarHeroes = {
             description: [
                 'Recover 45% health for nearby allies and they get +94% defense against Fire for 3 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'kashhrek costume': {
         name: 'Kashhrek Costume',
@@ -2001,7 +2072,8 @@ const green4StarHeroes = {
             description: [
                 'Boosts health of the caster and nearby allies by 450. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'little john': {
         name: 'Little John',
@@ -2019,7 +2091,8 @@ const green4StarHeroes = {
             description: [
                 'Deal 185% damage to all enemies and they get -64% mana generation for 3 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'little john costume': {
         name: 'Little John Costume',
@@ -2038,7 +2111,8 @@ const green4StarHeroes = {
                 'Deals 185% damage to all enemies.',
                 'The caster and nearby allies have from +30% to +70% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },       
     melendor: {
         name: 'Melendor',
@@ -2056,7 +2130,8 @@ const green4StarHeroes = {
             description: [
                 'Recover 42% health for all allies and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'melendor costume': {
         name: 'Melendor Costume',
@@ -2076,7 +2151,8 @@ const green4StarHeroes = {
                 'All allies get +46% defense for 3 turns',
                 'Dispels buffs from all enemies'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     peters: {
         name: 'Peters',
@@ -2095,7 +2171,8 @@ const green4StarHeroes = {
                 'Deals 320% damage to the target.',
                 'The target gets silenced for 3 turns.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     skittleskull: {
         name: 'Skittleskull',
@@ -2114,7 +2191,8 @@ const green4StarHeroes = {
                 'Deals 185% damage to all enemies.',
                 'All enemies get -34% attack for 6 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'skittleskull costume': {
         name: 'Skittleskull Costume',
@@ -2133,7 +2211,8 @@ const green4StarHeroes = {
                 'Deals 175% damage to all enemies.',
                 'All Enemies get -39% attack for 6 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     }
 };
 
@@ -2154,7 +2233,8 @@ const red4StarHeroes = {
             description: [
                 'Recover 27% health for all allies and they get +48% attack for 4 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'boldtusk costume': {
         name: 'Boldtusk Costume',
@@ -2173,8 +2253,8 @@ const red4StarHeroes = {
                 'Recovers 37% health for all allies.',
                 'All allies get +30% attack for 4 turns.'
             ]
-        }
-
+        },
+        family: References.events.THE_MASQUERADE
     },
     carol: {
         name: 'Carol',
@@ -2193,7 +2273,8 @@ const red4StarHeroes = {
                 'Reduces the mana of the target by 25%.',
                 'The target receives a Gift Bomb. After 3 turns the Gift Bomb explodes and deals 312 damage to the target and nearby enemies. The Gift Bomb also explodes when the target is defeated.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     colen: {
         name: 'Colen',
@@ -2210,7 +2291,8 @@ const red4StarHeroes = {
             description: [
                 'Deal 180% damage to all enemies and tehy receive 330 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'guardian falcon': {
         name: 'Guardian Falcon',
@@ -2228,7 +2310,8 @@ const red4StarHeroes = {
             description: [
                 'Deal 225% damage to target and nearby enemies and they get -54% defense against Fire for 4 turns'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     gormek: {
         name: 'Gormek',
@@ -2245,7 +2328,8 @@ const red4StarHeroes = {
             description: [
                 'Deal 295% damage to a single enemy and minor damage on nearby enemies and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     kelile: {
         name: 'Kelile',
@@ -2263,7 +2347,8 @@ const red4StarHeroes = {
             description: [
                 'Deal 320% damage to a single enemy and they receive 306 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     lancelot: {
         name: 'Sir Lancelot',
@@ -2283,7 +2368,8 @@ const red4StarHeroes = {
                 'The caster and nearby allies get +24% mana generation for 4 turns.',
                 'The caster and nearby allies get +48% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     scarlett: {
         name: 'Scarlett',
@@ -2301,7 +2387,8 @@ const red4StarHeroes = {
             description: [
                 'Deal 215% damage to a single enemy and minor damage to nearby enemies and they get -34% attack for 6 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     shadereave: {
         name: 'Shadereave',
@@ -2324,7 +2411,8 @@ const red4StarHeroes = {
                 '500 attack.',
                 '500 defense.'
             ]
-        }
+        },
+        family: References.realms.HELHEIM
     },
     shale: {
         name: 'Shale',
@@ -2353,7 +2441,8 @@ const red4StarHeroes = {
                 'All allies regenerate 714 HP over 3 turns.',
                 'Cleanses status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     sumitomo: {
         name: 'Sumitomo',
@@ -2373,7 +2462,8 @@ const red4StarHeroes = {
                 'The caster counterattacks with 135% of the damage received for 5 turns.',
                 'The caster regenerates a moderate amount of mana for each counterattack. The effect gets diminished for consecutive activations during the same turn.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     sumle: {
         name: 'Sumle',
@@ -2391,7 +2481,8 @@ const red4StarHeroes = {
                 'Deals 235% damage to all enemies. Each hit has 80% accuracy.',
                 'The damage is increased by 70% per each dead enemy.'
             ]
-        }
+        },
+        family: References.realms.MUSPELHEIM
     }, 
     wilbur: {
         name: 'Wilbur',
@@ -2411,7 +2502,8 @@ const red4StarHeroes = {
                 'All allies get +63% defense for 4 turns.',
                 'All enemies get -44% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     }
 };
 
@@ -2436,7 +2528,8 @@ const purple4StarHeroes = {
                 "While in Ghost form the caster can't gain mana but is immune to normal attacks, special attacks, and all status effects.",
                 'Ghost form lasts for 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     ametrine: {
         name: 'Ametrine',
@@ -2465,7 +2558,8 @@ const purple4StarHeroes = {
                 'Dispels buffs from all enemies.',
                 'Deals 300% damage to all enemies.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     boomer: {
         name: 'Boomer',
@@ -2484,7 +2578,8 @@ const purple4StarHeroes = {
                 'Deals 204% damage to all enemies.',
                 'The caster and nearby allies get +94% defense against Holy for 3 turns.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     'chesire cat': {
         name: 'Cheshire Cat',
@@ -2504,7 +2599,8 @@ const purple4StarHeroes = {
                 'All Holy enemies get -44% defense for 4 turns.',
                 "All enmies receive 276 damage over 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     cyprian: {
         name: 'Cyprian',
@@ -2521,7 +2617,8 @@ const purple4StarHeroes = {
             description: [
                 'The caster and nearby allies counterattack with 125% of the damage received for 5 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     fura: {
         name: 'Fura',
@@ -2541,7 +2638,8 @@ const purple4StarHeroes = {
                 "Reduces max health from all enemies by 100. Max health can't get lower than 30% of the original max health.",
                 'All enemies get -50% decrease for any healing received for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.SVARTALFHEIM
     },
     gafar: {
         name: 'Gafar',
@@ -2562,7 +2660,8 @@ const purple4StarHeroes = {
                 "The target gets -100% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },
     jabbar: {
         name: 'Jabbar',
@@ -2583,7 +2682,8 @@ const purple4StarHeroes = {
                 "The target and nearby enemies get -75% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },
     merlin: {
         name: 'Merlin',
@@ -2602,7 +2702,8 @@ const purple4StarHeroes = {
                 'The more mana the enemies have, the more damage they will receive, up to 250%.',
                 'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     proteus: {
         name: 'Proteus',
@@ -2620,7 +2721,8 @@ const purple4StarHeroes = {
                 'The target and nearby enemies receive 327 damage over 3 turns.',
                 "The target and nearby enemies can't gain mana for 3 turns."
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },    
     rigard: {
         name: 'Rigard',
@@ -2637,7 +2739,8 @@ const purple4StarHeroes = {
             description: [
                 'Recover 42% health for all allies and cure status ailments from them'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'rigard costume': {
         name: 'Rigard Costume',
@@ -2657,7 +2760,8 @@ const purple4StarHeroes = {
                 'All allies get +48% attack for 3 turns.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     sabina: {
         name: 'Sabina',
@@ -2674,7 +2778,8 @@ const purple4StarHeroes = {
             description: [
                 'Recover 42% health for all allies and remove buffs from all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     stonecleave: {
         name: 'Stonecleave',
@@ -2695,8 +2800,8 @@ const purple4StarHeroes = {
                 "While in Dire Ghost form the caster can't gain mana but is immune to normal attacks, Special Skill attacks, status effects and stacks except the damage from enemies whose element is strong against the caster.",
                 'Dire Ghost form lasts for 4 turns.'
             ]
-        }
-
+        },
+        family: References.realms.HELHEIM
     }, 
     tiburtus: {
         name: 'Tiburtus',
@@ -2714,7 +2819,8 @@ const purple4StarHeroes = {
             description: [
                 'Deal 295% damage to a single enemy and minor damage on nearby enemies and they get -34% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'tiburtus costume': {
         name: 'Tiburtus Costume',
@@ -2733,7 +2839,8 @@ const purple4StarHeroes = {
                 'Deals 175% damage to all enemies.',
                 'All enemies get -34% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     }
 }
 
@@ -2756,7 +2863,8 @@ const blue5StarHeroes = {
                 'All allies heal 100% of dealt normal damage for 3 turns.',
                 "Element Link recovers 4% health for all Ice allies for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     alasie: {
         name: 'Alasie',
@@ -2775,7 +2883,8 @@ const blue5StarHeroes = {
                 "The target and nearby enemies get -24% mana generation for 3 turns. This effect can't be dispelled.",
                 "Element Link gives all Ice allies +5% attack and +5% defense for 6 turns. This effect cant be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     alice: {
         name: 'Alice',
@@ -2793,7 +2902,8 @@ const blue5StarHeroes = {
                 'Deals 430% damage to the target.',
                 'Target gets -44% attack for 3 turns. The effect duration is reset if the target is healed. This effect cannot be dispelled.'
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     ariel: {
         name: 'Ariel',
@@ -2812,7 +2922,8 @@ const blue5StarHeroes = {
                 'All allies get +24% mana generation for 4 turns.',
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     athena: {
         name: 'Athena',
@@ -2829,7 +2940,8 @@ const blue5StarHeroes = {
             description: [
                 'Deal 305% damage to a single enemy and minor damage on nearby enemies and they get -41% defense and a further -4% decrease every time they are hit for 4 turns. Deals extra damage against Fire.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     cobalt: {
         name: 'Cobalt',
@@ -2858,7 +2970,8 @@ const blue5StarHeroes = {
                 'Deals 300% damage to all enemies.',
                 'The attack has a 100% chance to bypass defensive buffs. This includes counterattacks.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     fenrir: {
         name: 'Fenrir',
@@ -2878,7 +2991,8 @@ const blue5StarHeroes = {
                 'The caster gains a moderate amount of mana for each enemy killed and a small amount of mana for each enemy minion killed.',
                 'Heals the caster of 50% of the damage dealt.'
             ]
-        }
+        },
+        family: References.realms.NIFLHEIM
     },
     finley: {
         name: 'Finley',
@@ -2898,7 +3012,8 @@ const blue5StarHeroes = {
                 'If the target has buffs, targets another enemy with buffs. If none of the other enemies have buffs, targets a random enemy. The damage is reduced on each consecutive hit. Each enemy can only be hit once.',
                 'All hit targets get -34% defense for 3 turns.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     frida: {
         name: 'Frida',
@@ -2918,7 +3033,8 @@ const blue5StarHeroes = {
                 'Dispels buffs from the target and nearby enemies',
                 "Element Link gives all Ice allies +46% defense against Nature for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     glenda: {
         name: 'Glenda',
@@ -2939,7 +3055,8 @@ const blue5StarHeroes = {
                 'Cleanses status ailments from all allies.',
                 "Element Link summons an Ice Minion for all Ice allies with 5% HP and 10% attack inherited from the caster."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     isarnia: {
         name: 'Isarnia',
@@ -2956,7 +3073,8 @@ const blue5StarHeroes = {
             description: [
                 'Deal 235% damage to all enemies and they get -44% defense for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'isarnia costume': {
         name: 'Isarnia Costume',
@@ -2975,7 +3093,8 @@ const blue5StarHeroes = {
                 'Deals 255% damage to all enemies.',
                 'All enemies get -34% defense for 6 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'king arthur': {
         name: 'King Arthur',
@@ -2996,7 +3115,8 @@ const blue5StarHeroes = {
                 'The target gets -54% defense against Ice for 4 turns.',
                 'The caster gets +74% defense against Special Skills for 4 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     krampus: {
         name: 'Krampus',
@@ -3017,7 +3137,8 @@ const blue5StarHeroes = {
                 "The caster gets +44% defense, and a further 10% increase every time they are hit during 3 turns. This effect can't be dispelled.",
                 'All allies get +50% attack for 3 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     'lord loki': {
         name: 'Lord Loki',
@@ -3039,7 +3160,8 @@ const blue5StarHeroes = {
                 'Villan Swing:',
                 'Deals 275% damage to the target.'
             ]
-        }
+        },
+        family: References.realms.JOTUNHEIM
     },
     magni: {
         name: 'Magni',
@@ -3056,7 +3178,8 @@ const blue5StarHeroes = {
             description: [
                 'Deal 420% damage to a single enemy and nearby allies get +63% defense for 4 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'magni costume': {
         name: 'Magni Costume',
@@ -3075,7 +3198,8 @@ const blue5StarHeroes = {
                 'Deals 420% damage to the target.',
                 'The target and nearby enemies get -34% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'master lepus': {
         name: 'Master Lepus',
@@ -3094,7 +3218,8 @@ const blue5StarHeroes = {
                 'Deals 410% damage to the target and minor damage to nearby enemies.',
                 "The caster gets -20% defense for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     miki: {
         name: 'Miki',
@@ -3113,7 +3238,8 @@ const blue5StarHeroes = {
                 'The target and nearby enemies get silenced for 4 turns.',
                 "Element Link gives +4% mana generation for all Ice allies for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     misandra: {
         name: 'Misandra',
@@ -3132,7 +3258,8 @@ const blue5StarHeroes = {
                 'Has a 42% chance for additional hits on random enemies up to 3 times. Additional hits deal minor damage.',
                 'All allies gain a small amount of mana for each additional hit.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     perseus: {
         name: 'Perseus',
@@ -3149,7 +3276,8 @@ const blue5StarHeroes = {
             description: [
                 "Deal 355% damage to a single enemy and they get -100% healing received for 4 turns and it can't be dispelled. Nearby allies get +94% defense against Nature for 4 turns."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     raffaele: {
         name: 'Raffaele',
@@ -3170,7 +3298,8 @@ const blue5StarHeroes = {
                 'Dispels status ailments from all allies.',
                 "Element Link gives all ice allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     richard: {
         name: 'Richard',
@@ -3187,7 +3316,8 @@ const blue5StarHeroes = {
             description: [
                 'Deal 415% damage to a single enemy and minor damage on nearby enemies and they get -34% attack for 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'richard costume': {
         name: 'Richard Costume',
@@ -3206,7 +3336,8 @@ const blue5StarHeroes = {
                 'Deals 435% damage to the target and minor damage to nearby enemies.',
                 'The target and nearby enemies get -34% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     rumpelstiltskin: {
         name: 'Rumpelstiltskin',
@@ -3236,7 +3367,8 @@ const blue5StarHeroes = {
                 'All enemies get -34% defense for 3 turns.',
                 'All allies get +48% attack for 3 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     'skadi': {
         name: 'Skadi',
@@ -3256,7 +3388,8 @@ const blue5StarHeroes = {
                 'Stack: all enemies receive 30 Frost damage per each killed enemy or enemy minion at the end of each turn. The maximum size of stack is 10.',
                 'Stack: all enemies get -6% mana generation per each killed enemy or enemy minion. The maximum size of stack is 10.'
             ]
-        }
+        },
+        family: References.realms.JOTUNHEIM
     },
     'snow white': {
         name: 'Snow White',
@@ -3274,7 +3407,8 @@ const blue5StarHeroes = {
                 'Dispels all buffs and status ailments from all allies and enemies.',
                 'Deals 180% damage to all enemies and additional 15% damage per removed status effect, up to 420% damage in total.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     thorne: {
         name: 'Thorne',
@@ -3292,7 +3426,8 @@ const blue5StarHeroes = {
             description: [
                 'Deals 480% damage to the target and minor damage to nearby enemies.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     vela: {
         name: 'Vela',
@@ -3314,7 +3449,8 @@ const blue5StarHeroes = {
                 'Deals extra damage against Fire.',
                 "Element Link gives all ice allies +10% critial chance for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     }
 }
 
@@ -3338,7 +3474,8 @@ const yellow5StarHeroes = {
                 'The target gets -75% decrease for any healing received for 2 turns.',
                 "Element Link gives all Holy allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     delilah: {
         name: 'Delilah',
@@ -3357,7 +3494,8 @@ const yellow5StarHeroes = {
                 'Recovers 33% health for all allies.',
                 'Summons a Guardian Minion for each ally with 13% HP and 16% attack inherited from the caster.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'drake fong': {
         name: 'Drake Fong',
@@ -3377,7 +3515,8 @@ const yellow5StarHeroes = {
                 'The target and nearby enemies get -35% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills.',
                 "Element Link gives all Holy allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'guardian gazelle': {
         name: 'Guardian Gazelle',
@@ -3403,7 +3542,8 @@ const yellow5StarHeroes = {
                 'If the caster dies, the dancer receives 100% damage and their mana is reduced by 100%.',
                 'This effect cannot be dispelled.'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     'guardian owl': {
         name: 'Guardian Owl',
@@ -3424,7 +3564,8 @@ const yellow5StarHeroes = {
                 'The caster gets +46% defense for 5 turns.',
                 'The caster regenerates 765 HP over 5 turns.'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     guinevere: {
         name: 'Guinevere',
@@ -3444,7 +3585,8 @@ const yellow5StarHeroes = {
                 'The caster and nearby allies regenerate 612 HP over 4 turns.',
                 'The caster and nearby allies get +54% defense against Dark for 4 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     inari: {
         name: 'Inari',
@@ -3462,7 +3604,8 @@ const yellow5StarHeroes = {
                 'All allies get +56% chance to dodge Special Skills for 3 turns. Each dodge summons a Sakura Fox minion.',
                 'Sakura Fox Minion has 8% HP and 30% attack inherited from the caster. It adds 7% mana to its owner at the end of each turn.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     joon: {
         name: 'Joon',
@@ -3479,7 +3622,8 @@ const yellow5StarHeroes = {
             description: [
                 'Deal 467% damage to a single enemy and they are less accurate for 6 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'joon costume': {
         name: 'Joon Costume',
@@ -3498,7 +3642,8 @@ const yellow5StarHeroes = {
                 'Deals 488% damage to the target.',
                 'The target gets -35% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     justice: {
         name: 'Justice',
@@ -3517,7 +3662,8 @@ const yellow5StarHeroes = {
                 'All enemies get -40% accuract for 4 turns.',
                 'Chance to miss also applies to offensive Special Skills.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     leonidas: {
         name: 'Leonidas',
@@ -3537,7 +3683,8 @@ const yellow5StarHeroes = {
                 'Reduces the mana of the target by 40%',
                 'Heals the caster for 75% of damage dealt.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     malosi: {
         name: 'Malosi',
@@ -3556,7 +3703,8 @@ const yellow5StarHeroes = {
                 'The target cannot cast any new status effects or stacks on enemies or allies for 3 turns.',
                 "Element Link gives all Holy allies +10% critical chance for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     mica: {
         name: 'Mica',
@@ -3588,7 +3736,8 @@ const yellow5StarHeroes = {
                 'All allies get +73% defense for 5 turns.',
                 'All allies get +33% mana generation for 5 turns.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     musashi: {
         name: 'Musashi',
@@ -3606,7 +3755,8 @@ const yellow5StarHeroes = {
                 'Deal 332% damage to a single enemy and minor damage to nearby enemies.',
                 'The caster heals 50% of dealt normal damage for 5 turns.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     neith: {
         name: 'Neith',
@@ -3626,7 +3776,8 @@ const yellow5StarHeroes = {
                 'All enemies get -35% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.',
                 "Element Link gives +4% mana generation for all Holy allies for 4 gturns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     norns: {
         name: 'Norns',
@@ -3645,7 +3796,8 @@ const yellow5StarHeroes = {
                 'Deals 265% damage to the target and nearby enemies.',
                 'The target and nearby enemies become weak against the element they are strong against for 5 turns. They stay weak against the element they are normally weak against.'
             ]
-        }
+        },
+        family: References.realms.VANAHEIM
     },
     odin: {
         name: 'Odin',
@@ -3665,7 +3817,8 @@ const yellow5StarHeroes = {
                 'Deals additional 18% damage per each Holy shield, up to 244% damage in total.',
                 'All allies get +8% mana generation and a further 3% increase per Holy shield on the board, up to +29% mana generation.'
             ]
-        }
+        },
+        family: References.realms.MIDGARD
     },
     onatel: {
         name: 'Onatel',
@@ -3684,8 +3837,8 @@ const yellow5StarHeroes = {
                 "The caster steals generated mana of the target and the nearby enemies over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be dispelled, but gets removed if the caster dies.",
                 "Element Link recovers 4% health for all Holy allies for 6 turns. This effect can't be dispelled."
             ]
-        }
-
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     poseidon: {
         name: 'Poseidon',
@@ -3704,7 +3857,8 @@ const yellow5StarHeroes = {
                 'All allies resist new negative mana effects for 3 turns.',
                 'ALl allies resist new effects that block usage of Special Skills for 3 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     rana: {
         name: 'Rana',
@@ -3725,7 +3879,8 @@ const yellow5StarHeroes = {
                 "The target and nearby enemies get -75% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },
     ranvir: {
         name: 'Ranvir',
@@ -3744,7 +3899,8 @@ const yellow5StarHeroes = {
                 'All allies get +195% attack and -35% accuracy that only applies when the enemy has more health than the attacker. The effect lasts for 5 turns.',
                 "Element Link gives all Holy allies +46% defense against Dark for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     roc: {
         name: 'Roc',
@@ -3763,7 +3919,8 @@ const yellow5StarHeroes = {
                 "All enemies get -50% decrease for any healing received for 2 turns. This effect can't be dispelled.",
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },
     sif: {
         name: 'Sif',
@@ -3782,7 +3939,8 @@ const yellow5StarHeroes = {
                 'The caster and nearby allies reduce all received damage by -50% for 4 turns.',
                 'The caster and nearby allies get +24% mana generation for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.MIDGARD
     },
     'sir roostley': {
         name: 'Sir Roostley',
@@ -3802,7 +3960,8 @@ const yellow5StarHeroes = {
                 'The attack chains through all enemies that are adjacent to any hit enemy',
                 "The caster gets -20% attack for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     vivica: {
         name: 'Vivica',
@@ -3820,7 +3979,8 @@ const yellow5StarHeroes = {
             description: [
                 'Recover 44% health for all allies and cure status ailments from them and they get +63% defense for 4 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'vivica costume': {
         name: 'Vivica Costume',
@@ -3840,7 +4000,8 @@ const yellow5StarHeroes = {
                 'All enemies get -44% defense for 4 turns.',
                 'Dispels buffs for all enemies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'white rabbit': {
         name: 'White Rabbit',
@@ -3858,7 +4019,8 @@ const yellow5StarHeroes = {
                 'Deals 280% damage to the target and nearby enemies.',
                 "Target gets -34% defense for 4 turns. This effect duratiion is reset if the target is healed. This effect cant be dispelled."
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     }
 };
 
@@ -3881,7 +4043,8 @@ const green5StarHeroes = {
                 'All allies regenerate 612 HP over 4 turns.',
                 'All allies regenerate a moderate amount of mana over 4 turns.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     atomos: {
         name: 'Atomos',
@@ -3900,7 +4063,8 @@ const green5StarHeroes = {
                 'The more mana the enemies have, the more damage they will receive, up to 290%.',
                 'If the caster dies during the next 5 turns they are resurrected in the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     elkanen: {
         name: 'Elkanen',
@@ -3919,7 +4083,8 @@ const green5StarHeroes = {
                 'Deals 330% damage to the target and minor damage to nearby enemies.',
                 'Heals the caster for 38% of damage dealt.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'elkanen costume': {
         name: 'Elkanen Costume',
@@ -3938,7 +4103,8 @@ const green5StarHeroes = {
                 'Deals 280% damage to the target and nearby enemies.',
                 'The caster steals 61% of any healing applied to the target and nearby enemies for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     evelyn: {
         name: 'Evelyn',
@@ -3959,7 +4125,8 @@ const green5StarHeroes = {
                 "Element Link recovers 4% health for all Nature allies for 6 turns. This effect can't be dispelled.",
                 'Dispels buffs from the target and nearby enemies.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     francine: {
         name: 'Francine',
@@ -3978,7 +4145,8 @@ const green5StarHeroes = {
                 'Cleanses status ailments from all allies at the end of each turn for 3 turns.',
                 'Deals extra damage against Ice.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     },
     frigg: {
         name: 'Frigg',
@@ -3998,7 +4166,8 @@ const green5StarHeroes = {
                 'Deals additional 18% damage per Nature shield on the board, up to 244% damage in total.',
                 'All enemies get -8% defense, and a further -4% decrease per each Nature shield on the board for 3 turns up to -44% defense.',
             ]
-        }
+        },
+        family: References.realms.ALFHEIM
     },
     gregorion: {
         name: 'Gregorion',
@@ -4018,7 +4187,8 @@ const green5StarHeroes = {
                 'All allies get +30% critical chance for 3 turns.',
                 "Element Link gives all Nature allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'guardian chameleon': {
         name: 'Guardian Chameleon',
@@ -4039,7 +4209,8 @@ const green5StarHeroes = {
                 'All allies get +54% attack for 4 turns.',
                 'All allies get +36% critical chance for 4 turns.'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     heimdall: {
         name: 'Heimdall',
@@ -4059,7 +4230,8 @@ const green5StarHeroes = {
                 'Each fallen ally has a 20% chance to get revived with 30% HP.',
                 'All allies get +30% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.ASGARD
     },
     horghall: {
         name: 'Horghall',
@@ -4078,7 +4250,8 @@ const green5StarHeroes = {
                 'Deals 235% damage to all enemies.',
                 'All enemies get -34% attack for 6 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'horghall costume': {
         name: 'Horghall Costume',
@@ -4097,7 +4270,8 @@ const green5StarHeroes = {
                 'Deals 215% damage to all enemies.',
                 'All enemies get -54% attack for 6 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     jade: {
         name: 'Jade',
@@ -4126,7 +4300,8 @@ const green5StarHeroes = {
                 'Reduces the mana of all enemies by 25%.',
                 'All allies get +75% chance of dodging special attacks that do damage for 5 turns.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     kadilen: {
         name: 'Kadilen',
@@ -4145,7 +4320,8 @@ const green5StarHeroes = {
                 'Deals 190% damage to all enemies.',
                 'All allies get +74% defense against Special Skills for 3 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'kadilen costume': {
         name: 'Kadilen Costume',
@@ -4165,7 +4341,8 @@ const green5StarHeroes = {
                 'All allies get +45% chance to dodge Special Skills for 3 turns. Each dodge summons a Thorn Minion.',
                 'Thorn Minion has 15% HP and 15% attack inherited from the caster.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     kingston: {
         name: 'Kingston',
@@ -4184,7 +4361,8 @@ const green5StarHeroes = {
                 'The target and nearby enemies get -31% attack, and a further -4% decrease every time they are hit during 4 turns.',
                 "Element Link gives +4% mana generation for all Nature allies for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'lady locke': {
         name: 'Lady Locke',
@@ -4203,7 +4381,8 @@ const green5StarHeroes = {
                 'The target and nearby enemies receive 869 damage over 4 turns, starting low and increasing with every turn.',
                 'Dispels status ailments from all allies'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     'lady of the lake': {
         name: 'Lady of the Lake',
@@ -4223,7 +4402,8 @@ const green5StarHeroes = {
                 'Summons a Magical Sword Minion for the caster and nearby allies with 14% HP and 15% attack inherited from the caster.',
                 'The Minion removes -10% mana from the target when it hits them.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     lianna: {
         name: 'Lianna',
@@ -4240,7 +4420,8 @@ const green5StarHeroes = {
             description: [
                 'Deal 512% damage to a single enemy'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'lianna costume': {
         name: 'Lianna Costume',
@@ -4259,7 +4440,8 @@ const green5StarHeroes = {
                 'Deals 482% damage to the target.',
                 'The target gets -34% mana generation for 3 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     margaret: {
         name: 'Margaret',
@@ -4279,7 +4461,8 @@ const green5StarHeroes = {
                 'The caster and nearby allies have from +30% to +90% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 3 turns.',
                 "Element Link gives all Nature allies +46% defense against Fire for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'morgan le fay': {
         name: 'Morgan Le Fay',
@@ -4298,7 +4481,8 @@ const green5StarHeroes = {
                 "The caster drains 627 HP from the target over 4 turns. This effect can't be dispelled but gets removed if the caster dies.",
                 'The caster gets +94% defense against Fire for 4 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     'mother north': {
         name: 'Mother North',
@@ -4318,7 +4502,8 @@ const green5StarHeroes = {
                 'Each fallen ally has a 50% chance to get revived with 10% HP.',
                 'Summons an Elf Minion for each ally with 10% HP and 10% attack inherited from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     'ratatoskr': {
         name: 'Ratatoskr',
@@ -4337,7 +4522,8 @@ const green5StarHeroes = {
                 'Recovers 44% health for all allies.',
                 'All Nature shields on the board become enhanced. Enhanced shields have +64% attack when attacking hero casts the special, and -57% attack when defending hero casts the special.'
             ]
-        }
+        },
+        family: References.realms.ALFHEIM
     },
     tarlak: {
         name: 'Tarlak',
@@ -4355,7 +4541,8 @@ const green5StarHeroes = {
                 'All allies get +100% normal attack for 4 turns. Stacks with similar status effects up to a maximum +160% normal attack.',
                 'All allies regenerate 324 HP over 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     telluria: {
         name: 'Telluria',
@@ -4378,7 +4565,8 @@ const green5StarHeroes = {
                 "Element Link gives all Nature allies +10% critical chance for 6 turns. This effect can't be dispelled."
 
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'the hatter': {
         name: 'The Hatter',
@@ -4401,7 +4589,8 @@ const green5StarHeroes = {
                 'Deals 370% damage to the target and minor damage to nearby expressions.',
                 'Steals all the dispellable buffs from all enemies and randoml exicute hatter'
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     yunan: {
         name: 'Yunan',
@@ -4422,7 +4611,8 @@ const green5StarHeroes = {
                 "All enemies get -50% healing received for 2 turns. This effect can't be dispelled.",
                 'Cures status ailments from the caster.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SAND_EMPIRE
     },
     zeline: {
         name: 'Zeline',
@@ -4442,7 +4632,8 @@ const green5StarHeroes = {
                 'Deals extra damage against Ice.',
                 'Removes buffs from all enemies.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     zocc: {
         name: 'Zocc',
@@ -4462,7 +4653,8 @@ const green5StarHeroes = {
                 'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.',
                 "Element Link gives all Nature allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     }
 };
 
@@ -4485,7 +4677,8 @@ const red5StarHeroes = {
                 'Heals each ally with 20% of total damage dealt.',
                 "Element Link gives all Fire allies +46% defense against Ice for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     ares: {
         name: 'Ares',
@@ -4505,7 +4698,8 @@ const red5StarHeroes = {
                 'The caster and nearby allies get +36% critical chance for 4 turns.',
                 'The caster and nearby allies regenerate 720 HP over 4 turns.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     azlar: {
         name: 'Azlar',
@@ -4522,7 +4716,8 @@ const red5StarHeroes = {
             description: [
                 'Deal 205% damage to all enemies and they receive 360 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'azlar costume': {
         name: 'Azlar Costume',
@@ -4542,7 +4737,8 @@ const red5StarHeroes = {
                 'Deals 410% damage if the target has less than 50% health remaining.',
                 "The target and nearby enemies receive 430 Burn damage over 2 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     'baldur': {
         name: 'Baldur',
@@ -4561,7 +4757,8 @@ const red5StarHeroes = {
                 'All allies resist direct mana reduction for as long as the caster has boosted health. This effect cannot be dispelled.',
                 'Deals 165% damage to a random enemy each turn for as long as the caster has boosted health. This effect cannot be dispelled.'
             ]
-        }
+        },
+        family: References.realms.MUSPELHEIM
     },
     'black knight': {
         name: 'Black Knight',
@@ -4581,7 +4778,8 @@ const red5StarHeroes = {
                 "The caster gets Taunt that prevents enemies from using Special Skills on the caster's allies for 3 turns.",
                 'All allies get +45% attack, and a further 20% increase every time they are hit during 3 turns.'
             ]
-        }
+        },
+        family: References.events.KNIGHTS_OF_AVALON
     },
     'captain kestrel': {
         name: 'Captain Kestrel',
@@ -4600,7 +4798,8 @@ const red5StarHeroes = {
                 'Deals 215% damage to the target and nearby enemies.',
                 'The more mana the enemies have, the more damage they will receive, up to 335%.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     elena: {
         name: 'Elena',
@@ -4618,7 +4817,8 @@ const red5StarHeroes = {
                 'Deals 202% damage to all enemies.',
                 'The caster and nearby allies counterattack with 125% of the damage received for 5 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'elena costume': {
         name: 'Elena Costume',
@@ -4637,7 +4837,8 @@ const red5StarHeroes = {
                 'Deals 172% damage to all enemies.',
                 'The caster and nearby allies counterattack with 155% of the damage received for 5 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     garnet: {
         name: 'Garnet',
@@ -4666,7 +4867,8 @@ const red5StarHeroes = {
                 'Boosts health of all allies by 720. If health exceeds max HP, it is added as temporary HP. Max temporary HP is 100% of max HP. Boosted health counters max HP reduction.',
                 'ALl allies are immune to new status ailments for 4 turns.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     gefjon: {
         name: 'Gefjon',
@@ -4684,7 +4886,8 @@ const red5StarHeroes = {
                 'Seals minions from the target.',
                 'Deals 500% damage to the target.'
             ]
-        }
+        },
+        family: References.realms.MUSPELHEIM
     },
     gravemaker: {
         name: 'Gravemaker',
@@ -4705,7 +4908,8 @@ const red5StarHeroes = {
                 'Deals extra damage against Nature.',
                 "Element Link gives all Fire allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     grazul: {
         name: 'Grazul',
@@ -4725,8 +4929,8 @@ const red5StarHeroes = {
                 'All allies are immune to new status ailments for 2 turns.',
                 "Element Link gives +4% mana generation for all Fire allies for 4 turns. This effect can't be dispelled."
             ]
-        }
-
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'guardian kong': {
         name: 'Guardian Kong',
@@ -4746,7 +4950,8 @@ const red5StarHeroes = {
                 'Removes status ailments from all allies',
                 'All allies get +94% defense against Ice for 4 turns.'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     'jean-françois': {
         name: 'Jean-François',
@@ -4767,7 +4972,8 @@ const red5StarHeroes = {
                 'All allies get Defense Status Ailment Protection for 4 turns. New status ailments affecting defense will be replaced by +42% defense for 4 turns.',
                 "Element Link gives all Fire allies +10% critical chance for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     khagan: {
         name: 'Khagan',
@@ -4786,7 +4992,8 @@ const red5StarHeroes = {
                 'The caster and nearby allies get +24% mana generation for 5 turns.',
                 'The caster and nearby allies get +63% defense for 5 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'lady loki': {
         name: 'Lady Loki',
@@ -4805,7 +5012,8 @@ const red5StarHeroes = {
                 'Deals 170% damage to all enemies.',
                 'Deals additional 8% damage per allocated status effect, up to 298% damage in total.'
             ]
-        }
+        },
+        family: References.realms.HELHEIM
     },
     marjana: {
         name: 'Marjana',
@@ -4823,7 +5031,8 @@ const red5StarHeroes = {
             description: [
                 'Deal 458% damage to a single enemy and they receive 300 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     mitsuko: {
         name: 'Mitsuko',
@@ -4843,7 +5052,8 @@ const red5StarHeroes = {
                 'Reduces the mana of the target and nearby enemies by 20%.',
                 'All allies reflect all status effects and 115% damage from Ice Special Skills back to the attacker for 4 turns.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     natalya: {
         name: 'Natalya',
@@ -4863,7 +5073,8 @@ const red5StarHeroes = {
                 "The target gets -54% mana generation for 4 turns. This effect can't be dispelled.",
                 'Deals extra damage against Nature.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     noor: {
         name: 'Noor',
@@ -4882,7 +5093,8 @@ const red5StarHeroes = {
                 'Before Sparrow Minion hits target, it destroys all Minions from the target.',
                 "Element Link gives all Fire allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'puss in boots': {
         name: 'Puss in Boots',
@@ -4903,7 +5115,8 @@ const red5StarHeroes = {
                 'All allies regenerate 548 HP over 4 turns.',
                 'All allies get +30% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     'queen of hearts': {
         name: 'Queen of Hearts',
@@ -4924,7 +5137,8 @@ const red5StarHeroes = {
                 "The Playing Card Minion gives its owner Taunt. Taunt prevents the enemies from using their Special Sklls on Minion owner's allies",
                 'The caster gets 74% defense against Special Skills for 4 turns.'
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     'red hood': {
         name: 'Red Hood',
@@ -4942,7 +5156,8 @@ const red5StarHeroes = {
                 'Deals 131% damage to all enemies.',
                 'Summons a Fox Minion for each ally with 14% HP. The minion recovers 7% health for its owner at the start of each turn.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     reuben: {
         name: 'Reuben',
@@ -4963,7 +5178,8 @@ const red5StarHeroes = {
                 'All allies get -50% reduction to damage received from status effects for 4 turns.',
                 "Element Link summons a Fire Minion for all Fire allies with 5% HP and 10% attack inherited from the caster."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'santa claus': {
         name: 'Santa Claus',
@@ -4984,7 +5200,8 @@ const red5StarHeroes = {
                 'All enemies get -34% attack for 3 turns.',
                 'All enemies get -44% defense for 3 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.SANTAS_CHALLENGE
     },
     tyr: {
         name: 'Tyr',
@@ -5005,7 +5222,8 @@ const red5StarHeroes = {
                 'The caster regenerates 548 HP over 4 turns.',
                 'If the caster dies during the next 4 turns, they are resurrected at the beginning of their next turn with 32% health. All status effects are removed when the caster dies.'
             ]
-        }
+        },
+        family: References.realms.HELHEIM
     },
     vanda: {
         name: 'Vanda',
@@ -5013,7 +5231,6 @@ const red5StarHeroes = {
         defense: 735,
         health: 1384,
         element: elements.fire.id,
-        // TODO
         imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/2/728e3218592c4a8124bbde5b3b2c4926c516dd91.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST.value,
@@ -5025,7 +5242,8 @@ const red5StarHeroes = {
                 'The caster steals 61% of any healing applied to all enemies for 2 turns.',
                 'All allies are immune to new status ailments for 2 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     },
     zimkitha: {
         name: 'Zimkitha',
@@ -5046,7 +5264,8 @@ const red5StarHeroes = {
                 "Element Link recovers 4% health for all Fire allies for 6 turns. This effect can't be dispelled.",
                 'Dispels status ailments from all allies.'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     }
 };
 
@@ -5069,7 +5288,8 @@ const purple5StarHeroes = {
                 'Cures status ailments from the target and nearby allies.',
                 "Element Link gives all Dark allies +5% attack and +5% defense for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     alfrike: {
         name: 'Alfrike',
@@ -5090,7 +5310,8 @@ const purple5StarHeroes = {
                 "Dark Cube reduces max health from the target by 224. Max health can't get lower than 30% of the original max health",
                 'The target automatically casts Mindless Attack on a random ally when mana is full during 3 turns.'
             ]
-        }
+        },
+        family: References.realms.SVARTALFHEIM
     },
     bera: {
         name: 'Bera',
@@ -5110,7 +5331,8 @@ const purple5StarHeroes = {
                 'The target receives 180 Poison damage over 3 turns.',
                 "The target can't receive new Minions for 3 turns."
             ]
-        }
+        },
+        family: References.realms.VANAHEIM
     },
     'boss wolf': {
         name: 'Boss Wolf',
@@ -5130,7 +5352,8 @@ const purple5StarHeroes = {
                 'All enemies get -34% mana generation for 4 turns.',
                 'The caster and nearby allies counterattack with 115% of the damage received for 4 turns.'
             ]
-        }
+        },
+        family: References.events.FABLES_OF_GRIMFOREST
     },
     clarissa: {
         name: 'Clarissa',
@@ -5150,7 +5373,8 @@ const purple5StarHeroes = {
                 'Deals extra damage against Holy.',
                 "Element Link gives Dark allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     domitia: {
         name: 'Domitia',
@@ -5169,7 +5393,8 @@ const purple5StarHeroes = {
                 'The caster and nearby allies get +94% defense against Holy for 4 turns.',
                 'Dispels buffs from the target and nearby enemies.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'domitia costume': {
         name: 'Domitia Costume',
@@ -5189,7 +5414,8 @@ const purple5StarHeroes = {
                 'The target and nearby enemies receive 324 Poison damage over 4 turns.',
                 'Dispels status ailments from the caster and nearby allies.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     freya: {
         name: 'Freya',
@@ -5208,7 +5434,8 @@ const purple5StarHeroes = {
                 "Raven Minion gives +120% attack to all its owner's other Minions.",
                 'All allies get +30% defense for 4 turns.'
             ]
-        }
+        },
+        family: References.realms.VANAHEIM
     },
     'guardian panther': {
         name: 'Guardian Panther',
@@ -5226,7 +5453,8 @@ const purple5StarHeroes = {
             description: [
                 'Deal 210% damage to target and nearby enemies adn remove buffs from them and they get -54% defense against Dark for 4 turns'
             ]
-        }
+        },
+        family: References.events.GUARDIANS_OF_TELTOC
     },
     grimble: {
         name: 'Grimble',
@@ -5246,7 +5474,8 @@ const purple5StarHeroes = {
                 'All allies get a small amount of mana for each destroyed Minon.',
                 "Element Link gives all Dark allies +10% critical chance for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     hel: {
         name: 'Hel',
@@ -5264,7 +5493,8 @@ const purple5StarHeroes = {
                 'Deal 315% damage to a single enemy and minor damage on nearby enemies and they get no mana for 3 turns.',
                 'Deals extra damage against Holy'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     jabberwock: {
         name: 'Jabberwock',
@@ -5283,7 +5513,8 @@ const purple5StarHeroes = {
                 'Deals 300% damage to the enemies on the edges of the enemy formation. If there is only one enemy alive, the damage is doubled.',
                 "The enemies on the edges of the enemy formation receive 234 Poison damage over 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.RIDDLES_OF_WONDERLAND
     },
     kageburado: {
         name: 'Kageburado',
@@ -5303,7 +5534,8 @@ const purple5StarHeroes = {
                 'Deals 225% damage to the target.',
                 'Deals 450% damage if the target has more than 50% health remaining.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.SAKURA
     },
     khiona: {
         name: 'Khiona',
@@ -5322,7 +5554,8 @@ const purple5StarHeroes = {
                 'The caster and nearby allies get +45% attack, and a further 20% increase every time they are hit during 3 turns.',
                 "Element Link recovers 4% health for all Dark allies for 6 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     killhare: {
         name: 'Killhare',
@@ -5340,7 +5573,8 @@ const purple5StarHeroes = {
                 'Deals 300% damage to all enemies.',
                 "All allies except the caster get -20% defense for 3 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.seasonalEvents.SPRINGVALE
     },
     kunchen: {
         name: 'Kunchen',
@@ -5361,7 +5595,8 @@ const purple5StarHeroes = {
                 'Dispels status ailments from all allies.',
                 "Element Link gives all Dark allies +46% defense against Holy for 4 turns. This effect can't be dispelled."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'marie-thérèse': {
         name: 'Marie-Thérèse',
@@ -5387,7 +5622,8 @@ const purple5StarHeroes = {
                 '500 defense',
                 'Special Skill: Poison Bite.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     'mok-arr': {
         name: 'Mok-Arr',
@@ -5408,7 +5644,8 @@ const purple5StarHeroes = {
                 'Deals extra damage against Holy.',
                 'All Dark allies and enemies are immune to this attack.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.LAGOON
     },
     'myztero': {
         name: 'Myztero',
@@ -5427,7 +5664,8 @@ const purple5StarHeroes = {
                 'Deals 100% damage to all enemies.',
                 'All status ailments memorized by the innate ability are cast to all enemies.'
             ]
-        }
+        },
+        family: References.events.TAVERN_OF_LEGENDS
     },
     obakan: {
         name: 'Obakan',
@@ -5445,7 +5683,8 @@ const purple5StarHeroes = {
                 'Deal 260% damage to a single enemy and minor damage on nearby enemies.',
                 'The caster counterattacks with 115% of the damage received for 4 turns.'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     onyx: {
         name: 'Onyx',
@@ -5477,7 +5716,8 @@ const purple5StarHeroes = {
                 'ALl enemies are immune to new buffs for 5 turns.',
                 'Dispels buffs from all enemies.'
             ]
-        }
+        },
+        family: References.events.NINJA_TOWER
     },
     quintus: {
         name: 'Quintus',
@@ -5494,7 +5734,8 @@ const purple5StarHeroes = {
             description: [
                 'Deal 260% damage to all enemies'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'quintus costume': {
         name: 'Quintus Costume',
@@ -5513,7 +5754,8 @@ const purple5StarHeroes = {
                 'Deals 235% damage to all enemies.',
                 'All enemies get -34% attack for 4 turns.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     sargasso: {
         name: 'Captain Sargasso',
@@ -5532,7 +5774,8 @@ const purple5StarHeroes = {
                 'Deals 355% damage to the target and minor damage to nearby enemies.',
                 'The target and nearby enemies get -80% decrease for any healing received for 4 turns.'
             ]
-        }
+        },
+        family: References.events.PIRATES_OF_CORELLIA
     },
     sartana: {
         name: 'Sartana',
@@ -5549,7 +5792,8 @@ const purple5StarHeroes = {
             description: [
                 'Deal 452% damage to a single enemy and they receive 294 damage over 6 turns'
             ]
-        }
+        },
+        family: References.maps.SEASON_1
     },
     'sartana costume': {
         name: 'Sartana Costume',
@@ -5567,7 +5811,8 @@ const purple5StarHeroes = {
             description: [
                 'Deals 532% damage to the target.'
             ]
-        }
+        },
+        family: References.events.THE_MASQUERADE
     },
     seshat: {
         name: 'Seshat',
@@ -5587,7 +5832,8 @@ const purple5StarHeroes = {
                 "Element link gives 4% mana generation for all Dark allies for 4 turns. This effect can't be dispelled.",
                 'Dispels buffs from the target and nearby enemies'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     'thoth-amun': {
         name: 'Thoth-Amun',
@@ -5605,7 +5851,8 @@ const purple5StarHeroes = {
             description: [
                 'Deal 215% damage to target and nearby enemies and summons an undead Minion with 20% HP and 15% attack inherited from the caster'
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     ursena: {
         name: 'Ursena',
@@ -5625,7 +5872,8 @@ const purple5StarHeroes = {
                 "All allies reflect all status effects and 115% damage from enemies' Holy Special Skills back to the attacker for 4 turns.",
                 'Deals extra damage against Holy.'
             ]
-        }
+        },
+        family: References.atlantisFamilies.ATLANTIS
     },
     victor: {
         name: 'Victor',
@@ -5645,7 +5893,8 @@ const purple5StarHeroes = {
                 'The caster steals 61% of any healing applied to the target for 3 turns.',
                 'All allies get +30% defense for 3 turns.'
             ]
-        }
+        },
+        family: References.seasonalEvents.RETURN_TO_MORLOVIA
     },
     zulag: {
         name: 'Zulag',
@@ -5665,7 +5914,8 @@ const purple5StarHeroes = {
                 'The caster and nearby allies get +74% defense against Special Skills for 4 turns.',
                 "Element Link summons a Dark Minion for all Dark allies with 5% HP and 5% attack inherited from the caster."
             ]
-        }
+        },
+        family: References.events.HERO_OF_THE_MONTH
     }
 };
 

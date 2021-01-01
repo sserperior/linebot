@@ -4,6 +4,8 @@ const HeroesDao = require('dao/HeroesDao');
 const elements = require('nlp/entities/elements');
 const ManaSpeeds = require('nlp/entities/ManaSpeeds');
 const Classes = require('nlp/entities/Classes');
+const References = require('nlp/entities/references');
+
 const intentsHelper = require('nlp/intents/intentsHelper');
 
 const intentLabel = 'list.heroes';
@@ -15,10 +17,13 @@ const handle = async entities => {
     const uniqueElementEntities = intentsHelper.getUniqueEntities(entities, 'element');
     const uniqueManaSpeedEntities = intentsHelper.getUniqueEntities(entities, 'manaSpeed');
     const uniqueClassEntities = intentsHelper.getUniqueEntities(entities, 'class');
+    const uniqueFamilyEntities = intentsHelper.getUniqueEntities(entities, 'reference');
     const uniqueStarEntities = intentsHelper.getUniqueNumberEntities(entities);
     const elementIds = [];
     const manaSpeeds = [];
     const classes = [];
+    const families = [];
+    const stars = [];
 
     uniqueElementEntities.forEach(uniqueElementEntity => {
         elementIds.push(elements[uniqueElementEntity.option].id);
@@ -30,6 +35,31 @@ const handle = async entities => {
 
     uniqueClassEntities.forEach(UniqueClassEntity => {
         classes.push(Classes[UniqueClassEntity.option].value);
+    });
+
+    uniqueFamilyEntities.forEach(uniqueFamilyEntity => {
+        switch (uniqueFamilyEntity.option) {
+            case References.maps.SEASON_2:
+                Object.keys(References.atlantisFamilies).forEach(key => {
+                    if (!families.includes(References.atlantisFamilies[key])) {
+                        families.push(References.atlantisFamilies[key]);
+                    }
+                });
+                break;
+            case References.maps.SEASON_3:
+                Object.keys(References.realms).forEach(key => {
+                    if (!families.includes(References.realms[key])) {
+                        families.push(References.realms[key]);
+                    }
+                });
+                break;
+            default:
+                families.push(uniqueFamilyEntity.option);    
+        }
+    });
+
+    uniqueStarEntities.forEach(uniqueStarEntity => {
+        stars.push(uniqueStarEntity);
     });
 
     if (elementIds.length === 0) {
@@ -63,12 +93,32 @@ const handle = async entities => {
     }
 
     if (uniqueStarEntities.length === 0) {
-        uniqueStarEntities.push(3);
-        uniqueStarEntities.push(4);
-        uniqueStarEntities.push(5);
+        stars.push(3);
+        stars.push(4);
+        stars.push(5);
     }
 
-    const heroModels = await HeroesDao.findHeroNames(elementIds, uniqueStarEntities, manaSpeeds, classes);
+    if (uniqueFamilyEntities.length === 0) {
+        Object.keys(References.events).forEach(eventKey => {
+            families.push(References.events[eventKey]);
+        });
+
+        Object.keys(References.seasonalEvents).forEach(eventKey => {
+            families.push(References.seasonalEvents[eventKey]);
+        });
+
+        families.push(References.maps.SEASON_1);
+
+        Object.keys(References.atlantisFamilies).forEach(eventKey => {
+            families.push(References.atlantisFamilies[eventKey]);
+        });
+
+        Object.keys(References.realms).forEach(eventKey => {
+            families.push(References.realms[eventKey]);
+        });
+    }
+
+    const heroModels = await HeroesDao.findHeroNames(elementIds, stars, manaSpeeds, classes, families);
 
     let displayTextArray = [];
     displayTextArray.push(`${heroModels.length} heroes found:`);

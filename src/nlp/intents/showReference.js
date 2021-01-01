@@ -38,16 +38,23 @@ const handle = async entities => {
     for (let i=0;i<Math.min(uniqueReferences.length, 5); i++) {
         const referenceId = uniqueReferences[i].option;
         const referenceModel = await ReferencesDao.findReferenceByName(referenceId);
-        switch (referenceModel.imgUrl) {
-            case 'The Masquerade':
-                referenceModel.imgUrl = await handleTheMasquerade();
-                break;
+        if (referenceModel.imgUrl != null) {
+            switch (referenceModel.imgUrl) {
+                case 'The Masquerade':
+                    referenceModel.imgUrl = await handleTheMasquerade();
+                    break;
+            }
+            replyMessages.push({
+                type: 'image',
+                originalContentUrl: referenceModel.imgUrl,
+                previewImageUrl: referenceModel.imgUrl
+            });
+        } else {
+            replyMessages.push({
+                type: 'text',
+                text: 'Coming soon...'
+            })
         }
-        replyMessages.push({
-            type: 'image',
-            originalContentUrl: referenceModel.imgUrl,
-            previewImageUrl: referenceModel.imgUrl
-        });
     }
 
     if (uniqueReferences.length > 5) {

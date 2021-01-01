@@ -23,6 +23,7 @@ describe('herolist tests', () => {
             expect(classGradeValues.includes(heroes[heroKey].classGrade), `hero key ${heroKey} has an invalid classGrade`).to.be.true;
             expect(heroes[heroKey].special.name, `hero key ${heroKey} has an invalid special.name property`).to.be.an('string').to.have.lengthOf.above(0);
             expect(heroes[heroKey].special.description, `hero key ${heroKey} has an invalid special.description property`).to.not.be.empty;
+            expect(heroes[heroKey].family, `hero key ${heroKey} has an invalid family property`).to.be.an('string').that.is.not.empty;
         });
     });
 });

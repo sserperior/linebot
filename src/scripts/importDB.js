@@ -4,7 +4,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const herolist = require('scripts/herolist');
 const HeroSchema = require('db/HeroSchema');
 
-const references = require('scripts/references');
+const references = require('scripts/referencelist');
 const ReferenceSchema = require('db/ReferenceSchema');
 
 const getDefaultGradeValue = value => value == null ? '' : value;
@@ -137,12 +137,14 @@ const createEmptyGrading = () => ({
     console.log('Successfully cleared references collection!');
     
     Object.keys(references.items).forEach(referenceName => {
-        const reference = new ReferenceModel({
-            name: referenceName,
-            imgUrl: references.items[referenceName].imgUrl,
-            type: references.items[referenceName].type
-        });
-        savePromises.push(reference.save().catch(err => console.log(`could not save ${referenceName}`)));
+        if (references.items[referenceName].imgUrl != null) {
+            const reference = new ReferenceModel({
+                name: referenceName,
+                imgUrl: references.items[referenceName].imgUrl,
+                type: references.items[referenceName].type
+            });
+            savePromises.push(reference.save().catch(err => console.log(`could not save ${referenceName}`)));
+        }
     });
     
     await Promise.all(savePromises);

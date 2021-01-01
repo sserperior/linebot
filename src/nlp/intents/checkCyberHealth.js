@@ -13,20 +13,24 @@ const intentThreshold = parseFloat(process.env.CHECK_CYBER_HEALTH_INTENT_THRESHO
 const checkCalendar = async calendarInfoReader => {
     const calendarInfo = await calendarInfoReader();
     logger.info(calendarInfo);
-    let result = null;
-    try {
-        const response = await axios.get(await calendarInfo.urlPromise);
-        result = {
-            status: response.status === 200 ? 'OK' : `Not OK[${response.status}]`,
-            yyyymmString: calendarInfo.yyyymmString
+    const url = await calendarInfo.urlPromise;
+    let result = {
+        yyyymmString: calendarInfo.yyyymmString
+    };
+    if (url != null) {
+        try {
+            const response = await axios.get(url);
+            result.status = response.status === 200 ? 'OK' : `Not OK[${response.status}]`;
+        } catch (error) {
+            logger.error('Unable to get Calendar');
+            logger.error(error.response);
+            result = {
+                status: `Not OK[${error.response.status}]`,
+                yyyymmString: calendarInfo.yyyymmString
+            }
         }
-    } catch (error) {
-        logger.error('Unable to get Calendar');
-        logger.error(error.response);
-        result = {
-            status: `Not OK[${error.response.status}]`,
-            yyyymmString: calendarInfo.yyyymmString
-        }
+    } else {
+        result.status = 'Not available';
     }
     return result;
 };

@@ -1,6 +1,6 @@
 const getManager = require('nlp/brain').getManager;
 
 (async () => {
-    const result = await getManager().process('war 29 5000 15 5000 14');
+    const result = await getManager().process('list atlantis family heroes');
     console.log(result);
 })();

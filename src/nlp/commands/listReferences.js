@@ -2,11 +2,13 @@ const logger = require('logger');
 const cybUtil = require('cybUtil');
 const ReferencesDao = require('dao/ReferencesDao');
 
-const intentLabel = 'list.references';
-const intentThreshold = parseFloat(process.env.LIST_REFERENCES_INTENT_THRESHOLD || 0.7);
+const commands = [
+    'list references',
+    'list refs'
+];
 
-const handle = async entities => {
-    logger.info(`handle ${intentLabel} intent`);
+const handle = async () => {
+    logger.info(`handle listReferences command...`);
     const replyMessages = [];
 
     const referenceModels = await ReferencesDao.findReferences();
@@ -28,7 +30,6 @@ const handle = async entities => {
 };
 
 module.exports = {
-    handle,
-    intentLabel,
-    intentThreshold
+    commands,
+    handle
 };

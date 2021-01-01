@@ -6,6 +6,7 @@ const logger = require('logger');
 
 const translate = require('nlp/commands/translate');
 const help = require('nlp/commands/help');
+const listReferences = require('nlp/commands/listReferences');
 
 const showHero = require('nlp/intents/showHero');
 const showReference = require('nlp/intents/showReference');
@@ -15,7 +16,6 @@ const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
 const showHeroTalent = require('nlp/intents/showHeroTalent');
 const listHeroes = require('nlp/intents/listHeroes');
-const listEvents = require('nlp/intents/listReferences');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const thanksCyber = require('nlp/intents/thanksCyber');
@@ -75,6 +75,8 @@ const generateCommandResponse = messageText => {
             return translate.handle(commandStructure);
         } else if ((commandStructure = getCommandStructure(messageText, help.commands)) != null) {
             return Promise.resolve(help.handle(commandStructure));
+        } else if ((commandStructure = getCommandStructure(messageText, listReferences.commands)) != null) {
+            return listReferences.handle(commandStructure);
         }
     }
     return result;
@@ -108,8 +110,6 @@ const generateNLResponse = messageText => getManager().process(messageText).then
         return showHeroTalent.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, listHeroes)) {
         return listHeroes.handle(result.entities);
-    } else if (isRecognizedIntent(intent, score, listEvents)) {
-        return listEvents.handle(result.entities);
     } else if (isRecognizedIntent(intent, score, farmElementalChest)) {
         return Promise.resolve(farmElementalChest.handle(result.entities));
     } else if (isRecognizedIntent(intent, score, showHeroGrading)) {

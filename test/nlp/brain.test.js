@@ -13,7 +13,6 @@ const intentsHelper = require('nlp/intents/intentsHelper');
 
 const doNothing = require('nlp/intents/doNothing');
 const listHeroes = require('nlp/intents/listHeroes');
-const listReferences = require('nlp/intents/listReferences');
 const farmElementalChest = require('nlp/intents/farmElementalChest');
 const farmItem = require('nlp/intents/farmItem');
 const harpoonTeamQuery = require('nlp/intents/harpoonTeamQuery');
@@ -783,20 +782,6 @@ describe('brain tests', () => {
             const result = await getManager().process('show helheim');
             checkSpecificReference(result, 'Helheim');
         });        
-    });
-
-    describe('list references tests', () => {
-        it('should return the correct intent', async () => {
-            const result = await getManager().process('list references');
-            expect(result.intent).to.equal(listReferences.intentLabel);
-            expect(result.score).to.be.at.least(listReferences.intentThreshold);
-        });
-
-        it('should return the correct intent', async () => {
-            const result = await getManager().process('list refs');
-            expect(result.intent).to.equal(listReferences.intentLabel);
-            expect(result.score).to.be.at.least(listReferences.intentThreshold);
-        });
     });
 
     describe('Calendar tests', () => {

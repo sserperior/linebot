@@ -1,6 +1,6 @@
 const { NlpManager } = require('node-nlp');
 const { heroes } = require('scripts/herolist');
-const referencesWrapper = require('scripts/references');
+const referencesWrapper = require('scripts/referencelist');
 const AllianceMembers = require('nlp/entities/AllianceMembers');
 const elements = require('nlp/entities/elements');
 const cyber88 = require('nlp/entities/cyber88');
@@ -13,7 +13,6 @@ const Classes = require('nlp/entities/Classes');
 
 const showHero = require('nlp/intents/showHero');
 const listHeroes = require('nlp/intents/listHeroes');
-const listReferences = require('nlp/intents/listReferences');
 const showReference = require('nlp/intents/showReference');
 const showHeroSpecial = require('nlp/intents/showHeroSpecial');
 const showHeroGrading = require('nlp/intents/showHeroGrading');
@@ -202,15 +201,12 @@ manager.addDocument('en', 'display %hero% %talent%', showHeroTalent.intentLabel)
 
 // List heroes questions
 manager.addDocument('en', 'list %element%', listHeroes.intentLabel);
-manager.addDocument('en', 'list %number% %element% %manaSpeed% %class%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %number% %reference% %element% %manaSpeed% %class%', listHeroes.intentLabel);
 manager.addDocument('en', 'list %class%', listHeroes.intentLabel);
 manager.addDocument('en', 'list %number%', listHeroes.intentLabel);
 manager.addDocument('en', 'list %manaSpeed%', listHeroes.intentLabel);
+manager.addDocument('en', 'list %reference%', listHeroes.intentLabel);
 manager.addDocument('en', 'list heroes', listHeroes.intentLabel);
-
-// List references questions
-manager.addDocument('en', 'list references', listReferences.intentLabel);
-manager.addDocument('en', 'list refs', listReferences.intentLabel);
 
 // Elemental chest questions
 manager.addDocument('en', 'where do i farm for %element% chest', farmElementalChest.intentLabel);

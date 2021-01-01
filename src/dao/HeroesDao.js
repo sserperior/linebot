@@ -16,11 +16,12 @@ exportable.findHeroes = async (conditions, projection=null) => heroModel.find(co
 
 exportable.findHeroesByHeroIds = async heroIds => exportable.findHeroes({ heroId: { $in: heroIds }});
 
-exportable.findHeroNames = async (elementIds, stars, manaSpeeds, classes) => exportable.findHeroes({
+exportable.findHeroNames = async (elementIds, stars, manaSpeeds, classes, families) => exportable.findHeroes({
         element: { $in: elementIds },
         stars: { $in: stars },
         manaSpeed: { $in: manaSpeeds },
-        classGrade: { $in: classes }
+        classGrade: { $in: classes },
+        family: { $in: families }
     },
     'name'
 );

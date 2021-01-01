@@ -53,6 +53,8 @@ const getCalendarInfoForNextMonth = () => {
         // Last month of the year, set to January of the following year
         utcYear += 1;
         utcMonth = 0;
+    } else {
+        utcMonth++;
     }
     const month = getMonthAsTwoDigitString(utcMonth);
     const yyyymmString = `${utcYear}-${month}`;
