@@ -748,6 +748,11 @@ describe('brain tests', () => {
             checkSpecificReference(result, 'Season 3 Avatars');
         });
 
+        it('show "alfheim" should trigger show reference', async () => {
+            const result = await getManager().process('show alfheim');
+            checkSpecificReference(result, 'Alfheim');
+        });
+
         it('show "midgard" should trigger show reference', async () => {
             const result = await getManager().process('show midgard');
             checkSpecificReference(result, 'Midgard');
@@ -781,7 +786,12 @@ describe('brain tests', () => {
         it('show "helheim" should trigger show reference', async () => {
             const result = await getManager().process('show helheim');
             checkSpecificReference(result, 'Helheim');
-        });        
+        });
+        
+        it('show "Runic Rocks" should trigger show reference', async () => {
+            const result = await getManager().process('show runic rocks');
+            checkSpecificReference(result, 'Runic Rocks');
+        });
     });
 
     describe('Calendar tests', () => {

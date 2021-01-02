@@ -9,7 +9,7 @@ module.exports = {
             pseudonyms: ['alchemy lab', 'al']
         },
         [References.realms.ALFHEIM]: {
-            // TODO imgUrl
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/3/33bd93b43fdb585cabbe48d4d8f66b7ab33db873.jpeg',
             type: 'realm',
             pseudonmys: ['alfheim']
         },
@@ -115,6 +115,11 @@ module.exports = {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/6/266b60414d70ad7a4b1072bc4f3664a83e4ea6ab.png',
             type: 'event',
             pseudonyms: ['wonderland', 'riddles', 'riddles of wonderland']
+        },
+        'Runic Rocks': {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/d/9/d959a12be44451bd4b537276c09aeb2f2a91da6d.jpeg',
+            type: 'event',
+            pseudonyms: ['runic rocks']
         },
         [References.maps.SEASON_1]: {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/c/4c7c27adf53b973cb3b5fc3a8101e24b329df0a2.jpeg',

@@ -4,6 +4,8 @@ const ReferencesDao = require('dao/ReferencesDao');
 
 const commands = [
     'list references',
+    'list reference',
+    'list ref',
     'list refs'
 ];
 

@@ -4066,6 +4066,27 @@ const green5StarHeroes = {
         },
         family: References.atlantisFamilies.ATLANTIS
     },
+    bertila: {
+        name: 'Bertila',
+        attack: 718,
+        defense: 774,
+        health: 1367,
+        element: elements.nature.id,
+        // TODO:
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/a/6ae4b22315137f25449ff703f9afb33c9833e173.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'En Garde',
+            description: [
+                'Deals 290% damage to all enemies.',
+                'Lifts all cleansable status ailments that affect attack or defense from all allies and randomly distributes them on enemies.',
+                "Element Link Summons a Nature Minion for all Nature allies with 5% HP and 10% attack inherited from the caster."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
     elkanen: {
         name: 'Elkanen',
         attack: 675,
