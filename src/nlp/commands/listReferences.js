@@ -19,7 +19,7 @@ const handle = async () => {
     referenceModels.forEach(referenceModel => {
         displayTextArray.push(`\u2022 ${referenceModel.name}`);
     });
-    displayTextArray.push(`\nUse 'show to display the specific reference.`);
+    displayTextArray.push(`\nUse 'show' to display the specific reference.`);
 
     replyMessages.push({
         type: 'text',

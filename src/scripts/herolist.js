@@ -83,6 +83,28 @@ const blue3StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'graymane costume': {
+        name: 'graymane costume',
+        attack: 457,
+        defense: 411,
+        health: 897,
+        element: elements.ice.id,
+        pseudonyms: ['graymane costume', 'costume graymane', 'greymane costume', 'costume greymane'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Graymane%20Costume_card.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Raccoon Bite',
+            description: [
+                'Deals 235% damage to the target.',
+                "The caster is immune to new status ailments for 3 turns. This effect can't be dispelled.",
+                'The caster gets +50% attack for 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     gunnar: {
         name: 'Gunnar',
         attack: 387,
@@ -195,7 +217,28 @@ const blue3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
-    },            
+    },
+    'ulmer costume': {
+        name: 'Ulmer Costume',
+        attack: 522,
+        defense: 403,
+        health: 772,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Ulmer%20Costume_card.png',
+        pseudonyms: ['ulmer costume', 'costume ulmer'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.MONK.value,
+        special: {
+            name: 'Whiteout',
+            description: [
+                'Deals 145% damage to all enemies.',
+                'All allies get +48% attack for 6 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },         
     valen: {
         name: 'Valen',
         attack: 479,
@@ -213,6 +256,27 @@ const blue3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'valen costume': {
+        name: 'Valen Costume',
+        attack: 488,
+        defense: 443,
+        health: 757,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Valen%20Costume_card.png',
+        pseudonyms: ['valen costume', 'costume valen'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Thrilling Clash',
+            description: [
+                'Deals 335% damage to the target.',
+                'The caster gets +54% attack for 6 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     vodnik: {
         name: 'Vodnik',
@@ -332,13 +396,33 @@ const yellow3StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'dawa costume': {
+        name: 'Dawa Costume',
+        attack: 527,
+        defense: 423,
+        health: 684,
+        element: elements.holy.id,
+        pseudonyms: ['dawa costume', 'costume dawa'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Dawa%20Costume_card.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Pounding Attack',
+            description: [
+                'Deals 200% damage to the target.',
+                'Deals 230% damage to a random different enemy. Deals extra damage if the target is Dark.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     'gan ju': {
         name: 'Gan Ju',
         attack: 467,
         defense: 363,
         health: 811,
         element: elements.holy.id,
-        pseudonyms: ['gan', 'ju', 'gan ju', 'gan-ju'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/gan-ju.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -351,6 +435,27 @@ const yellow3StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'gan ju costume': {
+        name: 'Gan Ju Costume',
+        attack: 519,
+        defense: 371,
+        health: 844,
+        element: elements.holy.id,
+        pseudonyms: ['costume gan ju', 'gan ju costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Gan-Ju%20Costume_card.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Rural Chop',
+            description: [
+                'Deals 220% damage to the target.',
+                'Reduces the mana of the target by 40%.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     kailani: {
         name: 'Kailani',
         attack: 429,
@@ -360,7 +465,7 @@ const yellow3StarHeroes = {
         pseudonyms: ['kailani', 'kalani'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/kailani.jpg',
         stars: 3,
-        manaSpeed: ManaSpeeds.AVERAGE.value,
+        manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC.value,
         special: {
             name: 'Spirit Link',
@@ -369,6 +474,27 @@ const yellow3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'kailani costume': {
+        name: 'Kailani Costume',
+        attack: 423,
+        defense: 497,
+        health: 825,
+        element: elements.holy.id,
+        pseudonyms: ['kailani costume', 'costume kailani', 'kalani costume', 'costume kalani'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Kailani%20Costume_card.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Sprirt Rally',
+            description: [
+                'All allies share received damage with each other for 5 turns.',
+                'All allies get +50% attack for 5 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     kvasir: {
         name: 'Kvasir',
@@ -897,7 +1023,6 @@ const red3StarHeroes = {
         defense: 436,
         health: 599,
         element: elements.fire.id,
-        pseudonyms: ['jahangar', 'jahangir'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/jahangir.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -909,6 +1034,27 @@ const red3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'jahangir costume': {
+        name: 'Jahangir Costume',
+        attack: 514,
+        defense: 443,
+        health: 705,
+        element: elements.fire.id,
+        pseudonyms: ['jahangir costume', 'costume jahangir'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Jahangir%20Costume_card.png',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Scorching Ray',
+            description: [
+                'Deals 115% damage to all enemies.',
+                'All enemies receive 156 Burn damage over 4 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     namahage: {
         name: 'Namahage',
@@ -946,6 +1092,27 @@ const red3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'nashgar costume': {
+        name: 'Nashgar Costume',
+        attack: 567,
+        defense: 369,
+        health: 715,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Nashgar%20Costume_card.png',
+        stars: 3,
+        pseudonyms: ['nashgar costume', 'costume nashgar'],
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Searing Strike',
+            description: [
+                'Deals 260% damage to the target.',
+                'The target receives 129 Burn damage over 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     rudolph: {
         name: 'Rudolph',
@@ -1184,6 +1351,26 @@ const purple3StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'oberon costume': {
+        name: 'Oberon Costume',
+        attack: 413,
+        defense: 463,
+        health: 933,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Oberon%20Costume_card.png',
+        pseudonyms: ['oberon costume', 'costume oberon'],
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Toxic Tricks',
+            description: [
+                "All enemies receive 324 Poison damage over 3 turns. This effect can't be cleansed."
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     prisca: {
         name: 'Prisca',
@@ -1426,6 +1613,7 @@ const blue4StarHeroes = {
         health: 1132,
         element: elements.ice.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/grimm.jpg',
+        pseudonyms: ['grim', 'grimm'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN.value,
@@ -1436,6 +1624,27 @@ const blue4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'grimm costume': {
+        name: 'Grimm Costume',
+        attack: 716,
+        defense: 585,
+        health: 1278,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Grimm%20Costume_card.png',
+        pseudonyms: ['grimm costume', 'costume grimm', 'grim costume', 'costume grim'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Merciless Pulverizer',
+            description: [
+                'Deals 295% damage to the target and mino damage to nearby enemies.',
+                'The caster and nearby allies get +50% attack for 6 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     jott: {
         name: 'Jott',
@@ -1644,6 +1853,27 @@ const yellow4StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'chao costume': {
+        name: 'Chao Costume',
+        attack: 673,
+        defense: 680,
+        health: 1189,
+        element: elements.holy.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Chao%20Costume_card.png',
+        pseudonyms: ['costume chao', 'chao costume', 'dodo'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Ornithological Cut',
+            description: [
+                'Deals 275% damage to the target.',
+                "The caster steals generated mana of the target over 4 turns starting low and increasing every turn until on the last turn all the generated mana is stolen. This effect can't be cleansed but it gets removed if the caster dies."
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     danzaburo: {
         name: 'Danzaburo',
         attack: 622,
@@ -1720,7 +1950,7 @@ const yellow4StarHeroes = {
         defense: 631,
         health: 1183,
         element: elements.holy.id,
-        pseudonyms: ['hu', 'hu tao', 'hu-tao'],
+        pseudonyms: ['hu', 'hu tao'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/hu-tao.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -1733,6 +1963,28 @@ const yellow4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'hu tao costume': {
+        name: 'Hu Tao Costume',
+        attack: 581,
+        defense: 744,
+        health: 1268,
+        element: elements.holy.id,
+        pseudonyms: ['costume hu', 'hu costume', 'costume hu tao', 'hu tao costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Hu%20Tao%20Costume_card.png',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Aura Wave',
+            description: [
+                'Deals 160% damage to all enemies.',
+                'All enemies get -30% accuracy for 4 turns. Chance to miss also applies to offensive Special Skills.',
+                "All enemies get -50% decrease for any healing received for 4 turns. This effect can't be cleansed."
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     'guardian jackal': {
         name: 'Guardian Jackal',
@@ -1851,6 +2103,27 @@ const yellow4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'wu kong costume': {
+        name: 'Wu Kong Costume',
+        attack: 728,
+        defense: 690,
+        health: 1053,
+        element: elements.holy.id,
+        pseudonyms: ['wu kong costume', 'costume wu kong', 'wu costume', 'costume wu', 'wu-kong costume', 'costume wu-kong'],
+        // TODO:
+        imgUrl: 'https://allheroes.eu/heroes/Wu%20Kong%20Costume_card.png',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: "Gambler's Slash",
+            description: [
+                'Deals 210% damage to all enemies.',
+                "The caster gets -20% defense for 3 turns. This effect can't be cleansed."
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     }
 };
 
@@ -2289,10 +2562,31 @@ const red4StarHeroes = {
         special: {
             name: 'Fire Storm',
             description: [
-                'Deal 180% damage to all enemies and tehy receive 330 damage over 6 turns'
+                'Deal 180% damage to all enemies and they receive 330 damage over 6 turns'
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'colen costume': {
+        name: 'Colen Costume',
+        attack: 771,
+        defense: 546,
+        health: 1222,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Colen%20Costume_card.png',
+        stars: 4,
+        pseudonmys: ['colen costume', 'costume colen'],
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Flame Assault',
+            description: [
+                'Deals 240% damage to all enemies.',
+                'All enemies receive 204 Burn damage over 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     'guardian falcon': {
         name: 'Guardian Falcon',
@@ -2331,13 +2625,34 @@ const red4StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'gormek costume': {
+        name: 'Gormek Costume',
+        attack: 611,
+        defense: 606,
+        health: 1511,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Gormek%20Costume_card.png',
+        pseudonym: ['gormek costume', 'costume gormek'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Pulverizing Abacus',
+            description: [
+                'Destroys all Minions from all enemies.',
+                'Deals 180% damage to all enemies.',
+                'All allies recover 80 HP for each destroyed Minion.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     kelile: {
         name: 'Kelile',
         attack: 675,
         defense: 686,
         health: 935,
         element: elements.fire.id,
-        pseudonyms: ['kelile', 'kellile'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/kelile.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -2349,6 +2664,26 @@ const red4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'kelile costume': {
+        name: 'Kelile Costume',
+        attack: 746,
+        defense: 690,
+        health: 995,
+        element: elements.fire.id,
+        pseudonyms: ['kelile costume', 'costume kelile'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Kelile%20Costume_card.png',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Dance of Ignition',
+            description: [
+                'All enemies receive 304 Burn damage over 2 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     lancelot: {
         name: 'Sir Lancelot',
@@ -2389,6 +2724,28 @@ const red4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'scarlett costume': {
+        name: 'Scarlett Costume',
+        attack: 769,
+        defense: 561,
+        health: 1172,
+        element: elements.fire.id,
+        pseudonyms: ['costume scarlet', 'scarlet costume', 'costume scarlett', 'scarlett costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Scarlett%20Costume_card.png',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.RANGER.value,
+        special: {
+            name: 'Blades of Venom',
+            description: [
+                'Deals 185% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies receive 138 Poison damage over 3 turns.',
+                'The caster and nearby allies get +30% attack for 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     shadereave: {
         name: 'Shadereave',
@@ -2620,6 +2977,26 @@ const purple4StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'cyprian costume': {
+        name: 'Cyprian Costume',
+        attack: 555,
+        defense: 698,
+        health: 1460,
+        element: elements.dark.id,
+        // TODO:
+        imgUrl: 'https://allheroes.eu/heroes/Cyprian%20Costume_card.png',
+        pseudonyms: ['cyprian costume', 'costume cyprian'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Deadly Riposte',
+            description: [
+                'All allies counterattack with 60% of the damage received for 4 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     fura: {
         name: 'Fura',
         attack: 707,
@@ -2780,6 +3157,28 @@ const purple4StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'sabina costume': {
+        name: 'Sabina Costume',
+        attack: 742,
+        defense: 642,
+        health: 1074,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Sabina%20Costume_card.png',
+        pseudonyms: ['sabina costume', 'costume sabina'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Haze of the Fallen',
+            description: [
+                'All allies regenerate 609 HP over 3 turns.',
+                'All enemies are immune to new buffs for 3 turns.',
+                'Dispels buffs from all enemies.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     stonecleave: {
         name: 'Stonecleave',
@@ -3429,6 +3828,27 @@ const blue5StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'thorne costume': {
+        name: 'Thorne Costume',
+        attack: 726,
+        defense: 786,
+        health: 1424,
+        element: elements.ice.id,
+        pseudonyms: ['costume thorne', 'costume thorn', 'thorne costume', 'thorn costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Thorne%20Costume_card.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Freezing Final',
+            description: [
+                'Deals 540% damage to the target.',
+                "The caster gets +24% mana generation for 3 turns. This effect can't be dispelled."
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     vela: {
         name: 'Vela',
         attack: 743,
@@ -3686,6 +4106,28 @@ const yellow5StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'leonidas costume': {
+        name: 'Leonidas Costume',
+        attack: 749,
+        defense: 773,
+        health: 1347,
+        element: elements.holy.id,
+        pseudonyms: ['costume leonidas', 'costume leo', 'leonidas costume', 'leo costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Leonidas%20Costume_card.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Spartan Charge',
+            description: [
+                'Deals 390% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies get -54% defense against Holy for 4 turns.',
+                'All Dark enemies get -34% attack for 4 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     malosi: {
         name: 'Malosi',
         attack: 743,
@@ -3815,7 +4257,7 @@ const yellow5StarHeroes = {
             description: [
                 'Deals 100% damage to all enemies',
                 'Deals additional 18% damage per each Holy shield, up to 244% damage in total.',
-                'All allies get +8% mana generation and a further 3% increase per Holy shield on the board, up to +29% mana generation.'
+                'All allies get +8% mana generation and a further 2% increase per Holy shield on the board, up to +28% mana generation.'
             ]
         },
         family: References.realms.MIDGARD
@@ -4185,7 +4627,7 @@ const green5StarHeroes = {
             description: [
                 'Deals 100% damage to all enemies.',
                 'Deals additional 18% damage per Nature shield on the board, up to 244% damage in total.',
-                'All enemies get -8% defense, and a further -4% decrease per each Nature shield on the board for 3 turns up to -44% defense.',
+                'All enemies get -8% defense, and a further -3% decrease per each Nature shield on the board for 3 turns up to -44% defense.',
             ]
         },
         family: References.realms.ALFHEIM
@@ -5016,6 +5458,28 @@ const red5StarHeroes = {
         },
         family: References.maps.SEASON_1
     },
+    'khagan costume': {
+        name: 'Khagan Costume',
+        attack: 761,
+        defense: 691,
+        health: 1529,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Khagan%20Costume_card.png',
+        pseudonyms: ['khagan costume', 'costume khagan'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: "Conqueror's Command",
+            description: [
+                'Deals 514% damage to the target.',
+                'All allies get +12% mana generation for 5 turns.',
+                'All allies get +46% defense for 5 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
+    },
     'lady loki': {
         name: 'Lady Loki',
         attack: 747,
@@ -5054,6 +5518,28 @@ const red5StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'marjana costume': {
+        name: 'Marjana Costume',
+        attack: 753,
+        defense: 704,
+        health: 1499,
+        element: elements.fire.id,
+        pseudonyms: ['marjana costume', 'costume marjana', 'costume marj', 'marj costume'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Marjana%20Costume_card.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Lava Blast',
+            description: [
+                'Deals 358% damage to the target and minor damage to nearby enemies.',
+                'The target and nearby enemies get -54% defense against Fire for 3 turns.',
+                'All Ice enemies get -34% attack for 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     mitsuko: {
         name: 'Mitsuko',
@@ -5706,6 +6192,27 @@ const purple5StarHeroes = {
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'obakan costume': {
+        name: 'Obakan Costume',
+        attack: 775,
+        defense: 712,
+        health: 1436,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Obakan%20Costume_card.png',
+        pseudonyms: ['obakan costume', 'costume obakan'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Oppose and Overthrow',
+            description: [
+                'Deals 182% damage to all enemies.',
+                'The caster and nearby allies counterattack with 85% of the damage received for 4 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     onyx: {
         name: 'Onyx',
