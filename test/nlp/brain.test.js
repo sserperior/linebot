@@ -154,6 +154,16 @@ describe('brain tests', () => {
             const result = await getManager().process('show boldtusk costume');
             checkSpecificHero(result, 'boldtusk costume');
         });
+
+        it('show jean fran should be classified properly', async () => {
+            const result = await getManager().process('show jean fran');
+            checkSpecificHero(result, 'jean-françois')
+        });
+
+        it('show jean-fran should be classified properly', async () => {
+            const result = await getManager().process('show jean-fran');
+            checkSpecificHero(result, 'jean-françois')
+        });
     });
 
     describe('harpoon.team.query intent tests', () => {

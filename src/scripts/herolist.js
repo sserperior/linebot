@@ -4405,6 +4405,60 @@ const yellow5StarHeroes = {
         },
         family: References.seasonalEvents.SPRINGVALE
     },
+    thor: {
+        name: 'Thor',
+        attack: 745,
+        defense: 735,
+        health: 1394,
+        element: elements.holy.id,
+        // TODO
+        imgUrl: 'https://cnet1.cbsistatic.com/img/YUcMzfe235Tdz7IBV6-rshbR3A0=/940x0/2020/04/21/1506eb8e-f75e-4d3c-a007-269a32862a8d/twitter-in-stream-wide-fatthorbig2.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'Power of Mjölnir',
+            description: [
+                'Special Skill has a diffrent effect on consecutive uses, in the following order:',
+                '',
+                '1st:',
+                'Deals 280% damage to the target.',
+                'The target gets -40% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills.',
+                '',
+                '2nd:',
+                'Deals 280% damage to the target and nearby enemies.',
+                'The target and nearby enemies get -40% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills.',
+                '',
+                '3rd:',
+                'Deals 280% damage to all enemies.',
+                'All enemies get -40% accuracy for 3 turns. Chance to miss also applies to offiensive Special Skills.'
+            ]
+        },
+        family: References.realms.MIDGARD
+    },
+    uraeus: {
+        name: 'Uraeus',
+        attack: 778,
+        defense: 727,
+        health: 1324,
+        element: elements.holy.id,
+        pseudonyms: ['uraus', 'uraeus'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/wX3FuC6yeMwSYCVhgCSo_RPX4dABYk9sZOqXspvIl9luUMbIymuxsuHWSdMcB-q6W7iMVgXIropMjh4S1DJDzG4UCd0eJ9_Y_iKJFfZMNj71r9w97MwER3ofMtGlYSvIG-A1GmRPWDkq0U-qHwxdPYHhimlzlfJLbZisla_WHtWND7Oql_83374vOc3gtFXGDVyvtZIJFIXqEP4Zhiq4vECfqeKIs6FxqTiErcv1Wd5Oi4aaG-BnQNP3AnNMwvsfcGRLTBpfMyP11DMQFE1WZHb_DyBVVnivdFTZoBMiKjwILm4h8-GE5BLsSo0oEa764mmm_-lSXgecKMaqINuFIxfwv4DhvjZIUDBG01XZy0cTDXD-i5cqB-QoT7X-Ip_qEkpvVTNDw4hpcVfLEaUQ06kO5RVcUHqOsxBAMaUApZXfSIy_UcbUGwPOKrdgw1qVo1AS0nf3o6oOQya91GQYG2WMTKjPwlFEgtZnTs3uKpStk5V2qi2EtRAQbto52TyVWFUl2nasvl1_csnd8VcszITPPDfYh6vBqNa5C5tRLqqugdb3z1gX8DpQEco2OrCFvmgvn58KrkIgn0rpzm6ENEpXvzOy932ZJD51DYl-P-qsSdRfwJDnJFMyLgeyxwii7aT_NlEJ-xdRV05qOQNT3VlH1Z5KM_K8kV2xbMEkbPrXoIQBduBxbDQhSZg0mQ=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Strike of the Cobra',
+            description: [
+                'Deals 485% damage to the target.',
+                "Damage bypasses target's Minions.",
+                'All enemies who own a Minion receive 315 Sand damage over 3 turns.',
+                "Element Link summons a Holy Minion for all Holy allies with 5% HP and 10% attack inherited from the caster."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
     vivica: {
         name: 'Vivica',
         attack: 714,
@@ -5422,7 +5476,7 @@ const red5StarHeroes = {
         defense: 723,
         health: 1332,
         element: elements.fire.id,
-        pseudonyms: ['jean-françois', 'jean francois', 'jean françois', 'jf'],
+        pseudonyms: ['jean-françois', 'jean francois', 'jean françois', 'jf', 'jean fran', 'jean-fran'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/03/jean-francois.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,

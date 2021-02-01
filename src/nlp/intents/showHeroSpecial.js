@@ -10,7 +10,7 @@ const generateSpecialText = heroData => {
     let specialText = `${heroData.name}'s special is ${_.get(heroData, 'special.name', 'Unknown')}`;
     _.get(heroData, 'special.description', []).forEach(description => {
         specialText += '\n';
-        if (description.length > 0) {
+        if (description.trim().length > 0) {
             if (!description.endsWith(':')) {
                 specialText += `\u2022  ${description}`;
             } else {
