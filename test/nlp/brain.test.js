@@ -802,6 +802,31 @@ describe('brain tests', () => {
             const result = await getManager().process('show runic rocks');
             checkSpecificReference(result, 'Runic Rocks');
         });
+
+        it('show "league of villains" should trigger show reference', async () => {
+            const result = await getManager().process('show league of villains');
+            checkSpecificReference(result, 'League of Villains');
+        });
+
+        it ('show "villans" should trigger show reference', async () => {
+            const result = await getManager().process('show villans');
+            checkSpecificReference(result, 'League of Villains');
+        });
+
+        it ('show "villains" should trigger show reference', async () => {
+            const result = await getManager().process('show villains');
+            checkSpecificReference(result, 'League of Villains');
+        });
+
+        it ('show "league of villans" should trigger show reference', async () => {
+            const result = await getManager().process('show league of villans');
+            checkSpecificReference(result, 'League of Villains');
+        });
+
+        it ('show "league" should trigger show reference', async () => {
+            const result = await getManager().process('show league');
+            checkSpecificReference(result, 'League of Villains');
+        });
     });
 
     describe('Calendar tests', () => {

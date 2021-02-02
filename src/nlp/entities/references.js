@@ -3,6 +3,7 @@ module.exports = {
         FABLES_OF_GRIMFOREST: 'Fables of Grimforest',
         GUARDIANS_OF_TELTOC: 'Guardians of Teltoc',
         HERO_OF_THE_MONTH: 'Hero of the Month',
+        LEAGUE_OF_VILLAINS: 'League of Villains',
         KNIGHTS_OF_AVALON: 'Knights of Avalon',
         NINJA_TOWER: 'Ninja Tower',
         PATH_OF_VALOR: 'Path of Valor',

@@ -76,6 +76,11 @@ module.exports = {
             type: 'event',
             pseudonyms: ['avalon', 'knights', 'knights of avalon']
         },
+        [References.events.LEAGUE_OF_VILLAINS]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/3/73dd6e97228bead43c7cb3a60b7e09c709464693.jpeg',
+            type: 'event',
+            pseudonyms: ['league', 'villans', 'villains', 'league of villains', 'league of villans']
+        },
         [References.realms.MIDGARD]: {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/f/0f246e87d2933fc0b997eb1bbf6f218bc49b693b.jpeg',
             type: 'realm',
