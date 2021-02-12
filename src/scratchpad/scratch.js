@@ -1,6 +1,6 @@
 const getManager = require('nlp/brain').getManager;
 
 (async () => {
-    const result = await getManager().process("what is thor's special?");
+    const result = await getManager().process("show dark lord");
     console.log(result);
 })();

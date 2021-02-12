@@ -148,6 +148,7 @@ manager.addDocument('en', 'show li xiu', showHero.intentLabel);
 manager.addDocument('en', 'show hu tao', showHero.intentLabel);
 manager.addDocument('en', 'show wu kong', showHero.intentLabel);
 manager.addDocument('en', 'show boldtusk costume', showHero.intentLabel);
+manager.addDocument('en', 'show dark lord', showHero.intentLabel);
 
 // Show reference questions
 manager.addDocument('en', 'show %reference%', showReference.intentLabel);
