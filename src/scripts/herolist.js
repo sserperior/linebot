@@ -1134,6 +1134,27 @@ const red3StarHeroes = {
         },
         family: References.seasonalEvents.SANTAS_CHALLENGE
     },
+    skrekok: {
+        name: 'Skrekok',
+        attack: 493,
+        defense: 472,
+        health: 762,
+        element: elements.fire.id,
+        pseudonyms: ['skrekok', 'rat'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/4/84eb0421f24e2fd8719fb5a761f194fdf30a2eea.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Mad Rat Mania',
+            description: [
+                'Deals 165% damage to the target and nearby enemies.',
+                'The caster and nearby allies get +45% attack and a further 20% increase every time they are hit during 3 turns.'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
+    },
     'squire wabbit': {
         name: 'Squire Wabbit',
         attack: 538,
@@ -1272,6 +1293,27 @@ const purple3StarHeroes = {
             ]
         },
         family: References.atlantisFamilies.SAKURA
+    },
+    edd: {
+        name: 'Edd',
+        attack: 526,
+        defense: 450,
+        health: 723,
+        element: elements.dark.id,
+        pseudonyms: ['edd', 'ed'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/2/12e0dc12e4599fd0dff7c2370c9ee40a1ad5aaf5.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.RANGER.value,
+        special: {
+            name: 'Crazed Lunge',
+            description: [
+                'Deals 290% damage to the target.',
+                'The target is immune to new buffs for 3 turns.'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     'gill-ra': {
         name: 'Gill-Ra',
@@ -1723,6 +1765,27 @@ const blue4StarHeroes = {
             ]
         },
         family: References.realms.VANAHEIM
+    },
+    sanngrior: {
+        name: 'Sanngrior',
+        attack: 565,
+        defense: 680,
+        health: 1447,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/6/762e1fc33cc70936e33fe09c6741a43f095ace0e.jpeg',
+        pseudonyms: ['sangrior', 'sanngrior'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: "Valkyrie's Fortitude",
+            description: [
+                'Recovers 45% health for the caster and nearby allies.',
+                'The caster and nearby allies get +94% defense against Nature for 3 turns.'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     sapphire: {
         name: 'Sapphire',
@@ -3040,6 +3103,27 @@ const purple4StarHeroes = {
         },
         family: References.seasonalEvents.SAND_EMPIRE
     },
+    ingolf: {
+        name: 'Ingolf',
+        attack: 633,
+        defense: 684,
+        health: 1268,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/2/721e64ea39ecd4e46052dde2908df80a138c45ef.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'Impairing Blade',
+            description: [
+                'Deals 185% damage to the target and nearby enemies.',
+                "Reduces the duration of target and nearby enemies' buffs by 1 turn.",
+                "The target and nearby enemies receive Corrosive Poison for 3 turns. Corrosive Poison does 50 damage and lowers the target's mana generation by -9% each turn."
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
+    },
     jabbar: {
         name: 'Jabbar',
         attack: 531,
@@ -3371,6 +3455,27 @@ const blue5StarHeroes = {
             ]
         },
         family: References.events.NINJA_TOWER
+    },
+    crystalis: {
+        name: 'Crystalis',
+        attack: 778,
+        defense: 756,
+        health: 1374,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/1/119f5d4307183be9aec1d467c31e4599daf33838.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Freezing Crystal',
+            description: [
+                'Deals 150% damage to all enemies.',
+                "Reduces the duration of enemies' active buffs by 1 turn.",
+                "All enemies receive Corrosive Frost for 3 turns. The Corrosive Frost deals 42 Frost damage and lowers the target's attack by -7% each turn."
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     fenrir: {
         name: 'Fenrir',
@@ -5109,6 +5214,28 @@ const green5StarHeroes = {
         },
         family: References.events.RIDDLES_OF_WONDERLAND
     },
+    toxicandra: {
+        name: 'Toxicandra',
+        attack: 774,
+        defense: 760,
+        health: 1369,
+        element: elements.nature.id,
+        pseudonyms: [ 'poison ivy', 'toxicandra'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e4174624d5e4f8079052ee310b479915ea4c1c63.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Accelerated Growth',
+            description: [
+                'Recovers 24% health for all allies.',
+                'All allies regenerate a moderate amount of mana over 3 turns.',
+                'Cleanses status ailments from all allies'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
+    },
     yunan: {
         name: 'Yunan',
         attack: 618,
@@ -5217,6 +5344,28 @@ const red5StarHeroes = {
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
+    },
+    asterius: {
+        name: 'Asterius',
+        attack: 784,
+        defense: 762,
+        health: 1355,
+        element: elements.fire.id,
+        pseudonyms: ['minotaur', 'asterius'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/8/28859e611bc1f0636388d719591624282f618211.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Brutal Bull Rush',
+            description: [
+                'Deals 235% damage to the target and nearby enemies.',
+                "Reduces the duration of the target and nearby enemies' buffs by 1 turn.",
+                "The target and nearby enemies receive Corrosive Burn for 3 turns. The Corrosive Burn deals 88 burn damage and lowers the target's defense by -10% each turn."
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     azlar: {
         name: 'Azlar',
@@ -5469,6 +5618,27 @@ const red5StarHeroes = {
             ]
         },
         family: References.events.GUARDIANS_OF_TELTOC
+    },
+    isrod: {
+        name: 'Isrod',
+        attack: 758,
+        defense: 768,
+        health: 1423,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/d/ad90e2654f858fb990ebdf2ed8f0d719710940e6.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Vengeful Scythe',
+            description: [
+                'Deals 225% damage to the target and nearby enemies.',
+                'The caster and nearby allies counterattack with 80% of the damage received over 3 turns.',
+                'The caster and nearby allies regenerate a small amount of mana for each counterattack. The effect gets diminished for consecutive counterattacks during the same turn.'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     'jean-françois': {
         name: 'Jean-François',
@@ -5937,6 +6107,28 @@ const purple5StarHeroes = {
         },
         family: References.events.HERO_OF_THE_MONTH
     },
+    'dark lord': {
+        name: 'Dark Lord',
+        attack: 801,
+        defense: 749,
+        health: 1357,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/b/7/b7ed3b5625d19a1b80771830249ce19c358aa9fe.jpeg',
+        stars: 5,
+        pseudonyms: ['dark lord', 'darklord'],
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Doomstrike',
+            description: [
+                'Deals 390% damage to the target.',
+                "Reduces the duration of the target and nearby enemies' buffs by 1 turn.",
+                "The target and nearby enemies receive Corrosive Poison for 3 turns. The Corrosive Poison deals 64 damage and lowers the target's mana generation by -9% each turn for 3 turns."
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
+    },
     domitia: {
         name: 'Domitia',
         attack: 725,
@@ -6097,6 +6289,28 @@ const purple5StarHeroes = {
             ]
         },
         family: References.atlantisFamilies.SAKURA
+    },
+    karnov: {
+        name: 'Karnov',
+        attack: 766,
+        defense: 745,
+        health: 1444,
+        element: elements.dark.id,
+        pseudonyms: ['karnov', 'airbender'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/d/7d0ae9c07b70d3deaf580f560e477f80520d4387.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.MONK.value,
+        special: {
+            name: 'Total Beatdown',
+            description: [
+                'Deals 290% damage to all enemies.',
+                'Alters the power of all Dark shields on the board. When an attacking Hero casts the special, the shield becomes enhanced with +64% attack. When a defending Hero casts the special, the shields become weakened with -57% attack.',
+                'All Holy allies get -24% mana generation for 3 turns. This effect cannot be cleansed.'
+            ]
+        },
+        family: References.events.LEAGUE_OF_VILLAINS
     },
     khiona: {
         name: 'Khiona',
