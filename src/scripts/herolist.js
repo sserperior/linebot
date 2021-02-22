@@ -2639,7 +2639,7 @@ const red4StarHeroes = {
         // TODO
         imgUrl: 'https://allheroes.eu/heroes/Colen%20Costume_card.png',
         stars: 4,
-        pseudonmys: ['colen costume', 'costume colen'],
+        pseudonyms: ['colen costume', 'costume colen'],
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN.value,
         special: {
@@ -4549,7 +4549,7 @@ const yellow5StarHeroes = {
         element: elements.holy.id,
         pseudonyms: ['uraus', 'uraeus'],
         // TODO
-        imgUrl: 'https://lh3.googleusercontent.com/wX3FuC6yeMwSYCVhgCSo_RPX4dABYk9sZOqXspvIl9luUMbIymuxsuHWSdMcB-q6W7iMVgXIropMjh4S1DJDzG4UCd0eJ9_Y_iKJFfZMNj71r9w97MwER3ofMtGlYSvIG-A1GmRPWDkq0U-qHwxdPYHhimlzlfJLbZisla_WHtWND7Oql_83374vOc3gtFXGDVyvtZIJFIXqEP4Zhiq4vECfqeKIs6FxqTiErcv1Wd5Oi4aaG-BnQNP3AnNMwvsfcGRLTBpfMyP11DMQFE1WZHb_DyBVVnivdFTZoBMiKjwILm4h8-GE5BLsSo0oEa764mmm_-lSXgecKMaqINuFIxfwv4DhvjZIUDBG01XZy0cTDXD-i5cqB-QoT7X-Ip_qEkpvVTNDw4hpcVfLEaUQ06kO5RVcUHqOsxBAMaUApZXfSIy_UcbUGwPOKrdgw1qVo1AS0nf3o6oOQya91GQYG2WMTKjPwlFEgtZnTs3uKpStk5V2qi2EtRAQbto52TyVWFUl2nasvl1_csnd8VcszITPPDfYh6vBqNa5C5tRLqqugdb3z1gX8DpQEco2OrCFvmgvn58KrkIgn0rpzm6ENEpXvzOy932ZJD51DYl-P-qsSdRfwJDnJFMyLgeyxwii7aT_NlEJ-xdRV05qOQNT3VlH1Z5KM_K8kV2xbMEkbPrXoIQBduBxbDQhSZg0mQ=w1000-no-tmp.jpg',
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/b/0/b02267f7951ef2ea00604984294fdd974b067bac.jpeg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER.value,
