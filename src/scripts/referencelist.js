@@ -102,7 +102,7 @@ module.exports = {
             pseudonyms: ['ninja tower', 'tower', 'ninja']
         },
         [References.events.PATH_OF_VALOR]: {
-            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dijI88JgqijatrgxIDFChdUyzgbnpCFCg0D6XWj9rJZ-5-HcnoZTaJyRFyUIGPsrT9GBXdFKIx0ksZGYKlMh17TepwFbaylgs-Mu2LKVA4Uq4iH9uUnG0bPHs1FvACr2T9LkV16_5bUCYMn4-0GAV5=w1000-no-tmp.jpg',
+            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dq0cftL-d-Qcl1QyGUqvKle0-yFtIHZhYdTPhYQZW9tBDkK0T2Dgx3asYi_J2tKFRWIOY24cJJb9ybNnGc0WwJTBkMupWUllhQ9KfmL1NbV-H605N_Qzcc8nSJAmoF2D0Jaa3VeduOUyNAj15DOYZp=w1000-no-tmp.jpg',
             type: 'event',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
         },
@@ -185,6 +185,56 @@ module.exports = {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/2/f202e32acdb218da921e0125c711ba0e19961196.jpeg',
             type: 'realm',
             pseudonyms: ['vanaheim']
-        }
+        },
+        [References.events.TRIALS_OF_DECIMATION]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/8/f8763ee4023128355f1b589c6a716e90802dcaa8.png',
+            type: 'event',
+            pseudonyms: ['trials of decimation', 'decimation trials']
+        },
+        [References.events.TRIALS_OF_FORTITUDE]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/e/7e02f8239e200f6d9df6def5f7a78e85ccef429a.png',
+            type: 'event',
+            pseudonyms: ['trials of fortitude', 'fortitude trials']
+        },
+        [References.events.TRIALS_OF_JUSTICE]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/c/4c33d10199c9f9c4fc62df42ab1c722ec133f492.png',
+            type: 'event',
+            pseudonyms: ['trials of justice', 'justice trials']
+        },
+        [References.events.TRIALS_OF_MYSTICISM]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/9/29a48ac6a057e0003d698d3e32acd0542512e560.png',
+            type: 'event',
+            pseudonyms: ['trials of mysticism', 'mysticism trials']
+        },
+        [References.events.TRIALS_OF_NATURE]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/c/3c15032393537b675ffbf7c07c7d59f951ebf391.png',
+            type: 'event',
+            pseudonyms: ['trials of nature', 'nature trials']
+        },
+        [References.events.TRIALS_OF_PIETY]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/3/a36cd8ed5e3fdc74a776d614f2179a36ed9d744e.png',
+            type: 'event',
+            pseudonyms: ['trials of piety', 'piety trials']
+        },
+        [References.events.TRIALS_OF_SERENITY]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/a/5aeba0ae35e2b401cd1c0908669216296b5f17c1.png',
+            type: 'event',
+            pseudonyms: ['trials of serenity', 'serenity trials']
+        },
+        [References.events.TRIALS_OF_SHADOWS]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/b/0bfd10ea78df67c918e36683c829ca585a130d70.png',
+            type: 'event',
+            pseudonyms: ['trials of shadows', 'shadows trials']
+        },
+        [References.events.TRIALS_OF_STRENGTH]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/2/22456d0bf866af332018ba6e2493ed2e5dd548b0.png',
+            type: 'event',
+            pseudonyms: ['trials of strength', 'strength trials']
+        },
+        [References.events.TRIALS_OF_SURVIVAL]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/1/f1d9f707160c772566fff030dead39d7d8d05c90.png',
+            type: 'event',
+            pseudonyms: ['trials of survival', 'survival trials']
+        },
     }
 };

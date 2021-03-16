@@ -3658,7 +3658,7 @@ const blue5StarHeroes = {
         special: {
             name: "Trickster's Mischief",
             description: [
-                "Copies target's Special Skill and uses ut as uf ut was tge caster's own Special Skill.",
+                "Copies target's Special Skill and uses it as if it was the caster's own Special Skill.",
                 "If the target does not have a Special Skill, or it can't be copied, the following Special skill will be cast:",
                 '',
                 'Villan Swing:',
@@ -6369,6 +6369,40 @@ const purple5StarHeroes = {
                 'All enemies get -34% defense for 4 turns.',
                 'Dispels status ailments from all allies.',
                 "Element Link gives all Dark allies +46% defense against Holy for 4 turns. This effect can't be dispelled."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
+    malicna: {
+        name: 'Malicna',
+        attack: 766,
+        defense: 741,
+        health: 1339,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://static.wikia.nocookie.net/empiresandpuzzles/images/4/49/Malicna_-_Hero_Card.gif/revision/latest?cb=20210301071234',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Grimoire Skim',
+            description: [
+                'Deals 260% damage to the target and nearby enemies',
+                '',
+                'Randomly casts one of the following alternatives:',
+                '',
+                'Alternative 1:',
+                'The target and nearby enemies get -54% defense for 3 turns.',
+                'The target and nearby enemies get -54% attack for 3 turns.',
+                'The target and nearby enemies get -24% mana generation for 3 turns.',
+                '',
+                'Alternative 2:',
+                'The target and nearby enemies get -16% defense for 3 turns.',
+                '',
+                'Alternative 3:',
+                'The target and nearby enemies get -16% attack for 3 turns.',
+                '',
+                "Element Link gives all Dark allies small amount of mana at the end of the turn for 4 turns. This effect can't be dispelled."
             ]
         },
         family: References.events.HERO_OF_THE_MONTH

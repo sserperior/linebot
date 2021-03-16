@@ -10,7 +10,17 @@ module.exports = {
         PIRATES_OF_CORELLIA: 'Pirates of Corellia',
         RIDDLES_OF_WONDERLAND: 'Riddles of Wonderland',
         TAVERN_OF_LEGENDS: 'Tavern of Legends',
-        THE_MASQUERADE: 'The Masquerade'
+        THE_MASQUERADE: 'The Masquerade',
+        TRIALS_OF_DECIMATION: 'Trials of Decimation',
+        TRIALS_OF_FORTITUDE: 'Trials of Fortitude',
+        TRIALS_OF_JUSTICE: 'Trials of Justice',
+        TRIALS_OF_MYSTICISM: 'Trials of Mysticism',
+        TRIALS_OF_NATURE: 'Trials of Nature',
+        TRIALS_OF_PIETY: 'Trials of Piety',
+        TRIALS_OF_SERENITY: 'Trials of Serenity',
+        TRIALS_OF_SHADOWS: 'Trials of Shadows',
+        TRIALS_OF_STRENGTH: 'Trials of Strength',
+        TRIALS_OF_SURVIVAL: 'Trials of Survival'
     },
 
     seasonalEvents: {

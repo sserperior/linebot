@@ -158,6 +158,8 @@ manager.addDocument('en', 'show guardians of teltoc', showReference.intentLabel)
 manager.addDocument('en', "show santa's challenge", showReference.intentLabel);
 manager.addDocument('en', 'show santa’s challenge', showReference.intentLabel);
 manager.addDocument('en', 'show al', showReference.intentLabel);
+manager.addDocument('en', 'show trials of nature', showReference.intentLabel);
+manager.addDocument('en', 'show nature trials', showReference.intentLabel);
 
 // Show calendar questions
 manager.addDocument('en', 'show %daterange% %calendar%', showCalendar.intentLabel);
