@@ -143,6 +143,27 @@ const blue3StarHeroes = {
         },
         family: References.events.THE_MASQUERADE
     },
+    helo: {
+        name: 'Helo',
+        attack: 457,
+        defense: 505,
+        health: 799,
+        element: elements.ice.id,
+        pseudonmys: ['helo', 'hello', 'fishead', 'fishhead'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/7/a7f15c1bebf2c4dd62987f5ef7f4ea5a31777ff4.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Healthiest Catch',
+            description: [
+                'Recovers 32% health for all allies.',
+                'Cleanses status ailments from all allies.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     jarvur: {
         name: 'Jarvur',
         attack: 500,
@@ -536,6 +557,26 @@ const yellow3StarHeroes = {
         },
         family: References.atlantisFamilies.ATLANTIS
     },
+    poppy: {
+        name: 'Poppy',
+        attack: 497,
+        defense: 453,
+        health: 804,
+        element: elements.holy.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/5/65b9fdbf85ec2720a13d2dc7825bde6d5bf04d87.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.RANGER.value,
+        special: {
+            name: 'Ricochet Bolt',
+            description: [
+                'Deals 300% damage to the target.',
+                'Has a 42% chance for additional hits on random enemies up to 3 times. Additional hits deal minor damage.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     pixie: {
         name: 'Pixie',
         attack: 427,
@@ -773,6 +814,26 @@ const green3StarHeroes = {
             ]
         },
         family: References.events.THE_MASQUERADE
+    },
+    gramps: {
+        name: 'Gramps',
+        attack: 448,
+        defense: 514,
+        health: 804,
+        element: elements.nature.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/3/23292311eb65b96bb8ae2d1cdc240731fc54db7b.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: "Elder's Remedy",
+            description: [
+                'Each fallen ally has a 33% chance to get revived with 23% HP.',
+                'All allies regenerate a moderate amount of mana over 4 turns.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     grevle: {
         name: 'Grevle',
@@ -1194,6 +1255,27 @@ const red3StarHeroes = {
             ]
         },
         family: References.realms.MUSPELHEIM
+    },
+    vollermork: {
+        name: 'Vollermork',
+        attack: 476,
+        defense: 514,
+        health: 738,
+        element: elements.fire.id,
+        pseudonyms: ['vollermork', 'mork', 'voller'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/e/7e24805a3099eb178a8086a850b65845dbe941e3.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Thresher Worms',
+            description: [
+                'Summons a Worm Fiend for all enemies. The Fiend damages the enemy with 32% attack every turn.',
+                "The Worm Fiend absorbs healing and disappears when it has absorbed health equal to 16% of the target's max health."
+            ]
+        },
+        family: References.maps.SEASON_4
     }
 };
 
@@ -1375,6 +1457,31 @@ const purple3StarHeroes = {
             ]
         },
         family: References.seasonalEvents.RETURN_TO_MORLOVIA
+    },
+    morris: {
+        name: 'Morris',
+        attack: 507,
+        defense: 483,
+        health: 721,
+        element: elements.dark.id,
+        pseudonyms: ['morris', 'underminer'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/4/542a2155d77de3b3ed8265805c01eaba8eb77c70.jpeg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'Dig a Hole',
+            description: [
+                'Removes all status effects and stacks from the caster. Removes even status effects and stacks that are otherwise undispellable or uncleansable.',
+                'Caster digs a hole and hides in it for 2 turns.',
+                "While in the hole, the caster can't gain mana, but is immune to normal attacks, special attacks, and all status effects.",
+                'After 2 turns the caster jumps out from the hole and deals 223 damage to a random enemy.',
+                'The hit enemy receives the following status ailment:',
+                "The target can't gain mana for 2 turns."
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     oberon: {
         name: 'Oberon',
@@ -1893,6 +2000,27 @@ const blue4StarHeroes = {
             ]
         },
         family: References.seasonalEvents.RETURN_TO_MORLOVIA
+    },
+    'zila lei': {
+        name: 'Zila Lei',
+        attack: 677,
+        defense: 652,
+        health: 1234,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/8/781128273e6531e1db1fd5dca2f6674486f84f64.jpeg',
+        pseudonyms: ['zila lei', 'zila'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Fishbone Blades',
+            description: [
+                'Deals 185% damage to the enemies on the edges of the enemy formation. If there is only one enemy alive, the damage is doubled.',
+                'The enemies on the edges of the enemy formation get -34% defense for 3 turns.'
+            ]
+        },
+        family: References.maps.SEASON_4
     }
 };
 
@@ -1986,6 +2114,27 @@ const yellow4StarHeroes = {
             ]
         },
         family: References.events.FABLES_OF_GRIMFOREST
+    },
+    griffin: {
+        name: 'Griffin',
+        attack: 739,
+        defense: 639,
+        health: 1109,
+        element: elements.holy.id,
+        pseudonyms: ['griffin', 'griff'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/9/794ff7af17cfb7677510f20c10b4e2fdc1d4e960.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Invisible Strike',
+            description: [
+                'Deals 340% damage to the target.',
+                'The attack will always bypass counterattacks and reflection.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     gullinbursti: {
         name: 'Gullinbursti',
@@ -2549,6 +2698,28 @@ const green4StarHeroes = {
             ]
         },
         family: References.events.THE_MASQUERADE
+    },
+    tettukh: {
+        name: 'Tettukh',
+        attack: 663,
+        defense: 667,
+        health: 1241,
+        element: elements.nature.id,
+        pseudonyms: ['tettukh', 'tet', 'tett', 'tetuk', 'tetukh', 'tettuk'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/0/00eec9f003c1b5220d03e0a08d2fe31aa8c649b4.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.MONK.value,
+        special: {
+            name: 'Crippling Grapple',
+            description: [
+                'Deals 320% damage to the target.',
+                'The target gets silenced for 4 turns.',
+                'The target receives 100 Poison damage over 4 turns.'
+            ]
+        },
+        family: References.maps.SEASON_4
     }
 };
 
@@ -2768,6 +2939,48 @@ const red4StarHeroes = {
             ]
         },
         family: References.events.KNIGHTS_OF_AVALON
+    },
+    mack: {
+        name: 'Mack',
+        attack: 646,
+        defense: 686,
+        health: 1247,
+        element: elements.fire.id,
+        peudonyms: ['mac', 'mack'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/b/ab7d0a2f3f8115ca238d45fcca5ac59421d8a15e.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: "Halfling's Wit",
+            description: [
+                'The caster and nearby allies counterattack with 125% of the damage received for 4 turns.',
+                'The caster and nearby allies get +25% attack for 4 turns.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
+    rokkamush: {
+        name: 'Rokkamush',
+        attack: 707,
+        defense: 658,
+        health: 1147,
+        element: elements.fire.id,
+        pseudonyms: ['rok', 'rokka', 'rokkamush'],
+        // TODO:
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/e/3ea1cea938ac44e58316f4a02162f0cbcc005a8d.jpeg',
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Blind Rage',
+            description: [
+                'Deals 200% damage to all enemies. Each hit has 50% accuracy.',
+                'All enemies receives 180 Bleed damage over 4 turns. This effect stacks with similar effects.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     scarlett: {
         name: 'Scarlett',
@@ -3980,6 +4193,27 @@ const blue5StarHeroes = {
 }
 
 const yellow5StarHeroes = {
+    akkorog: {
+        name: 'Akkorog',
+        attack: 782,
+        defense: 772,
+        health: 1371,
+        element: elements.holy.id,
+        pseudonyms: ['akk', 'akkorog'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/f/7f967cf521853362e94ea234efb9f67c14c16699.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.RANGER.value,
+        special: {
+            name: 'Colossal Chops',
+            description: [
+                'Rearranges the enemy positions randomly.',
+                'Deals 280% damage to the target and nearby enemies.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     'bai yeong': {
         name: 'Bai Yeong',
         attack: 749,
@@ -4406,6 +4640,28 @@ const yellow5StarHeroes = {
             ]
         },
         family: References.atlantisFamilies.ATLANTIS
+    },
+    'prof. lidenbrock': {
+        name: 'Prof. Lidenbrock',
+        attack: 745,
+        defense: 807,
+        health: 1394,
+        element: elements.holy.id,
+        pseudonyms: ['prof. lidenbrock', 'prof lidenbrock', 'prof', 'lidenbrock', 'professor', 'professor lidenbrock'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/0/90feae4ab887d7be5bca878c1384ea196a4a4904.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Glorious Grace',
+            description: [
+                'Cleanses status ailments from all allies.',
+                'Boosts health of all allies by 200. If health exceeds max HP, it is added as temporary HP.',
+                "All allies' health is boosted by 600 HP over 4 turns. The effect duration is reset if the target receives status ailments."
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     rana: {
         name: 'Rana',
@@ -5127,6 +5383,28 @@ const green5StarHeroes = {
         },
         family: References.seasonalEvents.SANTAS_CHALLENGE
     },
+    'phileas fogg': {
+        name: 'Phileas Fogg',
+        attack: 832,
+        defense: 727,
+        health: 1339,
+        element: elements.nature.id,
+        pseudonyms: ['phileas', 'fogg', 'fog'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/3/433a35aa488ec6e7c9419c1b21047ac4b44001d0.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'Valiant Lunge',
+            description: [
+                'Dispels buffs from the target.',
+                'Deals 420% damage to the target.',
+                'The target gets -58% defense against Nature for 4 turns.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     'ratatoskr': {
         name: 'Ratatoskr',
         attack: 753,
@@ -5505,6 +5783,29 @@ const red5StarHeroes = {
             ]
         },
         family: References.events.THE_MASQUERADE
+    },
+    elizabeth: {
+        name: 'Elizabeth',
+        attack: 768,
+        defense: 753,
+        health: 1448,
+        element: elements.fire.id,
+        pseudonyms: ['elizabeth', 'lisa', 'eliza'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/2/c2af0b996335d2313a40edce16caba919ee4ba23.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.MONK.value,
+        special: {
+            name: "Widow's Kiss",
+            description: [
+                'Deals 175% damage to all enemies.',
+                'Summons a Spider Fiend for all enemies. The Fiend damages the enemy with 43% attack every turn.',
+                "The Spider Fiend absorbs healing and disappears when it has absorbed health equal to 28% of the target's max health.",
+                'The Spider Fiend gives -24% mana generation for its owner for as long as the owner has Spider Fiends. This effect cannot be cleansed.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     garnet: {
         name: 'Garnet',
@@ -6170,6 +6471,27 @@ const purple5StarHeroes = {
         },
         family: References.events.THE_MASQUERADE
     },
+    'dr. moreau': {
+        name: 'Dr. Moreau',
+        attack: 774,
+        defense: 751,
+        health: 1439,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/e/7e0e988f573a78fa5f99547cad8d938b8456ebf7.jpeg',
+        pseudonyms: ['dr. moreau', 'moreau', 'doctor'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Blinding Wisdom',
+            description: [
+                'Deals 270% damage to the target and nearby enemies.',
+                'The target and nearby enemies get -35% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills. The effect duration is reset if the target is healed.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     freya: {
         name: 'Freya',
         attack: 776,
@@ -6248,6 +6570,31 @@ const purple5StarHeroes = {
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
+    },
+    lepiota: {
+        name: 'Lepiota',
+        attack: 780,
+        defense: 778,
+        health: 1359,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/b/3b84d0fe706d03b3a84c6c2620ae89aefea745c1.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: 'Abyssal Incantation',
+            description: [
+                'Removes all status effects and stacks from the target. Removes even status effects and stacks that are otherwise undispellable or uncleansable.',
+                'Deals 158% damage to the target.',
+                'The target shifts into Abyss Ghost form.',
+                'While in Abyss Ghost form the target receives 88 damage each turn.',
+                "While in Abyss Ghost form the target can't gain mana and can't be healed by Special Skills, but is immune to normal attacks, Special Skill attacks, status effects and stacks.",
+                'Abyss Ghost form lasts for 4 turns.',
+                "Last enemy left in the battle can't be shifted to Abyss Ghost form."
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     jabberwock: {
         name: 'Jabberwock',

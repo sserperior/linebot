@@ -35,7 +35,8 @@ module.exports = {
         SEASON_2: 'Season 2',
         SEASON_2_AVATARS: 'Season 2 Avatars',
         SEASON_3: 'Season 3',
-        SEASON_3_AVATARS: 'Season 3 Avatars'
+        SEASON_3_AVATARS: 'Season 3 Avatars',
+        SEASON_4: 'Season 4'
     },
 
     atlantisFamilies: {

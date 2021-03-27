@@ -141,6 +141,12 @@ module.exports = {
             type: 'map',
             pseudonyms: ['season 3 avatars', 'avatars 3']
         },
+        [References.maps.SEASON_4]: {
+            // TODO
+            imgUrl: 'https://i1.wp.com/hwca.ca/wp-content/uploads/2018/06/20180510143149-Under-Construction-Sign.png?resize=1024%2C483&ssl=1',
+            type: 'map',
+            pseudonyms: ['voyagers of the underwild', 'voyagers', 'underwild', 'season 4', 'season iv']
+        },
         [References.seasonalEvents.SPRINGVALE]: {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/5/25516f3ed75926713e0ab17582b3df58615edee1.jpeg',
             type: 'seasonal event',
