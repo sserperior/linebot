@@ -3555,7 +3555,7 @@ const blue5StarHeroes = {
             name: 'Icy Resilience',
             description: [
                 'All allies share received damage with each other for 3 turns.',
-                'All allies get +30% defense for 3 turns.',
+                'All allies get +35% defense for 3 turns.',
                 'All allies heal 100% of dealt normal damage for 3 turns.',
                 "Element Link recovers 4% health for all Ice allies for 6 turns. This effect can't be dispelled."
             ]
@@ -3749,6 +3749,27 @@ const blue5StarHeroes = {
                 'The target and nearby enemies get -54% defense against Ice for 4 turns.',
                 'Dispels buffs from the target and nearby enemies',
                 "Element Link gives all Ice allies +46% defense against Nature for 4 turns. This effect can't be dispelled."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
+    frosth: {
+        name: 'Frosth',
+        attack: 776,
+        defense: 731,
+        health: 1347,
+        element: elements.ice.id,
+        // TODO
+        imgUrl: 'https://1.bp.blogspot.com/-H1DKB2-GlWQ/YGYewJfWJYI/AAAAAAAAFl4/K6y-oGbRIKIcQGbt0W_JUK4vuL5-R_69gCLcBGAsYHQ/s1417/Frosth%2BHero.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Cold Command',
+            description: [
+                'Summons a Frost Sprite Minion for each ally with 13% HP and 15% attack inherited from the caster.',
+                "All allies' Minions get +30% HP and +30% attack.",
+                "Element Link gives all Ice allies small amount of mana at the end of each turn for 4 turns. This effect can't be dispelled."
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
@@ -3952,7 +3973,7 @@ const blue5StarHeroes = {
             name: 'Wrath of Tundra',
             description: [
                 'All allies get +130% normal attack that only applies when the enemy has more health than the attacker. Stacks with similar status effects up to a maximum of +170% normal attack. The effect lasts for 5 turns.',
-                'The target and nearby enemies get silenced for 4 turns.',
+                'The target and nearby enemies get silenced for 5 turns.',
                 "Element Link gives +4% mana generation for all Ice allies for 4 turns. This effect can't be dispelled."
             ]
         },
@@ -4141,7 +4162,7 @@ const blue5StarHeroes = {
         special: {
             name: 'Icecold Finisher',
             description: [
-                'Deals 480% damage to the target and minor damage to nearby enemies.'
+                'Deals 490% damage to the target and minor damage to nearby enemies.'
             ]
         },
         family: References.maps.SEASON_1
@@ -4417,12 +4438,33 @@ const yellow5StarHeroes = {
         special: {
             name: 'Rite of Judgement',
             description: [
-                'Deals 240% damage to all enemies.',
-                'All enemies get -40% accuract for 4 turns.',
+                'Deals 285% damage to all enemies.',
+                'All enemies get -40% accuracy for 4 turns.',
                 'Chance to miss also applies to offensive Special Skills.'
             ]
         },
         family: References.maps.SEASON_1
+    },
+    'justice costume': {
+        name: 'Justice Costume',
+        attack: 706,
+        defense: 757,
+        health: 1511,
+        element: elements.holy.id,
+        pseudonyms: ['costume justice', 'justice costume'],
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/justice-costume-ancient-of-the-sun.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Day of Judgement',
+            description: [
+                'Deals 250% damage to all enemies.',
+                'The damage is increased by 50% per each dead ally',
+                'The caster gets +24% mana generation for 3 turns.'
+            ]
+        },
+        family: References.events.THE_MASQUERADE
     },
     leonidas: {
         name: 'Leonidas',
@@ -4438,7 +4480,7 @@ const yellow5StarHeroes = {
         special: {
             name: 'Spartan Cleave',
             description: [
-                'Deals 365% damage to the target.',
+                'Deals 415% damage to the target.',
                 'Reduces the mana of the target by 40%',
                 'Heals the caster for 75% of damage dealt.'
             ]
@@ -5125,7 +5167,7 @@ const green5StarHeroes = {
         special: {
             name: 'Anger of the Forest',
             description: [
-                'Deals 235% damage to all enemies.',
+                'Deals 280% damage to all enemies.',
                 'All enemies get -34% attack for 6 turns.'
             ]
         },
@@ -5145,7 +5187,7 @@ const green5StarHeroes = {
         special: {
             name: 'Anger of the Jester',
             description: [
-                'Deals 215% damage to all enemies.',
+                'Deals 250% damage to all enemies.',
                 'All enemies get -54% attack for 6 turns.'
             ]
         },
@@ -5976,7 +6018,7 @@ const red5StarHeroes = {
         special: {
             name: "Khan's Order",
             description: [
-                'Deals 320% damage to the target and nearby enemies.',
+                'Deals 380% damage to the target and nearby enemies.',
                 'The caster and nearby allies get +24% mana generation for 5 turns.',
                 'The caster and nearby allies get +63% defense for 5 turns.'
             ]
@@ -6121,7 +6163,7 @@ const red5StarHeroes = {
         special: {
             name: 'Sparrow Fury',
             description: [
-                'Summons an Sparrow Minion for each ally. The Sparrow Minion inherits 25% HP and 25% attack from the caster.',
+                'Summons an Sparrow Minion for each ally. The Sparrow Minion inherits 30% HP and 30% attack from the caster.',
                 'Before Sparrow Minion hits target, it destroys all Minions from the target.',
                 "Element Link gives all Fire allies +30% defense against Special Skills for 4 turns. This effect can't be dispelled."
             ]
@@ -6443,7 +6485,7 @@ const purple5StarHeroes = {
         special: {
             name: 'Shock Bolt',
             description: [
-                'Deals 410% damage to the target.',
+                'Deals 440% damage to the target.',
                 'The caster and nearby allies get +94% defense against Holy for 4 turns.',
                 'Dispels buffs from the target and nearby enemies.'
             ]
@@ -6464,7 +6506,7 @@ const purple5StarHeroes = {
         special: {
             name: 'Poison Bolt',
             description: [
-                'Deals 390% damage on the target.',
+                'Deals 400% damage on the target.',
                 'The target and nearby enemies receive 324 Poison damage over 4 turns.',
                 'Dispels status ailments from the caster and nearby allies.'
             ]
@@ -6836,7 +6878,7 @@ const purple5StarHeroes = {
         special: {
             name: 'Cleave and Counter',
             description: [
-                'Deal 260% damage to a single enemy and minor damage on nearby enemies.',
+                'Deal 310% damage to a single enemy and minor damage on nearby enemies.',
                 'The caster counterattacks with 115% of the damage received for 4 turns.'
             ]
         },
