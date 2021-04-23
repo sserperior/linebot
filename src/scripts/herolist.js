@@ -5074,7 +5074,6 @@ const green5StarHeroes = {
         defense: 760,
         health: 1320,
         element: elements.nature.id,
-        pseudonyms: ['frigg'],
         imgUrl: 'https://sgephome.files.wordpress.com/2020/09/frigg.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -5088,6 +5087,27 @@ const green5StarHeroes = {
             ]
         },
         family: References.realms.ALFHEIM
+    },
+    garjammal: {
+        name: 'Garjammal',
+        attack: 791,
+        defense: 774,
+        health: 1349,
+        element: elements.nature.id,
+        pseudonyms: ['garjammal', 'garjamal'],
+        // TODO
+        imgUrl: 'https://allheroes.eu/heroes/Garjammal_card.png',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Flail of Destruction',
+            description: [
+                'Deals 430% damage to the target.',
+                'The caster regenerates 675 HP over 3 turns. The effect duration is reset if the caster is hit with direct damage from a Special Skill.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     gregorion: {
         name: 'Gregorion',
