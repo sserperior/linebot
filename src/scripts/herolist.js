@@ -5732,7 +5732,7 @@ const red5StarHeroes = {
         health: 1431,
         element: elements.fire.id,
         imgUrl: 'https://sgephome.files.wordpress.com/2020/05/azlar-costume-king-of-the-leors-1.jpg',
-        pseudonyms: ['alzar costume', 'costume azlar'],
+        pseudonyms: ['azlar costume', 'costume azlar'],
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN.value,

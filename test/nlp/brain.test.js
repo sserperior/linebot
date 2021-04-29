@@ -169,6 +169,11 @@ describe('brain tests', () => {
             const result = await getManager().process('show dark lord');
             checkSpecificHero(result, 'dark lord');
         });
+
+        it('show azlar costume should be classied properly', async () => {
+            const result = await getManager().process('show azlar costume');
+            checkSpecificHero(result, 'azlar costume');
+        });
     });
 
     describe('harpoon.team.query intent tests', () => {
