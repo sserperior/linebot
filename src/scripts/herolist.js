@@ -30,8 +30,7 @@ const blue3StarHeroes = {
         defense: 523,
         health: 783,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/f/c/fc548996f616a74dd7b09dec8cbf1c568b977ebc.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/frosty.jpg',
         pseudonyms: ['frosty', 'snowman', 'frosty the snowman'],
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -84,14 +83,13 @@ const blue3StarHeroes = {
         family: References.maps.SEASON_1
     },
     'graymane costume': {
-        name: 'graymane costume',
+        name: 'Graymane Costume',
         attack: 457,
         defense: 411,
         health: 897,
         element: elements.ice.id,
         pseudonyms: ['graymane costume', 'costume graymane', 'greymane costume', 'costume greymane'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Graymane%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/graymane-costume-garlic-thief.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN.value,
@@ -150,8 +148,7 @@ const blue3StarHeroes = {
         health: 799,
         element: elements.ice.id,
         pseudonmys: ['helo', 'hello', 'fishead', 'fishhead'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/7/a7f15c1bebf2c4dd62987f5ef7f4ea5a31777ff4.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/helo.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID.value,
@@ -245,8 +242,7 @@ const blue3StarHeroes = {
         defense: 403,
         health: 772,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Ulmer%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/ulmer-costume-hermit-of-glaceholm.jpg',
         pseudonyms: ['ulmer costume', 'costume ulmer'],
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -284,8 +280,7 @@ const blue3StarHeroes = {
         defense: 443,
         health: 757,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Valen%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/valen-costume-clean-cut-climber.jpg',
         pseudonyms: ['valen costume', 'costume valen'],
         stars: 3,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -424,8 +419,7 @@ const yellow3StarHeroes = {
         health: 684,
         element: elements.holy.id,
         pseudonyms: ['dawa costume', 'costume dawa'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Dawa%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/dawa-costume-shagaudian-guardian.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN.value,
@@ -463,8 +457,7 @@ const yellow3StarHeroes = {
         health: 844,
         element: elements.holy.id,
         pseudonyms: ['costume gan ju', 'gan ju costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Gan-Ju%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/gan-ju-costume-root-of-bamboo.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN.value,
@@ -503,8 +496,7 @@ const yellow3StarHeroes = {
         health: 825,
         element: elements.holy.id,
         pseudonyms: ['kailani costume', 'costume kailani', 'kalani costume', 'costume kalani'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Kailani%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/kailani-costume-magnanimous-mender.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.SORCERER.value,
@@ -563,8 +555,7 @@ const yellow3StarHeroes = {
         defense: 453,
         health: 804,
         element: elements.holy.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/5/65b9fdbf85ec2720a13d2dc7825bde6d5bf04d87.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/poppy.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER.value,
@@ -821,8 +812,7 @@ const green3StarHeroes = {
         defense: 514,
         health: 804,
         element: elements.nature.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/3/23292311eb65b96bb8ae2d1cdc240731fc54db7b.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/gramps.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC.value,
@@ -1103,8 +1093,7 @@ const red3StarHeroes = {
         health: 705,
         element: elements.fire.id,
         pseudonyms: ['jahangir costume', 'costume jahangir'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Jahangir%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/jahangir-costume-wizard-of-sandsea.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.WIZARD.value,
@@ -1160,8 +1149,7 @@ const red3StarHeroes = {
         defense: 369,
         health: 715,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Nashgar%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/nashgar-costume-last-to-retreat.jpg',
         stars: 3,
         pseudonyms: ['nashgar costume', 'costume nashgar'],
         manaSpeed: ManaSpeeds.FAST.value,
@@ -1202,8 +1190,7 @@ const red3StarHeroes = {
         health: 762,
         element: elements.fire.id,
         pseudonyms: ['skrekok', 'rat'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/4/84eb0421f24e2fd8719fb5a761f194fdf30a2eea.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/skrekok.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.ROGUE.value,
@@ -1263,8 +1250,7 @@ const red3StarHeroes = {
         health: 738,
         element: elements.fire.id,
         pseudonyms: ['vollermork', 'mork', 'voller'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/e/7e24805a3099eb178a8086a850b65845dbe941e3.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/vollermork-2.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN.value,
@@ -1383,8 +1369,7 @@ const purple3StarHeroes = {
         health: 723,
         element: elements.dark.id,
         pseudonyms: ['edd', 'ed'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/2/12e0dc12e4599fd0dff7c2370c9ee40a1ad5aaf5.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/edd.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER.value,
@@ -1465,8 +1450,7 @@ const purple3StarHeroes = {
         health: 721,
         element: elements.dark.id,
         pseudonyms: ['morris', 'underminer'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/4/542a2155d77de3b3ed8265805c01eaba8eb77c70.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/morris.jpg',
         stars: 3,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER.value,
@@ -1507,8 +1491,7 @@ const purple3StarHeroes = {
         defense: 463,
         health: 933,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Oberon%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/oberon-costume-jester-remnant.jpg',
         pseudonyms: ['oberon costume', 'costume oberon'],
         stars: 3,
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -1780,8 +1763,7 @@ const blue4StarHeroes = {
         defense: 585,
         health: 1278,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Grimm%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/grimm-costume-heir-of-evil.jpg',
         pseudonyms: ['grimm costume', 'costume grimm', 'grim costume', 'costume grim'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -1879,8 +1861,7 @@ const blue4StarHeroes = {
         defense: 680,
         health: 1447,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/6/762e1fc33cc70936e33fe09c6741a43f095ace0e.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/sanngrior.jpg',
         pseudonyms: ['sangrior', 'sanngrior'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -2007,8 +1988,7 @@ const blue4StarHeroes = {
         defense: 652,
         health: 1234,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/8/781128273e6531e1db1fd5dca2f6674486f84f64.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/zila-lei.jpg',
         pseudonyms: ['zila lei', 'zila'],
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -2050,8 +2030,7 @@ const yellow4StarHeroes = {
         defense: 680,
         health: 1189,
         element: elements.holy.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Chao%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/chao-costume-master-conservator.jpg',
         pseudonyms: ['costume chao', 'chao costume', 'dodo'],
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -2122,8 +2101,7 @@ const yellow4StarHeroes = {
         health: 1109,
         element: elements.holy.id,
         pseudonyms: ['griffin', 'griff'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/9/794ff7af17cfb7677510f20c10b4e2fdc1d4e960.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/griffin.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE.value,
@@ -2183,8 +2161,7 @@ const yellow4StarHeroes = {
         health: 1268,
         element: elements.holy.id,
         pseudonyms: ['costume hu', 'hu costume', 'costume hu tao', 'hu tao costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Hu%20Tao%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/hu-tao-costume-bark-of-bamboo.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.PALADIN.value,
@@ -2323,8 +2300,7 @@ const yellow4StarHeroes = {
         health: 1053,
         element: elements.holy.id,
         pseudonyms: ['wu kong costume', 'costume wu kong', 'wu costume', 'costume wu', 'wu-kong costume', 'costume wu-kong'],
-        // TODO:
-        imgUrl: 'https://allheroes.eu/heroes/Wu%20Kong%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/wu-kong-costume-monkey-ronin.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN.value,
@@ -2706,8 +2682,7 @@ const green4StarHeroes = {
         health: 1241,
         element: elements.nature.id,
         pseudonyms: ['tettukh', 'tet', 'tett', 'tetuk', 'tetukh', 'tettuk'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/0/00eec9f003c1b5220d03e0a08d2fe31aa8c649b4.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/tettukh.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK.value,
@@ -2769,8 +2744,7 @@ const red4StarHeroes = {
         defense: 646,
         health: 1357,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/c/6c3dbe8b431a16b1d069790cb31b3e6cfabb7695.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/carol.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER.value,
@@ -2807,8 +2781,7 @@ const red4StarHeroes = {
         defense: 546,
         health: 1222,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Colen%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/colen-costume-fire-bounty-hunter.jpg',
         stars: 4,
         pseudonyms: ['colen costume', 'costume colen'],
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -2865,8 +2838,7 @@ const red4StarHeroes = {
         defense: 606,
         health: 1511,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Gormek%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/gormek-costume-the-coveteus.jpg',
         pseudonym: ['gormek costume', 'costume gormek'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -2906,8 +2878,7 @@ const red4StarHeroes = {
         health: 995,
         element: elements.fire.id,
         pseudonyms: ['kelile costume', 'costume kelile'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Kelile%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/kelile-costume-shamen-of-dragonia.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.DRUID.value,
@@ -2947,8 +2918,7 @@ const red4StarHeroes = {
         health: 1247,
         element: elements.fire.id,
         peudonyms: ['mac', 'mack'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/b/ab7d0a2f3f8115ca238d45fcca5ac59421d8a15e.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/mack.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.FIGHTER.value,
@@ -2968,8 +2938,7 @@ const red4StarHeroes = {
         health: 1147,
         element: elements.fire.id,
         pseudonyms: ['rok', 'rokka', 'rokkamush'],
-        // TODO:
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/e/3ea1cea938ac44e58316f4a02162f0cbcc005a8d.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/rokkamush.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN.value,
@@ -3008,8 +2977,7 @@ const red4StarHeroes = {
         health: 1172,
         element: elements.fire.id,
         pseudonyms: ['costume scarlet', 'scarlet costume', 'costume scarlett', 'scarlett costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Scarlett%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/scarlett-costume-assassin-of-sandsea.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER.value,
@@ -3259,8 +3227,7 @@ const purple4StarHeroes = {
         defense: 698,
         health: 1460,
         element: elements.dark.id,
-        // TODO:
-        imgUrl: 'https://allheroes.eu/heroes/Cyprian%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/cyprian-costume-deathless-prince.jpg',
         pseudonyms: ['cyprian costume', 'costume cyprian'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -3322,8 +3289,7 @@ const purple4StarHeroes = {
         defense: 684,
         health: 1268,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/2/721e64ea39ecd4e46052dde2908df80a138c45ef.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/ingolf.jpg',
         stars: 4,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.FIGHTER.value,
@@ -3461,8 +3427,7 @@ const purple4StarHeroes = {
         defense: 642,
         health: 1074,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Sabina%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/sabina-costume-deathless-princess.jpg',
         pseudonyms: ['sabina costume', 'costume sabina'],
         stars: 4,
         manaSpeed: ManaSpeeds.AVERAGE.value,
@@ -3675,8 +3640,7 @@ const blue5StarHeroes = {
         defense: 756,
         health: 1374,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/1/119f5d4307183be9aec1d467c31e4599daf33838.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/crystalis.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD.value,
@@ -3759,8 +3723,7 @@ const blue5StarHeroes = {
         defense: 731,
         health: 1347,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://1.bp.blogspot.com/-H1DKB2-GlWQ/YGYewJfWJYI/AAAAAAAAFl4/K6y-oGbRIKIcQGbt0W_JUK4vuL5-R_69gCLcBGAsYHQ/s1417/Frosth%2BHero.jpg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/frosth.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.ROGUE.value,
@@ -3862,8 +3825,7 @@ const blue5StarHeroes = {
         defense: 852,
         health: 1468,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/1/a/1a99ed9377243637dc93b312d97fa37a213f0e47.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/krampus.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER.value,
@@ -3884,8 +3846,7 @@ const blue5StarHeroes = {
         defense: 743,
         health: 1312,
         element: elements.ice.id,
-        // TODO
-        imgUrl: 'https://1.bp.blogspot.com/-6MALnaB-vhs/X-TxdPQInpI/AAAAAAAAFLE/w0uam8eJ2dAJSm-_aPGvJ4o0R9qJbVG_ACLcBGAsYHQ/s1072/Lord%2BLoki.jpg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/lord-loki.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.WIZARD.value,
@@ -4174,8 +4135,7 @@ const blue5StarHeroes = {
         health: 1424,
         element: elements.ice.id,
         pseudonyms: ['costume thorne', 'costume thorn', 'thorne costume', 'thorn costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Thorne%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/thorne-costume-king-frostmorrow.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.SORCERER.value,
@@ -4221,8 +4181,7 @@ const yellow5StarHeroes = {
         health: 1371,
         element: elements.holy.id,
         pseudonyms: ['akk', 'akkorog'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/f/7f967cf521853362e94ea234efb9f67c14c16699.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/akkorog.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.RANGER.value,
@@ -4494,8 +4453,7 @@ const yellow5StarHeroes = {
         health: 1347,
         element: elements.holy.id,
         pseudonyms: ['costume leonidas', 'costume leo', 'leonidas costume', 'leo costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Leonidas%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/leonidas-costume-king-of-sparta.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.BARBARIAN.value,
@@ -4628,8 +4586,7 @@ const yellow5StarHeroes = {
         defense: 751,
         health: 1330,
         element: elements.holy.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/a/ea6afbb7e536314aa7675109d498ee3557971ef0.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/odin.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.PALADIN.value,
@@ -4690,8 +4647,7 @@ const yellow5StarHeroes = {
         health: 1394,
         element: elements.holy.id,
         pseudonyms: ['prof. lidenbrock', 'prof lidenbrock', 'prof', 'lidenbrock', 'professor', 'professor lidenbrock'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/0/90feae4ab887d7be5bca878c1384ea196a4a4904.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/lidenbrock.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.CLERIC.value,
@@ -4814,8 +4770,7 @@ const yellow5StarHeroes = {
         defense: 735,
         health: 1394,
         element: elements.holy.id,
-        // TODO
-        imgUrl: 'https://cnet1.cbsistatic.com/img/YUcMzfe235Tdz7IBV6-rshbR3A0=/940x0/2020/04/21/1506eb8e-f75e-4d3c-a007-269a32862a8d/twitter-in-stream-wide-fatthorbig2.jpg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/thor.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.FIGHTER.value,
@@ -5095,8 +5050,7 @@ const green5StarHeroes = {
         health: 1349,
         element: elements.nature.id,
         pseudonyms: ['garjammal', 'garjamal'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Garjammal_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/garjammal.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.BARBARIAN.value,
@@ -5452,8 +5406,7 @@ const green5StarHeroes = {
         health: 1339,
         element: elements.nature.id,
         pseudonyms: ['phileas', 'fogg', 'fog'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/4/3/433a35aa488ec6e7c9419c1b21047ac4b44001d0.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/fogg.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.FIGHTER.value,
@@ -5561,8 +5514,7 @@ const green5StarHeroes = {
         health: 1369,
         element: elements.nature.id,
         pseudonyms: [ 'poison ivy', 'toxicandra'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/e/4/e4174624d5e4f8079052ee310b479915ea4c1c63.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/toxicandra.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC.value,
@@ -5692,8 +5644,7 @@ const red5StarHeroes = {
         health: 1355,
         element: elements.fire.id,
         pseudonyms: ['minotaur', 'asterius'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/2/8/28859e611bc1f0636388d719591624282f618211.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/asterius.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.DRUID.value,
@@ -5853,8 +5804,7 @@ const red5StarHeroes = {
         health: 1448,
         element: elements.fire.id,
         pseudonyms: ['elizabeth', 'lisa', 'eliza'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/c/2/c2af0b996335d2313a40edce16caba919ee4ba23.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/elizabeth.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.MONK.value,
@@ -5988,8 +5938,7 @@ const red5StarHeroes = {
         defense: 768,
         health: 1423,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/a/d/ad90e2654f858fb990ebdf2ed8f0d719710940e6.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/isrod.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.PALADIN.value,
@@ -6051,8 +6000,7 @@ const red5StarHeroes = {
         defense: 691,
         health: 1529,
         element: elements.fire.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Khagan%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/khagan-costume-avenger-of-tribes.jpg',
         pseudonyms: ['khagan costume', 'costume khagan'],
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW.value,
@@ -6113,8 +6061,7 @@ const red5StarHeroes = {
         health: 1499,
         element: elements.fire.id,
         pseudonyms: ['marjana costume', 'costume marjana', 'costume marj', 'marj costume'],
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Marjana%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/marjana-costume-terror-of-windemer.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.WIZARD.value,
@@ -6260,8 +6207,7 @@ const red5StarHeroes = {
         health: 1310,
         element: elements.fire.id,
         pseudonyms: ['reuben', 'rubin', 'ruben', 'rueben', 'ruebin'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/b/2/b212c65a26c2dc6f267a82cca60b40481a27b57b.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/reuben.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.CLERIC.value,
@@ -6338,6 +6284,31 @@ const red5StarHeroes = {
             ]
         },
         family: References.seasonalEvents.RETURN_TO_MORLOVIA
+    },
+    'yang mai': {
+        name: 'Yang Mai',
+        attack: 743,
+        defense: 762,
+        health: 1369,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3d5RXV-jmC2so41YqGoVjKNo3jKJPqLzMeh-nBqTYPMbu_bEkd2JNxWJIsV8AzaJzjcllgvO_APkDNNIH7ZOsFTslKZAHRCH-WxmYXw9C6h2cEXFK9LSYjkqIGZCkLhEbvYHuxdM9zl9FnUkitvo-O9=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.MONK.value,
+        pseudonyms: ['yang mai', 'mai', 'yang'],
+        special: {
+            name: 'Flaming Fury',
+            description: [
+                'Deals 280% damage to the target.',
+                'Has a 50% change for additional hits on random enemies up to 4 times. Additional hits deal minor damage.',
+                '\u2022 The caster gets the following status effect for each hit:',
+                'Stack: The caster gets +5% attack. The maximum size of stack is 10.',
+                '',
+                "Element Link gives all Fire allies small amount of mana at the end of the turn for 4 turns. This effect can't be dispelled."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     zimkitha: {
         name: 'Zimkitha',
@@ -6476,8 +6447,7 @@ const purple5StarHeroes = {
         defense: 749,
         health: 1357,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/b/7/b7ed3b5625d19a1b80771830249ce19c358aa9fe.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/dark-lord.jpg',
         stars: 5,
         pseudonyms: ['dark lord', 'darklord'],
         manaSpeed: ManaSpeeds.FAST.value,
@@ -6539,8 +6509,7 @@ const purple5StarHeroes = {
         defense: 751,
         health: 1439,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/e/7e0e988f573a78fa5f99547cad8d938b8456ebf7.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/doc-moreau.jpg',
         pseudonyms: ['dr. moreau', 'moreau', 'doctor'],
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
@@ -6639,8 +6608,7 @@ const purple5StarHeroes = {
         defense: 778,
         health: 1359,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/b/3b84d0fe706d03b3a84c6c2620ae89aefea745c1.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/lepiota.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,
         classGrade: Classes.SORCERER.value,
@@ -6706,8 +6674,7 @@ const purple5StarHeroes = {
         health: 1444,
         element: elements.dark.id,
         pseudonyms: ['karnov', 'airbender'],
-        // TODO
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/d/7d0ae9c07b70d3deaf580f560e477f80520d4387.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/karnov.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.SLOW.value,
         classGrade: Classes.MONK.value,
@@ -6788,8 +6755,7 @@ const purple5StarHeroes = {
         defense: 741,
         health: 1339,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://static.wikia.nocookie.net/empiresandpuzzles/images/4/49/Malicna_-_Hero_Card.gif/revision/latest?cb=20210301071234',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/malicna.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.AVERAGE.value,
         classGrade: Classes.CLERIC.value,
@@ -6910,8 +6876,7 @@ const purple5StarHeroes = {
         defense: 712,
         health: 1436,
         element: elements.dark.id,
-        // TODO
-        imgUrl: 'https://allheroes.eu/heroes/Obakan%20Costume_card.png',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/01/obakan-costume-preatorian-gladiator.jpg',
         pseudonyms: ['obakan costume', 'costume obakan'],
         stars: 5,
         manaSpeed: ManaSpeeds.FAST.value,

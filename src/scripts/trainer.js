@@ -233,6 +233,7 @@ manager.addDocument('en', 'where do i get %farmableItem%', farmItem.intentLabel)
 manager.addDocument('en', 'show %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'farm %farmableItem%', farmItem.intentLabel);
 manager.addDocument('en', 'find %farmableItem%', farmItem.intentLabel);
+manager.addDocument('en', 'crude iron', farmItem.intentLabel);
 manager.addDocument('en', '%farmableitem%', farmItem.intentLabel);
 
 // Thanks Cyber

@@ -102,7 +102,7 @@ module.exports = {
             pseudonyms: ['ninja tower', 'tower', 'ninja']
         },
         [References.events.PATH_OF_VALOR]: {
-            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dq0cftL-d-Qcl1QyGUqvKle0-yFtIHZhYdTPhYQZW9tBDkK0T2Dgx3asYi_J2tKFRWIOY24cJJb9ybNnGc0WwJTBkMupWUllhQ9KfmL1NbV-H605N_Qzcc8nSJAmoF2D0Jaa3VeduOUyNAj15DOYZp=w1000-no-tmp.jpg',
+            imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3cdhuZWcMagkLVpQbvN2j2qIRAT1-4zNwhaqA0JMyCOh6pIFhCt6NvoBttbjPjsHq1qC_hGn_VmCffp2KJ_MCVbkGd6HxzfLSZKzae49he7oH1F6KQFXAKjR1Cdd9rh1V-duW_QvdYu6IlKG64dHPPf=w1000-no-tmp.jpg',
             type: 'event',
             pseudonyms: ['pov', 'path of valor', 'path of valour']
         },
