@@ -4069,6 +4069,28 @@ const blue5StarHeroes = {
         },
         family: References.events.FABLES_OF_GRIMFOREST
     },
+    russula: {
+        name: 'Russula',
+        attack: 793,
+        defense: 782,
+        health: 1328,
+        element: elements.ice.id,
+        pseudonyms: ['russula', 'rusula'],
+        // TODO
+        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/8/4/84724ab8877d9beca7c1212cb01b4e2f5a828de9.jpeg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Vengeful Backstab',
+            description: [
+                'Deals 280% damage to the target.',
+                'The caster goes into hiding for 2 turns.',
+                'When the caster comes out of hiding, it deals 277 damage to all enemies that used Special Skills while it was hiding.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     'skadi': {
         name: 'Skadi',
         attack: 696,
@@ -4980,6 +5002,27 @@ const green5StarHeroes = {
             ]
         },
         family: References.events.THE_MASQUERADE
+    },
+    elradir: {
+        name: 'Elradir',
+        attack: 766,
+        defense: 745,
+        health: 1353,
+        element: elements.nature.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3dLKeNEOmvNgLrT2fo8EvbXuvTISzLhPT5RZ0nJPjDN2Fa0N37URWwN0GZ2ct-9VZfTdkDWlohHfLJ__4WYIrSx3i2tGZuOQCkYeFJwWGx488d7llqHsKfBUQdmiUAiYasFeZtsWdy53hZ3w-FmaqRy=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: "Nature's Payback",
+            description: [
+                'Deals 255% damage to the target and nearby enemies.',
+                'The caster reflects 100% of the damage received from their status ailments to all enemies for 3 turns.',
+                "Element Link gives all nature allies small amount of mana at the end of the turn for 4 turns. This effect can't be dispelled."
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
     },
     evelyn: {
         name: 'Evelyn',
