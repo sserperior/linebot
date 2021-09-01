@@ -4258,6 +4258,33 @@ const yellow5StarHeroes = {
         },
         family: References.events.HERO_OF_THE_MONTH
     },
+    devana: {
+        name: 'Devana',
+        attack: 741,
+        defense: 756,
+        health: 1404,
+        element: elements.holy.id,
+        pseudonyms: ['dev', 'devana', 'devanna'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLX_VLS7o3xIXI3oYo0VdRcr15eGE2pHSEihM2EuksKNfKOxpnhhQSQ2aU9bn_e2gIXh2b70W8KzDpWFV2VSJJdywEREmaXdMIQcPOYdMNqv3KTMAN3mcRxPfgibMBzpYNWz97XsI-_RQTNr6I3lMy2v=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.RANGER.value,
+        special: {
+            name: 'Arrows and Claws',
+            description: [
+                'Deals 255% damage to the target and nearby enemies.',
+                'Summons a Lynx Minion with 35% HP and 35% attack inherited from the caster.',
+                'Before a Lynx Minion hits a target, it destroys all Minions from the target.',
+                'Dispels buffs from the target and nearby enemies.',
+                "Element Link gives all Holy allies a small amount of mana at the end of each turn for 4 turns. This effect can't be dispelled",
+                'RESIST DISPELS: This hero has an innate resistance against dispels of buffs.',
+                'RESIST MINION EFFECTS: This hero has an innate resistance against incomming negative effects and damage from Minions.'
+
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
     'drake fong': {
         name: 'Drake Fong',
         attack: 727,
