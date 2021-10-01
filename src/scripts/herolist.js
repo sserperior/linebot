@@ -3547,6 +3547,31 @@ const blue5StarHeroes = {
         },
         family: References.events.HERO_OF_THE_MONTH
     },
+    alexandrine: {
+        name: 'Alexandrine',
+        attack: 745,
+        defense: 747,
+        health: 1423,
+        element: elements.ice.id,
+        pseudonyms: ['alexandrine', 'alexandra'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLVSY4XpgZlB6qkfZCP3zdno_e7x4DNP1rgVccTzD5iuLwjgUXRz8BR5a4stbu8Cl5Mr5C2_bG_wereSjKcDepsJ6CPeMJdKNajlgwY8e-udZulTYqevXj36oZNA-SjC0JpgMNg6Lp4CSA7aM6V4EJGj=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Shimmering Shield',
+            description: [
+                'Recovers 18% health for all allies.',
+                'Recovers additional 3% health per each Ice shield on the board, up to 42% health in total.',
+                'Alters the critical chance or accuracy of all Ice shields on the board. When an attacking Hero casts the special, the shield becomes enhanced with +54% critical chance. When a defending Hero casts the special, the shields become weakened with -47% accuracy.',
+                "Element Link gives +10% increase for any healing received for all Ice allies for 4 turns. This effect can't be dispelled.",
+                'RESIST HEALING AILMENTS: This Hero has innate resistance against status ailments that affect Healing.',
+                'HEALTH RECOVERY PER STATUS AILMENT: This Hero recovers 10% health when they receive a status ailment.'
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
     alice: {
         name: 'Alice',
         attack: 741,
@@ -6375,7 +6400,9 @@ const red5StarHeroes = {
                 '\u2022 The caster gets the following status effect for each hit:',
                 'Stack: The caster gets +5% attack. The maximum size of stack is 10.',
                 '',
-                "Element Link gives all Fire allies small amount of mana at the end of the turn for 4 turns. This effect can't be dispelled."
+                "Element Link gives all Fire allies small amount of mana at the end of the turn for 4 turns. This effect can't be dispelled.",
+                'STATUS EFFECT ON MANA REDUCTION: This hero gets +30% attack for 3 turns when their mana is reduced.',
+                'RESIST WATER DAMAGE: This Hero has innate resistance against Water damage.'
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
@@ -6489,6 +6516,32 @@ const purple5StarHeroes = {
             ]
         },
         family: References.events.FABLES_OF_GRIMFOREST
+    },
+    chakkoszrot: {
+        name: 'Chakkoszrot',
+        attack: 745,
+        defense: 780,
+        health: 1355,
+        element: elements.dark.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLVcdLfsgjdZFlLadKFZfyp9A9WKRp7zlp55S6r0XkSTaaUrnQ5SrgQziKe9RsxtiLvls-HUUgpfB6B7wTziHVmI1yhPqjlUQFIXXwCRUp6U1XYuvSJ1Q6UFN8nFsw3Y0mKbZlXlozaQOUTK7XuHPoEG=w1000-no-tmp.jpg',
+        pseudonyms: ['chakkoszrot', 'chakko', 'chako'],
+        stars: 5,
+        manaSpeed: ManaSpeeds.SLOW.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Stalling Spell',
+            description: [
+                'Deals 235% damage to all enemies.',
+                "All enemis with a dispellable mana generation buff get -54% mana generation for 4 turns. This effect can't be cleansed.",
+                'All enemies are immune to new buffs for 4 turns.',
+                "Element Link gives +10% increase for any healing received for all Dark allies for 4 turns. This effect can't be dispelled.",
+                'RESIST DIRECT MANA REDUCTION: This Hero has innate resistance against direct Mana Reduction.',
+                'MANA BUFF PER STATUS AILMENT: Receives +24% mana generation for 3 turns when this Hero receives a status ailment.'
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+
     },
     clarissa: {
         name: 'Clarissa',
