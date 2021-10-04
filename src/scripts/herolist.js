@@ -4241,6 +4241,28 @@ const yellow5StarHeroes = {
         },
         family: References.maps.SEASON_4
     },
+    aouda: {
+        name: 'Aouda',
+        attack: 811,
+        defense: 782,
+        health: 1293,
+        element: elements.holy.id,
+        pseudonyms: ['aouda', 'hawaiian girl'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLWrX-7J8fjlDCN1S7Mf3CtZ9-qj0JdBxSB7BlunMPNuTMmY8pD7HkyvRk7vM-utv0hZlMZMKs3A-lnamD0q8XCE8OANxn4Xsx5yQbZ4Om3bVCIT-Xpx3JuO-jWHyKbwNsLP2Vs7hUEq1pmGLwyUVbgI=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.ROGUE.value,
+        special: {
+            name: 'Blade of Bundelkhand',
+            description: [
+                'Deals 450% damage to the target.',
+                'Deals 500 extra damage if the target has boosted health.',
+                'INCREASED SPECIAL SKILL DAMAGE: First time this Hero casts Special Skill that does damage, additional 30% is added to its power.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     'bai yeong': {
         name: 'Bai Yeong',
         attack: 749,
@@ -4309,6 +4331,28 @@ const yellow5StarHeroes = {
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
+    },
+    'director zuri': {
+        name: 'Director Zuri',
+        attack: 766,
+        defense: 772,
+        health: 1421,
+        element: elements.holy.id,
+        pseudonyms: ['zuri', 'director', 'director zuri'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/GxMKcioLCU8cmMQmu4stNU-820nkB5fFZ8QIroHvHExnNyOZazwjJ6qWlA8HUeTZRDMjx14hzOdJN7bhP3jsoQGHHIVjFKDfKzu3b2LKowdXuyaJFJK80ARQSxtSb_sFVfvBIRsnLEwXKNMNOXmT30ls20L6zSQ7jGcXmBxrRLqLIOAk4Ugt3xKpkTCqHEn4IQjsm0iebAXwAnKruQBJWu9rG6WEYExkxwBDdJzApNDFII8doS4-CM5NJ1sJCoRDT9dLDCjvIvKsuPE836tMuw-CWlZmnC6eC2zZuhQ66SPkYjt7lNixYHphCTpKiPio9K85pK6jEGEqel_nqPj83TmVE3zHNMYKgxez1_kMTw2Vjzn5yzLIEBcW5BprsX89ZXkbSZm5SeaHsHaH_jZCK4YXa8Ad7qV_PhlfeQXHROVMu9tvvFcPs5ItVp7Vt9Lox7bsQvwvp9yToiOcIn6lWQMCoU5NwexztoD2IqYDXh6OPNws84QiKgO09-1y8Tosa5qz2ggcZoEGhs5VokxXC-muucl3hErGPtF3_9agp8fWV8An95r3xvJewwbPd_k6pA-trgl2sdU_X2LbmtYp2W8nrbhoD1NhsjyarpLoP5gcnE8yJ0r_RvgMdAraz5tXDi3EdLN1anBojX_fbgl4yEEjhK0Ze1VhX29UDyRH_lc1dOimh6IFP7EBbZs9_Ji-y2qv3UVg4tCfnm161sbHOIEH=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.SORCERER.value,
+        special: {
+            name: "Director's Blessing",
+            description: [
+                'Recovers 45% health for the ally with the lowest remaining HP. All other allies recover 30% health.',
+                'Summons a Clown Minion for each ally with 13% HP and 20% attact inherited from the caster.',
+                'Cleanses status ailments from all allies'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
     },
     'drake fong': {
         name: 'Drake Fong',
@@ -6316,6 +6360,31 @@ const red5StarHeroes = {
         },
         family: References.events.HERO_OF_THE_MONTH
     },
+    russell: {
+        name: 'Russell',
+        attack: 795,
+        defense: 739,
+        health: 1322,
+        element: elements.fire.id,
+        pseudonyms: ['russell', 'russ'],
+        // TODO
+        imgUrl: 'https://static.wikia.nocookie.net/id4/images/c/c2/Rus_02_portrait.png/revision/latest/scale-to-width-down/720?cb=20170922192108',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.WIZARD.value,
+        special: {
+            name: 'Sure-Fire Combustion',
+            description: [
+                'This Special Skill never misses its targets.',
+                'Deals 350% damage to the target.',
+                'The target and nearby enemies receive 264 Burn damage over 3 turns.',
+                "Element Link gives +10% increase for any healing received for all Fire allies for 4 turns. This effect can't be dispelled.",
+                'MANA ON BURN: This Hero gains 5% mana each time an enemy receives Burn damage.',
+                'RESIST ATTACK AILMENTS: This Hero has innate resistance against status ailments that affect Attack.'
+            ]
+        },
+        family: References.events.HERO_OF_THE_MONTH
+    },
     'santa claus': {
         name: 'Santa Claus',
         attack: 618,
@@ -6406,6 +6475,28 @@ const red5StarHeroes = {
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
+    },
+    zenobia: {
+        name: 'Zenobia',
+        attack: 824,
+        defense: 756,
+        health: 1316,
+        element: elements.fire.id,
+        pseudonyms: ['zenobia', 'zeno'],
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLWHcDnusoSIYytL7WMDgtaJ-KKeisj94m7DKX0fej_tRLe5lO_Yx2Gjc36MZbs-aWWZqeTdiCVTzkW0lJADuwnHGmMCq5AoByV-SwU3Zf7kcQZexKeLlNXv2pEOFLAnmYWKjEQwwxoTETCHpb3_GC4r=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Dual Sting',
+            description: [
+                'Deals 320% damage to the enemies on the edges of the enemy formation. If there is only one enemy alive, the damage is doubled.',
+                'Alters the power of all Fire shields on the board. When an attacking Hero casts the special, the shield becomes enhanced with +64% attack. When a defending Hero casts the special, the shields become weakened with -57% attack.',
+                'INCREASE BUFF DURATION: Duration fo the first 3 buffs this hero receives from Special Skills is increased by 1 turn.'
+            ]
+        },
+        family: References.maps.SEASON_4
     },
     zimkitha: {
         name: 'Zimkitha',

@@ -42,6 +42,11 @@ module.exports = {
             type: 'event',
             pseudonyms: ['fables', 'grimforest', 'fables of grimforest']
         },
+        [References.events.STARFALL_CIRCUS]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/b/d/bdd56697def14c9221bffde49e76b887d1c82c4a.jpeg',
+            type: 'event',
+            pseudonyms: ['starfall', 'circus', 'starfall circus']
+        },
         [References.events.GUARDIANS_OF_TELTOC]: {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/5/6/56c7b95e43cb9567730e49031eb0c9cff8eba654.jpeg',
             type: 'event',
@@ -59,7 +64,7 @@ module.exports = {
         },
         [References.events.HERO_OF_THE_MONTH]: {
             type: 'event',
-            pseudonyms: ['hotm', 'hero of the month']
+            pseudonyms: ['hotm', 'hero of the month', 'heroes of the month']
         },
         "Hunter's Lodge": {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/4/64f24fcc2ef551be14f1001a1980a0bc4ddd304e.jpeg',

@@ -9,6 +9,7 @@ module.exports = {
         PATH_OF_VALOR: 'Path of Valor',
         PIRATES_OF_CORELLIA: 'Pirates of Corellia',
         RIDDLES_OF_WONDERLAND: 'Riddles of Wonderland',
+        STARFALL_CIRCUS: 'Starfall Circus',
         TAVERN_OF_LEGENDS: 'Tavern of Legends',
         THE_MASQUERADE: 'The Masquerade',
         TRIALS_OF_DECIMATION: 'Trials of Decimation',
