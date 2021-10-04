@@ -14,7 +14,7 @@ module.exports = {
             pseudonmys: ['alfheim']
         },
         [References.realms.ASGARD]: {
-            // TODO imgUrl
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/3/8/38fc2ffea39d2a03b829f12768442d9751c41954.jpeg',
             type: 'realm',
             pseudonyms: ['asgard']
         },
@@ -105,6 +105,11 @@ module.exports = {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/6/2/6273571e6da828e7b154182ef30ea00020cb5754.jpeg',
             type: 'event',
             pseudonyms: ['ninja tower', 'tower', 'ninja']
+        },
+        [References.events.TOWER_OF_MAGIC]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/0/8/08072ef4efa21e514c71cc599c445e6b90b6f0c2.jpeg',
+            type: 'event',
+            psuedonyms: ['tower of magic', 'magic tower']
         },
         [References.events.PATH_OF_VALOR]: {
             imgUrl: 'https://lh3.googleusercontent.com/pw/ACtC-3cdhuZWcMagkLVpQbvN2j2qIRAT1-4zNwhaqA0JMyCOh6pIFhCt6NvoBttbjPjsHq1qC_hGn_VmCffp2KJ_MCVbkGd6HxzfLSZKzae49he7oH1F6KQFXAKjR1Cdd9rh1V-duW_QvdYu6IlKG64dHPPf=w1000-no-tmp.jpg',

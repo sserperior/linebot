@@ -6,6 +6,7 @@ module.exports = {
         LEAGUE_OF_VILLAINS: 'League of Villains',
         KNIGHTS_OF_AVALON: 'Knights of Avalon',
         NINJA_TOWER: 'Ninja Tower',
+        TOWER_OF_MAGIC: 'Tower of Magic',
         PATH_OF_VALOR: 'Path of Valor',
         PIRATES_OF_CORELLIA: 'Pirates of Corellia',
         RIDDLES_OF_WONDERLAND: 'Riddles of Wonderland',
