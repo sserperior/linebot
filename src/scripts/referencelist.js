@@ -52,6 +52,11 @@ module.exports = {
             type: 'event',
             pseudonyms: ['guardians', 'teltoc', 'guardians of teltoc']
         },
+        [References.events.CLASH_OF_KNIGHTS]: {
+            imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/optimized/3X/d/f/dfa1d26d083b9a35c9afd06a2b48779688602a06_2_622x750.jpeg',
+            type: 'event',
+            pseudonyms: ['clash', 'knights', 'clash of knights']
+        },
         [References.realms.HELHEIM]: {
             imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/9/9/99f342fca59686625e7cdda5122ef12086a54525.jpeg',
             type: 'realm',

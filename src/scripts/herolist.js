@@ -394,6 +394,26 @@ const yellow3StarHeroes = {
         },
         family: References.events.THE_MASQUERADE
     },
+    candy: {
+        name: 'Candy',
+        attack: 465,
+        defense: 488,
+        health: 809,
+        element: elements.holy.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLUMODIJnsAwsSG-32MKCU247mbbvDsmIELUn1BGZFE_3spGTSh8JE1HmClFTpxzge05vyFyiatfhVlX26Qifqc9OTQYwazo4qdRd8p_mqC3DAzxg06RvIiZJEb1CMvYTpufD-ktwKzaaB0DEh0WHcT2=w1000-no-tmp.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.CLERIC.value,
+        special: {
+            name: 'Whimsical Aid',
+            description: [
+                'Heals all allies who have less than 50% HP left to 50% health.',
+                'All allies regenerate 261 HP over 3 turns.'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
+    },
     dawa: {
         name: 'Dawa',
         attack: 488,
@@ -968,6 +988,26 @@ const green3StarHeroes = {
             ]
         },
         family: References.events.RIDDLES_OF_WONDERLAND
+    },
+    whacker: {
+        name: 'Whacker',
+        attack: 554,
+        defense: 406,
+        health: 747,
+        element: elements.nature.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLWuqfzwEpowWsf6QCqT5yg68CsYLeA0Yquh1BIbijQ5S9ap9gncKyV2KuNGs9vYZVTSblwlVMAkpo4ke494nxM35IitUKybZhJhCZKqw9FmvecCos_0M27rjdKJoZ_EckqUw-8_enft9ESyvVXNpLsG=w1000-no-tmp.jpg',
+        stars: 3,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.BARBARIAN.value,
+        special: {
+            name: 'Nasty Hammer',
+            description: [
+                'Deals 315% damage to the target.',
+                'The enemy with the highest base attack gets the following status ailment: The target gets -54% attack for 3 turns.'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
     }
 };
 
@@ -2005,6 +2045,28 @@ const blue4StarHeroes = {
 };
 
 const yellow4StarHeroes = {
+    "d'andre": {
+        name: "D'Andre",
+        attack: 629,
+        defense: 637,
+        health: 1381,
+        element: elements.holy.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLV160WuPdJ_8xioYaJQxc5zbsvoR8B3OnWsUTgcGJwMhL1N-3pBGYw-RElR3ZSCCmVjaL2vjCQhL6ya_b5c1cvqW9vPtYSOnYNnAlTDqdJxxKx_Y_qxQRfAwNS_9Xozorj0gsKqk4mxZ9bRZDGUnO7m=w1000-no-tmp.jpg',
+        pseudonyms: ["d'andre", 'd‘andre'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.PALADIN.value,
+        special: {
+            name: 'Vitalizing Spectacle',
+            description: [
+                'Recovers 35% health for all allies.',
+                'All allies with a dispellable status ailment that affects defense get +50% defense for 3 turns.',
+                'All allies get +24% mana generation for 3 turns.'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
+    },
     chao: {
         name: 'Chao',
         attack: 607,
@@ -2794,6 +2856,27 @@ const red4StarHeroes = {
             ]
         },
         family: References.events.THE_MASQUERADE
+    },
+    eichbelborg: {
+        name: 'Eichbelborg',
+        attack: 637,
+        defense: 656,
+        health: 1317,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLWxfJj4hUxsgPtlzN113FFQO_Ff_nKRtdm8Y2hKGUesATLnfZIkM53q1A-OQV4tiYv4bGfKGk20-z7Rdwg49YWJUd68x3VpJ59IVBIuvek4xX6ZFi9A9ClN4Cg8qAlMgRzK7BQVYJp7IlEAckcHfPXU=w1000-no-tmp.jpg',
+        pseudonyms: ['eich', 'eichbelborg'],
+        stars: 4,
+        manaSpeed: ManaSpeeds.FAST.value,
+        classGrade: Classes.MONK.value,
+        special: {
+            name: 'Pompous Flex',
+            description: [
+                'Deals 340% damage to the target.',
+                'The enemy with the highest base defense gets the following status ailment: The target gets -44% defense for 4 turns.'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
     },
     'guardian falcon': {
         name: 'Guardian Falcon',
@@ -5492,7 +5575,8 @@ const green5StarHeroes = {
             description: [
                 'Deals 150% damage to the target and nearby enemies.',
                 'The caster and nearby allies have from +30% to +90% chance of dodging special attacks that do damage. The higher the damage from the special is, the higher the chance to dodge it. Each dodge gives a moderate amount of mana to the target. The effect lasts for 3 turns.',
-                "Element Link gives all Nature allies +46% defense against Fire for 4 turns. This effect can't be dispelled."
+                "Element Link gives all Nature allies +46% defense against Fire for 4 turns. This effect can't be dispelled.",
+                'RESIST DISPELS: This Hero has inate resistance against dispels of buffs.'
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
@@ -5958,6 +6042,34 @@ const red5StarHeroes = {
         },
         family: References.maps.SEASON_4
     },
+    emilio: {
+        name: 'Emilio',
+        attack: 745,
+        defense: 803,
+        health: 1406,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLXjQxbKK7_y3tZO3ZvQX4TlyEctlfmaBQQQXyAlQY-HfnQuuhphQkFRTUbjMuek0gCs1iUJ8_w-y3Wcax2dU5UC-HvxacBq5hFBXtTfEGM_qFpDwH42DFGK6ch-_mVYPuxILyPqKVNbsfjiTRaJjXIM=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.VERY_FAST.value,
+        classGrade: Classes.DRUID.value,
+        special: {
+            name: 'Flames and Rejuvenation',
+            description: [
+                'Casts one of the following Special Skills:',
+                '',
+                'If any enemy has the Burn status ailment:',
+                'All enemies receive 410 Burn damage over 5 turns.',
+                'All allies regenerate 549 HP over 3 turns.',
+                'All allies are immune to new status aiments for 3 turns.',
+                '',
+                'Otherwise:',
+                'All enemies receive 320 Burn damage over 5 turns.',
+                'All allies are immune to new status ailments for 3 turns.'
+            ]
+        },
+        family: References.events.STARFALL_CIRCUS
+    },
     garnet: {
         name: 'Garnet',
         attack: 731,
@@ -6276,6 +6388,28 @@ const red5StarHeroes = {
         },
         family: References.events.HERO_OF_THE_MONTH
     },
+    octros: {
+        name: 'Octros',
+        attack: 762,
+        defense: 797,
+        health: 1396,
+        element: elements.fire.id,
+        // TODO
+        imgUrl: 'https://lh3.googleusercontent.com/pw/AM-JKLUUTggx0PLzaB3O91bBaNioAePiCa9pp5_qZt653h8R4oCy9Of0RNPG1ayGRnYFASQuJoug5la2D4lYz3gDNF3HeEy_gMsilIK3yg-F2qg9DpXp8X8dZJ6sPA41Air9wseLV1ioDZxhGHqRc2pIy2hC=w1000-no-tmp.jpg',
+        stars: 5,
+        manaSpeed: ManaSpeeds.AVERAGE.value,
+        classGrade: Classes.FIGHTER.value,
+        special: {
+            name: 'The Hallowed Blade',
+            description: [
+                'Deals 180% damage to all enemies.',
+                'Deals additional 20% damage per each Fire shield on the board, up to 340% damage in total.',
+                'All enemies get -24% attack for 3 turns.',
+                'INCREASE BUFF DURATION: Duration of the first 3 buffs this hero receives from Special Skills is increaed by 1 turn.'
+            ]
+        },
+        family: References.maps.SEASON_4
+    },
     'puss in boots': {
         name: 'Puss in Boots',
         attack: 764,
@@ -6435,7 +6569,7 @@ const red5StarHeroes = {
         defense: 735,
         health: 1384,
         element: elements.fire.id,
-        imgUrl: 'https://aws1.discourse-cdn.com/smallgiantgames/original/3X/7/2/728e3218592c4a8124bbde5b3b2c4926c516dd91.jpeg',
+        imgUrl: 'https://sgephome.files.wordpress.com/2021/04/vanda.jpg',
         stars: 5,
         manaSpeed: ManaSpeeds.VERY_FAST.value,
         classGrade: Classes.SORCERER.value,
@@ -7330,7 +7464,8 @@ const purple5StarHeroes = {
                 'The caster and nearby allies regenerate 612 HP over 4 turns.',
                 'The caster and nearby allies get +46% defense for 4 turns.',
                 'The caster and nearby allies get +74% defense against Special Skills for 4 turns.',
-                "Element Link summons a Dark Minion for all Dark allies with 5% HP and 5% attack inherited from the caster."
+                "Element Link summons a Dark Minion for all Dark allies with 5% HP and 5% attack inherited from the caster.",
+                'RESIST SAND DAMAGE: This Hero has innate resistance against Sand damage.'
             ]
         },
         family: References.events.HERO_OF_THE_MONTH
